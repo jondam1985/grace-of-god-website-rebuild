@@ -1,0 +1,47 @@
+    @import "./mixins.scss";
+
+    //Main nav active states
+
+    .page-homepage {
+        header {
+            .main-nav__link.about {
+                @include active-nav;
+            }
+        }
+    }
+    .page-services {
+        header {
+            .main-nav__link.services {
+                @include active-nav;
+            }
+        }
+    }
+    .page-beliefs {
+        header {
+            .main-nav__link.beliefs {
+                @include active-nav;
+            }
+        }
+    }
+    .page-blog {
+        header {
+            .main-nav__link.blog {
+                @include active-nav;
+            }
+        }
+    }
+
+    //Language selector active state
+    
+    body.es {
+        .lang-selector--es {
+            color: $quaternary-color;
+            font-weight: 700;
+        }
+    }
+    body.en {
+        .lang-selector--en {
+            color: $quaternary-color;
+            font-weight: 700;
+        }
+    }

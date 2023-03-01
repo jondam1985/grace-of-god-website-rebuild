@@ -1,0 +1,85 @@
+---
+import LogoEs from "../assets/logo_grace-of-god-es.png";
+import LogoEn from "../assets/logo_grace-of-god-en.png";
+import Social from "../assets/icon.png";
+import "./Header.scss";
+export interface Props {
+    mainNav: object;
+    socialNav: object;
+    currentUrl: string;
+    oppositeLangCanonical: string;
+    lang: string;
+}
+
+const { mainNav, currentUrl, oppositeLangCanonical, socialNav, lang } = Astro.props;
+---
+
+<header>
+    <div class="secondary-nav flex flex-justify-right flex-aling-center">
+        <div class="secondary-nav__item lang-selector">
+            <div id="langSelectorContainer" class="lang-selector__languages">
+                <a href={oppositeLangCanonical} class={`lang-selector__link flex flex-align-center flex-justify-between relative ${currentUrl.includes("/en") ? "en" : "es"}`}>
+                    <span class="block">ES</span>
+                    <span class="block">EN</span>
+                </a>
+            </div>
+        </div>
+        <div class="secondary-nav__item social-nav flex-align-center flex">
+            <nav class="flex flex-justify-between flex-align-center relative" aria-label="social links">
+                <a target="_blank" rel="noopener" href={socialNav.facebook.href} class="social-nav__item social-nav__item--icon facebook"><img src={Social} alt={socialNav.facebook.copy} /></a>
+                <a target="_blank" rel="noopener" href={socialNav.twitter.href} class="social-nav__item social-nav__item--icon twitter"><img src={Social} alt={socialNav.twitter.copy} /></a>
+                <a target="_blank" rel="noopener" href={socialNav.youtube.href} class="social-nav__item social-nav__item--icon youtube"><img src={Social} alt={socialNav.youtube.copy} /></a>
+            </nav>
+        </div>
+    </div>
+    <div class="main-nav relative">
+        <nav aira-label="main navigation" class="flex flex-align-center flex-justify-between">
+                <div class="main-nav__item logo">
+                    <a href={mainNav.logo.href} class="main-nav__link logo">
+                        <img alt={mainNav.logo.copy} src={mainNav.logo.href == "/" ? LogoEs : LogoEn} />
+                    </a>
+                </div>
+                <div class="main-nav__item mobile-menu-trigger">
+                    <button id="mobileMenu" aria-expanded="false" aria-controls="mainNavLinks" class="mobile-menu__trigger uppercase flex flex-align-center flex-justify-center">
+                        <span aria-label={mainNav.mobile.open} class="mobile-menu open">menu</span>
+                        <span aria-label={mainNav.mobile.open} class="mobile-menu close">x</span>
+                    </button>
+                </div>
+                <div id="mainNavLinks" class="main-nav__item main-links flex flex-justify-evenly flex-align-center text-center inactive hidden">
+                    <a href={mainNav.about.href} class="main-nav__link about relative flex flex-align-center flex-justify-center uppercase">{mainNav.about.copy}</a>
+                    <a href={mainNav.services.href} class="main-nav__link flex flex-align-center flex-justify-center services relative uppercase">{mainNav.services.copy}</a>
+                    <a href={mainNav.beliefs.href} class="main-nav__link flex flex-align-center flex-justify-center beliefs relative uppercase">{mainNav.beliefs.copy}</a>
+                    <a href={mainNav.blog.href} class="main-nav__link flex flex-align-center flex-justify-center blog relative uppercase">{mainNav.blog.copy}</a>
+                    <a target="_blank" rel="noopener" href={mainNav.donate.href} class="main-nav__link flex flex-align-center flex-justify-center donate relative uppercase">{mainNav.donate.copy}</a>
+                </div>
+        </nav>
+    </div>
+</header>
+<script>
+    //Handle mobile menu
+    document.getElementById("mobileMenu").addEventListener("click" , (e) => {
+        console.log(e.target.getAttribute("aria-controls"));
+        const selector = document.getElementById(e.target.getAttribute("aria-controls"));
+        if(e.target.getAttribute("aria-expanded") == "false") {
+            selector.classList.remove("hidden");
+            setTimeout(() => {
+                selector.classList.remove("inactive");
+            }, 100);
+            e.target.setAttribute("aria-expanded", "true")
+            document.querySelector("body").style.overflow = "hidden";
+        }
+        else {
+            selector.classList.add("inactive");
+            setTimeout(() => {
+                selector.classList.add("hidden");
+            }, 500);
+            e.target.setAttribute("aria-expanded", "false");
+            document.querySelector("body").removeAttribute("style");
+        }
+    })
+
+    //Handle language toggle
+    document.querySelector(".lang-selector__link").addEventListener("click", (e) => {
+        e.target.classList.add("switch");
+    })
+</script>

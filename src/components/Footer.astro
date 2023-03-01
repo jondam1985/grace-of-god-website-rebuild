@@ -1,0 +1,60 @@
+---
+import "./Footer.scss";
+import LogoEs from "../assets/logo_grace-of-god-es.png";
+import LogoEn from "../assets/logo_grace-of-god-en.png";
+import Social from "../assets/icon.png";
+import Verse from "./Verse.astro";
+export interface Props {
+    footerSocial: object;
+    footerContent: object;
+    lang: string;
+}
+
+const { footerContent, footerSocial, lang } = Astro.props;
+---
+
+<footer class="flex flex-justify-between">
+    <nav arial-label="Footer navigation" class="footer-links flex flex-align-top flex-justify-between">
+        <div class="footer-links__item social-links">
+            <!-- <a class="social-link--donate text-center" target="_blank" rel="noopener" href={footerContent.donate.href}>{footerContent.donate.copy}</a> -->
+            <div class="footer-social__icons flex flex-align-top flex-justify-between">
+                <a target="_blank" rel="noopener" href={footerSocial.facebook.href}><img src={Social} alt={footerSocial.facebook.copy} /></a>
+                <a target="_blank" rel="noopener" href={footerSocial.twitter.href}><img src={Social} alt={footerSocial.twitter.copy} /></a>
+                <a target="_blank" rel="noopener" href={footerSocial.youtube.href}><img src={Social} alt={footerSocial.youtube.copy} /></a>
+            </div>
+        </div>
+        <div class="footer-links__item navigation-links">
+            <a href={footerContent.navigation.contact.href}>{footerContent.navigation.contact.copy}</a>
+            <a href={footerContent.navigation.policy.href}>{footerContent.navigation.policy.copy}</a>
+            <a href={footerContent.navigation.sitemap.href}>{footerContent.navigation.sitemap.copy}</a>
+        </div>
+    </nav>
+    <div class="footer-copy flex flex-align-top flex-justify-between">
+        <div class="footer-copy__item services">
+            <p>{footerContent.services.local} <a class="inline" href={lang == "es" ? "/services-location" : "/en/services-location"}>624 Annette St, Toronto, ON</a></p>
+            <p>{footerContent.services.online} <a class="inline" href="https://www.youtube.com">Youtube</a></p>
+        </div>
+        <div class="footer-copy__item verse">
+            <div class="footer-verse">
+                <Verse 
+                    copy={footerContent.verse.copy}
+                    book={footerContent.verse.book}
+                />
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright flex flex-align-bottom flex-justify-left">
+        <div class="footer-copyright__item logo">
+            <img src={lang == "es" ? LogoEs : LogoEn} alt="" />
+        </div>
+        <div class="footer-copyright__item copyright">
+            <p>&copy;<span id="currentYear"></span> {footerContent.copyright}</p>
+        </div>
+    </div>
+</footer>
+<script>
+    window.addEventListener("load", () => {
+        const date = new Date;
+        document.getElementById("currentYear").innerText = date.getFullYear().toString();
+    })
+</script>

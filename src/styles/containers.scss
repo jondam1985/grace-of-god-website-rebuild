@@ -1,0 +1,68 @@
+//Container display
+
+.flex {
+    display: flex;
+}
+.block {
+    display: block;
+}
+.hidden {
+    display: none;
+}
+.inline {
+    display: inline;
+}
+.inline-block {
+    display: inline-block;
+}
+
+//Position
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.fixed {
+    position: fixed;
+}
+
+//Flex alignment
+.flex-align-center {
+    align-items: center;
+}
+.flex-align-top {
+    align-items: baseline;
+}
+.flex-align-bottom {
+    align-items: end;
+}
+
+.flex-justify-left {
+    justify-content: baseline;
+}
+.flex-justify-right {
+    justify-content: end;
+}
+.flex-justify-center {
+    justify-content: center;
+}
+.flex-justify-between {
+    justify-content: space-between;
+}
+.flex-justify-around {
+    justify-content: space-around;
+}
+.flex-justify-evenly {
+    justify-content: space-evenly;
+}
+
+//Width container
+
+.content-container {
+    max-width: 1440px;
+}
+
+
+
+

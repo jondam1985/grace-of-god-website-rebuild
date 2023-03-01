@@ -1,0 +1,52 @@
+---
+import "../styles/core.scss";
+import "../styles/containers.scss";
+import "../styles/typography.scss";
+import "../styles/active-menu.scss";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+export interface Props {
+	title: string;
+	description: string;
+	canonical: string;
+	pageClass: string;
+	navContent: object;
+	oppositeLangUrl: string;
+	socialNav: object;
+	currentLang: string;
+	footer: object;
+}
+
+const { title, description, canonical, pageClass, navContent, oppositeLangUrl, socialContent, currentLang, footer } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang={currentLang}>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<link rel="canonical" href={`https://www.graciadedios.ca${canonical}`} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+	</head>
+	<body class={pageClass}>
+		<Header 
+			mainNav={navContent}
+			socialNav={socialContent}
+			currentUrl={canonical}
+			oppositeLangCanonical={oppositeLangUrl}
+			lang={currentLang} />
+		<slot />
+		<Footer
+			footerSocial={socialContent}
+			footerContent={footer}
+			lang={currentLang}>
+		</Footer>
+	</body>
+</html>

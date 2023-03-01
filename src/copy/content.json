@@ -1,0 +1,180 @@
+{
+    "es": {
+        "global": {
+            "language": "es",
+            "baseUrl": "https://www.graciadedios.ca",
+            "langSelector": {
+                "es": "Espanol",
+                "en": "English"
+            }
+        },
+        "header": {
+            "navigation": {
+                "mobile": {
+                    "open": "Abrir menu",
+                    "close": "Cerrar menu"
+                },
+                "logo": {
+                    "copy": "Ir a la pagina de inicio",
+                    "href": "/"
+                },
+                "about": {
+                    "copy": "Acerca de nosotros",
+                    "href": "/acerca-de-nosotros"
+                },
+                "services": {
+                    "copy": "Servicios y ubicacion",
+                    "href": "/servicios-ubicacion"
+                },
+                "beliefs": {
+                    "copy": "Nuestras creencias",
+                    "href": "/nuestras-creencias"
+                },
+                "blog": {
+                    "copy": "Pepitas de fe",
+                    "href": "/blog-pepitas-de-fe"
+                },
+                "donate": {
+                    "copy": "Donaciones",
+                    "href": "https://www.google.com"
+                }
+            },
+            "social": {
+                "facebook": {
+                    "copy": "Siguenos en Facebook",
+                    "href": "https://www.google.com"
+                },
+                "twitter": {
+                    "copy": "Siguenos en Twitter",
+                    "href": "https://www.google.com"
+                },
+                "youtube": {
+                    "copy": "Siguenos en YouTube",
+                    "href": "https://www.google.com"
+                }
+            }
+        },
+        "footer": {
+            "navigation": {
+                "contact": {
+                    "copy": "Contactanos",
+                    "href": "/contactanos"
+                },
+                "policy": {
+                    "copy": "Politica de privacidad",
+                    "href": "/politica-de-privacidad"
+                },
+                "sitemap": {
+                    "copy": "sitemap",
+                    "href": "/sitemap"
+                }
+            },
+            "services": {
+                "local": "Visitanos cada domingo a las 7:00am - ",
+                "online": "Unete en linea cada doming a las 7:00am en"
+            },
+            "verse": {
+                "copy": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+                "book": "Juan 3:16"
+            },
+            "copyright": "lorem copyright espanol"
+        },
+        "pages": {
+            "homepage": {
+                "metadata": {
+                    "title": "Pagina de inicio",
+                    "description": "Esta es la pagina de inicio",
+                    "canonical": "/",
+                    "oppositeCanonical": "/en"
+                }
+            }
+        }
+    },
+    "en": {
+        "global": {
+            "language": "en",
+            "urls": "/en"
+        },
+        "header": {
+            "navigation": {
+                "mobile": {
+                    "open": "Abrir menu",
+                    "close": "Cerrar menu"
+                },
+                "logo": {
+                    "copy": "Go to homepage",
+                    "href": "/en"
+                },
+                "about": {
+                    "copy": "About us",
+                    "href": "/en/about-us"
+                },
+                "services": {
+                    "copy": "Services & location",
+                    "href": "/en/services-location"
+                },
+                "beliefs": {
+                    "copy": "Our beliefs",
+                    "href": "/en/our-beliefs"
+                },
+                "blog": {
+                    "copy": "Nuggets of faith",
+                    "href": "/en/blog-nuggets-of-faith"
+                },
+                "donate": {
+                    "copy": "Donate",
+                    "href": "https://www.google.com"
+                }
+            },
+            "social": {
+                "facebook": {
+                    "copy": "Follow us on Facebook",
+                    "href": "https://www.google.com"
+                },
+                "twitter": {
+                    "copy": "Follow us on Twitter",
+                    "href": "https://www.google.com"
+                },
+                "youtube": {
+                    "copy": "Follow us on YouTube",
+                    "href": "https://www.google.com"
+                }
+            }
+        },
+        "footer": {
+            "navigation": {
+                "contact": {
+                    "copy": "Contact us",
+                    "href": "/en/contact-us"
+                },
+                "policy": {
+                    "copy": "Privacy policy",
+                    "href": "/en/privacy-policy"
+                },
+                "sitemap": {
+                    "copy": "sitemap",
+                    "href": "/en/sitemap"
+                }
+            },
+            "services": {
+                "local": "Join us every Sunday at 7:00am - ",
+                "online": "Watch us online every Sunday at 7:00am on"
+            },
+            "verse": {
+                "copy": "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.",
+                "book": "John 3:16"
+            },
+            "copyright": "lorem copyright english"
+        },
+        "pages": {
+            "homepage": {
+                "metadata": {
+                    "title": "Homepage",
+                    "description": "This is the homepage",
+                    "canonical": "/en",
+                    "oppositeCanonical": "/"
+                }
+            }
+        }  
+    }
+}

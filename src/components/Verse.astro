@@ -1,0 +1,18 @@
+---
+import "./Verse.scss";
+export interface Props {
+    copy: string;
+    book: string;
+}
+
+const { copy, book } = Astro.props;
+---
+
+<div class="verse__container">
+    <div class="verse__copy">
+        <p>{copy}</p>
+    </div>
+    <div class="verse__book text-right">
+        <p><i>-{book}</i></p>
+    </div>
+</div>
