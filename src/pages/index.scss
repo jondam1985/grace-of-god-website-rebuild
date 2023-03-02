@@ -1,0 +1,81 @@
+@import "../styles/variables.scss";
+@import "../styles/mixins.scss";
+
+body.page-homepage {
+    main {
+
+        .hero {
+            background: linear-gradient(to bottom, rgba(108, 129, 248, 0.52), rgba(145, 216, 255, 0.73)),
+            url('../assets/bg_clouds.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 4rem;
+            color: $white;
+            background-attachment: fixed;
+
+            .hero__overlay {
+                background-color: rgba(1,1,1,0.7);
+                inset: 0;
+                transition: opacity 2s linear;
+            }
+
+            .hero__header {
+                font-family: $secondary-font;
+                text-align: center;
+                line-height: 1;
+                position: relative;
+
+                h1 {
+                    font-size: 5rem;
+                    opacity: 0;
+                    top: 2rem;
+                    transition: opacity 2s linear, top 2s linear;
+
+                }
+                p {
+                    font-size: 3rem;
+                    opacity: 0;
+                    top: 2rem;
+                    transition: opacity 2s linear, top 1.5s linear;
+                    transition-delay: 0.5s;
+                }
+            }
+
+            .verse {
+                padding: 2rem 0;
+                width: 50%;
+                text-shadow: 2px 1px 2px $black;
+                opacity: 0;
+                top: 2rem;
+                transition: opacity 2s linear, top 1.5s linear;
+                transition-delay: 1s;
+
+                @include mobile {
+                    width: 100%;
+                }
+            }
+        }
+
+        //Animation styles
+        .hero.animate {
+
+            .hero__overlay {
+                opacity: 0;
+            }
+
+            .hero__header h1 {
+                opacity: 1;
+                top: 0;
+            }
+
+            .hero__header p {
+                opacity: 1;
+                top: 0;
+            }
+            .verse {
+                opacity: 1;
+                top: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+@import "../styles/variables.scss";
+
+.lang-selector__languages {
+    a {
+        text-decoration: none;
+        width: 4rem;
+        font-weight: 300;
+        font-size: 0.8rem;
+        background-color: $quaternary-color;
+        border-radius: 20px;
+        border: 2px solid $secondary-color;
+        padding: 0.50rem;
+
+        span {
+            z-index: 2;
+        }
+
+        span:first-of-type {
+            margin-left: 0.1rem;
+        }
+
+        span:nth-of-type(2) {
+            margin-right: 0.1rem;
+        }
+    }
+
+    a::before {
+        content: "";
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background-color: $secondary-color;
+        position: absolute;
+        top: 0.13rem;
+    }
+
+    a.es {
+        span:first-of-type {
+            color: $white;
+            font-weight: 700;
+        }
+    }
+
+    a.en {
+        span:nth-of-type(2) {
+            color: $white;
+            font-weight: 700;
+        }
+    }
+
+    a.es.switch {
+        span:nth-of-type(2) {
+            color: $white;
+            font-weight: 700;
+        }
+    }
+
+    a.en.switch {
+        span:first-of-type {
+            color: $white;
+            font-weight: 700;
+        }
+    }
+
+    a.es::before {
+        left: 0.1rem;
+        right: unset;
+
+    }
+
+    a.es.switch::before {
+        left: unset;
+        right: 0.1rem;
+    }
+
+    a.en::before {
+        right: 0.1rem;
+        left: unset;
+    }
+
+    a.en.switch::before {
+        left: 0.1rem;
+        right: unset;
+    }
+
+    a:hover {
+        font-weight: 700;
+    }
+
+    a:focus {
+        outline: 2px dotted $secondary-color;
+    }
+}

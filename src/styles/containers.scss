@@ -1,5 +1,6 @@
-//Container display
+@import "./mixins.scss";
 
+//Container display
 .flex {
     display: flex;
 }
@@ -14,6 +15,16 @@
 }
 .inline-block {
     display: inline-block;
+}
+.desktop {
+    @include mobile {
+        display: none;
+    }
+}
+.mobile {
+    @include desktop {
+        display: none;
+    }
 }
 
 //Position
@@ -59,8 +70,14 @@
 
 //Width container
 
-.content-container {
-    max-width: 1440px;
+.container {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include desktop {
+        width: 80%;
+    }
 }
 
 

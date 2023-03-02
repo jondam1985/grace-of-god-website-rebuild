@@ -1,85 +1,85 @@
 ---
-import LogoEs from "../assets/logo_grace-of-god-es.png";
-import LogoEn from "../assets/logo_grace-of-god-en.png";
-import Social from "../assets/icon.png";
+import LogoSmall from "../assets/logo_church-small.png";
+import FacebookSVG from "./FacebookSVG.astro";
+import TwitterSVG from "./TwitterSVG.astro";
+import YoutubeSVG from "./YoutubeSVG.astro";
 import "./Header.scss";
+import LangSwitch from "./LangSwitch.astro";
 export interface Props {
-    mainNav: object;
-    socialNav: object;
-    currentUrl: string;
-    oppositeLangCanonical: string;
     lang: string;
+    langSwitchHref: string;
 }
 
-const { mainNav, currentUrl, oppositeLangCanonical, socialNav, lang } = Astro.props;
+const { lang, langSwitchHref  } = Astro.props;
 ---
 
-<header>
-    <div class="secondary-nav flex flex-justify-right flex-aling-center">
-        <div class="secondary-nav__item lang-selector">
-            <div id="langSelectorContainer" class="lang-selector__languages">
-                <a href={oppositeLangCanonical} class={`lang-selector__link flex flex-align-center flex-justify-between relative ${currentUrl.includes("/en") ? "en" : "es"}`}>
-                    <span class="block">ES</span>
-                    <span class="block">EN</span>
+<header class="relative">
+    <div class="container flex flex-align-center">
+        <div class="navbar__logo mobile">
+            <a class="flex flex-align-center" href={lang == "es" ? "/" : "/en/"}>
+                <img alt={lang == "es" ? "Logo Iglesia del Nazareno, ir a pagina de inicio" : "Church of the Nazarene logo, go to homepage"} src={LogoSmall} />
+            </a>
+        </div>
+        <div class="navbar__language mobile">
+            <LangSwitch 
+                lang={lang}
+                href={langSwitchHref}
+            />
+        </div>
+        <div class="navbar__mobile-menu mobile">
+            <button class="relative" aria-expanded="false" aria-controls="navigationPanel" aria-label={lang == "es" ? "Abrir menu de navegacion" : "Open navigation menu"}>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="navigationPanel" class="navbar__panel flex flex-align-center flex-justify-between">
+            <div class="navbar__logo desktop">
+                <a class="flex flex-align-center" href={lang == "es" ? "/" : "/en/"}>
+                    <img alt={lang == "es" ? "Logo Iglesia del Nazareno" : "Church of the Nazarene Logo"} src={lang == "es" ? LogoSmall : LogoSmall} />
                 </a>
             </div>
-        </div>
-        <div class="secondary-nav__item social-nav flex-align-center flex">
-            <nav class="flex flex-justify-between flex-align-center relative" aria-label="social links">
-                <a target="_blank" rel="noopener" href={socialNav.facebook.href} class="social-nav__item social-nav__item--icon facebook"><img src={Social} alt={socialNav.facebook.copy} /></a>
-                <a target="_blank" rel="noopener" href={socialNav.twitter.href} class="social-nav__item social-nav__item--icon twitter"><img src={Social} alt={socialNav.twitter.copy} /></a>
-                <a target="_blank" rel="noopener" href={socialNav.youtube.href} class="social-nav__item social-nav__item--icon youtube"><img src={Social} alt={socialNav.youtube.copy} /></a>
+            <nav aria-label={lang == "es" ? "Navegacion primaria" : "Main navigation"} class="navbar__main-nav flex flex-align-center flex-justify-center">
+                <a class="flex flex-align-center relative" href={lang == "es" ? "/" : "/en/"}>{lang == "es" ? <span>Sobre Nosotros</span> : <span>About Us</span>}</a>
+                <a class="flex flex-align-center relative" href={lang == "es" ? "/" : "/en/"}>{lang == "es" ? <span>Ubicacion y&nbsp;Servicios</span> : <span>Location &&nbsp;Services</span>}</a>
+                <a class="flex flex-align-center relative" href={lang == "es" ? "/" : "/en/"}>{lang == "es" ? <span>Nuestras Creencias</span> : <span>Our Beliefs</span>}</a>
+                <a class="flex flex-align-center relative" href={lang == "es" ? "/" : "/en/"}>{lang == "es" ? <span>Blog: Pepitas&nbsp;de&nbsp;Fe</span> : <span>Blog: Nuggets&nbsp;of&nbsp;Faith</span>}</a>
             </nav>
+            <div class="navbar__second-nav flex flex-align-center flex-justify-between">
+                <div class="navbar__second-nav-social-links flex flex-justify-center">
+                    <a class="second-nav__social" target="_blank" rel="noopener" href="https://www.google.com"><FacebookSVG /><span class="sr-only" lang={lang}>{lang == "es" ? "Siguenos en Facebook" : "Follow us on Facebook"}</span></a>
+                    <a class="second-nav__social" target="_blank" rel="noopener" href="https://www.google.com"><TwitterSVG /><span class="sr-only" lang={lang}>{lang == "es" ? "Siguenos en Twitter " : "Follow us on Twitter "}</span></a>
+                    <a class="second-nav__social" target="_blank" rel="noopener" href="https://www.google.com"><YoutubeSVG /><span class="sr-only" lang={lang}>{lang == "es" ? "Siguenos en Youtube " : "Follow us on Youtube "}</span></a>
+                </div>
+                <div class="navbar__second-nav-donate-links flex flex-justify-center">
+                    <a class="second-nav__donate" target="_blank" rel="noopener" href="https://www.google.com">{lang == "es" ? "Donaciones" : "Donate"}</a>
+                </div>
+                <div class="desktop">
+                    <LangSwitch 
+                        lang={lang}
+                        href={langSwitchHref}
+                    />
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="main-nav relative">
-        <nav aira-label="main navigation" class="flex flex-align-center flex-justify-between">
-                <div class="main-nav__item logo">
-                    <a href={mainNav.logo.href} class="main-nav__link logo">
-                        <img alt={mainNav.logo.copy} src={mainNav.logo.href == "/" ? LogoEs : LogoEn} />
-                    </a>
-                </div>
-                <div class="main-nav__item mobile-menu-trigger">
-                    <button id="mobileMenu" aria-expanded="false" aria-controls="mainNavLinks" class="mobile-menu__trigger uppercase flex flex-align-center flex-justify-center">
-                        <span aria-label={mainNav.mobile.open} class="mobile-menu open">menu</span>
-                        <span aria-label={mainNav.mobile.open} class="mobile-menu close">x</span>
-                    </button>
-                </div>
-                <div id="mainNavLinks" class="main-nav__item main-links flex flex-justify-evenly flex-align-center text-center inactive hidden">
-                    <a href={mainNav.about.href} class="main-nav__link about relative flex flex-align-center flex-justify-center uppercase">{mainNav.about.copy}</a>
-                    <a href={mainNav.services.href} class="main-nav__link flex flex-align-center flex-justify-center services relative uppercase">{mainNav.services.copy}</a>
-                    <a href={mainNav.beliefs.href} class="main-nav__link flex flex-align-center flex-justify-center beliefs relative uppercase">{mainNav.beliefs.copy}</a>
-                    <a href={mainNav.blog.href} class="main-nav__link flex flex-align-center flex-justify-center blog relative uppercase">{mainNav.blog.copy}</a>
-                    <a target="_blank" rel="noopener" href={mainNav.donate.href} class="main-nav__link flex flex-align-center flex-justify-center donate relative uppercase">{mainNav.donate.copy}</a>
-                </div>
-        </nav>
     </div>
 </header>
 <script>
-    //Handle mobile menu
-    document.getElementById("mobileMenu").addEventListener("click" , (e) => {
-        console.log(e.target.getAttribute("aria-controls"));
-        const selector = document.getElementById(e.target.getAttribute("aria-controls"));
-        if(e.target.getAttribute("aria-expanded") == "false") {
-            selector.classList.remove("hidden");
-            setTimeout(() => {
-                selector.classList.remove("inactive");
-            }, 100);
-            e.target.setAttribute("aria-expanded", "true")
-            document.querySelector("body").style.overflow = "hidden";
+    document.querySelector(".navbar__mobile-menu button").addEventListener("click", (e) => {
+        const trigger = e.target;
+        const panel = document.getElementById(trigger.getAttribute("aria-controls"));
+        const lang = document.querySelector("body").getAttribute("data-lang")
+        const header = document.querySelector("header")
+        if (trigger.getAttribute("aria-expanded") == "false") {
+            trigger.setAttribute("aria-expanded", "true");
+            trigger.setAttribute("aria-label", `${lang == "es" ? "Cerrar menu de navegacion" : "Close navigation menu"}`)
+            panel.classList.add("expanded");
+            header.classList.add("expanded")
         }
         else {
-            selector.classList.add("inactive");
-            setTimeout(() => {
-                selector.classList.add("hidden");
-            }, 500);
-            e.target.setAttribute("aria-expanded", "false");
-            document.querySelector("body").removeAttribute("style");
+            trigger.setAttribute("aria-expanded", "false");
+            trigger.setAttribute("aria-label", `${lang == "es" ? "Abrir menu de navegacion" : "Open navigation menu"}`)
+            panel.classList.remove("expanded");
+            header.classList.remove("expanded")
         }
-    })
-
-    //Handle language toggle
-    document.querySelector(".lang-selector__link").addEventListener("click", (e) => {
-        e.target.classList.add("switch");
     })
 </script>

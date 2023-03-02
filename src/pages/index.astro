@@ -1,78 +1,52 @@
 ---
+import "./index.scss";
 import Layout from '../layouts/Layout.astro';
 import Content from '../copy/content.json';
+import Verse from "../components/Verse.astro";
 
 const page = "homepage";
 const lang = "es";
 const content = Content[lang];
 const pageContent = content.pages[page];
-const navContent = content.header.navigation;
-const socialNav = content.header.social;
 const title = pageContent.metadata.title;
 const description = pageContent.metadata.description;
 const canonical = pageContent.metadata.canonical;
 const oppositeLangCanonical = pageContent.metadata.oppositeCanonical;
 const pageClass = `page-${page} ${lang}`;
-const footer = content.footer;
 ---
 
 <Layout 
 	title={title}
 	description={description}
 	canonical={canonical}
+	lang={lang}
+	langSwitchHref={oppositeLangCanonical}
 	pageClass={pageClass}
-	navContent={navContent}
-	oppositeLangUrl={oppositeLangCanonical}
-	socialContent={socialNav}
-	currentLang={lang}
-	footer={footer}
 	>
 	<main>
-		<h1>Homepage</h1>
+		<div class="hero relative" role="banner">
+			<div class="hero__overlay absolute"></div>
+			<div class="container">
+				<div class="hero__header">
+					<h1 class="relative">
+						{pageContent.hero.header}
+					</h1>
+					<p class="relative">
+						{pageContent.hero.subheader}
+					</p>
+				</div>
+				<div class="verse relative">
+					<Verse 
+						copy="Nada hagáis por egoísmo o por vanagloria, sino que con actitud humilde cada uno de vosotros considere al otro como más importante que a sí mismo,"
+						book="Filipenses 2:3"
+					/>
+				</div>
+			</div>
+		</div>
 	</main>
 </Layout>
-
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
+<script>
+	window.addEventListener("load", () => {
+		document.querySelector("body.page-homepage .hero").classList.add("animate");
+	})
+</script>

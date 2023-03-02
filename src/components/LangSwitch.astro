@@ -1,0 +1,27 @@
+---
+import "./LangSwitch.scss";
+
+export interface Props {
+    lang: string;
+    href: string;
+}
+
+const { lang, href } = Astro.props;
+---
+
+<div id="langSelectorContainer" class="lang-selector__languages">
+    <a href={href} class={`lang-selector__link flex flex-align-center flex-justify-between relative ${lang == "es" ? "es" : "en"}`}>
+        <span aria-hidden="true" class="block">ES</span>
+        <span aria-hidden="true" class="block">EN</span>
+        {lang == "es" ? 
+        <span class="sr-only" lang="es">Cambia a espanol</span> : 
+        <span class="sr-only" lang="en">Change to English</span>}
+    </a>
+</div>
+<script>
+    document.querySelectorAll(".lang-selector__link").forEach(x => {
+        x.addEventListener("click", (e) => {
+            e.target.classList.add("switch");
+        });
+    });
+</script>
