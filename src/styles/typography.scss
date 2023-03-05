@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 .lowercase {
     text-transform: lowercase;
 }
@@ -13,4 +15,15 @@
 }
 .text-right {
     text-align: right;
+}
+
+//Headings
+.subheading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $secondary-color;
+    margin-bottom: 1.5rem;
+    background: -webkit-linear-gradient(45deg, $secondary-color, rgba(31, 32, 65, 0.5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

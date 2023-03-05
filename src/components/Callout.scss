@@ -1,0 +1,98 @@
+@import "../styles/variables.scss";
+@import "../styles/mixins.scss";
+
+.callout {
+    width: 80%;
+    max-width: 30rem;
+    margin: 0 auto;
+    border: 5px solid $secondary-color;
+
+    &::before {
+        content: "";
+        display: block;
+        background-color: transparent;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        border: 5px solid transparent;
+        border-right-color: $secondary-color;
+        border-bottom-color: $secondary-color ;
+        position: absolute;
+        left: -9px;
+        top: -9px;
+    }
+    &::after {
+        content: "";
+        display: block;
+        background-color: transparent;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        border: 5px solid transparent;
+        border-left-color: $secondary-color;
+        border-top-color: $secondary-color ;
+        position: absolute;
+        right: -9px;
+        bottom: -9px;
+    }
+
+    img {
+        width: auto;
+    }
+
+    img:last-of-type {
+        transform: rotate(180deg);
+    }
+
+    .callout__content {
+        padding: 1rem;
+        //background: $secondary-color;
+        color: $secondary-color;
+    }
+
+    .callout__copy {
+        margin-bottom: 2rem;
+
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+    }
+    .callout__ctas {
+        a {
+            text-decoration: none;
+            background: $secondary-color;
+            border: 2px solid $secondary-color;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 12rem;
+            padding: 0.5rem 0;
+            color: $white;
+        }
+        a:first-of-type {
+            @include mobile {
+                margin-bottom: 1rem;
+            }
+        }
+        a:hover {
+            background-color: $white;
+            color: $secondary-color;
+            font-weight: 600;
+        }
+        a:focus {
+            outline: 2px dotted $white;
+        }
+    }
+    .callout__accent {
+        width: 30px;
+        height: 30px;
+        right: -15px;
+        top: -15px;
+        background-color: $white;
+
+        svg {
+            fill: $secondary-color;
+            height: 100%;
+        }
+    }
+}

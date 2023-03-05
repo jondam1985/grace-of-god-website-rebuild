@@ -1,0 +1,35 @@
+@import "../styles//variables.scss";
+@import "../styles/mixins.scss";
+
+.event-card {
+    width: 100%;
+    padding: 20px;
+    margin: 0.5rem;
+    color: $white;
+
+    @include desktop {
+        max-width: 13rem;
+    }
+    
+    .event__title {
+        font-size: 1.125rem;
+        font-weight: 600;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid $white;
+    }
+    .event__description {
+        margin-bottom: 1rem;
+    }
+    .event__date {
+        margin-bottom: 0.5rem;
+    }
+
+    a:hover {
+        color: $quaternary-color;
+        font-weight: 600;
+    }
+    a:focus {
+        outline: 2px dotted $secondary-color;
+    }
+}

@@ -1,0 +1,123 @@
+{
+    "es": {
+        "global": {
+            "language": "es",
+            "baseUrl": "https://www.graciadedios.ca",
+            "langSelector": {
+                "es": "Espanol",
+                "en": "English"
+            }
+        },
+        "pages": {
+            "homepage": {
+                "metadata": {
+                    "title": "Pagina de inicio",
+                    "description": "Esta es la pagina de inicio",
+                    "esHref": "/",
+                    "enHref": "/en"
+                },
+                "hero": {
+                    "header": "Gracia de Dios",
+                    "subheader": "Bienvenido"
+                },
+                "copy": {
+                    "sectionOne": {
+                        "calloutOne": {
+                            "copy": "Servicio de Adoracion: todos los domingos a las 3:00pm",
+                            "ctaOneCopy": "En persona",
+                            "ctaOneHref": "/servicios-ubicacion",
+                            "ctaOneExternal": false,
+                            "ctaTwoCopy": "En linea",
+                            "ctaTwoHref": "https://www.google.com/",
+                            "ctaTwoExternal": true
+                        }
+                    },
+                    "sectionTwo": {
+                        "header": "Labore sunt ex laboris esse adipisicing",
+                        "copyOne": "Dolore veniam amet eu cillum irure est laboris reprehenderit. Quis dolore deserunt proident id nisi proident. Irure Lorem exercitation nulla in officia laboris. Adipisicing dolore culpa nisi voluptate ullamco veniam. Do amet commodo do amet tempor proident aute exercitation esse incididunt."
+                    },
+                    "sectionThree": {
+                        "ctaOne": {
+                            "copy": "Lorem ipsum dolo noster, lorem ipsum dolo noster",
+                            "linkCopy": "Sobre nosotros",
+                            "herf":"/"
+                        },
+                        "ctaTwo": {
+                            "copy": "Lorem ipsum dolo noster, lorem ipsum dolo noster",
+                            "linkCopy": "Creencias",
+                            "herf":"/"
+                        },
+                        "ctaThree": {
+                            "copy": "Lorem ipsum dolo noster, lorem ipsum dolo noster",
+                            "linkCopy": "Pepitas de fe",
+                            "herf":"/"
+                        }
+                    },
+                    "sectionFour": {
+                        "header": "Labore sunt ex laboris esse adipisicing" 
+                    }
+                }
+            }
+        }
+    },
+    "en": {
+        "global": {
+            "language": "en",
+            "urls": "/en"
+        },
+        "pages": {
+            "homepage": {
+                "metadata": {
+                    "title": "Homepage",
+                    "description": "This is the homepage",
+                    "esHref": "/",
+                    "enHref": "/en"
+                },
+                "hero": {
+                    "header": "Grace of God",
+                    "subheader": "Welcome"
+                },
+                "copy": {
+                    "sectionOne": {
+                        "sundayService": "Worship Service",
+                        "sundaySchedule": "Sundays at 3:00pm",
+                        "ctaOne": {
+                            "copy": "In person at 624 Annette Street, Toronto, ON",
+                            "href": "/services-location",
+                            "external": false
+                        },
+                        "ctaTwo": {
+                            "copy": "Online in our Youtube channel",
+                            "href": "https://www.google.com/",
+                            "external": true
+                        }
+                    },
+                    "sectionTwo": {
+                        "header": "Labore sunt ex laboris esse adipisicing",
+                        "copyOne": "Dolore veniam amet eu cillum irure est laboris reprehenderit. Quis dolore deserunt proident id nisi proident. Irure Lorem exercitation nulla in officia laboris. Adipisicing dolore culpa nisi voluptate ullamco veniam. Do amet commodo do amet tempor proident aute exercitation esse incididunt."
+                    },
+                    "sectionThree": {
+                        "ctaOne": {
+                            "copy": "Lorem ipsum dolo noster, lorem ipsum dolo noster",
+                            "linkCopy": "Sobre nosotros",
+                            "herf":"/"
+                        },
+                        "ctaTwo": {
+                            "copy": "Lorem ipsum dolo noster, lorem ipsum dolo noster",
+                            "linkCopy": "Creencias",
+                            "herf":"/"
+                        },
+                        "ctaThree": {
+                            "copy": "Lorem ipsum dolo noster, lorem ipsum dolo noster",
+                            "linkCopy": "Pepitas de fe",
+                            "herf":"/"
+                        }
+                    },
+                    "sectionFour": {
+                        "header": "Labore sunt ex laboris esse adipisicing" 
+                    }
+                }
+            }
+        }  
+    }
+}

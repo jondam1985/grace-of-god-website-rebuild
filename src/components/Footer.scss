@@ -5,6 +5,7 @@ footer {
     width: 100%;
     background-color: $secondary-color;
     color: $white;
+    padding: 1rem 0;
 
     a:hover {
         color: $quaternary-color;
@@ -106,7 +107,7 @@ footer {
                     background-color: $quaternary-color;
                     color: $secondary-color;
                     border: 2px solid $white;
-                    border-radius: 30px;
+                    border-radius: 5px;
                     text-align: center;
                     margin: 1rem auto 0 auto;
                     padding: 0.5rem 0;

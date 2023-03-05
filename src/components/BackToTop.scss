@@ -1,0 +1,23 @@
+@import "../styles/variables.scss";
+@import "../styles/mixins.scss";
+
+.back-to-top {
+    right: 10px;
+    bottom: 10px;
+
+    a {
+        height: 4rem;
+        width: 4rem;
+        border: 2px solid $secondary-color;
+        background: $quaternary-color;
+        font-weight: 600;
+        border-radius: 50%;
+        color: $secondary-color;
+        font-size: 0.825rem;
+        text-decoration: none;
+
+        span {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+---
+import "@components/BackToTop.scss";
+export interface Props {
+    lang: string;
+}
+
+const { lang } = Astro.props;
+---
+<aside class="back-to-top fixed">
+    <a class="flex flex-wrap text-center" href="#header">
+        <span aria-hiden="true">^</span>
+        <span>{lang == "es" ? "Volver" : "Back to top"}</span>
+    </a>
+</aside>

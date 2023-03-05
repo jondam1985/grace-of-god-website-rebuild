@@ -1,15 +1,19 @@
 @import "../styles/variables.scss";
 
 .lang-selector__languages {
+
+    width: 4rem;
+    border: 2px solid $secondary-color;
+    border-radius: 5px;
+    background-color: $quaternary-color;
+
     a {
         text-decoration: none;
-        width: 4rem;
+        width: 50%;
         font-weight: 300;
         font-size: 0.8rem;
-        background-color: $quaternary-color;
-        border-radius: 20px;
-        border: 2px solid $secondary-color;
-        padding: 0.50rem;
+        padding: 0.50rem 0;
+        cursor: pointer;
 
         span {
             z-index: 2;
@@ -24,70 +28,71 @@
         }
     }
 
-    a::before {
-        content: "";
-        width: 2rem;
-        height: 2rem;
-        border-radius: 50%;
-        background-color: $secondary-color;
-        position: absolute;
-        top: 0.13rem;
-    }
-
-    a.es {
-        span:first-of-type {
-            color: $white;
-            font-weight: 700;
-        }
-    }
-
-    a.en {
-        span:nth-of-type(2) {
-            color: $white;
-            font-weight: 700;
-        }
-    }
-
-    a.es.switch {
-        span:nth-of-type(2) {
-            color: $white;
-            font-weight: 700;
-        }
-    }
-
-    a.en.switch {
-        span:first-of-type {
-            color: $white;
-            font-weight: 700;
-        }
-    }
-
-    a.es::before {
-        left: 0.1rem;
-        right: unset;
-
-    }
-
-    a.es.switch::before {
-        left: unset;
-        right: 0.1rem;
-    }
-
-    a.en::before {
-        right: 0.1rem;
-        left: unset;
-    }
-
-    a.en.switch::before {
-        left: 0.1rem;
-        right: unset;
-    }
-
     a:hover {
         font-weight: 700;
     }
 
     a:focus {
         outline: 2px dotted $secondary-color;
+    }
+}
+.lang-selector__languages::after {
+    content: "";
+    height: 100%;
+    width: 50%;
+    background-color: $secondary-color;
+    position: absolute;
+    top: 0;
+    border-radius: 5px;
+    transform: scale(0.9);
+    transition: all 0.3s;
+}
+.lang-selector__languages[data-active-lang="es"] {
+    a.es {
+        color: $white;
+        font-weight: 600;
+    }
+
+    &::after {
+        left: 0;
+    }
+}
+.lang-selector__languages[data-active-lang="en"] {
+    a.en {
+        color: $white;
+        font-weight: 600;
+    }
+
+    &::after {
+        left: unset;
+        right: 0;
+    }
+}
+.lang-selector__languages[data-active-lang="es"].switch {
+    a.es {
+        color: $secondary-color;
+        font-weight: 300;
+    }
+    a.en {
+        color: $white;
+        font-weight: 600;
+    }
+
+    &::after {
+        transform: scale(0.9) translate(110%);
+    }
+}
+.lang-selector__languages[data-active-lang="en"].switch {
+    a.en {
+        color: $secondary-color;
+        font-weight: 300;
+    }
+    a.es {
+        color: $white;
+        font-weight: 600;
+    }
+
+    &::after {
+        transform: scale(0.9) translate(-110%);
     }
 }

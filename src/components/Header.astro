@@ -7,13 +7,14 @@ import "@components/Header.scss";
 import LangSwitch from "@components/LangSwitch.astro";
 export interface Props {
     lang: string;
-    langSwitchHref: string;
+    esHref: string;
+    enHref: string;
 }
 
-const { lang, langSwitchHref  } = Astro.props;
+const { lang, esHref, enHref  } = Astro.props;
 ---
 
-<header class="relative">
+<header id="header" class="relative">
     <div class="container flex flex-align-center">
         <div class="navbar__logo mobile">
             <a class="flex flex-align-center" href={lang == "es" ? "/" : "/en/"}>
@@ -23,7 +24,8 @@ const { lang, langSwitchHref  } = Astro.props;
         <div class="navbar__language mobile">
             <LangSwitch 
                 lang={lang}
-                href={langSwitchHref}
+                esHref={esHref}
+                enHref={enHref}
             />
         </div>
         <div class="navbar__mobile-menu mobile">
@@ -55,8 +57,9 @@ const { lang, langSwitchHref  } = Astro.props;
                 </div>
                 <div class="desktop">
                     <LangSwitch 
-                        lang={lang}
-                        href={langSwitchHref}
+                    lang={lang}
+                    esHref={esHref}
+                    enHref={enHref}
                     />
                 </div>
             </div>

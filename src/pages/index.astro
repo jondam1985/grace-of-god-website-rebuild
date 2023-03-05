@@ -1,8 +1,12 @@
 ---
 import "@pages/index.scss";
 import Layout from '@layouts/Layout.astro';
-import Content from '@content/content.json';
+import Content from 'public/content/content.json';
 import Verse from "@components/Verse.astro";
+import EventCard from "@components/EventCard.astro";
+import AboutSVG from "@components/AboutSVG.astro";
+import BeliefsSVG from "@components/BeliefsSVG.astro";
+import BlogSVG from "@components/BlogSVG.astro";
 
 const page = "homepage";
 const lang = "es";
@@ -10,22 +14,51 @@ const content = Content[lang];
 const pageContent = content.pages[page];
 const title = pageContent.metadata.title;
 const description = pageContent.metadata.description;
-const canonical = pageContent.metadata.canonical;
-const oppositeLangCanonical = pageContent.metadata.oppositeCanonical;
 const pageClass = `page-${page} ${lang}`;
+
+const events = [
+	{
+		"title": "Titulo del evento",
+		"description": "Amet ea aliqua cillum sint est eu",
+		"date": "Sabado 11 de Marzo - 3:00pm",
+		"location": "624 Annete St, Toronto, ON",
+		"locationHref": "/ubicacion-servicios"
+	},
+	{
+		"title": "Titulo del evento",
+		"description": "Amet ea aliqua cillum sint est eu",
+		"date": "Sabado 11 de Marzo - 3:00pm",
+		"location": "624 Annete St, Toronto, ON",
+		"locationHref": "/ubicacion-servicios"
+	},
+	{
+		"title": "Titulo del evento",
+		"description": "Amet ea aliqua cillum sint est eu",
+		"date": "Sabado 11 de Marzo - 3:00pm",
+		"location": "624 Annete St, Toronto, ON",
+		"locationHref": "/ubicacion-servicios"
+	},
+	{
+		"title": "Titulo del evento",
+		"description": "Amet ea aliqua cillum sint est eu",
+		"date": "Sabado 11 de Marzo - 3:00pm",
+		"location": "624 Annete St, Toronto, ON",
+		"locationHref": "/ubicacion-servicios"
+	}
+]
 ---
 
 <Layout 
 	title={title}
 	description={description}
-	canonical={canonical}
 	lang={lang}
-	langSwitchHref={oppositeLangCanonical}
+	esHref={pageContent.metadata.esHref}
+	enHref={pageContent.metadata.enHref}
 	pageClass={pageClass}
+	canonical={`${pageContent}["${lang}Href"]`}
 	>
-	<main>
+	<main id="main">
 		<div class="hero relative" role="banner">
-			<div class="hero__overlay absolute"></div>
 			<div class="container">
 				<div class="hero__header">
 					<h1 class="relative">
@@ -43,6 +76,83 @@ const pageClass = `page-${page} ${lang}`;
 				</div>
 			</div>
 		</div>
+		<section class="section-alt sunday-service text-center relative">
+			<div class="container">
+				<div class="sunday-service__callout bg-white box-shadow relative">
+					<h2>Servicio de Adoracion: Domingos a las 3:00pm [<a href="/" class="inline">En persona</a> y <a href="/" class="inline">en linea</a>]</h2>
+				</div>
+				<div class="sunday-accent"></div>
+			</div>
+		</section>
+		<section class="section welcome">
+			<div class="container">
+				<h2 class="subheading">{pageContent.copy.sectionTwo.header}</h2>
+				<div class="flex flex-justify-between welcome__container flex-wrap bg-white box-shadow">
+					<div class="welcome__copy ">
+						<p>
+							{pageContent.copy.sectionTwo.copyOne}
+						</p>
+					</div>
+					<div class="welcome__video">
+						<iframe src="https://www.youtube-nocookie.com/embed/K4TOrB7at0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section-alt ctas">
+			<div class="container ctas__container flex flex-align-top flex-justify-center relative flex-wrap">
+				<div class="cta__accent absolute"></div>
+				<div class="cta__content about relative bg-white box-shadow">
+					<div class="cta__icon">
+						<AboutSVG />
+					</div>
+					<div class="cta__copy">
+						<p>{pageContent.copy.sectionThree.ctaOne.copy}</p>
+					</div>
+					<div class="cta__link text-center">
+						<a href={pageContent.copy.sectionThree.ctaOne.herf}>
+							{pageContent.copy.sectionThree.ctaOne.linkCopy}
+						</a>
+					</div>
+				</div>
+				<div class="cta__content beliefs relative bg-white box-shadow">
+					<div class="cta__icon">
+						<BeliefsSVG />
+					</div>
+					<div class="cta__copy">
+						<p>{pageContent.copy.sectionThree.ctaTwo.copy}</p>
+					</div>
+					<div class="cta__link text-center">
+						<a href={pageContent.copy.sectionThree.ctaTwo.herf}>
+							{pageContent.copy.sectionThree.ctaTwo.linkCopy}
+						</a>
+					</div>
+				</div>
+				<div class="cta__content blog relative bg-white box-shadow">
+					<div class="cta__icon">
+						<BlogSVG />
+					</div>
+					<div class="cta__copy">
+						<p>{pageContent.copy.sectionThree.ctaThree.copy}</p>
+					</div>
+					<div class="cta__link text-center">
+						<a href={pageContent.copy.sectionThree.ctaThree.herf}>
+							{pageContent.copy.sectionThree.ctaThree.linkCopy}
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section events">
+			<div class="container">
+				<h2 class="subheading">{pageContent.copy.sectionFour.header}</h2>
+				<div class="events__container flex flex-align-top flex-justify-center flex-wrap bg-white box-shadow">
+					{events.map(x => {
+						return (<EventCard title={x.title} description={x.description} date={x.date} location={x.location} locationHref={x.locationHref} addedClass="bg-white box-shadow" />)
+					})}
+				</div>
+			</div>
+		</section>
 	</main>
 </Layout>
 <script>

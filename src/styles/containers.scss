@@ -1,4 +1,5 @@
 @import "./mixins.scss";
+@import "./variables.scss";
 
 //Container display
 .flex {
@@ -67,21 +68,38 @@
 .flex-justify-evenly {
     justify-content: space-evenly;
 }
+.flex-wrap {
+    flex-wrap: wrap;
+}
 
 //Width container
 
 .container {
-    width: 95%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
+    max-width: 1440px;
 
     @include desktop {
         width: 80%;
     }
 }
 
+//Stylized containers
 .section {
-    margin: 2rem 0;
+    padding: 4rem 0;
+}
+.section-alt {
+    padding: 4rem 0;
+    background: $white;
+}
+.bg-white {
+    background: $white;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+.box-shadow {
+    box-shadow: 5px 2px 10px $secondary-color, -5px -2px 10px $secondary-color;
 }
 
 

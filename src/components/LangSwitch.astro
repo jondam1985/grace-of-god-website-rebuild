@@ -3,25 +3,29 @@ import "@components/LangSwitch.scss";
 
 export interface Props {
     lang: string;
-    href: string;
+    esHref: string;
+    enHref: string;
 }
 
-const { lang, href } = Astro.props;
+const { lang, esHref, enHref } = Astro.props;
 ---
 
-<div id="langSelectorContainer" class="lang-selector__languages">
-    <a href={href} class={`lang-selector__link flex flex-align-center flex-justify-between relative ${lang == "es" ? "es" : "en"}`}>
-        <span aria-hidden="true" class="block">ES</span>
-        <span aria-hidden="true" class="block">EN</span>
-        {lang == "es" ? 
-        <span class="sr-only" lang="es">Cambia a espanol</span> : 
-        <span class="sr-only" lang="en">Change to English</span>}
+<div id="langSelectorContainer" class="lang-selector__languages flex relative" data-active-lang={lang}>
+    <a href={esHref} class={`lang-selector__link flex flex-align-center flex-justify-center relative es`}>
+        <span aria-hidden="true" class="block">ES</span> 
+        <span class="sr-only" lang="es">Cambia a espanol</span> 
+    </a>
+    <a href={enHref} class={`lang-selector__link flex flex-align-center flex-justify-center relative en`}>
+        <span aria-hidden="true" class="block">EN</span> 
+        <span class="sr-only" lang="en">Switch to English</span>
     </a>
 </div>
 <script>
     document.querySelectorAll(".lang-selector__link").forEach(x => {
         x.addEventListener("click", (e) => {
-            e.target.classList.add("switch");
+            document.querySelectorAll(".lang-selector__languages").forEach(v => {
+                v.classList.add("switch");
+            });
         });
     });
 </script>

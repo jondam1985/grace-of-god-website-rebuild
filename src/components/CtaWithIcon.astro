@@ -1,0 +1,16 @@
+---
+import "@components/CtaWithIcon.scss";
+export interface Props {
+    copy: string;
+    href: string;
+    external: boolean;
+    addClass: string;
+}
+
+const { copy, href, external, addClass } = Astro.props;
+---
+
+<a href={href} target={external ? "_blank" : "_self"} rel={external ? "noopener" : ""} class={`cta-icon flex flex-align-center flex-justify-between ${addClass}`}>
+    <span>{copy}</span>
+    <slot />
+</a>

@@ -1,4 +1,25 @@
+@import "../styles//variables.scss";
+@import "../styles/mixins.scss";
+
 .verse__container {
+
+    .verse__accent {
+        height: 50px;
+        width: 50px;
+        left: -50px;
+        top: -25px;
+        background: url("../assets/icon_quotes.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @include mobile {
+            width: 30px;
+            height: 30px;
+            left: -5px;
+            top: -30px;
+        }
+    }
+
     .verse__copy {
         margin-bottom: 0.5rem;
     }

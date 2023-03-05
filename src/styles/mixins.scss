@@ -45,3 +45,24 @@
         }
     }
 }
+
+@mixin callout-button($bgColor, $fontColor, $borderColor, $hoverBgColor, $hoverFontColor, $hoverBorderColor, $oulinteColor) {
+    text-decoration: none;
+    background: $bgColor;
+    border: 2px solid $borderColor;
+    color: $fontColor;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 12rem;
+    padding: 0.5rem 0;
+
+    &:hover {
+        background-color: $hoverBgColor;
+        color: $hoverFontColor;
+        border-color: $hoverBorderColor;
+        font-weight: 600;
+    }
+    &:focus {
+        outline: 2px dotted $oulinteColor;
+    }
+}
