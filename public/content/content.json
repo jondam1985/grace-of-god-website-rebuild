@@ -54,7 +54,7 @@
                         }
                     },
                     "sectionFour": {
-                        "header": "Labore sunt ex laboris esse adipisicing" 
+                        "header": "Eventos" 
                     }
                 }
             }
@@ -79,17 +79,14 @@
                 },
                 "copy": {
                     "sectionOne": {
-                        "sundayService": "Worship Service",
-                        "sundaySchedule": "Sundays at 3:00pm",
-                        "ctaOne": {
-                            "copy": "In person at 624 Annette Street, Toronto, ON",
-                            "href": "/services-location",
-                            "external": false
-                        },
-                        "ctaTwo": {
-                            "copy": "Online in our Youtube channel",
-                            "href": "https://www.google.com/",
-                            "external": true
+                        "calloutOne": {
+                            "copy": "Worship Service: Every Sunday a las 3:00pm",
+                            "ctaOneCopy": "In person",
+                            "ctaOneHref": "/servicios-ubicacion",
+                            "ctaOneExternal": false,
+                            "ctaTwoCopy": "Online",
+                            "ctaTwoHref": "https://www.google.com/",
+                            "ctaTwoExternal": true
                         }
                     },
                     "sectionTwo": {
@@ -114,7 +111,7 @@
                         }
                     },
                     "sectionFour": {
-                        "header": "Labore sunt ex laboris esse adipisicing" 
+                        "header": "Upcoming events" 
                     }
                 }
             }
