@@ -80,7 +80,7 @@
                 "copy": {
                     "sectionOne": {
                         "calloutOne": {
-                            "copy": "Worship Service: Every Sunday a las 3:00pm",
+                            "copy": "Worship Service: Every Sunday at 3:00pm",
                             "ctaOneCopy": "In person",
                             "ctaOneHref": "/servicios-ubicacion",
                             "ctaOneExternal": false,
