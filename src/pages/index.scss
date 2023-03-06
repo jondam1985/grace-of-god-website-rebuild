@@ -26,6 +26,10 @@ body.page-homepage {
                     top: 2rem;
                     transition: opacity 2s linear, top 2s linear;
 
+                    @include mobile {
+                        font-size: 4.5rem;
+                    }
+
                 }
                 p {
                     font-size: 3rem;

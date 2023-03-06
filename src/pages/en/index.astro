@@ -44,34 +44,6 @@ const events = [
 		"date": "Sabado 11 de Marzo - 3:00pm",
 		"location": "624 Annete St, Toronto, ON",
 		"locationHref": "/ubicacion-servicios"
-	},
-	{
-		"title": "Titulo del evento",
-		"description": "Amet ea aliqua cillum sint est eu",
-		"date": "Sabado 11 de Marzo - 3:00pm",
-		"location": "Online",
-		"locationHref": "/ubicacion-servicios"
-	},
-	{
-		"title": "Titulo del evento",
-		"description": "Amet ea aliqua cillum sint est eu",
-		"date": "Sabado 11 de Marzo - 3:00pm",
-		"location": "624 Annete St, Toronto, ON",
-		"locationHref": "/ubicacion-servicios"
-	},
-	{
-		"title": "Titulo del evento",
-		"description": "Amet ea aliqua cillum sint est eu",
-		"date": "Sabado 11 de Marzo - 3:00pm",
-		"location": "624 Annete St, Toronto, ON",
-		"locationHref": "/ubicacion-servicios"
-	},
-	{
-		"title": "Titulo del evento",
-		"description": "Amet ea aliqua cillum sint est eu",
-		"date": "Sabado 11 de Marzo - 3:00pm",
-		"location": "624 Annete St, Toronto, ON",
-		"locationHref": "/ubicacion-servicios"
 	}
 ]
 ---
@@ -106,9 +78,10 @@ const events = [
 		</div>
 		<section class="section-alt sunday-service text-center relative">
 			<div class="container">
-				<div class="sunday-service__callout bg-white box-shadow">
+				<div class="sunday-service__callout bg-white box-shadow relative">
 					<h2>Servicio de Adoracion: Domingos a las 3:00pm [<a href="/" class="inline">En persona</a> y <a href="/" class="inline">en linea</a>]</h2>
 				</div>
+				<div class="sunday-accent"></div>
 			</div>
 		</section>
 		<section class="section welcome">
@@ -121,13 +94,14 @@ const events = [
 						</p>
 					</div>
 					<div class="welcome__video">
-						<iframe src="https://www.youtube-nocookie.com/embed/K4TOrB7at0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						<iframe src="https://www.youtube-nocookie.com/embed/K4TOrB7at0Y" title="YouTube video player" allow="encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section class="section-alt ctas">
-			<div class="container ctas__container flex flex-align-top flex-justify-center flex-wrap">
+			<div class="container ctas__container flex flex-align-top flex-justify-center relative flex-wrap">
+				<div class="cta__accent absolute"></div>
 				<div class="cta__content about relative bg-white box-shadow">
 					<div class="cta__icon">
 						<AboutSVG />
@@ -141,7 +115,7 @@ const events = [
 						</a>
 					</div>
 				</div>
-				<div class="cta__content beliefs relative bg-white box-shadowe">
+				<div class="cta__content beliefs relative bg-white box-shadow">
 					<div class="cta__icon">
 						<BeliefsSVG />
 					</div>

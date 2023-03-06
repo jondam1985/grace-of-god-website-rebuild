@@ -1,14 +1,32 @@
 ---
 import "@components/BackToTop.scss";
 export interface Props {
-    lang: string;
+	lang: string;
 }
 
 const { lang } = Astro.props;
 ---
+
 <aside class="back-to-top fixed">
-    <a class="flex flex-wrap text-center" href="#header">
-        <span aria-hiden="true">^</span>
-        <span>{lang == "es" ? "Volver" : "Back to top"}</span>
-    </a>
+	<a class="relative" href="#header">
+		<span class="sr-only">{lang == "es" ? "Volver" : "Back to top"}</span>
+	</a>
 </aside>
+<script>
+	const target = document.querySelector("#header");
+    const back = document.querySelector(".back-to-top");
+
+	function handleIntersection(entries) {
+		entries.map((entry) => {
+			if (entry.isIntersecting) {
+				back.classList.add("hidden");
+			} else {
+				back.classList.remove("hidden");
+			}
+		});
+	}
+
+    const observer = new IntersectionObserver(handleIntersection);
+
+    observer.observe(target);
+</script>

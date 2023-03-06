@@ -70,19 +70,23 @@ const { lang, esHref, enHref  } = Astro.props;
     document.querySelector(".navbar__mobile-menu button").addEventListener("click", (e) => {
         const trigger = e.target;
         const panel = document.getElementById(trigger.getAttribute("aria-controls"));
-        const lang = document.querySelector("body").getAttribute("data-lang")
-        const header = document.querySelector("header")
+        const lang = document.querySelector("body").getAttribute("data-lang");
+        const header = document.querySelector("header");
+        const body = document.querySelector("body");
         if (trigger.getAttribute("aria-expanded") == "false") {
             trigger.setAttribute("aria-expanded", "true");
             trigger.setAttribute("aria-label", `${lang == "es" ? "Cerrar menu de navegacion" : "Close navigation menu"}`)
             panel.classList.add("expanded");
-            header.classList.add("expanded")
+            header.classList.add("expanded");
+            body.setAttribute("style", "overflow: hidden;");
+
         }
         else {
             trigger.setAttribute("aria-expanded", "false");
             trigger.setAttribute("aria-label", `${lang == "es" ? "Abrir menu de navegacion" : "Open navigation menu"}`)
             panel.classList.remove("expanded");
             header.classList.remove("expanded")
+            body.removeAttribute("style");
         }
     })
 </script>
