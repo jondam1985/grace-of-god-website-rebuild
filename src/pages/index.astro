@@ -7,6 +7,7 @@ import EventCard from "@components/EventCard.astro";
 import AboutSVG from "@components/AboutSVG.astro";
 import BeliefsSVG from "@components/BeliefsSVG.astro";
 import BlogSVG from "@components/BlogSVG.astro";
+import Events from "@components/Events.astro";
 
 const page = "homepage";
 const lang = "es";
@@ -146,11 +147,7 @@ const events = [
 		<section class="section events">
 			<div class="container">
 				<h2 class="subheading">{pageContent.copy.sectionFour.header}</h2>
-				<div class="events__container flex flex-align-top flex-justify-center flex-wrap bg-white box-shadow">
-					{events.map(x => {
-						return (<EventCard title={x.title} description={x.description} date={x.date} location={x.location} locationHref={x.locationHref} addedClass="bg-white box-shadow" />)
-					})}
-				</div>
+				<Events data={events} />
 			</div>
 		</section>
 	</main>

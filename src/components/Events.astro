@@ -1,0 +1,14 @@
+---
+import EventCard from '@components/EventCard.astro';
+export interface Props {
+    data: object;
+} 
+
+const { data } = Astro.props;
+---
+
+<div class="events__container flex flex-align-top flex-justify-center flex-wrap bg-white box-shadow">
+    {data.map(x => {
+        return (<EventCard title={x.title} description={x.description} date={x.date} location={x.location} locationHref={x.locationHref} addedClass="bg-white box-shadow" />)
+    })}
+</div>

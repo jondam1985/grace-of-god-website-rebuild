@@ -160,18 +160,7 @@ body.page-homepage {
                 }
             }
         }
-        section.events {
-            .event-card {
-                background: $secondary-color;
-                background-repeat: no-repeat;
-                background-size: cover;
-
-                @include desktop {
-                    min-height: 15px;
-                }
-            }
-        }
-
+        
         //Animation styles
         .hero.animate {
 

@@ -6,9 +6,11 @@
     padding: 20px;
     margin: 0.5rem;
     color: $white;
+    background: $secondary-color;
 
     @include desktop {
         max-width: 13rem;
+        min-height: 15px;
     }
     
     .event__title {
