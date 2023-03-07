@@ -11,11 +11,11 @@ const { lang, esHref, enHref } = Astro.props;
 ---
 
 <div id="langSelectorContainer" class="lang-selector__languages flex relative" data-active-lang={lang}>
-    <a href={`/grace-of-god-website-rebuild${esHref}`} class={`lang-selector__link flex flex-align-center flex-justify-center relative es`}>
+    <a href={`${esHref}`} class={`lang-selector__link flex flex-align-center flex-justify-center relative es`}>
         <span aria-hidden="true" class="block">ES</span> 
         <span class="sr-only" lang="es">Cambia a espanol</span> 
     </a>
-    <a href={`/grace-of-god-website-rebuild${enHref}`} class={`lang-selector__link flex flex-align-center flex-justify-center relative en`}>
+    <a href={`${enHref}`} class={`lang-selector__link flex flex-align-center flex-justify-center relative en`}>
         <span aria-hidden="true" class="block">EN</span> 
         <span class="sr-only" lang="en">Switch to English</span>
     </a>
