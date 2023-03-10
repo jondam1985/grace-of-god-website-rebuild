@@ -1,0 +1,46 @@
+---
+import Hero from '@components/Hero.astro';
+import QuickLinks from '@components/QuickLinks.astro';
+import Layout from '@layouts/Layout.astro';
+import Content from 'public/content/content.json';
+
+const page = "about";
+const lang = "es";
+const content = Content[lang];
+const pageContent = content.pages[page];
+const title = pageContent.metadata.title;
+const description = pageContent.metadata.description;
+const pageClass = `page-${page} ${lang}`;
+---
+
+<Layout
+    title={title}
+    description={description}
+    lang={lang}
+    esHref={pageContent.metadata.esHref}
+    enHref={pageContent.metadata.enHref}
+    pageClass={pageClass}
+    canonical={`${pageContent}["${lang}Href"]`}
+    >
+    <main id="main">
+        <Hero
+            heading={pageContent.hero.header}
+            verse={pageContent.hero.verse}
+            book={pageContent.hero.book}
+        />
+        <QuickLinks 
+            links={pageContent.quickLinks}
+        />
+        <section id="about" class="section-alt about">
+            <div class="container">
+                <h2 class="subheading">{pageContent.copy.sectionOne.header}</h2>
+                <CopyImage 
+                    copy={pageContent.copy.sectionOne.copy}
+                    image={BG}
+                />
+            </div>
+
+        </section>
+    </main>
+
+</Layout>

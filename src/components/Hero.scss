@@ -1,0 +1,13 @@
+@import "../styles/variables.scss";
+
+.hero {
+    padding: 4rem 0;
+    background: $primary-color;
+    color: $white;
+
+    h1 {
+        font-size: 3rem;
+        font-family: $secondary-font;
+        margin-bottom: 4rem;
+    }
+}

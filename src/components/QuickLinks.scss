@@ -1,0 +1,27 @@
+@import "../styles/variables.scss";
+@import "../styles/mixins.scss";
+
+.quick-links {
+    width: 100%;
+    font-size: 0.875rem;
+    margin-top: -32px;
+    color: $white;
+
+    @include mobile {
+        font-size: 0.8rem;
+    }
+
+    .quick-links__container {
+        margin: 0 auto;
+        background-color: $secondary-color;
+        border-radius: 5px;
+
+        @include desktop {
+            width: 75%;
+        }
+
+        a {
+            padding: 1rem 0;
+        }
+    }
+}

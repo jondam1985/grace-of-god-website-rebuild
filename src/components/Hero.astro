@@ -1,0 +1,26 @@
+---
+import "@components/Hero.scss";
+import Verse from '@components/Verse.astro';
+
+export interface Props {
+    heading: string;
+    verse: string;
+    book: string;
+}
+
+const { heading, verse, book, image } = Astro.props;
+---
+
+<section role="banner" class="hero">
+    <div class="container relative">
+        <h1 class="hero__heading">
+            {heading}
+        </h1>
+        <div class="hero__verse">
+            <Verse 
+                copy={verse}
+                book={book}
+            />
+        </div>
+    </div>
+</section>

@@ -11,8 +11,8 @@
         "pages": {
             "homepage": {
                 "metadata": {
-                    "title": "Pagina de inicio",
-                    "description": "Esta es la pagina de inicio",
+                    "title": "Bienvenido a la Iglesia Nazarena Gracia de Dioz | Gracia de Dios: contandote con el Amor de Cristo",
+                    "description": "Bienvenido a Gracia de Dios - una vibrante comunidad de creyentes dedicados a esparcir el amor y la gracia de Jesucrist. Acompananos en nuestro viaje, donde buscamos crecer en la fe, esperanza y amor.",
                     "esHref": "/",
                     "enHref": "/en"
                 },
@@ -27,34 +27,60 @@
                             "ctaOneCopy": "En persona",
                             "ctaOneHref": "/servicios-ubicacion",
                             "ctaOneExternal": false,
-                            "ctaTwoCopy": "En linea",
+                            "ctaTwoCopy": "en linea",
                             "ctaTwoHref": "https://www.google.com/",
                             "ctaTwoExternal": true
                         }
                     },
                     "sectionTwo": {
-                        "header": "Labore sunt ex laboris esse adipisicing",
-                        "copyOne": "Dolore veniam amet eu cillum irure est laboris reprehenderit. Quis dolore deserunt proident id nisi proident. Irure Lorem exercitation nulla in officia laboris. Adipisicing dolore culpa nisi voluptate ullamco veniam. Do amet commodo do amet tempor proident aute exercitation esse incididunt."
+                        "header": "Bienvenido a la Iglesia Nazarena Gracia de Dios",
+                        "copyOne": "<p>La Iglesia Nazarena Gracia de Dios es una comunidad de cristianos quienes proviniendo de varios países, diferentes trasfondos culturales, sociales y religiosos, nos congregamos para adorar y servir a Dios en la ciudad de Toronto, Canadá.</p><p>Ya seas nuevo en la fe o hayas sido un miebro de la Iglesia del Nazareno por anos, te damos la mas calida bienvenida. Es un privilegio conectarnos con personas que comparten una pasion por servir a Dios y esparcir su amor por todo el mundo.</p>"
                     },
                     "sectionThree": {
                         "ctaOne": {
-                            "copy": "Lorem ipsum dolo noster, lorem ipsum dolo noster",
+                            "copy": "Conocenos - quienes somos y que representamos!",
                             "linkCopy": "Sobre nosotros",
-                            "herf":"/"
+                            "herf": "/"
                         },
                         "ctaTwo": {
-                            "copy": "Lorem ipsum dolo noster, lorem ipsum dolo noster",
+                            "copy": "Descrube nuestra fe - la fundacion de lo que hacemos y en que creemos",
                             "linkCopy": "Creencias",
-                            "herf":"/"
+                            "herf": "/"
                         },
                         "ctaThree": {
-                            "copy": "Lorem ipsum dolo noster, lorem ipsum dolo noster",
-                            "linkCopy": "Pepitas de fe",
-                            "herf":"/"
+                            "copy": "Descubre pepitas doradas de fe y sabiduria - un articulo a la vez",
+                            "linkCopy": "Lee nuestro blog",
+                            "herf": "/"
                         }
                     },
                     "sectionFour": {
-                        "header": "Eventos" 
+                        "header": "Eventos"
+                    }
+                }
+            },
+            "about": {
+                "metadata": {
+                    "title": "Sobre nosotros",
+                    "description": "Sobre nosotors",
+                    "esHref": "/sobre-nosotros",
+                    "enHref": "/en/about-us"
+                },
+                "hero": {
+                    "header": "Sobre Nosotros",
+                    "verse": "No te des prisa en hablar, ni se apresure tu corazón a proferir palabra delante de Dios. Porque Dios está en el cielo y tú en la tierra; por tanto sean pocas tus palabras.",
+                    "book": "Eclesiastés 5:2"
+                },
+                "quickLinks": [
+                    {"copy": "Nosotros", "href": "#about"},
+                    {"copy": "Mision", "href": "#mission"},
+                    {"copy": "Lideres", "href": "#leaders"},
+                    {"copy": "Ministerios", "href": "#ministries"},
+                    {"copy": "Historia", "href": "#history"}
+                ],
+                "copy": {
+                    "sectionOne": {
+                        "header": "Quienes somos",
+                        "copy":"<p>Dolor elit ex est velit velit duis labore cillum nisi do. Aliquip non sit qui dolor enim labore veniam qui dolore consequat qui culpa elit in. Nulla sit reprehenderit cupidatat occaecat cupidatat veniam ad. Aute amet qui Lorem consectetur aute. Laboris est in veniam Lorem duis ullamco exercitation incididunt proident incididunt nostrud sunt sunt exercitation.</p> <p>Sit est pariatur do quis est irure aute id qui aute reprehenderit aliqua. Officia aliquip duis proident cillum proident est velit exercitation mollit voluptate irure excepteur adipisicing reprehenderit. Cillum id reprehenderit labore nostrud voluptate in dolore quis. Labore anim velit reprehenderit consequat non qui nisi aute consequat ea do culpa nulla sunt. Laborum dolor duis duis ut mollit labore occaecat. Elit reprehenderit mollit amet do do exercitation. Ad commodo id velit dolor laboris eu ea irure.</p>"
                     }
                 }
             }
@@ -68,8 +94,8 @@
         "pages": {
             "homepage": {
                 "metadata": {
-                    "title": "Homepage",
-                    "description": "This is the homepage",
+                    "title": "Welcome to Grace of God Nazare Church | Grace of God: Connecting you with the Love of Christ",
+                    "description": "Welcome to Grace of God - a vibrant community of believers dedicated to spreading the love and grace of Jesus Christ. Join us as we journey together, seeking to grow in faith, hope, and love.",
                     "esHref": "/",
                     "enHref": "/en"
                 },
@@ -84,37 +110,37 @@
                             "ctaOneCopy": "In person",
                             "ctaOneHref": "/servicios-ubicacion",
                             "ctaOneExternal": false,
-                            "ctaTwoCopy": "Online",
+                            "ctaTwoCopy": "online",
                             "ctaTwoHref": "https://www.google.com/",
                             "ctaTwoExternal": true
                         }
                     },
                     "sectionTwo": {
-                        "header": "Labore sunt ex laboris esse adipisicing",
-                        "copyOne": "Dolore veniam amet eu cillum irure est laboris reprehenderit. Quis dolore deserunt proident id nisi proident. Irure Lorem exercitation nulla in officia laboris. Adipisicing dolore culpa nisi voluptate ullamco veniam. Do amet commodo do amet tempor proident aute exercitation esse incididunt."
+                        "header": "Welcome Grace of God Nazarene Church",
+                        "copyOne": "<p>Grace of God Nazarene Church is a community of Christians who coming from various countries, different cultural, social and religious backgrounds, gather to worship and serve God in the city of Toronto, Canada.</p><p>Whether you are new in the faith or have been a member of the Church of the Nazarene for many years, we want to extend a warm welcome to you. It is a privilege to connect with individuals who share a passion for serving God and spreading his love in the world.</p>"
                     },
                     "sectionThree": {
                         "ctaOne": {
-                            "copy": "Lorem ipsum dolo noster, lorem ipsum dolo noster",
-                            "linkCopy": "Sobre nosotros",
-                            "herf":"/"
+                            "copy": "Get to know us - who we are and what we stand for!",
+                            "linkCopy": "About us",
+                            "herf": "/"
                         },
                         "ctaTwo": {
-                            "copy": "Lorem ipsum dolo noster, lorem ipsum dolo noster",
-                            "linkCopy": "Creencias",
-                            "herf":"/"
+                            "copy": "Discover our faith - the foundation of all we do and believe in.",
+                            "linkCopy": "Our beliefs",
+                            "herf": "/"
                         },
                         "ctaThree": {
-                            "copy": "Lorem ipsum dolo noster, lorem ipsum dolo noster",
-                            "linkCopy": "Pepitas de fe",
-                            "herf":"/"
+                            "copy": "Uncover golden nuggets of faith and wisdom - one post at a time",
+                            "linkCopy": "Read our blog",
+                            "herf": "/"
                         }
                     },
                     "sectionFour": {
-                        "header": "Upcoming events" 
+                        "header": "Upcoming events"
                     }
                 }
             }
-        }  
+        }
     }
 }

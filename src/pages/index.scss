@@ -11,7 +11,7 @@ body.page-homepage {
         .hero {
             background-repeat: no-repeat;
             background-size: cover;
-            padding-top: 4rem;
+            padding: 4rem 0;
             color: $white;
 
             .hero__header {
@@ -19,6 +19,7 @@ body.page-homepage {
                 text-align: center;
                 line-height: 1;
                 position: relative;
+                margin-bottom: 2rem;
 
                 h1 {
                     font-size: 5rem;
@@ -41,9 +42,6 @@ body.page-homepage {
             }
 
             .verse {
-                padding: 2rem 0;
-                width: 50%;
-                text-shadow: 2px 1px 2px $black;
                 opacity: 0;
                 top: 2rem;
                 transition: opacity 2s linear, top 1.5s linear;
@@ -117,11 +115,12 @@ body.page-homepage {
 
                 .cta__content {
                     width: 100%;
-                    padding: 2rem;
+                    padding: 2rem 1.5rem;
                     margin: 2rem;
 
                     @include desktop {
                         max-width: 15rem;
+                        min-height: 21rem;
                     }
 
                     .cta__icon {
@@ -143,6 +142,11 @@ body.page-homepage {
                         @include mobile {
                             max-width: 100%;
                         }
+
+                        @include desktop {
+                            position: absolute;
+                            top: 16.5rem;
+                        }
                     }
                 }
                 .cta__content {
@@ -160,7 +164,7 @@ body.page-homepage {
                 }
             }
         }
-        
+
         //Animation styles
         .hero.animate {
 

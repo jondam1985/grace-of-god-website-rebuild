@@ -16,14 +16,6 @@ html {
     color: inherit;
 }
 
-main {
-    margin-top: 1rem;
-
-    @include desktop {
-        margin-top: 3rem;
-    }
-}
-
 img,
 svg {
     display: block;
@@ -39,6 +31,10 @@ button {
     & > * {
         pointer-events: none;
     }
+}
+
+p {
+    margin-bottom: 0.5rem;
 }
 
 .sr-only {
