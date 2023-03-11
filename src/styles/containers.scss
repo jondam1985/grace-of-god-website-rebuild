@@ -51,10 +51,10 @@
 }
 
 .flex-justify-left {
-    justify-content: baseline;
+    justify-content: flex-start;
 }
 .flex-justify-right {
-    justify-content: end;
+    justify-content: flex-end;
 }
 .flex-justify-center {
     justify-content: center;
@@ -88,6 +88,7 @@
 //Stylized containers
 .section {
     padding: 4rem 0;
+    background-image: linear-gradient(-45deg, $primary-color, $white);
 }
 .section-alt {
     padding: 4rem 0;

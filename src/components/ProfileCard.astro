@@ -1,0 +1,52 @@
+---
+import "@components/ProfileCard.scss";
+export interface Props {
+    image: string;
+    name: string;
+    position: string;
+    motto: string;
+    book: string;
+}
+
+const { image, name, position, motto, book } = Astro.props;
+---
+
+<button class="profile-card front relative">
+    <div class="profile-card__front text-center">
+        <div class="profile__image">
+            <img src={image} alt="" />
+        </div>
+        <div class="profile__name">
+            <p>{name}</p>
+        </div>
+        <div class="profile__position">
+            <p>{position}</p>
+        </div>
+    </div>
+    <div class="profile-card__back" aria-hidden="true">
+        <div class="profile__motto">
+            <p>{motto}</p>
+        </div>
+        <div class="profile__book">
+            <p>- {book}</p>
+        </div>
+    </div>
+</button>
+<script>
+    document.querySelectorAll(".profile-card").forEach(v => {
+        v.addEventListener("click", (e) => {
+            if(e.target.classList.contains("back")) {
+                e.target.classList.add("front");
+                e.target.classList.remove("back")
+                e.target.querySelector(".profile-card__front").removeAttribute("aria-hidden");
+                e.target.querySelector(".profile-card__back").setAttribute("aria-hidden", "true");
+            }
+            else {
+                e.target.classList.add("back");
+                e.target.classList.remove("front")
+                e.target.querySelector(".profile-card__back").removeAttribute("aria-hidden");
+                e.target.querySelector(".profile-card__front").setAttribute("aria-hidden", "true");
+            }
+        })
+    })
+</script>

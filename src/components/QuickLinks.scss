@@ -8,7 +8,7 @@
     color: $white;
 
     @include mobile {
-        font-size: 0.8rem;
+        font-size: 0.875rem;
     }
 
     .quick-links__container {
@@ -20,8 +20,17 @@
             width: 75%;
         }
 
+        @include mobile {
+            display: block;
+            padding: 0.25rem 0;
+        }
+
         a {
             padding: 1rem 0;
+
+            @include mobile {
+                padding: 0.25rem 0;
+            }
         }
     }
 }

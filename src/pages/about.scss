@@ -1,0 +1,125 @@
+@import "../styles/mixins.scss";
+@import "../styles/variables.scss";
+
+.page-about {
+    .about__content {
+        width: 100%;
+
+        @include mobile {
+            flex-wrap: wrap;
+        }
+
+        .about__copy {
+            width: 100%;
+            margin-bottom: 1rem;
+
+            @include desktop {
+                margin-right: 1rem;
+                margin-bottom: 0;
+            }
+        }
+        .about__image {
+            width: 100%;
+            max-width: 23rem;
+
+            @include desktop {
+                width: 40%;
+            }
+
+            img {
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .mission__container {
+        .mission__accent {
+            position: absolute;
+            width: 70%;
+            height: 125%;
+            right: -10%;
+            top: 50%;
+            transform: translate(0, -50%);
+            background: $secondary-color;
+            border-radius: 5px;
+
+            @include mobile {
+                height: 50%;
+                top: 85%;
+                right: 14%;
+            }
+        }
+    }
+
+    .values {
+        .values__container {
+            flex-wrap: wrap;
+            
+            &::after,
+            &::before {
+                @include desktop {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                }
+            }
+            &::after {
+                height: 100%;
+                width: 1px;
+                border-right: 3px dotted $quaternary-color;
+                left: 50%;
+                top: 0;
+                transform: translate(-50%, 0);
+            }
+            &::before {
+                height: 1px;
+                width: 100%;
+                border-bottom: 3px dotted $quaternary-color;
+                left: 0;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+
+
+            
+            .value__item {
+                margin: 1rem 0;
+
+                @include desktop {
+                    width: 45%;
+                    max-width: 26rem;
+                }
+
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    height: 1px;
+                    border-bottom: 2px dotted $quaternary-color;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+
+                    @include desktop {
+                        display: none;
+                    }
+                }
+
+                .value__icon {
+                    width: 50px;
+                    margin: 0 auto;
+                }
+                .value__copy {
+                    font-size: 1.25rem;
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+
+    .leaders {
+        .leaders__content {
+            margin: 0 auto;
+        }
+    }
+}

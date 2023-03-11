@@ -3,6 +3,14 @@ import Hero from '@components/Hero.astro';
 import QuickLinks from '@components/QuickLinks.astro';
 import Layout from '@layouts/Layout.astro';
 import Content from 'public/content/content.json';
+import ProfileCard from '@components/ProfileCard.astro';
+import AboutUsImg from '@assets/bg_about-us.jpg';
+import CommunitySVG from '@components/CommunitySVG.astro';
+import MusicSVG from '@components/MusicSVG.astro';
+import DoveSVG from '@components/DoveSVG.astro';
+import GospelSVG from '@components/GospelSVG.astro';
+import ProfileImg from '@assets/profile.png';
+import '@pages/about.scss';
 
 const page = "about";
 const lang = "es";
@@ -11,6 +19,39 @@ const pageContent = content.pages[page];
 const title = pageContent.metadata.title;
 const description = pageContent.metadata.description;
 const pageClass = `page-${page} ${lang}`;
+
+const leaders = [
+    {
+        "name": "John Doe",
+        "position": "Some position",
+        "motto": "This is my spiritual motto",
+        "book": "Book 3:16"
+    },
+    {
+        "name": "John Doe",
+        "position": "Some position",
+        "motto": "This is my spiritual motto",
+        "book": "Book 3:16"
+    },
+    {
+        "name": "John Doe",
+        "position": "Some position",
+        "motto": "This is my spiritual motto",
+        "book": "Book 3:16"
+    },
+    {
+        "name": "John Doe",
+        "position": "Some position",
+        "motto": "This is my spiritual motto",
+        "book": "Book 3:16"
+    },
+    {
+        "name": "John Doe",
+        "position": "Some position",
+        "motto": "This is my spiritual motto",
+        "book": "Book 3:16"
+    }
+]
 ---
 
 <Layout
@@ -34,8 +75,81 @@ const pageClass = `page-${page} ${lang}`;
         <section id="about" class="section-alt about">
             <div class="container">
                 <h2 class="subheading">{pageContent.copy.sectionOne.header}</h2>
+                <div class="flex flex-justify-between about__content">
+                    <div class="about__copy">
+                        <Fragment set:html={pageContent.copy.sectionOne.copy} />
+                    </div>
+                    <div class="about__image">
+                        <img src={AboutUsImg} alt="" class="box-shadow" />
+                    </div>
+                </div>
             </div>
-
+        </section>
+        <section id="mission" class="section mission">
+            <div class="container">
+                <h2 class="subheading">{pageContent.copy.sectionTwo.header}</h2>
+                <div class="mission__container relative">
+                    <div class="mission__accent"></div>
+                    <div class="text-center bg-white mission__content relative box-shadow">
+                        <Fragment set:html={pageContent.copy.sectionTwo.copy} />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="values" class="section-alt values">
+            <div class="container">
+                <h2 class="subheading">{pageContent.copy.sectionThree.header}</h2>
+                <div class="values__container relative flex flex-justify-evenly flex-align-center">
+                    <div class="value__item relative christian-people">
+                        <div class="value__icon">
+                            <CommunitySVG />
+                        </div>
+                        <div class="value__copy text-center">
+                            <p>{pageContent.copy.sectionThree.values.valueOne}</p>
+                        </div>
+                    </div>
+                    <div class="value__item relative praise">
+                        <div class="value__icon">
+                            <MusicSVG />
+                        </div>
+                        <div class="value__copy text-center">
+                            <p>{pageContent.copy.sectionThree.values.valueTwo}</p>
+                        </div>
+                    </div>
+                    <div class="value__item relative holiness">
+                        <div class="value__icon">
+                            <DoveSVG />
+                        </div>
+                        <div class="value__copy text-center">
+                            <p>{pageContent.copy.sectionThree.values.valueThree}</p>
+                        </div>
+                    </div>
+                    <div class="value__item relative gospel">
+                        <div class="value__icon">
+                            <GospelSVG />
+                        </div>
+                        <div class="value__copy text-center">
+                            <p>{pageContent.copy.sectionThree.values.valueFour}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="leaders" class="section leaders">
+            <div class="container">
+                <h2 class="subheading">{pageContent.copy.sectionFour.header}</h2>
+                <div class="leaders__content relative flex flex-justify-left flex-wrap">
+                    {leaders.map(v => {
+                      return  <ProfileCard 
+                        image={ProfileImg}
+                        name={v.name}
+                        position={v.position}
+                        motto={v.motto}
+                        book={v.book}
+                      />
+                    })}
+                </div>
+            </div>
         </section>
     </main>
 

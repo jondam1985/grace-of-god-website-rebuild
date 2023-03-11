@@ -11,7 +11,7 @@
         "pages": {
             "homepage": {
                 "metadata": {
-                    "title": "Bienvenido a la Iglesia Nazarena Gracia de Dioz | Gracia de Dios: contandote con el Amor de Cristo",
+                    "title": "Bienvenido a la Iglesia Nazarena Gracia de Dioz | Gracia de Dios",
                     "description": "Bienvenido a Gracia de Dios - una vibrante comunidad de creyentes dedicados a esparcir el amor y la gracia de Jesucrist. Acompananos en nuestro viaje, donde buscamos crecer en la fe, esperanza y amor.",
                     "esHref": "/",
                     "enHref": "/en"
@@ -60,8 +60,8 @@
             },
             "about": {
                 "metadata": {
-                    "title": "Sobre nosotros",
-                    "description": "Sobre nosotors",
+                    "title": "About us - Sharing God's Love with the World | Gracia de Dios",
+                    "description": "Learn about Grace of God - who we are, our values, our history, and our mission to spread the love of Jesus Christ to the world.",
                     "esHref": "/sobre-nosotros",
                     "enHref": "/en/about-us"
                 },
@@ -71,8 +71,9 @@
                     "book": "Eclesiastés 5:2"
                 },
                 "quickLinks": [
-                    {"copy": "Nosotros", "href": "#about"},
+                    {"copy": "Quienes somos", "href": "#about"},
                     {"copy": "Mision", "href": "#mission"},
+                    {"copy": "Valores", "href": "#values"},
                     {"copy": "Lideres", "href": "#leaders"},
                     {"copy": "Ministerios", "href": "#ministries"},
                     {"copy": "Historia", "href": "#history"}
@@ -80,7 +81,23 @@
                 "copy": {
                     "sectionOne": {
                         "header": "Quienes somos",
-                        "copy":"<p>Dolor elit ex est velit velit duis labore cillum nisi do. Aliquip non sit qui dolor enim labore veniam qui dolore consequat qui culpa elit in. Nulla sit reprehenderit cupidatat occaecat cupidatat veniam ad. Aute amet qui Lorem consectetur aute. Laboris est in veniam Lorem duis ullamco exercitation incididunt proident incididunt nostrud sunt sunt exercitation.</p> <p>Sit est pariatur do quis est irure aute id qui aute reprehenderit aliqua. Officia aliquip duis proident cillum proident est velit exercitation mollit voluptate irure excepteur adipisicing reprehenderit. Cillum id reprehenderit labore nostrud voluptate in dolore quis. Labore anim velit reprehenderit consequat non qui nisi aute consequat ea do culpa nulla sunt. Laborum dolor duis duis ut mollit labore occaecat. Elit reprehenderit mollit amet do do exercitation. Ad commodo id velit dolor laboris eu ea irure.</p>"
+                        "copy": "<p>La Iglesia del Nazareno de la Gracia de Dios es una comunidad vibrante de creyentes dedicados a compartir el amor y la gracia de Jesucristo con el mundo. Nuestra iglesia está comprometida con la formación de discípulos que viven el mensaje del evangelio en sus vidas diarias. Creemos que la fe cristiana no solo es una cuestión personal, sino también comunitaria, y buscamos fomentar una comunidad amorosa y de apoyo donde todos puedan crecer en su relación con Dios</p><p>Nos esforzamos por ser una iglesia acogedora y abierta a todos, sin importar su pasado, su presente o sus circunstancias actuales. Queremos ser una fuente de esperanza y ayuda para aquellos que están en necesidad, y buscamos servir a nuestra comunidad en cualquier forma que podamos.</p><p>Nos encantaría que te unas a nosotros mientras buscamos crecer en nuestra fe, ayudar a otros y compartir el amor de Jesucristo con el mundo.</p>"
+                    },
+                    "sectionTwo": {
+                        "header": "Nuestra mision",
+                        "copy": "<p>La misión de la Iglesia del Nazareno es hacer discípulos en las naciones.</p><p>Somos una comunidad global de fe, se nos ha comisionado llevar las buenas nuevas de vida en Cristo Jesús a gente en todas partes y diseminar el mensaje bíblico de la santidad (vivir a la semejanza de Cristo) en todos los países.</p>"
+                    },
+                    "sectionThree": {
+                        "header": "Nuestros valores principales",
+                        "values": {
+                            "valueOne": "Somos un pueblo cristiano al servicio de la comunidad",
+                            "valueTwo": "Alabamos a Jesucristo y lo confesamos como Senor",
+                            "valueThree": "Somo un pueblo de santidad como estilo de vida",
+                            "valueFour": "Somos un pueblo misional, evangelizamos con compasion"
+                        }
+                    },
+                    "sectionFour": {
+                        "header": "Nuestros lideres espirituales"
                     }
                 }
             }
@@ -94,7 +111,7 @@
         "pages": {
             "homepage": {
                 "metadata": {
-                    "title": "Welcome to Grace of God Nazare Church | Grace of God: Connecting you with the Love of Christ",
+                    "title": "Welcome to Grace of God Nazare Church | Grace of God",
                     "description": "Welcome to Grace of God - a vibrant community of believers dedicated to spreading the love and grace of Jesus Christ. Join us as we journey together, seeking to grow in faith, hope, and love.",
                     "esHref": "/",
                     "enHref": "/en"
@@ -140,7 +157,35 @@
                         "header": "Upcoming events"
                     }
                 }
-            }
+            },
+            "about": {
+                "metadata": {
+                    "title": "About us - Sharing God's Love with the World | Grace of God",
+                    "description": "Learn about Grace of God - who we are, our values, our history, and our mission to spread the love of Jesus Christ to the world.",
+                    "esHref": "/sobre-nosotros",
+                    "enHref": "/en/about-us"
+                },
+                "hero": {
+                    "header": "About us",
+                    "verse": "No te des prisa en hablar, ni se apresure tu corazón a proferir palabra delante de Dios. Porque Dios está en el cielo y tú en la tierra; por tanto sean pocas tus palabras.",
+                    "book": "Eclesiastés 5:2"
+                },
+                "quickLinks": [
+                    {"copy": "Who we are", "href": "#about"},
+                    {"copy": "Mission", "href": "#mission"},
+                    {"copy": "Values", "href": "#values"},
+                    {"copy": "Leadership", "href": "#leaders"},
+                    {"copy": "Ministries", "href": "#ministries"},
+                    {"copy": "History", "href": "#history"}
+                ],
+                "copy": {
+                    "sectionOne": {
+                        "header": "Quienes somos",
+                        "copy":
+                            "<p>Grace of God Nazarene Church is a vibrant community of believers dedicated to sharing the love and grace of Jesus Christ with the world. Our church is committed to forming disciples who live out the message of the gospel in their daily lives. We believe that the Christian faith is not just a personal matter, but also a community one, and we seek to foster a loving and supportive community where everyone can grow in their relationship with God.</p><p>We strive to be a welcoming and open church to all, regardless of their past, present, or current circumstances. We want to be a source of hope and help for those in need, and we seek to serve our community in any way we can.</p><p>We would love for you to join us as we seek to grow in our faith, help others, and share the love of Jesus Christ with the world.</p>"
+                    }
+                }
+            }  
         }
     }
 }
