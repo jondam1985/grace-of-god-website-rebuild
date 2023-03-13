@@ -3,51 +3,29 @@
 
 .callout {
     width: 80%;
-    max-width: 30rem;
     margin: 0 auto;
-    border: 5px solid $secondary-color;
+    border: 5px solid $quinary-color;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background: $white;
 
-    &::before {
-        content: "";
-        display: block;
-        background-color: transparent;
-        height: 20px;
-        width: 20px;
-        border-radius: 50%;
-        border: 5px solid transparent;
-        border-right-color: $secondary-color;
-        border-bottom-color: $secondary-color ;
-        position: absolute;
-        left: -9px;
-        top: -9px;
-    }
-    &::after {
-        content: "";
-        display: block;
-        background-color: transparent;
-        height: 20px;
-        width: 20px;
-        border-radius: 50%;
-        border: 5px solid transparent;
-        border-left-color: $secondary-color;
-        border-top-color: $secondary-color ;
-        position: absolute;
-        right: -9px;
-        bottom: -9px;
+    @include desktop {
+        min-width: 28rem;
+        max-width: 30rem;
     }
 
-    img {
-        width: auto;
-    }
-
-    img:last-of-type {
-        transform: rotate(180deg);
+    &.last {
+        top: 0;
     }
 
     .callout__content {
-        padding: 1rem;
-        //background: $secondary-color;
-        color: $secondary-color;
+        padding: 2rem 1rem;
+        color: $quinary-color;
     }
 
     .callout__copy {
@@ -61,13 +39,14 @@
     .callout__ctas {
         a {
             text-decoration: none;
-            background: $secondary-color;
-            border: 2px solid $secondary-color;
+            background: $white;
+            border: 5px solid $quinary-color;
             border-radius: 5px;
             width: 100%;
             max-width: 12rem;
             padding: 0.5rem 0;
-            color: $white;
+            color: $quinary-color;
+            font-weight: 600;
         }
         a:first-of-type {
             @include mobile {
@@ -75,23 +54,22 @@
             }
         }
         a:hover {
-            background-color: $white;
-            color: $secondary-color;
-            font-weight: 600;
+            background-color: $quinary-color;
+            color: $white;
         }
         a:focus {
-            outline: 2px dotted $white;
+            outline: 2px dotted $quinary-color;
         }
     }
     .callout__accent {
         width: 30px;
         height: 30px;
-        right: -15px;
-        top: -15px;
-        background-color: $white;
+        right: 0;
+        top: 0;
+        background-color: transparent;
 
         svg {
-            fill: $secondary-color;
+            fill: $quaternary-color;
             height: 100%;
         }
     }

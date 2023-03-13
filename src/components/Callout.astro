@@ -1,34 +1,27 @@
 ---
 import "@components/Callout.scss";
-import BracketSvg from "@assets/icon_curly-bracket-left.svg";
 import ExclamationSVG from "@components/ExclamationSVG.astro";
 export interface Props {
     copy: string;
-    ctaOneCopy: string;
-    ctaOneHref: string;
-    ctaOneExternal: boolean;
-    ctaTwoCopy: string;
-    ctaTwoHref: string;
-    addedClass: string;
-    ctaTwoExternal: boolean;
+    href: string;
+    hrefComp: string;
+    last: boolean;
 }
 
-const { copy, ctaOneCopy, ctaOneHref, ctaOneExternal, ctaTwoCopy, ctaTwoHref, ctaTwoExternal, addedClass } = Astro.props;
+const { copy, href, hrefComp, last } = Astro.props;
 ---
 
-<div class={`callout relative flex flex-align-center ${addedClass}`}>
-    <!-- <img src={BracketSvg} alt="" /> -->
+<div class={`callout relative flex flex-align-center flex-justify-center ${last ? "last" : ""}`}>
     <div class="callout__content text-center">
         <div class="callout__copy">
-            <h2>{copy}</h2>
+            <h3>{copy}</h3>
         </div>
         <div class="callout__ctas flex flex-align flex-justify-evenly flex-wrap">
-            <a href={ctaOneHref} target={ctaOneExternal ? "_blank" : "_self"} rel={ctaOneExternal ? "noopener" : ""}>{ctaOneCopy}</a>
-            {ctaTwoCopy == "" ? null : <a href={ctaTwoHref} target={ctaTwoExternal ? "_blank" : "_self"} rel={ctaTwoExternal ? "noopener" : ""}>{ctaTwoCopy}</a>}
+            <Fragment set:html={href} />
+            {hrefComp == "" ? "" : <Fragment set:html={hrefComp} />}
         </div>
     </div>
     <div class="callout__accent absolute">
         <ExclamationSVG />
     </div>
-    <!-- <img src={BracketSvg} alt="" /> -->
 </div>

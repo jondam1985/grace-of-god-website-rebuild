@@ -97,6 +97,27 @@
     background: $white;
     
 }
+.callout-at-bottom {
+    padding-bottom: 13rem;
+
+    @include desktop {
+        padding-bottom: 11rem;
+    }
+}
+.callout-at-top {
+    padding-top: 13rem;
+
+    @include desktop {
+        padding-top: 11rem;
+    }  
+}
+.last-callout {
+    height: 13rem;
+
+    @include desktop {
+        height: 11rem;
+    }
+}
 .bg-white {
     background: $white;
     border-radius: 5px;

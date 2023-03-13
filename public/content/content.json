@@ -83,6 +83,11 @@
                         "header": "Quienes somos",
                         "copy": "<p>La Iglesia del Nazareno de la Gracia de Dios es una comunidad vibrante de creyentes dedicados a compartir el amor y la gracia de Jesucristo con el mundo. Nuestra iglesia está comprometida con la formación de discípulos que viven el mensaje del evangelio en sus vidas diarias. Creemos que la fe cristiana no solo es una cuestión personal, sino también comunitaria, y buscamos fomentar una comunidad amorosa y de apoyo donde todos puedan crecer en su relación con Dios</p><p>Nos esforzamos por ser una iglesia acogedora y abierta a todos, sin importar su pasado, su presente o sus circunstancias actuales. Queremos ser una fuente de esperanza y ayuda para aquellos que están en necesidad, y buscamos servir a nuestra comunidad en cualquier forma que podamos.</p><p>Nos encantaría que te unas a nosotros mientras buscamos crecer en nuestra fe, ayudar a otros y compartir el amor de Jesucristo con el mundo.</p>"
                     },
+                    "calloutBeliefs": {
+                        "copy": "Nuestras creencias tambien forman parte de quienes somos",
+                        "href": "<a href='/nuestras-creencias'>Explora nuestas creencias</a>",
+                        "hrefComp": ""
+                    },
                     "sectionTwo": {
                         "header": "Nuestra mision",
                         "copy": "<p>La misión de la Iglesia del Nazareno es hacer discípulos en las naciones.</p><p>Somos una comunidad global de fe, se nos ha comisionado llevar las buenas nuevas de vida en Cristo Jesús a gente en todas partes y diseminar el mensaje bíblico de la santidad (vivir a la semejanza de Cristo) en todos los países.</p>"
@@ -153,9 +158,19 @@
                             ]
                         }
                     },
+                    "calloutVisit": {
+                        "copy": "Conoce a nuestros lideres en persona y aprende mas sobre nuestros ministerios",
+                        "href": "<a href='/ubicacion-servicios'>Visitanos</a>",
+                        "hrefComp": ""
+                    },
                     "sectionSix": {
                         "header": "Nuestra historia",
                         "copy": "<p>Adipisicing enim aliquip sint non mollit. Aliquip aliqua qui tempor sit consectetur ut consequat pariatur fugiat consectetur ullamco. Ex laboris reprehenderit sit excepteur sint sint dolor Lorem.</p><p>Tempor ut amet sunt laboris aliqua et proident ipsum deserunt sunt voluptate id cupidatat. Aliquip sint labore qui ipsum dolore. Ullamco ut exercitation eu sit incididunt velit ex nisi qui. Sit id non labore minim. Ut nostrud proident voluptate voluptate. Velit enim aute qui tempor ut est mollit aute elit enim ex aliquip labore.</p><p>Irure sint esse nisi eu aliquip Lorem aliquip incididunt do id dolor velit dolore quis. Lorem sunt cillum ipsum deserunt non consequat officia nisi. Esse aute fugiat dolore laboris eu voluptate deserunt eu deserunt et elit proident nulla. Quis ullamco quis elit commodo sit deserunt ad magna consequat voluptate. Consequat qui ut minim esse sit.</p>"
+                    },
+                    "calloutMessage": {
+                        "copy": "Tienes alguna pregunta o comentario?",
+                        "href": "<a href='/contacto'>Contactanos</a>",
+                        "hrefComp": ""
                     }
                 }
             }

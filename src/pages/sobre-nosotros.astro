@@ -21,6 +21,7 @@ import Women from '@assets/bg_women.jpg';
 import Men from '@assets/bg_men.jpg';
 import '@pages/about.scss';
 import Tabs from '@components/Tabs.astro';
+import Callout from '@components/Callout.astro';
 
 const page = "about";
 const lang = "es";
@@ -53,7 +54,7 @@ const panelImages = [Music,Youth, SundaySchool, Women, Men]
         <QuickLinks 
             links={pageContent.quickLinks}
         />
-        <section id="about" class="section-alt about">
+        <section id="about" class="section-alt about callout-at-bottom">
             <div class="container">
                 <h2 class="subheading">{pageContent.copy.sectionOne.header}</h2>
                 <div class="flex flex-justify-between about__content">
@@ -66,7 +67,15 @@ const panelImages = [Music,Youth, SundaySchool, Women, Men]
                 </div>
             </div>
         </section>
-        <section id="mission" class="section mission">
+        <div class="callout__container beliefs relative">
+            <Callout 
+                copy={pageContent.copy.calloutBeliefs.copy} 
+                href={pageContent.copy.calloutBeliefs.href} 
+                hrefComp={pageContent.copy.calloutBeliefs.hrefComp} 
+                last={false}
+            />
+        </div>
+        <section id="mission" class="section mission callout-at-top">
             <div class="container">
                 <h2 class="subheading">{pageContent.copy.sectionTwo.header}</h2>
                 <div class="mission__container relative">
@@ -132,7 +141,7 @@ const panelImages = [Music,Youth, SundaySchool, Women, Men]
                 </div>
             </div>
         </section>
-        <section id="ministries" class="section-alt ministries">
+        <section id="ministries" class="section-alt ministries callout-at-bottom">
             <div class="container">
                 <h2 class="subheading">{pageContent.copy.sectionFive.header}</h2>
                 <p>{pageContent.copy.sectionFive.copy}</p>
@@ -146,7 +155,15 @@ const panelImages = [Music,Youth, SundaySchool, Women, Men]
                 </div>
             </div>
         </section>
-        <section id="history" class="section history">
+        <div class="callout__container visit relative">
+            <Callout 
+                copy={pageContent.copy.calloutVisit.copy} 
+                href={pageContent.copy.calloutVisit.href} 
+                hrefComp={pageContent.copy.calloutVisit.hrefComp} 
+                last={false}
+            />
+        </div>
+        <section id="history" class="section history callout-at-top callout-at-bottom">
             <div class="container">
                 <h2 class="subheading">{pageContent.copy.sectionSix.header}</h2>
                 <div class="flex flex-justify-between history__content  bg-white box-shadow">
@@ -159,6 +176,14 @@ const panelImages = [Music,Youth, SundaySchool, Women, Men]
                 </div>
             </div>
         </section>
+        <div class="callout__container comment relative last-callout">
+            <Callout 
+                copy={pageContent.copy.calloutMessage.copy} 
+                href={pageContent.copy.calloutMessage.href} 
+                hrefComp={pageContent.copy.calloutMessage.hrefComp} 
+                last={true}
+            />
+        </div>
     </main>
 
 </Layout>
