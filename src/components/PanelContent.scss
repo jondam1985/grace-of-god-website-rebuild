@@ -1,0 +1,41 @@
+@import "../styles/mixins.scss";
+@import "../styles/variables.scss";
+
+.panel__content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    align-items: center;
+
+    @include mobile {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .panel__image {
+        width: 100%;
+        margin-top: 1rem;
+
+        img {
+            border-radius: 5px;
+        }
+
+        @include desktop {
+            width: 30%;
+            margin-right: 1rem;
+        }
+    }
+
+    .panel__copy-container {
+        width: 100%;
+        color: $secondary-color;
+
+        @include desktop {
+            width: 70%;
+        }
+
+        .panel__header {
+            margin-bottom: 1rem;
+        }
+    }
+}

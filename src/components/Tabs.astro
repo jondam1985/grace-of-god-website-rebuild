@@ -1,0 +1,50 @@
+---
+import '@components/Tabs.scss';
+import PanelContent from './PanelContent.astro';
+
+export interface Props {
+    tabGroupId: string;
+    tabs: object;
+    panels: object;
+    images: object;
+}
+
+const { tabGroupId, tabs, panels, images } = Astro.props;
+---
+
+<div class="tabbed-content">
+    <div class="tabs flex flex-justify-left">
+        {tabs.map((v, index) => {
+            return <button data-tab-index={index} data-tab-length={tabs.length} class={`tab tab-${index}`} role="tab" data-tab-group={tabGroupId} aria-selected={index == 0 ? "true" : "false"} aria-controls={`${tabGroupId}-panel-${index}`}>{v} <span class="sr-only">{`tab ${index + 1} of ${tabs.length}`}</span></button>
+        })}
+    </div>
+    <div class="panels relative">
+        {panels.map((p, index) => {
+            return <div role="tabpanel" id={`${tabGroupId}-panel-${index}`} class={`panel panel-${index} ${index == 0 ? "" : "hidden"} relative`}>
+                    <PanelContent header={p.header} copy={p.copy} image={images[index]} />
+                </div>
+        })}
+    </div>
+</div>
+<script>
+    const openPanel = (tab, panel) => {
+        tab.setAttribute("aria-selected", "true");
+        panel.classList.remove("hidden");
+    };
+    const closePanel = (tab, panel) => {
+        tab.setAttribute("aria-selected", "false");
+        panel.classList.add("hidden");
+    };
+    const closeAll = (tabGroupId) => {
+        document.querySelectorAll(`#${tabGroupId} button.tab`).forEach(v => {
+            closePanel(v, document.getElementById(v.getAttribute("aria-controls")));
+        });
+    };
+    
+    document.querySelectorAll("button.tab").forEach(v => {
+        v.addEventListener("click", (e) => {
+            closeAll(e.target.getAttribute("data-tab-group"));
+            openPanel(e.target, document.getElementById(e.target.getAttribute("aria-controls")));
+        });
+    });
+</script>

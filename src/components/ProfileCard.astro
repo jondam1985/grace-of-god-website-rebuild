@@ -1,34 +1,36 @@
 ---
 import "@components/ProfileCard.scss";
+import TapSVG from "@components/TapSVG.astro";
 export interface Props {
     image: string;
     name: string;
     position: string;
     motto: string;
-    book: string;
 }
 
-const { image, name, position, motto, book } = Astro.props;
+const { image, name, position, motto } = Astro.props;
 ---
 
 <button class="profile-card front relative">
-    <div class="profile-card__front text-center">
+    <div class="profile-card__front relative text-center">
+        <div class="profile__tap-icon mobile">
+            <TapSVG />
+        </div>
         <div class="profile__image">
             <img src={image} alt="" />
         </div>
-        <div class="profile__name">
-            <p>{name}</p>
-        </div>
-        <div class="profile__position">
-            <p>{position}</p>
+        <div class="profile__copy">
+            <div class="profile__name">
+                <p>{name}</p>
+            </div>
+            <div class="profile__position">
+                <p>{position}</p>
+            </div>
         </div>
     </div>
     <div class="profile-card__back" aria-hidden="true">
         <div class="profile__motto">
             <p>{motto}</p>
-        </div>
-        <div class="profile__book">
-            <p>- {book}</p>
         </div>
     </div>
 </button>

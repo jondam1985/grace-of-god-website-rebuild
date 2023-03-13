@@ -4,13 +4,23 @@ import QuickLinks from '@components/QuickLinks.astro';
 import Layout from '@layouts/Layout.astro';
 import Content from 'public/content/content.json';
 import ProfileCard from '@components/ProfileCard.astro';
-import AboutUsImg from '@assets/bg_about-us.jpg';
+import AboutUsImg from '@assets/bg_church.jpg';
+import HistoryImg from '@assets/bg_church-old.png';
 import CommunitySVG from '@components/CommunitySVG.astro';
 import MusicSVG from '@components/MusicSVG.astro';
 import DoveSVG from '@components/DoveSVG.astro';
 import GospelSVG from '@components/GospelSVG.astro';
-import ProfileImg from '@assets/profile.png';
+import ProfileGina from '@assets/profile_gina.jpg';
+import ProfileOswaldo from '@assets/profile_oswaldo.jpg';
+import ProfileRoxana from '@assets/profile_roxana.jpg';
+import ProfileFrancisco from '@assets/profile_francisco.jpg';
+import Music from '@assets/bg_music.jpg';
+import Youth from '@assets/bg_youth.jpg';
+import SundaySchool from '@assets/bg_sunday-school.jpg';
+import Women from '@assets/bg_women.jpg';
+import Men from '@assets/bg_men.jpg';
 import '@pages/about.scss';
+import Tabs from '@components/Tabs.astro';
 
 const page = "about";
 const lang = "es";
@@ -20,38 +30,9 @@ const title = pageContent.metadata.title;
 const description = pageContent.metadata.description;
 const pageClass = `page-${page} ${lang}`;
 
-const leaders = [
-    {
-        "name": "John Doe",
-        "position": "Some position",
-        "motto": "This is my spiritual motto",
-        "book": "Book 3:16"
-    },
-    {
-        "name": "John Doe",
-        "position": "Some position",
-        "motto": "This is my spiritual motto",
-        "book": "Book 3:16"
-    },
-    {
-        "name": "John Doe",
-        "position": "Some position",
-        "motto": "This is my spiritual motto",
-        "book": "Book 3:16"
-    },
-    {
-        "name": "John Doe",
-        "position": "Some position",
-        "motto": "This is my spiritual motto",
-        "book": "Book 3:16"
-    },
-    {
-        "name": "John Doe",
-        "position": "Some position",
-        "motto": "This is my spiritual motto",
-        "book": "Book 3:16"
-    }
-]
+const leadersPhotos = [ ProfileGina, ProfileOswaldo, ProfileRoxana, ProfileFrancisco ]
+
+const panelImages = [Music,Youth, SundaySchool, Women, Men]
 ---
 
 <Layout
@@ -99,6 +80,7 @@ const leaders = [
         <section id="values" class="section-alt values">
             <div class="container">
                 <h2 class="subheading">{pageContent.copy.sectionThree.header}</h2>
+                <p>{pageContent.copy.sectionThree.copy}</p>
                 <div class="values__container relative flex flex-justify-evenly flex-align-center">
                     <div class="value__item relative christian-people">
                         <div class="value__icon">
@@ -138,16 +120,42 @@ const leaders = [
         <section id="leaders" class="section leaders">
             <div class="container">
                 <h2 class="subheading">{pageContent.copy.sectionFour.header}</h2>
-                <div class="leaders__content relative flex flex-justify-left flex-wrap">
-                    {leaders.map(v => {
+                <div class="leaders__content relative flex flex-justify-between flex-wrap">
+                    {pageContent.copy.sectionFour.profiles.map((v, index) => {
                       return  <ProfileCard 
-                        image={ProfileImg}
+                        image={leadersPhotos[index]}
                         name={v.name}
                         position={v.position}
                         motto={v.motto}
-                        book={v.book}
                       />
                     })}
+                </div>
+            </div>
+        </section>
+        <section id="ministries" class="section-alt ministries">
+            <div class="container">
+                <h2 class="subheading">{pageContent.copy.sectionFive.header}</h2>
+                <p>{pageContent.copy.sectionFive.copy}</p>
+                <div class="ministries__content">
+                    <Tabs 
+                        tabGroupId="ministries"
+                        tabs={pageContent.copy.sectionFive.ministries.tabs}
+                        panels={pageContent.copy.sectionFive.ministries.panels}
+                        images={panelImages}
+                    />
+                </div>
+            </div>
+        </section>
+        <section id="history" class="section history">
+            <div class="container">
+                <h2 class="subheading">{pageContent.copy.sectionSix.header}</h2>
+                <div class="flex flex-justify-between history__content  bg-white box-shadow">
+                    <div class="history__image">
+                        <img src={HistoryImg} alt="" />
+                    </div>
+                    <div class="history__copy">
+                        <Fragment set:html={pageContent.copy.sectionSix.copy} />
+                    </div>
                 </div>
             </div>
         </section>

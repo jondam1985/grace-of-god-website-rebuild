@@ -2,36 +2,37 @@
 @import "../styles/variables.scss";
 
 .page-about {
-    .about__content {
-        width: 100%;
-
-        @include mobile {
-            flex-wrap: wrap;
-        }
-
-        .about__copy {
+    .about {
+        .about__content {
             width: 100%;
-            margin-bottom: 1rem;
-
-            @include desktop {
-                margin-right: 1rem;
-                margin-bottom: 0;
+    
+            @include mobile {
+                flex-wrap: wrap;
             }
-        }
-        .about__image {
-            width: 100%;
-            max-width: 23rem;
-
-            @include desktop {
-                width: 40%;
+    
+            .about__copy {
+                width: 100%;
+                margin-bottom: 1rem;
+    
+                @include desktop {
+                    margin-right: 1rem;
+                    margin-bottom: 0;
+                }
             }
-
-            img {
-                border-radius: 5px;
+            .about__image {
+                width: 100%;
+                max-width: 23rem;
+    
+                @include desktop {
+                    width: 40%;
+                }
+    
+                img {
+                    border-radius: 5px;
+                }
             }
-        }
+        }    
     }
-
     .mission__container {
         .mission__accent {
             position: absolute;
@@ -41,7 +42,6 @@
             top: 50%;
             transform: translate(0, -50%);
             background: $secondary-color;
-            border-radius: 5px;
 
             @include mobile {
                 height: 50%;
@@ -54,6 +54,8 @@
     .values {
         .values__container {
             flex-wrap: wrap;
+            margin: 3rem auto 0 auto;
+            max-width: 77rem;
             
             &::after,
             &::before {
@@ -120,6 +122,42 @@
     .leaders {
         .leaders__content {
             margin: 0 auto;
+        }
+    }
+
+    .ministries {
+
+        .tabbed-content {
+            margin-top: 2.5rem;
+        }
+    }
+
+    .history {
+        .history__content {
+            width: 100%;
+            padding: 2rem;
+            
+            @include mobile {
+                flex-wrap: wrap;
+            }
+
+            .history__image {
+                width: 100%;
+                margin-bottom: 1rem;
+
+                @include desktop {
+                    width: 40%;
+                    margin-right: 1rem;
+                }
+            }
+
+            .history__copy {
+                width: 100%;
+
+                @include desktop {
+                    width: 60%;
+                }
+            }
         }
     }
 }

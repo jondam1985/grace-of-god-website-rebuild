@@ -1,0 +1,25 @@
+---
+import '@components/PanelContent.scss';
+
+export interface Props {
+    image: string;
+    copy: string;
+    header: string;
+}
+
+const { image, copy, header } = Astro.props;
+---
+
+<div class="panel__content flex flex-justify-between bg-white box-shadow">
+    <div class="panel__image">
+        <img src={image} alt="" />
+    </div>
+    <div class="panel__copy-container">
+        <div class="panel__header">
+            <Fragment set:html={header} />
+        </div>
+        <div class="panel__copy">
+            <Fragment set:html={copy} />
+        </div>
+    </div>
+</div>
