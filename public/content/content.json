@@ -21,7 +21,7 @@
                     "subheader": "Bienvenido"
                 },
                 "copy": {
-                    "sectionOne": {
+                    "sectionSundayService": {
                         "calloutOne": {
                             "copy": "Servicio de Adoracion: todos los domingos a las 3:00pm",
                             "ctaOneCopy": "En persona",
@@ -32,11 +32,11 @@
                             "ctaTwoExternal": true
                         }
                     },
-                    "sectionTwo": {
+                    "sectionWelcome": {
                         "header": "Bienvenido a la Iglesia Nazarena Gracia de Dios",
                         "copyOne": "<p>La Iglesia Nazarena Gracia de Dios es una comunidad de cristianos quienes proviniendo de varios países, diferentes trasfondos culturales, sociales y religiosos, nos congregamos para adorar y servir a Dios en la ciudad de Toronto, Canadá.</p><p>Ya seas nuevo en la fe o hayas sido un miebro de la Iglesia del Nazareno por anos, te damos la mas calida bienvenida. Es un privilegio conectarnos con personas que comparten una pasion por servir a Dios y esparcir su amor por todo el mundo.</p>"
                     },
-                    "sectionThree": {
+                    "sectionCta": {
                         "ctaOne": {
                             "copy": "Conocenos - quienes somos y que representamos!",
                             "linkCopy": "Sobre nosotros",
@@ -53,7 +53,7 @@
                             "herf": "/"
                         }
                     },
-                    "sectionFour": {
+                    "sectionEvents": {
                         "header": "Eventos"
                     }
                 }
@@ -79,7 +79,7 @@
                     {"copy": "Historia", "href": "#history"}
                 ],
                 "copy": {
-                    "sectionOne": {
+                    "sectionAbout": {
                         "header": "Quienes somos",
                         "copy": "<p>La Iglesia del Nazareno de la Gracia de Dios es una comunidad vibrante de creyentes dedicados a compartir el amor y la gracia de Jesucristo con el mundo. Nuestra iglesia está comprometida con la formación de discípulos que viven el mensaje del evangelio en sus vidas diarias. Creemos que la fe cristiana no solo es una cuestión personal, sino también comunitaria, y buscamos fomentar una comunidad amorosa y de apoyo donde todos puedan crecer en su relación con Dios</p><p>Nos esforzamos por ser una iglesia acogedora y abierta a todos, sin importar su pasado, su presente o sus circunstancias actuales. Queremos ser una fuente de esperanza y ayuda para aquellos que están en necesidad, y buscamos servir a nuestra comunidad en cualquier forma que podamos.</p><p>Nos encantaría que te unas a nosotros mientras buscamos crecer en nuestra fe, ayudar a otros y compartir el amor de Jesucristo con el mundo.</p>"
                     },
@@ -88,11 +88,11 @@
                         "href": "<a href='/nuestras-creencias'>Explora nuestas creencias</a>",
                         "hrefComp": ""
                     },
-                    "sectionTwo": {
+                    "sectionMission": {
                         "header": "Nuestra mision",
                         "copy": "<p>La misión de la Iglesia del Nazareno es hacer discípulos en las naciones.</p><p>Somos una comunidad global de fe, se nos ha comisionado llevar las buenas nuevas de vida en Cristo Jesús a gente en todas partes y diseminar el mensaje bíblico de la santidad (vivir a la semejanza de Cristo) en todos los países.</p>"
                     },
-                    "sectionThree": {
+                    "sectionValues": {
                         "header": "Nuestros valores escenciales",
                         "copy": "Creemos que la santidad es la virtud principal de todo buen Nazareno.",
                         "values": {
@@ -102,7 +102,7 @@
                             "valueFour": "Somos un pueblo misional, evangelizamos con compasion"
                         }
                     },
-                    "sectionFour": {
+                    "sectionLeaders": {
                         "header": "Nuestros lideres espirituales",
                         "copy": "",
                         "profiles": [
@@ -128,7 +128,7 @@
                             }
                         ]
                     },
-                    "sectionFive": {
+                    "sectionMinistries": {
                         "header": "Nuestros ministerios",
                         "copy": "Grace of God has a variety of groups that cater to different age groups, interests, and needs, providing opportunities for spiritual growth, fellowship, and service.",
                         "ministries": {
@@ -163,7 +163,7 @@
                         "href": "<a href='/ubicacion-servicios'>Visitanos</a>",
                         "hrefComp": ""
                     },
-                    "sectionSix": {
+                    "sectionHistory": {
                         "header": "Nuestra historia",
                         "copy": "<p>Adipisicing enim aliquip sint non mollit. Aliquip aliqua qui tempor sit consectetur ut consequat pariatur fugiat consectetur ullamco. Ex laboris reprehenderit sit excepteur sint sint dolor Lorem.</p><p>Tempor ut amet sunt laboris aliqua et proident ipsum deserunt sunt voluptate id cupidatat. Aliquip sint labore qui ipsum dolore. Ullamco ut exercitation eu sit incididunt velit ex nisi qui. Sit id non labore minim. Ut nostrud proident voluptate voluptate. Velit enim aute qui tempor ut est mollit aute elit enim ex aliquip labore.</p><p>Irure sint esse nisi eu aliquip Lorem aliquip incididunt do id dolor velit dolore quis. Lorem sunt cillum ipsum deserunt non consequat officia nisi. Esse aute fugiat dolore laboris eu voluptate deserunt eu deserunt et elit proident nulla. Quis ullamco quis elit commodo sit deserunt ad magna consequat voluptate. Consequat qui ut minim esse sit.</p>"
                     },
@@ -194,7 +194,7 @@
                     "subheader": "Welcome"
                 },
                 "copy": {
-                    "sectionOne": {
+                    "sectionSundayService": {
                         "calloutOne": {
                             "copy": "Worship Service: Every Sunday at 3:00pm",
                             "ctaOneCopy": "In person",
@@ -205,11 +205,11 @@
                             "ctaTwoExternal": true
                         }
                     },
-                    "sectionTwo": {
+                    "sectionWelcome": {
                         "header": "Welcome Grace of God Nazarene Church",
                         "copyOne": "<p>Grace of God Nazarene Church is a community of Christians who coming from various countries, different cultural, social and religious backgrounds, gather to worship and serve God in the city of Toronto, Canada.</p><p>Whether you are new in the faith or have been a member of the Church of the Nazarene for many years, we want to extend a warm welcome to you. It is a privilege to connect with individuals who share a passion for serving God and spreading his love in the world.</p>"
                     },
-                    "sectionThree": {
+                    "sectionCta": {
                         "ctaOne": {
                             "copy": "Get to know us - who we are and what we stand for!",
                             "linkCopy": "About us",
@@ -226,7 +226,7 @@
                             "herf": "/"
                         }
                     },
-                    "sectionFour": {
+                    "sectionEvents": {
                         "header": "Upcoming events"
                     }
                 }
@@ -252,7 +252,7 @@
                     {"copy": "History", "href": "#history"}
                 ],
                 "copy": {
-                    "sectionOne": {
+                    "sectionAbout": {
                         "header": "Quienes somos",
                         "copy":
                             "<p>Grace of God Nazarene Church is a vibrant community of believers dedicated to sharing the love and grace of Jesus Christ with the world. Our church is committed to forming disciples who live out the message of the gospel in their daily lives. We believe that the Christian faith is not just a personal matter, but also a community one, and we seek to foster a loving and supportive community where everyone can grow in their relationship with God.</p><p>We strive to be a welcoming and open church to all, regardless of their past, present, or current circumstances. We want to be a source of hope and help for those in need, and we seek to serve our community in any way we can.</p><p>We would love for you to join us as we seek to grow in our faith, help others, and share the love of Jesus Christ with the world.</p>"

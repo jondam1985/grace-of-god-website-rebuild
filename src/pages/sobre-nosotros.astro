@@ -56,10 +56,10 @@ const panelImages = [Music,Youth, SundaySchool, Women, Men]
         />
         <section id="about" class="section-alt about callout-at-bottom">
             <div class="container">
-                <h2 class="subheading">{pageContent.copy.sectionOne.header}</h2>
+                <h2 class="subheading">{pageContent.copy.sectionAbout.header}</h2>
                 <div class="flex flex-justify-between about__content">
                     <div class="about__copy">
-                        <Fragment set:html={pageContent.copy.sectionOne.copy} />
+                        <Fragment set:html={pageContent.copy.sectionAbout.copy} />
                     </div>
                     <div class="about__image">
                         <img src={AboutUsImg} alt="" class="box-shadow" />
@@ -77,26 +77,26 @@ const panelImages = [Music,Youth, SundaySchool, Women, Men]
         </div>
         <section id="mission" class="section mission callout-at-top">
             <div class="container">
-                <h2 class="subheading">{pageContent.copy.sectionTwo.header}</h2>
+                <h2 class="subheading">{pageContent.copy.sectionMission.header}</h2>
                 <div class="mission__container relative">
                     <div class="mission__accent"></div>
                     <div class="text-center bg-white mission__content relative box-shadow">
-                        <Fragment set:html={pageContent.copy.sectionTwo.copy} />
+                        <Fragment set:html={pageContent.copy.sectionMission.copy} />
                     </div>
                 </div>
             </div>
         </section>
         <section id="values" class="section-alt values">
             <div class="container">
-                <h2 class="subheading">{pageContent.copy.sectionThree.header}</h2>
-                <p>{pageContent.copy.sectionThree.copy}</p>
+                <h2 class="subheading">{pageContent.copy.sectionValues.header}</h2>
+                <p>{pageContent.copy.sectionValues.copy}</p>
                 <div class="values__container relative flex flex-justify-evenly flex-align-center">
                     <div class="value__item relative christian-people">
                         <div class="value__icon">
                             <CommunitySVG />
                         </div>
                         <div class="value__copy text-center">
-                            <p>{pageContent.copy.sectionThree.values.valueOne}</p>
+                            <p>{pageContent.copy.sectionValues.values.valueOne}</p>
                         </div>
                     </div>
                     <div class="value__item relative praise">
@@ -104,7 +104,7 @@ const panelImages = [Music,Youth, SundaySchool, Women, Men]
                             <MusicSVG />
                         </div>
                         <div class="value__copy text-center">
-                            <p>{pageContent.copy.sectionThree.values.valueTwo}</p>
+                            <p>{pageContent.copy.sectionValues.values.valueTwo}</p>
                         </div>
                     </div>
                     <div class="value__item relative holiness">
@@ -112,7 +112,7 @@ const panelImages = [Music,Youth, SundaySchool, Women, Men]
                             <DoveSVG />
                         </div>
                         <div class="value__copy text-center">
-                            <p>{pageContent.copy.sectionThree.values.valueThree}</p>
+                            <p>{pageContent.copy.sectionValues.values.valueThree}</p>
                         </div>
                     </div>
                     <div class="value__item relative gospel">
@@ -120,7 +120,7 @@ const panelImages = [Music,Youth, SundaySchool, Women, Men]
                             <GospelSVG />
                         </div>
                         <div class="value__copy text-center">
-                            <p>{pageContent.copy.sectionThree.values.valueFour}</p>
+                            <p>{pageContent.copy.sectionValues.values.valueFour}</p>
                         </div>
                     </div>
                 </div>
@@ -128,9 +128,9 @@ const panelImages = [Music,Youth, SundaySchool, Women, Men]
         </section>
         <section id="leaders" class="section leaders">
             <div class="container">
-                <h2 class="subheading">{pageContent.copy.sectionFour.header}</h2>
+                <h2 class="subheading">{pageContent.copy.sectionLeaders.header}</h2>
                 <div class="leaders__content relative flex flex-justify-between flex-wrap">
-                    {pageContent.copy.sectionFour.profiles.map((v, index) => {
+                    {pageContent.copy.sectionLeaders.profiles.map((v, index) => {
                       return  <ProfileCard 
                         image={leadersPhotos[index]}
                         name={v.name}
@@ -143,13 +143,13 @@ const panelImages = [Music,Youth, SundaySchool, Women, Men]
         </section>
         <section id="ministries" class="section-alt ministries callout-at-bottom">
             <div class="container">
-                <h2 class="subheading">{pageContent.copy.sectionFive.header}</h2>
-                <p>{pageContent.copy.sectionFive.copy}</p>
+                <h2 class="subheading">{pageContent.copy.sectionMinistries.header}</h2>
+                <p>{pageContent.copy.sectionMinistries.copy}</p>
                 <div class="ministries__content">
                     <Tabs 
                         tabGroupId="ministries"
-                        tabs={pageContent.copy.sectionFive.ministries.tabs}
-                        panels={pageContent.copy.sectionFive.ministries.panels}
+                        tabs={pageContent.copy.sectionMinistries.ministries.tabs}
+                        panels={pageContent.copy.sectionMinistries.ministries.panels}
                         images={panelImages}
                     />
                 </div>
@@ -165,13 +165,13 @@ const panelImages = [Music,Youth, SundaySchool, Women, Men]
         </div>
         <section id="history" class="section history callout-at-top callout-at-bottom">
             <div class="container">
-                <h2 class="subheading">{pageContent.copy.sectionSix.header}</h2>
+                <h2 class="subheading">{pageContent.copy.sectionHistory.header}</h2>
                 <div class="flex flex-justify-between history__content  bg-white box-shadow">
                     <div class="history__image">
                         <img src={HistoryImg} alt="" />
                     </div>
                     <div class="history__copy">
-                        <Fragment set:html={pageContent.copy.sectionSix.copy} />
+                        <Fragment set:html={pageContent.copy.sectionHistory.copy} />
                     </div>
                 </div>
             </div>
