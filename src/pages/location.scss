@@ -1,0 +1,237 @@
+@import "../styles/variables.scss";
+@import "../styles/mixins.scss";
+
+.page-location {
+    section.services {
+        .services__container {
+            width: 100%;
+
+            .services__sunday {
+                width: 100%;
+                padding: 1rem 0 2rem 0;
+                font-size: 1.5rem;
+                border-bottom: 2px dotted $quaternary-color;
+
+                .sunday__header {
+                    font-size: 1.8rem;
+                    margin-bottom: 1rem;
+                    color: $white;
+                    background: $quinary-color;
+                    border-radius: 5px;
+                    padding: 0.5rem;
+                }
+
+                .sunday__hour {
+                    margin-bottom: 1rem;
+                }
+
+                a {
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+
+                    @include desktop {
+                        display: inline;
+                    }
+                }
+                a:hover {
+                    color: $quinary-color;
+                }
+                a:focus {
+                    outline: 2px dotted $secondary-color;
+                }
+            }
+
+            .services__other {
+                width: 100%;
+                margin-top: 2rem;
+
+                .other__header {
+                    font-size: 1.5rem;
+                    text-align: center;
+                    margin-bottom: 1rem;
+                }
+
+                .services__content {
+
+                    .service__item {
+                        border: 2px solid $quinary-color;
+                        margin: 0.5rem 0;
+                        border-radius: 5px;
+                        padding: 1rem;
+
+                        @include mobile {
+                            font-size: 0.875rem;
+                            flex-wrap: wrap;
+                            text-align: center;
+                            justify-content: center;
+                        }
+                    } 
+                    
+                    p {
+                        width: 25%;
+
+                        @include mobile {
+                            width: 100%;
+                        }
+                    }
+
+                    .service__connect {
+
+                        a {
+                            border: 2px solid $quinary-color;
+                            background-color: $white;
+                            padding: 0.5rem;
+                            text-decoration: none;
+                            border-radius: 5px;
+                        }
+
+                        a:hover {
+                            background: $quinary-color;
+                            color: $white;
+                        }
+
+                        a:focus {
+                            outline: 2px dotted $quinary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section.location {
+        .location__content {
+            padding: 2rem;
+
+            @include mobile {
+                flex-wrap: wrap;
+                padding: 0.5rem;
+            }
+            .location__copy {
+                width: 50%;
+                padding: 0.5rem 1.5rem 0.5rem 1rem;
+                background: $quinary-color;
+                color: $white;
+                border-radius: 5px;
+
+                @include mobile {
+                    width: 100%;
+                    margin-bottom: 1.5rem;
+                }
+
+                .location__subheader {
+                    font-size: 1.5rem;
+
+                    @include mobile {
+                        font-size: 1.125rem;
+                    }
+                }
+
+                p {
+                    font-size: 2.5rem;
+                    margin-top: 1rem;
+
+                    @include mobile {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            .location__map {
+                width: 50%;
+                padding-left: 1.5rem;
+
+                @include mobile {
+                    width: 100%;
+                    padding: 0;
+                }
+
+                .map {
+                    display: block;
+                    width: 100%;
+
+                    iframe {
+                        width: 100%;
+                        aspect-ratio: 1;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+    section.online {
+        .online__content {
+            background: $secondary-color;
+            padding: 2rem;
+
+            @include mobile {
+                flex-wrap: wrap;
+                padding: 0.5rem;
+            }
+            .online__copy {
+                width: 50%;
+                padding-left: 1.5rem;
+                color: $secondary-color;
+                border-radius: 5px;
+
+                @include mobile {
+                    width: 100%;
+                    padding: 0;
+                }
+
+                .online__subheader {
+                    font-size: 1.5rem;
+                    background: $white;
+                    margin-bottom: 1rem;
+                    border-radius: 5px;
+                    padding: 0.5rem;
+                }
+
+                a {
+                    border: 4px solid $white;
+                    color: $white;
+                    padding: 1rem;
+                    width: 80%;
+                    border-radius: 5px;
+                    font-weight: 600;
+                    font-size: 1.5rem;
+                    margin: 0 auto;
+                    text-decoration: none;
+
+                    @include mobile {
+                        width: 100%;
+                        margin-bottom: 1.5rem;
+                    }
+                }
+                a:hover {
+                    border-color: $secondary-color;
+                    background: $white;
+                    color: $secondary-color;
+                }
+                a:focus {
+                    outline: 2px dotted $white;
+                }
+            }
+            .online__video {
+                width: 50%;
+                padding: 0.5rem 1.5rem 0.5rem 1rem;
+
+                @include mobile {
+                    width: 100%;
+                    padding: 0;
+                    margin-bottom: 1.5rem;
+                }
+
+                .video {
+                    display: block;
+                    width: 100%;
+
+                    iframe {
+                        width: 100%;
+                        aspect-ratio: 1.7;
+                        border-radius: 5px;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}

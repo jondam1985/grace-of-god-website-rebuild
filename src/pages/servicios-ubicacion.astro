@@ -1,0 +1,153 @@
+---
+import '@pages/location.scss';
+import Hero from '@components/Hero.astro';
+import QuickLinks from '@components/QuickLinks.astro';
+import Layout from '@layouts/Layout.astro';
+import Content from 'public/content/content.json';
+import Map from '@components/Map.astro';
+import WelcomeVideo from '@components/WelcomeVideo.astro';
+import Callout from '@components/Callout.astro';
+import Events from '@components/Events.astro';
+
+const page = "location";
+const lang = "es";
+const content = Content[lang];
+const pageContent = content.pages[page];
+const title = pageContent.metadata.title;
+const description = pageContent.metadata.description;
+const pageClass = `page-${page} ${lang}`;
+
+const events = [
+	{
+		"title": "Titulo del evento",
+		"description": "Amet ea aliqua cillum sint est eu",
+		"date": "Sabado 11 de Marzo - 3:00pm",
+		"location": "624 Annete St, Toronto, ON",
+		"locationHref": "/ubicacion-servicios"
+	},
+	{
+		"title": "Titulo del evento",
+		"description": "Amet ea aliqua cillum sint est eu",
+		"date": "Sabado 11 de Marzo - 3:00pm",
+		"location": "624 Annete St, Toronto, ON",
+		"locationHref": "/ubicacion-servicios"
+	},
+	{
+		"title": "Titulo del evento",
+		"description": "Amet ea aliqua cillum sint est eu",
+		"date": "Sabado 11 de Marzo - 3:00pm",
+		"location": "624 Annete St, Toronto, ON",
+		"locationHref": "/ubicacion-servicios"
+	},
+	{
+		"title": "Titulo del evento",
+		"description": "Amet ea aliqua cillum sint est eu",
+		"date": "Sabado 11 de Marzo - 3:00pm",
+		"location": "624 Annete St, Toronto, ON",
+		"locationHref": "/ubicacion-servicios"
+	}
+]
+---
+
+<Layout
+    title={title}
+    description={description}
+    lang={lang}
+    esHref={pageContent.metadata.esHref}
+    enHref={pageContent.metadata.enHref}
+    pageClass={pageClass}
+    canonical={`${pageContent}["${lang}Href"]`}
+    >
+    <main id="main">
+        <Hero
+            heading={pageContent.hero.header}
+            verse={pageContent.hero.verse}
+            book={pageContent.hero.book}
+        />
+        <QuickLinks 
+            links={pageContent.quickLinks}
+        />
+        <section id="services" class="section-alt services">
+            <div class="container">
+                <h2 class="subheading">{pageContent.copy.sectionServices.header}</h2>
+                    <div class="services__container">
+                        <div class="services__sunday text-center relative">
+                            <h3 class="sunday__header"><b>{pageContent.copy.sectionServices.sundayHeader}</b></h3>
+                            <p class="sunday__hour">{pageContent.copy.sectionServices.sundayHour}</p>
+                            <div>
+                                <Fragment set:html={pageContent.copy.sectionServices.sundayInPerson} /> <span class="inline desktop">|</span> <Fragment set:html={pageContent.copy.sectionServices.sundayOnline} />
+                            </div>
+                        </div>
+                    <div class="services__other relative">
+                        <div class="other__header">
+                            <h3><b>{pageContent.copy.sectionServices.otherHeader}</b></h3>
+                        </div>
+                        <div class="services__content relative">
+                            {pageContent.copy.sectionServices.services.map((s, index) => {
+                            return (
+                                <div class={`service__item service__item-${index} relative flex flex-align-center flex-justify-between`}>
+                                    <p><b>**{s.title}**</b></p>
+                                    <p><span><b>{lang == "es" ? "Fecha" : "When"}:</b> </span>{s.date}</p>
+                                    <p><span><b>{lang == "es" ? "Lugar" : "Where"}:</b> </span><Fragment set:html={s.location} /></p>
+                                    <div class="service__connect">
+                                        <Fragment set:html={s.link} />
+                                    </div>
+                                </div>)
+                            })}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="location" class="section location callout-at-bottom">
+            <div class="container">
+                <h2 class="subheading">{pageContent.copy.sectionLocation.header}</h2>
+                <div class="location__content flex flex-align-center flex-justify-evenly bg-white box-shadow">
+                    <div class="location__copy text-center">
+                        <Fragment set:html={pageContent.copy.sectionLocation.locationCopy} />
+                    </div>
+                    <div class="location__map">
+                        <Map />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="callout__container blog relative">
+            <Callout 
+                copy={pageContent.copy.calloutBlog.copy} 
+                href={pageContent.copy.calloutBlog.href} 
+                hrefComp={pageContent.copy.calloutBlog.hrefComp} 
+                last={false}
+            />
+        </div>
+        <section id="online" class="section-alt online callout-at-top">
+            <div class="container">
+                <h2 class="subheading">{pageContent.copy.sectionOnline.header}</h2>
+                <div class="online__content flex flex-align-center flex-justify-evenly box-shadow">
+                    <div class="online__video">
+                        <WelcomeVideo />
+                    </div>
+                    <div class="online__copy">
+                        <Fragment set:html={pageContent.copy.sectionOnline.locationCopy} />
+                        <Fragment set:html={pageContent.copy.sectionOnline.locationLink} />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="events" class="section events callout-at-bottom">
+			<div class="container">
+				<h2 class="subheading">{pageContent.copy.sectionEvents.header}</h2>
+				<Events data={events} />
+			</div>
+        </section>
+        <div class="callout__container comment relative last-callout">
+            <Callout 
+                copy={pageContent.copy.calloutMessage.copy} 
+                href={pageContent.copy.calloutMessage.href} 
+                hrefComp={pageContent.copy.calloutMessage.hrefComp} 
+                last={true}
+            />
+        </div>
+    </main>
+
+</Layout>

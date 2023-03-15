@@ -173,6 +173,83 @@
                         "hrefComp": ""
                     }
                 }
+            },
+            "location": {
+                "metadata": {
+                    "title": "Services and location - Sharing God's Love with the World | Gracia de Dios",
+                    "description": "Discover Our Church Grace of God: Experience Community and Worship in Toronto with Our Range of Services and Programs.",
+                    "esHref": "/servicios-ubicacion",
+                    "enHref": "/en/services-location"
+                },
+                "hero": {
+                    "header": "Servicios y Ubicacion",
+                    "verse": "No te des prisa en hablar, ni se apresure tu corazón a proferir palabra delante de Dios. Porque Dios está en el cielo y tú en la tierra; por tanto sean pocas tus palabras.",
+                    "book": "Eclesiastés 5:2"
+                },
+                "quickLinks": [
+                    {"copy": "Servicios", "href": "#services"},
+                    {"copy": "Ubicacion", "href": "#location"},
+                    {"copy": "En linea", "href": "#online"},
+                    {"copy": "Eventos", "href": "#events"}
+                ],
+                "copy": {
+                    "sectionServices": {
+                        "header": "Nuestros servicios",
+                        "sundayHeader": "Servicio de Adoracion",
+                        "sundayHour": "Visitanos los domingos a las 3:00pm",
+                        "sundayInPerson": "<a href='#location'>EN PERSONA</a>",
+                        "sundayOnline": "<a href='#online'>EN LINEA</a>",
+                        "otherHeader": "Other services",
+                        "services": [
+                            {
+                                "title": "Servicio lunes",
+                                "location": "<span>En linea",
+                                "date": "Lunes a las 6:00pm",
+                                "link": "<a href='https://www.zoom.us' target='_blank' rel='noopener'>Attend via Zoom</a>"
+                            },
+                            {
+                                "title": "Servicio martes",
+                                "location": "<span>En linea",
+                                "date": "Martes a las 6:00pm",
+                                "link": "<a href='#location'>Attend in person</a>"
+                            },
+                            {
+                                "title": "Servicio miercoles",
+                                "location": "<span>En Persona",
+                                "date": "Lunes a las 6:00pm",
+                                "link": "<a href='https://www.zoom.us' target='_blank' rel='noopener'>Attend via Zoom</a>"
+                            },
+                            {
+                                "title": "Servicio jueves",
+                                "location": "<span>En linea",
+                                "date": "Jueves a las 6:00pm",
+                                "link": "<a href='https://www.zoom.us' target='_blank' rel='noopener'>Attend via Zoom</a>"
+                            }
+                        ]
+                    },
+                    "sectionLocation": {
+                        "header": "We'd love to see you in person",
+                        "locationCopy": "<h3 class='location__subheader'>We are located at:</h3><p><b>624 Annette St, Toronto, ON M6S&nbsp;2C4</b></p>"
+                    },
+                    "sectionOnline": {
+                        "header": "You can also join us online",
+                        "locationCopy": "<h3 class='online__subheader text-center'>Watch our livestream Sunday Service and past sermons on our Youtube channel</h3>",
+                        "locationLink": "<a class='text-center' href='https://www.google.com' target='_blank' rel='noopener'>Watch now</a>"
+                    },
+                    "calloutBlog": {
+                        "copy": "Keep growing your faith - uncover nuggets of faith in these articles penned by our family in Christ",
+                        "href": "<a href='/blog'>Read our blog \"Nuggets&nbsp;of&nbsp;Faith\"</a>",
+                        "hrefComp":""
+                    },
+                    "sectionEvents": {
+                        "header": "Upcoming events"
+                    },
+                    "calloutMessage": {
+                        "copy": "Tienes alguna pregunta o comentario? Nos encantaria escuchar de ti",
+                        "href": "<a href='/contacto'>Contactanos</a>",
+                        "hrefComp": ""
+                    }
+                }
             }
         }
     },
@@ -256,6 +333,95 @@
                         "header": "Quienes somos",
                         "copy":
                             "<p>Grace of God Nazarene Church is a vibrant community of believers dedicated to sharing the love and grace of Jesus Christ with the world. Our church is committed to forming disciples who live out the message of the gospel in their daily lives. We believe that the Christian faith is not just a personal matter, but also a community one, and we seek to foster a loving and supportive community where everyone can grow in their relationship with God.</p><p>We strive to be a welcoming and open church to all, regardless of their past, present, or current circumstances. We want to be a source of hope and help for those in need, and we seek to serve our community in any way we can.</p><p>We would love for you to join us as we seek to grow in our faith, help others, and share the love of Jesus Christ with the world.</p>"
+                    },
+                    "calloutBeliefs": {
+                        "copy": "Nuestras creencias tambien forman parte de quienes somos",
+                        "href": "<a href='/nuestras-creencias'>Explora nuestas creencias</a>",
+                        "hrefComp": ""
+                    },
+                    "sectionMission": {
+                        "header": "Nuestra mision",
+                        "copy": "<p>La misión de la Iglesia del Nazareno es hacer discípulos en las naciones.</p><p>Somos una comunidad global de fe, se nos ha comisionado llevar las buenas nuevas de vida en Cristo Jesús a gente en todas partes y diseminar el mensaje bíblico de la santidad (vivir a la semejanza de Cristo) en todos los países.</p>"
+                    },
+                    "sectionValues": {
+                        "header": "Nuestros valores escenciales",
+                        "copy": "Creemos que la santidad es la virtud principal de todo buen Nazareno.",
+                        "values": {
+                            "valueOne": "Somos un pueblo cristiano al servicio de la comunidad",
+                            "valueTwo": "Alabamos a Jesucristo y lo confesamos como Senor",
+                            "valueThree": "Somo un pueblo de santidad como estilo de vida",
+                            "valueFour": "Somos un pueblo misional, evangelizamos con compasion"
+                        }
+                    },
+                    "sectionLeaders": {
+                        "header": "Nuestros lideres espirituales",
+                        "copy": "",
+                        "profiles": [
+                            {
+                                "name": "Gina Torres",
+                                "position": "Pastora",
+                                "motto": "Con Dios podemos alcanzarlo todo y mucho más de lo que imaginamos. Con Dios podemos hacer realidad todos nuestros sueños."
+                            },
+                            {
+                                "name": "Oswaldo Castellanos",
+                                "position": "Vocal",
+                                "motto": "A veces las cosas no salen como tu esperabas, porque lo que te espera es lo mejor de Dios!DIOS quita pero cuando devuelve, MULTIPLICA..."
+                            },
+                            {
+                                "name": "Roxana Contreras",
+                                "position": "Vocal",
+                                "motto": "La Fe en Dios no hace las cosas fáciles, pero si las hace posibles...No te aferres a cosas pequeñas porque DIOS tiene algo más grande para ti."
+                            },
+                            {
+                                "name": "Francisco Buitrago",
+                                "position": "Vocal",
+                                "motto": "Donde hay fe hay amor, donde hay amor hay paz, donde hay paz esta DIOS y donde está DIOS no falta nada. Es mejor tenerlo a El."
+                            }
+                        ]
+                    },
+                    "sectionMinistries": {
+                        "header": "Nuestros ministerios",
+                        "copy": "Grace of God has a variety of groups that cater to different age groups, interests, and needs, providing opportunities for spiritual growth, fellowship, and service.",
+                        "ministries": {
+                            "tabs": ["Alabanza", "Jovenes", "Ninos", "Damas", "Caballeros"],
+                            "panels": [
+                                {
+                                    "header": "<h3>Ministerio de Alabanza",
+                                    "copy": "<p>Tempor commodo ipsum enim in irure pariatur sit occaecat magna consequat incididunt et nisi amet. Ullamco pariatur sit aute consequat sit. Non ullamco exercitation consequat duis est eiusmod excepteur.</p><p>Enim officia irure labore dolor amet nulla exercitation aliquip sunt. Est sit et pariatur irure consectetur incididunt voluptate. Qui do incididunt quis anim culpa elit elit aliqua aliqua ea occaecat. Aute aute cupidatat ad commodo duis eu. Proident duis aliqua mollit laboris sit mollit nisi.</p>"
+                                },
+                                {
+                                    "header": "<h3>Ministerio de Jovenes",
+                                    "copy": "<p>Labore deserunt sint esse ullamco irure nostrud in non. Fugiat cupidatat aute culpa duis incididunt ullamco sint minim labore. Sint minim deserunt nisi minim pariatur sunt proident incididunt excepteur sit ad veniam.</p><p>Adipisicing fugiat fugiat reprehenderit et nostrud eu. Eiusmod dolor reprehenderit duis ullamco proident laborum voluptate amet minim. Cupidatat nisi nulla esse velit anim amet. Tempor ea deserunt nulla aliquip pariatur deserunt esse deserunt sint est duis enim. Aliqua amet aliqua voluptate qui sunt et labore ex culpa. Ut sit ex non Lorem id velit.</p>"
+                                },
+                                {
+                                    "header": "<h3>Ministerio de Ninos",
+                                    "copy": "<p>Ullamco Lorem nisi culpa consectetur qui consequat commodo quis enim non commodo. Exercitation adipisicing ex labore et id eiusmod velit sint ex labore dolore laboris aute dolor. Esse laborum ex deserunt quis et eu. Adipisicing et ut dolore tempor quis ex sit quis occaecat nulla nostrud irure cupidatat ipsum. Ipsum esse ad nisi velit do et. Qui minim nisi consequat incididunt. Ea ullamco mollit cillum occaecat tempor ad aute id esse.</p><p>Ipsum do nisi ad voluptate culpa voluptate veniam. Duis irure excepteur dolore proident labore pariatur consequat aliqua veniam adipisicing officia id eiusmod. Consectetur incididunt aute ipsum deserunt consectetur consequat consectetur do. Sit deserunt anim commodo do quis laboris adipisicing proident reprehenderit pariatur cupidatat ipsum ad sit.</p>"
+                                },
+                                {
+                                    "header": "<h3>Ministerio de Damas",
+                                    "copy": "<p>Excepteur laboris labore laborum ea. Lorem elit occaecat adipisicing reprehenderit culpa fugiat veniam. Quis tempor aliqua fugiat laborum aute fugiat mollit eiusmod nulla ullamco amet. Non ex velit ipsum in officia duis anim ex enim enim officia enim exercitation.</p><p>Eu sit irure tempor enim et minim eiusmod id anim. Nostrud nulla nisi aliquip irure do enim veniam dolor labore excepteur. Sunt magna esse consectetur veniam veniam quis veniam officia voluptate velit eu. Tempor ea dolor voluptate sunt Lorem esse culpa et deserunt veniam.</p>"
+                                },
+                                {
+                                    "header": "<h3>Ministerio de Caballeros",
+                                    "copy": "<p>Occaecat fugiat nulla Lorem in anim velit mollit fugiat eu deserunt pariatur adipisicing exercitation. Ad aliquip velit voluptate nostrud. Quis Lorem id nulla aute ut commodo fugiat elit quis et non occaecat veniam. Do occaecat sit tempor in nostrud labore. Minim anim labore esse aute dolor ad Lorem anim exercitation. Aliqua aliquip amet id labore cupidatat adipisicing mollit ad velit.</p><p>Cillum ut et ea eu sunt pariatur magna. Elit et occaecat enim occaecat ad sit fugiat velit cillum velit enim aute qui sit. Labore excepteur ullamco adipisicing aliqua duis in enim. Ullamco aute excepteur mollit elit cillum excepteur in voluptate sit in ipsum deserunt dolor magna. Duis reprehenderit commodo elit dolore aliquip culpa nulla sint.</p>"
+                                }
+
+                            ]
+                        }
+                    },
+                    "calloutVisit": {
+                        "copy": "Conoce a nuestros lideres en persona y aprende mas sobre nuestros ministerios",
+                        "href": "<a href='/ubicacion-servicios'>Visitanos</a>",
+                        "hrefComp": ""
+                    },
+                    "sectionHistory": {
+                        "header": "Nuestra historia",
+                        "copy": "<p>Adipisicing enim aliquip sint non mollit. Aliquip aliqua qui tempor sit consectetur ut consequat pariatur fugiat consectetur ullamco. Ex laboris reprehenderit sit excepteur sint sint dolor Lorem.</p><p>Tempor ut amet sunt laboris aliqua et proident ipsum deserunt sunt voluptate id cupidatat. Aliquip sint labore qui ipsum dolore. Ullamco ut exercitation eu sit incididunt velit ex nisi qui. Sit id non labore minim. Ut nostrud proident voluptate voluptate. Velit enim aute qui tempor ut est mollit aute elit enim ex aliquip labore.</p><p>Irure sint esse nisi eu aliquip Lorem aliquip incididunt do id dolor velit dolore quis. Lorem sunt cillum ipsum deserunt non consequat officia nisi. Esse aute fugiat dolore laboris eu voluptate deserunt eu deserunt et elit proident nulla. Quis ullamco quis elit commodo sit deserunt ad magna consequat voluptate. Consequat qui ut minim esse sit.</p>"
+                    },
+                    "calloutMessage": {
+                        "copy": "Tienes alguna pregunta o comentario? Nos encantaria escuchar de ti",
+                        "href": "<a href='/contacto'>Contactanos</a>",
+                        "hrefComp": ""
                     }
                 }
             }  
