@@ -18,6 +18,10 @@ export interface Props {
 }
 
 const { title, description, enHref, pageClass, lang, esHref, canonical } = Astro.props;
+
+const data = import.meta.env.TEST_VAR;
+
+console.log(data);
 ---
 
 <!DOCTYPE html>
