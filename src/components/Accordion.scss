@@ -1,0 +1,24 @@
+.accordions {
+    .accordion__trigger {
+        button[aria-expanded="false"] {
+            .trigger__collapse {
+                display: none;
+            }
+        }
+        button[aria-expanded="true"] {
+            .trigger__expand {
+                display: none;
+            }
+        }
+
+        .trigger__collapse,
+        .trigger__expand {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translate(0, -50%);
+            height: 25px;
+            width: 25px;
+        }
+    }
+}

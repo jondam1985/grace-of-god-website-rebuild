@@ -424,7 +424,258 @@
                         "hrefComp": ""
                     }
                 }
-            }  
+            },
+            "location": {
+                "metadata": {
+                    "title": "Services and location - Sharing God's Love with the World | Gracia de Dios",
+                    "description": "Discover Our Church Grace of God: Experience Community and Worship in Toronto with Our Range of Services and Programs.",
+                    "esHref": "/servicios-ubicacion",
+                    "enHref": "/en/services-location"
+                },
+                "hero": {
+                    "header": "Servicios y Ubicacion",
+                    "verse": "No te des prisa en hablar, ni se apresure tu corazón a proferir palabra delante de Dios. Porque Dios está en el cielo y tú en la tierra; por tanto sean pocas tus palabras.",
+                    "book": "Eclesiastés 5:2"
+                },
+                "quickLinks": [
+                    {"copy": "Servicios", "href": "#services"},
+                    {"copy": "Ubicacion", "href": "#location"},
+                    {"copy": "En linea", "href": "#online"},
+                    {"copy": "Eventos", "href": "#events"}
+                ],
+                "copy": {
+                    "sectionServices": {
+                        "header": "Nuestros servicios",
+                        "sundayHeader": "Servicio de Adoracion",
+                        "sundayHour": "Visitanos los domingos a las 3:00pm",
+                        "sundayInPerson": "<a href='#location'>EN PERSONA</a>",
+                        "sundayOnline": "<a href='#online'>EN LINEA</a>",
+                        "otherHeader": "Other services",
+                        "services": [
+                            {
+                                "title": "Servicio lunes",
+                                "location": "<span>En linea",
+                                "date": "Lunes a las 6:00pm",
+                                "link": "<a href='https://www.zoom.us' target='_blank' rel='noopener'>Attend via Zoom</a>"
+                            },
+                            {
+                                "title": "Servicio martes",
+                                "location": "<span>En linea",
+                                "date": "Martes a las 6:00pm",
+                                "link": "<a href='#location'>Attend in person</a>"
+                            },
+                            {
+                                "title": "Servicio miercoles",
+                                "location": "<span>En Persona",
+                                "date": "Lunes a las 6:00pm",
+                                "link": "<a href='https://www.zoom.us' target='_blank' rel='noopener'>Attend via Zoom</a>"
+                            },
+                            {
+                                "title": "Servicio jueves",
+                                "location": "<span>En linea",
+                                "date": "Jueves a las 6:00pm",
+                                "link": "<a href='https://www.zoom.us' target='_blank' rel='noopener'>Attend via Zoom</a>"
+                            }
+                        ]
+                    },
+                    "sectionLocation": {
+                        "header": "We'd love to see you in person",
+                        "locationCopy": "<h3 class='location__subheader'>We are located at:</h3><p><b>624 Annette St, Toronto, ON M6S&nbsp;2C4</b></p>"
+                    },
+                    "sectionOnline": {
+                        "header": "You can also join us online",
+                        "locationCopy": "<h3 class='online__subheader text-center'>Watch our livestream Sunday Service and past sermons on our Youtube channel</h3>",
+                        "locationLink": "<a class='text-center' href='https://www.google.com' target='_blank' rel='noopener'>Watch now</a>"
+                    },
+                    "calloutBlog": {
+                        "copy": "Keep growing your faith - uncover nuggets of faith in these articles penned by our family in Christ",
+                        "href": "<a href='/blog'>Read our blog \"Nuggets&nbsp;of&nbsp;Faith\"</a>",
+                        "hrefComp":""
+                    },
+                    "sectionEvents": {
+                        "header": "Upcoming events"
+                    },
+                    "calloutMessage": {
+                        "copy": "Tienes alguna pregunta o comentario? Nos encantaria escuchar de ti",
+                        "href": "<a href='/contacto'>Contactanos</a>",
+                        "hrefComp": ""
+                    }
+                }
+            },
+            "beliefs": {
+                "metadata": {
+                    "title": "Our Beliefs - Sharing God's Love with the World | Grace of God Nazarene Church",
+                    "description": "Learn about the beliefs of the Grace of God Nazarene Church: discover our emphasis on holiness, commitment to evangelism and missions, and belief in sanctification, divine healing, and the second coming of Jesus.",
+                    "esHref": "/creencias",
+                    "enHref": "/en/beliefs"
+                },
+                "hero": {
+                    "header": "Our Beliefs",
+                    "verse": "No te des prisa en hablar, ni se apresure tu corazón a proferir palabra delante de Dios. Porque Dios está en el cielo y tú en la tierra; por tanto sean pocas tus palabras.",
+                    "book": "Eclesiastés 5:2"
+                },
+                "quickLinks": [
+                    {"copy": "Explore", "href": "#explore"},
+                    {"copy": "Articles of Faith", "href": "#articles"},
+                    {"copy": "Characteristics", "href": "#characteristics"},
+                    {"copy": "Values", "href": "#values"}
+                ],
+                "copy": {
+                    "sectionExplore": {
+                        "header": "Explore our beliefs",
+                        "copy": "<p>Learn about the beliefs of the Grace of God Nazarene Church, a Protestant Christian denomination with roots in the Wesleyan-Holiness tradition. Discover Our emphasis on holiness, commitment to evangelism and missions, and belief in sanctification, divine healing, and the second coming of Jesus. Explore our values of education, worship, and family, and understand our connectional system of church government.</p>"
+                    },
+                    "sectionArticles": {
+                        "header": "Articles of Faith",
+                        "copy": "<p>The Articles of Faith represent our fundamental beliefs. They serve as a statement of faith and provide a framework for understanding our denomination's theological perspective and practice. They serve as a unifying declaration of what we believe and are the foundation for our ministry and mission.</p>",
+                        "accordions": [
+                            {
+                                "trigger": "The Triune God",
+                                "panel": "<p>We believe in one God, who exists in three persons - the Father, the Son (Jesus Christ), and the Holy Spirit.</p>"
+                            },
+                            {
+                                "trigger": "Jesus Christ",
+                                "panel": "<p>We believe in the divinity of Jesus Christ, his virgin birth, sinless life, atoning death, bodily resurrection, and ascension to heaven.</p>"
+                            },
+                            {
+                                "trigger": "The Holy Spirit",
+                                "panel": "<p>We believe in the Holy Spirit, who is a person and is part of the triune God. The Holy Spirit empowers believers to live a holy life and to bear witness to Christ.</p>"
+                            },
+                            {
+                                "trigger": "The Holy Scriptures",
+                                "panel": "<p>The Church of the Nazarene believes in the authority and inspiration of the Bible, which is the written word of God. The Bible is the final authority for all matters of faith and practice.</p>"
+                            },
+                            {
+                                "trigger": "Sin, Original and Personal",
+                                "panel": "<p>We believe that sin entered the world through Adam and Eve's disobedience, and that all human beings are born with a sin nature. We also believe that individuals commit personal sins and need forgiveness and salvation.</p>"
+                            },
+                            {
+                                "trigger": "Atonement",
+                                "panel": "<p>We believe that Jesus Christ's death on the cross provides the only means of salvation for humanity. Through his death and resurrection, believers are reconciled to God and receive eternal life.</p>"
+                            },
+                            {
+                                "trigger": "Prevenient Grace",
+                                "panel": "<p>We believe in prevenient grace, which is the grace of God that goes before us, preparing our hearts to receive salvation.</p>"
+                            },
+                            {
+                                "trigger": "Repentance",
+                                "panel": "<p>We believe that repentance is necessary for salvation. Repentance involves a genuine turning away from sin and a turning toward God.</p>"
+                            },
+                            {
+                                "trigger": "Justification, Regeneration, and Adoption",
+                                "panel": "<p>We believe that justification is the act of God declaring a sinner righteous based on faith in Christ. Regeneration is the new birth that occurs when a person accepts Christ as Lord and Savior. Adoption is the act of God receiving believers into His family.</p>"
+                            },
+                            {
+                                "trigger": "Entire Sanctification",
+                                "panel": "<p>We believe in the possibility of entire sanctification, which is a second work of grace that results in a believer being filled with the Holy Spirit and experiencing a life of victory over sin.</p>"
+                            },
+                            {
+                                "trigger": "The Church",
+                                "panel": "<p>We believe in the universal Church, which is made up of all believers in Christ. We also believe in the local church, which is a community of believers who gather for worship, fellowship, and service.</p>"
+                            },
+                            {
+                                "trigger": "Baptism",
+                                "panel": "<p>We practice baptism by immersion for believers. Baptism is an outward symbol of an inward commitment to follow Christ.</p>"
+                            },
+                            {
+                                "trigger": "The Lord's Supper",
+                                "panel": "<p>We practice the Lord's Supper as a memorial of Christ's death and as a means of grace for believers.</p>"
+                            },
+                            {
+                                "trigger": "Divine Healing",
+                                "panel": "<p>We believe that God can and does heal people physically, emotionally, and spiritually.</p>"
+                            },
+                            {
+                                "trigger": "The Second Coming of Christ",
+                                "panel": "<p>We believe in the imminent return of Christ, when he will judge the living and the dead and establish his kingdom on earth.</p>"
+                            },
+                            {
+                                "trigger": "Christian Stewardship",
+                                "panel": "<p>We believe that all believers are called to be good stewards of the resources that God has entrusted to them. This includes their time, talents, and material possessions, which should be used to further God's kingdom and bless others.</p>"
+                            }
+                        ]
+                    },
+                    "calloutVisit": {
+                        "copy": "Do you want to know more? Visit us during our Sunday Service and chat with one of our leaders",
+                        "href": "<a href='/service-location'>Visit us</a>",
+                        "hrefComp": ""
+                    },
+                    "sectionCharacteristics": {
+                        "header": "Our Nazarene characteristics",
+                        "copy": "<p>These defining characteristics of the Church of the Nazarene and its members shape the church's identity and mission and provide a framework for its theology and practice.</p>",
+                        "accordions": [
+                            {
+                                "trigger": "Wesleyan-Holiness Theology",
+                                "panel": "<p>We are part of the Wesleyan-Holiness tradition, which emphasizes the biblical teachings of John Wesley, the founder of Methodism, and the Holiness movement, which emphasized the importance of a life of sanctification and purity.</p>"
+                            },
+                            {
+                                "trigger": "Emphasis on Personal and Social Holiness",
+                                "panel": "<p>We place a strong emphasis on both personal and social holiness. Personal holiness involves living a life that is set apart for God and characterized by obedience to God's commands. Social holiness involves engaging in compassionate ministry and social justice to help those in need.</p>"
+                            },
+                            {
+                                "trigger": "Emphasis on Evangelism and Missions",
+                                "panel": "<p>We have a strong commitment to evangelism and missions, seeking to share the gospel of Jesus Christ with the world and to engage in compassionate ministry to those in need.</p>"
+                            },
+                            {
+                                "trigger": "Commitment to Education",
+                                "panel": "<p>We place a high value on education, with several universities and seminaries around the world. We believes in the importance of equipping our members with knowledge and skills to serve God effectively.</p>"
+                            },
+                            {
+                                "trigger": "Active Participation in Worship",
+                                "panel": "<p>We emphasize the importance of active participation in worship, including singing, prayer, scripture reading, and preaching. The church believes that worship is a vital part of a believer's spiritual growth and development.</p>"
+                            },
+                            {
+                                "trigger": "Support for Traditional Family Values",
+                                "panel": "<p>We place a high value on traditional family values, including the importance of marriage between one man and one woman and the sanctity of human life.</p>"
+                            }
+                        ]
+                    },
+                    "calloutBlog": {
+                        "copy": "You might also be interested in reading words from the hearts of our congreation",
+                        "href": "<a href='/blog'>Read our blog \"Nuggets&nbsp;of&nbsp;Faith\"</a>",
+                        "hrefComp": ""
+                    },
+                    "sectionValues": {
+                        "header": "Our Nazarene values",
+                        "copy": "<p>These values help shape the identity and mission of the Grace of God Nazarene Chuch and guide us in living out our faith.</p>",
+                        "accordions": [
+                            {
+                                "trigger": "We are a Christian people",
+                                "panel": "<p>As a Christian denomination, we value the centrality of Jesus Christ in all aspects of our theology, worship, and mission.</p>"
+                            },
+                            {
+                                "trigger": "We are a holiness people",
+                                "panel": "<p>We value the biblical concept of holiness, which emphasizes the transformational work of the Holy Spirit in a believer's life, leading to a life of obedience and love for God and others.</p>"
+                            },
+                            {
+                                "trigger": "We are a missional people",
+                                "panel": "<p>We value the call to share the gospel of Jesus Christ with the world and to engage in compassionate ministry to those in need.</p>"
+                            },
+                            {
+                                "trigger": "We are a disciplined people",
+                                "panel": "<p>We value the importance of spiritual disciplines, such as prayer, fasting, Bible study, and accountability, in order to grow in faith and holiness.</p>"
+                            },
+                            {
+                                "trigger": "We are a diverse people",
+                                "panel": "<p>We value the diversity of cultures, races, genders, and backgrounds within its membership and seeks to promote unity in Christ.</p>"
+                            },
+                            {
+                                "trigger": "We are a compassionate people",
+                                "panel": "<p>We value showing the love of Christ to others through acts of kindness, mercy, and justice.</p>"
+                            },
+                            {
+                                "trigger": "We are a visionary people",
+                                "panel": "<p>We value innovation and creativity in order to effectively engage with the world and share the gospel.</p>"
+                            }
+                        ]
+                    },
+                    "calloutMessage": {
+                        "copy": "Do you have any comments or questions?",
+                        "href": "<a href='/contact-us'>Contact us</a>",
+                        "hrefComp": ""
+                    }
+                }
+            }
         }
     }
 }

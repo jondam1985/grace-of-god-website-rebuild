@@ -1,0 +1,95 @@
+@import "../styles//mixins.scss";
+@import "../styles/variables.scss";
+
+.page-beliefs {
+    .accordions {
+        width: 100%;
+        margin-top: 2rem;
+
+        .accordion__trigger {
+            button {
+                width: 100%;
+                padding: 0.5rem 4rem 0.5rem 1rem;
+                font-weight: 600;
+                border-radius: 5px;
+                text-align: left;
+                font-size: 1.125rem;
+                margin-top: 0.75rem;
+            }
+            button[aria-expanded="true"] {
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+        }
+        
+        .accordion__panel {
+            width: 100%;
+            background: $white;
+            padding: 1rem;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border: 4px solid $white;
+        }
+    }
+
+    section.articles {
+        .accordions {
+            .accordion__trigger {
+                button {
+                    background: $secondary-color;
+                    color: $white;
+
+                    .trigger__expand,
+                    .trigger__collapse {
+                        svg {
+                            fill: $white;
+                        }
+                    }
+                }
+            }
+            .accordion__panel {
+                border-color: $secondary-color;
+            }
+        }
+    }
+    section.characteristics {
+        .accordions {
+            .accordion__trigger {
+                button {
+                    background: $quinary-color;
+                    color: $white;
+
+                    .trigger__expand,
+                    .trigger__collapse {
+                        svg {
+                            fill: $white;
+                        }
+                    }
+                }
+            }
+            .accordion__panel {
+                border-color: $quinary-color;
+            }
+        }
+    }
+    section.values {
+        .accordions {
+            .accordion__trigger {
+                button {
+                    background: $tertiary-color;
+                    color: $white;
+
+                    .trigger__expand,
+                    .trigger__collapse {
+                        svg {
+                            fill: $white;
+                        }
+                    }
+                }
+            }
+            .accordion__panel {
+                border-color: $tertiary-color;
+            }
+        }
+    }
+}

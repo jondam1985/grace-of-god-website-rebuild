@@ -1,0 +1,112 @@
+---
+import Accordion from '@components/Accordion.astro';
+import Hero from '@components/Hero.astro';
+import QuickLinks from '@components/QuickLinks.astro';
+import Layout from '@layouts/Layout.astro';
+import Content from 'public/content/content.json';
+import '@pages/beliefs.scss';
+import Callout from '@components/Callout.astro';
+
+const page = "beliefs";
+const lang = "en";
+const content = Content[lang];
+const pageContent = content.pages[page];
+const title = pageContent.metadata.title;
+const description = pageContent.metadata.description;
+const pageClass = `page-${page} ${lang}`;
+---
+
+<Layout
+    title={title}
+    description={description}
+    lang={lang}
+    esHref={pageContent.metadata.esHref}
+    enHref={pageContent.metadata.enHref}
+    pageClass={pageClass}
+    canonical={`${pageContent}["${lang}Href"]`}
+    >
+    <main id="main">
+        <Hero
+            heading={pageContent.hero.header}
+            verse={pageContent.hero.verse}
+            book={pageContent.hero.book}
+        />
+        <QuickLinks 
+            links={pageContent.quickLinks}
+        />
+        <section id="explore" class="section-alt explore">
+            <div class="container">
+                <h2 class="subheading">{pageContent.copy.sectionExplore.header}</h2>
+                <div class="explore__copy">
+                    <Fragment set:html={pageContent.copy.sectionExplore.copy} />
+                </div>
+            </div>
+        </section>
+        <section id="articles" class="section articles callout-at-bottom">
+            <div class="container">
+                <h2 class="subheading">{pageContent.copy.sectionArticles.header}</h2>
+                <div class="articles__copy">
+                    <Fragment set:html={pageContent.copy.sectionArticles.copy} />
+                </div>
+                <div class="articles__accordions">
+                    <Accordion 
+                    id="articlesAccordion"
+                    accordions={pageContent.copy.sectionArticles.accordions}
+                />
+                </div>
+            </div>
+        </section>
+        <div class="callout__container visit relative">
+            <Callout 
+                copy={pageContent.copy.calloutVisit.copy} 
+                href={pageContent.copy.calloutVisit.href} 
+                hrefComp={pageContent.copy.calloutVisit.hrefComp} 
+                last={false}
+            />
+        </div>
+        <section id="characteristics" class="section-alt characteristics callout-at-top callout-at-bottom">
+            <div class="container">
+                <h2 class="subheading">{pageContent.copy.sectionCharacteristics.header}</h2>
+                <div class="other__copy">
+                    <Fragment set:html={pageContent.copy.sectionCharacteristics.copy} />
+                </div>
+                <div class="characteristics__accordions">
+                    <Accordion 
+                    id="characteristicsAccordion"
+                    accordions={pageContent.copy.sectionCharacteristics.accordions}
+                />
+                </div>
+            </div>
+        </section>
+        <div class="callout__container blog relative">
+            <Callout 
+                copy={pageContent.copy.calloutBlog.copy} 
+                href={pageContent.copy.calloutBlog.href} 
+                hrefComp={pageContent.copy.calloutBlog.hrefComp} 
+                last={false}
+            />
+        </div>
+        <section id="values" class="section values callout-at-bottom callout-at-top">
+            <div class="container">
+                <h2 class="subheading">{pageContent.copy.sectionValues.header}</h2>
+                <div class="values__copy">
+                    <Fragment set:html={pageContent.copy.sectionValues.copy} />
+                </div>
+                <div class="values__accordions">
+                    <Accordion 
+                    id="valuesAccordion"
+                    accordions={pageContent.copy.sectionValues.accordions}
+                />
+                </div>
+            </div>
+        </section>
+        <div class="callout__container message relative last-callout">
+            <Callout 
+                copy={pageContent.copy.calloutMessage.copy} 
+                href={pageContent.copy.calloutMessage.href} 
+                hrefComp={pageContent.copy.calloutMessage.hrefComp} 
+                last={true}
+            />
+        </div>
+    </main>
+</Layout>

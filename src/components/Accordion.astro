@@ -1,0 +1,54 @@
+---
+import PlusSVG from '@components/PlusSVG.astro';
+import MinusSVG from '@components/MinusSVG.astro';
+import '@components/Accordion.scss';
+export interface Props {
+    id: string;
+    accordions: object;
+}
+
+const { id, accordions } = Astro.props;
+---
+
+<div id={id} class={`accordions accordions-${id}`}>
+    {accordions.map((v, index) => {
+        return (
+            <div class="accordion__item">
+                <div class={`accordion__trigger accordion__trigger--${index}`}>
+                    <h3>
+                        <button class="relative" data-group={id} data-index={index} aria-controls={`panel-${id}-${index}`} aria-expanded="false">
+                            {v.trigger}
+                            <div class="trigger__expand">
+                                <PlusSVG />    
+                            </div>
+                            <div class="trigger__collapse">
+                                <MinusSVG />
+                            </div>
+                        </button>
+                    </h3>
+                </div> 
+                <div id={`panel-${id}-${index}`} class={`accordion__panel accordion__panel-${index} hidden`}>
+                    <Fragment set:html={v.panel} />    
+                </div>   
+            </div>
+        )
+    })}
+</div>
+<script>
+    const toggleAccordion = (triggerEl) => {
+        if(triggerEl.getAttribute("aria-expanded") === "false") {
+            triggerEl.setAttribute("aria-expanded", "true");
+            document.getElementById(triggerEl.getAttribute("aria-controls")).classList.remove("hidden");
+        }
+        else {
+            triggerEl.setAttribute("aria-expanded", "false");
+            document.getElementById(triggerEl.getAttribute("aria-controls")).classList.add("hidden");
+        }
+    }
+
+    document.querySelectorAll(".accordion__trigger button").forEach(b => {
+        b.addEventListener("click", e => {
+            toggleAccordion(e.target);
+        })
+    })
+</script>

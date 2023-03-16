@@ -1,0 +1,189 @@
+---
+import Hero from '@components/Hero.astro';
+import QuickLinks from '@components/QuickLinks.astro';
+import Layout from '@layouts/Layout.astro';
+import Content from 'public/content/content.json';
+import ProfileCard from '@components/ProfileCard.astro';
+import AboutUsImg from '@assets/bg_church.jpg';
+import HistoryImg from '@assets/bg_church-old.png';
+import CommunitySVG from '@components/CommunitySVG.astro';
+import MusicSVG from '@components/MusicSVG.astro';
+import DoveSVG from '@components/DoveSVG.astro';
+import GospelSVG from '@components/GospelSVG.astro';
+import ProfileGina from '@assets/profile_gina.jpg';
+import ProfileOswaldo from '@assets/profile_oswaldo.jpg';
+import ProfileRoxana from '@assets/profile_roxana.jpg';
+import ProfileFrancisco from '@assets/profile_francisco.jpg';
+import Music from '@assets/bg_music.jpg';
+import Youth from '@assets/bg_youth.jpg';
+import SundaySchool from '@assets/bg_sunday-school.jpg';
+import Women from '@assets/bg_women.jpg';
+import Men from '@assets/bg_men.jpg';
+import '@pages/about.scss';
+import Tabs from '@components/Tabs.astro';
+import Callout from '@components/Callout.astro';
+
+const page = "about";
+const lang = "en";
+const content = Content[lang];
+const pageContent = content.pages[page];
+const title = pageContent.metadata.title;
+const description = pageContent.metadata.description;
+const pageClass = `page-${page} ${lang}`;
+
+const leadersPhotos = [ ProfileGina, ProfileOswaldo, ProfileRoxana, ProfileFrancisco ]
+
+const panelImages = [Music,Youth, SundaySchool, Women, Men]
+---
+
+<Layout
+    title={title}
+    description={description}
+    lang={lang}
+    esHref={pageContent.metadata.esHref}
+    enHref={pageContent.metadata.enHref}
+    pageClass={pageClass}
+    canonical={`${pageContent}["${lang}Href"]`}
+    >
+    <main id="main">
+        <Hero
+            heading={pageContent.hero.header}
+            verse={pageContent.hero.verse}
+            book={pageContent.hero.book}
+        />
+        <QuickLinks 
+            links={pageContent.quickLinks}
+        />
+        <section id="about" class="section-alt about callout-at-bottom">
+            <div class="container">
+                <h2 class="subheading">{pageContent.copy.sectionAbout.header}</h2>
+                <div class="flex flex-justify-between about__content">
+                    <div class="about__copy">
+                        <Fragment set:html={pageContent.copy.sectionAbout.copy} />
+                    </div>
+                    <div class="about__image">
+                        <img src={AboutUsImg} alt="" class="box-shadow" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="callout__container beliefs relative">
+            <Callout 
+                copy={pageContent.copy.calloutBeliefs.copy} 
+                href={pageContent.copy.calloutBeliefs.href} 
+                hrefComp={pageContent.copy.calloutBeliefs.hrefComp} 
+                last={false}
+            />
+        </div>
+        <section id="mission" class="section mission callout-at-top">
+            <div class="container">
+                <h2 class="subheading">{pageContent.copy.sectionMission.header}</h2>
+                <div class="mission__container relative">
+                    <div class="mission__accent"></div>
+                    <div class="text-center bg-white mission__content relative box-shadow">
+                        <Fragment set:html={pageContent.copy.sectionMission.copy} />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="values" class="section-alt values">
+            <div class="container">
+                <h2 class="subheading">{pageContent.copy.sectionValues.header}</h2>
+                <p>{pageContent.copy.sectionValues.copy}</p>
+                <div class="values__container relative flex flex-justify-evenly flex-align-center">
+                    <div class="value__item relative christian-people">
+                        <div class="value__icon">
+                            <CommunitySVG />
+                        </div>
+                        <div class="value__copy text-center">
+                            <p>{pageContent.copy.sectionValues.values.valueOne}</p>
+                        </div>
+                    </div>
+                    <div class="value__item relative praise">
+                        <div class="value__icon">
+                            <MusicSVG />
+                        </div>
+                        <div class="value__copy text-center">
+                            <p>{pageContent.copy.sectionValues.values.valueTwo}</p>
+                        </div>
+                    </div>
+                    <div class="value__item relative holiness">
+                        <div class="value__icon">
+                            <DoveSVG />
+                        </div>
+                        <div class="value__copy text-center">
+                            <p>{pageContent.copy.sectionValues.values.valueThree}</p>
+                        </div>
+                    </div>
+                    <div class="value__item relative gospel">
+                        <div class="value__icon">
+                            <GospelSVG />
+                        </div>
+                        <div class="value__copy text-center">
+                            <p>{pageContent.copy.sectionValues.values.valueFour}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="leaders" class="section leaders">
+            <div class="container">
+                <h2 class="subheading">{pageContent.copy.sectionLeaders.header}</h2>
+                <div class="leaders__content relative flex flex-justify-between flex-wrap">
+                    {pageContent.copy.sectionLeaders.profiles.map((v, index) => {
+                      return  <ProfileCard 
+                        image={leadersPhotos[index]}
+                        name={v.name}
+                        position={v.position}
+                        motto={v.motto}
+                      />
+                    })}
+                </div>
+            </div>
+        </section>
+        <section id="ministries" class="section-alt ministries callout-at-bottom">
+            <div class="container">
+                <h2 class="subheading">{pageContent.copy.sectionMinistries.header}</h2>
+                <p>{pageContent.copy.sectionMinistries.copy}</p>
+                <div class="ministries__content">
+                    <Tabs 
+                        tabGroupId="ministries"
+                        tabs={pageContent.copy.sectionMinistries.ministries.tabs}
+                        panels={pageContent.copy.sectionMinistries.ministries.panels}
+                        images={panelImages}
+                    />
+                </div>
+            </div>
+        </section>
+        <div class="callout__container visit relative">
+            <Callout 
+                copy={pageContent.copy.calloutVisit.copy} 
+                href={pageContent.copy.calloutVisit.href} 
+                hrefComp={pageContent.copy.calloutVisit.hrefComp} 
+                last={false}
+            />
+        </div>
+        <section id="history" class="section history callout-at-top callout-at-bottom">
+            <div class="container">
+                <h2 class="subheading">{pageContent.copy.sectionHistory.header}</h2>
+                <div class="flex flex-justify-between history__content  bg-white box-shadow">
+                    <div class="history__image">
+                        <img src={HistoryImg} alt="" />
+                    </div>
+                    <div class="history__copy">
+                        <Fragment set:html={pageContent.copy.sectionHistory.copy} />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="callout__container comment relative last-callout">
+            <Callout 
+                copy={pageContent.copy.calloutMessage.copy} 
+                href={pageContent.copy.calloutMessage.href} 
+                hrefComp={pageContent.copy.calloutMessage.hrefComp} 
+                last={true}
+            />
+        </div>
+    </main>
+
+</Layout>
