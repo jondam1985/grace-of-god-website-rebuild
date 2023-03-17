@@ -1,0 +1,74 @@
+---
+import Hero from '@components/Hero.astro';
+import PostCard from '@components/PostCard.astro';
+import Layout from '@layouts/Layout.astro';
+import Content from 'public/content/content.json';
+import Callout from '@components/Callout.astro';
+import '@pages/blog.scss';
+import Posts from 'public/content/posts.json';
+
+const page = "blog";
+const lang = "en";
+const content = Content[lang];
+const pageContent = content.pages[page];
+const title = pageContent.metadata.title;
+const description = pageContent.metadata.description;
+const pageClass = `page-${page} ${lang}`;
+
+const posts = Posts.posts;
+---
+
+<Layout
+    title={title}
+    description={description}
+    lang={lang}
+    esHref={pageContent.metadata.esHref}
+    enHref={pageContent.metadata.enHref}
+    pageClass={pageClass}
+    canonical={`${pageContent}["${lang}Href"]`}
+    >
+    <main id="main">
+        <Hero
+            heading={pageContent.hero.header}
+            verse={pageContent.hero.verse}
+            book={pageContent.hero.book}
+        />
+        <section id="introduction" class="section-alt">
+            <div class="container">
+                <h2 class="subheading">{pageContent.copy.sectionIntro.header}</h2>
+                <div class="introduction__content">
+                    <Fragment set:html={pageContent.copy.sectionIntro.copy} />
+                </div>
+            </div>
+        </section>
+        <section id="posts" class="section posts callout-at-bottom">
+            <div class="container">
+                <div class="posts__container">
+                    {posts.map((p, index) => {
+                        return (
+                            <PostCard 
+                                lang={lang}
+                                id={p.id}
+                                title={p.title}
+                                description={p.description}
+                                length={p.length}
+                                topic={p.topic}
+                                author={p.author}
+                                date={p.date}
+                                image={p.image}
+                            />
+                        )
+                    })}
+                </div>
+            </div>
+        </section>
+        <div class="callout__container comment relative last-callout">
+            <Callout 
+                copy={pageContent.copy.calloutMessage.copy} 
+                href={pageContent.copy.calloutMessage.href} 
+                hrefComp={pageContent.copy.calloutMessage.hrefComp} 
+                last={true}
+            />
+        </div>
+    </main>
+</Layout>

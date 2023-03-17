@@ -1,0 +1,42 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Posts from "public/content/posts.json";
+
+
+
+//console.log(staticPaths);
+
+export async function getStaticPaths() {
+    const posts = Posts.posts;
+
+const staticPaths = posts.reduce((acc, v) => {
+    acc.push({params: {id: v.id}});
+    return acc;
+}, []);
+
+    return staticPaths;
+
+    // return [
+    //     {params: {id: "1"}},
+    //     {params: {id: "2"}},
+    //     {params: {id: "3"}},
+    //     {params: {id: "4"}},
+    // ]
+}
+
+const { id } = Astro.params;
+---
+
+<Layout
+    title="test"
+    description="test"
+    lang="en"
+    esHref=""
+    enHref=""
+    pageClass="test"
+    canonical="test"
+    >
+    <main id="main">
+        <h1>{id}</h1>
+    </main>
+</Layout>

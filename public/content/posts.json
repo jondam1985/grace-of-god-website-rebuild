@@ -1,0 +1,44 @@
+{
+    "posts": [
+        {
+            "id": "1",
+            "title": "Lorem 1",
+            "description": "<p>Commodo commodo elit enim incididunt excepteur incididunt laboris in deserunt id cillum consequat pariatur anim. Dolor duis mollit enim nisi elit nisi adipisicing. Proident consequat eiusmod reprehenderit deserunt labore eu do sit.</p>",
+            "length": "5 minutes",
+            "topic": "Sermon",
+            "author": "John Doe",
+            "date": "February 20, 2023",
+            "image": "https://images.nationalgeographic.org/image/upload/v1638892272/EducationHub/photos/hoh-river-valley.jpg"
+        },
+        {
+            "id": "2",
+            "title": "Lorem 2",
+            "description": "<p>Commodo excepteur fugiat elit aute minim nisi Lorem sunt sit duis. Sint occaecat culpa veniam do aute ad. Incididunt exercitation ad aute duis.</p>",
+            "length": "10 minutes",
+            "topic": "Reflexion",
+            "author": "Jane Doe",
+            "date": "February 10, 2023",
+            "image": "https://images.nationalgeographic.org/image/upload/v1638892272/EducationHub/photos/hoh-river-valley.jpg"
+        },
+        {
+            "id": "3",
+            "title": "Lorem 3",
+            "description": "<p>Et nisi excepteur magna nostrud. Ullamco culpa fugiat ad consectetur incididunt Lorem consequat esse. Esse eiusmod reprehenderit pariatur occaecat proident magna ipsum. Duis velit deserunt laborum duis deserunt Lorem sunt excepteur laboris mollit ullamco proident. Labore cupidatat ut et labore aute ad dolor eu nisi aute sunt sunt cillum cillum. Do enim et ex officia elit voluptate labore id.</p>",
+            "length": "20 minutes",
+            "topic": "Bible study",
+            "author": "Jane Doe",
+            "date": "March 1, 2023",
+            "image": "https://images.nationalgeographic.org/image/upload/v1638892272/EducationHub/photos/hoh-river-valley.jpg"
+        },
+        {
+            "id": "4",
+            "title": "Lorem 4",
+            "description": "<p>Dolore aute nisi deserunt in enim. Consequat mollit irure aliqua nulla elit adipisicing eu laborum. Reprehenderit ipsum laboris eiusmod est excepteur et minim cupidatat. Dolor ex laboris eu sit ex do.</p>",
+            "length": "3 minutes",
+            "topic": "Sermon",
+            "author": "Janice Doe",
+            "date": "December 28, 2023",
+            "image": "https://images.nationalgeographic.org/image/upload/v1638892272/EducationHub/photos/hoh-river-valley.jpg"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+@import "../styles/mixins.scss";
+@import "../styles/variables.scss";
+
+
+.page-blog {
+    .posts__container {
+        width: 100%;
+    }
+    .callout .callout__ctas a {
+        width: 43%;
+    }
+}
