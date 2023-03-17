@@ -1,0 +1,166 @@
+---
+import '@components/ContactForm.scss';
+import LoadingSVG from '@components/LoadingSVG.astro';
+
+export interface Props {
+    lang: string;
+}
+
+const { lang } = Astro.props
+---
+
+<div class="contact-form relative">
+    <form tabindex="-1" id="contactForm" novalidate>
+        <div class="disclaimer">
+            <p>{lang == "es" ? "Todos los campos son requeridos a menos que se indique lo contrario" : "All fields are required unless otherwise noted"}</p>
+        </div>
+        <fieldset>
+            <div class="form-group">
+                <label for="name">{lang == "es" ? "Nombre" : "Name"}</label>
+                <input maxlength="100" type="text" autocomplete="name" aria-required="true" aria-invalid="false" id="name" name="name" placeholder={lang == "es" ? "Ejemplo: Jane Doe" : "e.g. Jane Doe"} required>
+                <p id="nameError" class="error-message hidden">{lang == "es" ? "Nombre invalido" : "Invalid name"}</p>
+            </div>
+            <div class="form-group">
+                <label for="email">{lang == "es" ? "Correo electronico" : "Email"}</label>
+                <input maxlength="100" type="email" autocomplete="email" aria-required="true" aria-invalid="false" id="email" name="email" placeholder={lang == "es" ? "Ejemplo: nombre@dominio.com" : "e.g. name@domain.com"} required>
+                <p id="emailError" class="error-message hidden">{lang == "es" ? "Correo electronico invalido" : "Invalid email"}</p>
+            </div>
+            <div class="form-group">
+                <label for="phone">{lang == "es" ? "Telefono (opcional)" : "Phone (optional)"}</label>
+                <input maxlength="10" type="tel" autocomplete="tel" aria-required="false" aria-invalid="false" id="phone" name="phone" placeholder={lang == "es" ? "5555467655" : "5555467655"}>
+            </div>
+            <div class="form-group">
+                <label for="subject">{lang == "es" ? "Asunto" : "Subject"}</label>
+                <input maxlength="100" type="text" aria-required="true" aria-invalid="false" id="subject" name="subject" placeholder={lang == "es" ? "Ejemplo: Pregunta sobre sus creencias" : "e.g. Question about your beliefs"} required>
+                <p id="subjectError" class="error-message hidden">{lang == "es" ? "Asunto invalido" : "Invalid subject"}</p>
+            </div>
+            <div class="form-group">
+                <label for="message">{lang == "es" ? "Mensaje" : "Message"}</label>
+                <textarea maxlength="1000" aria-required="true" aria-invalid="false" id="message" name="message" placeholder={lang == "es" ? "Escribe tu mensaje aqui" : "Enter your message here"} required></textarea>
+                <p id="messageError" class="error-message hidden">{lang == "es" ? "Mensaje invalido" : "Invalid message"}</p>
+            </div>
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            <div class="form-group">
+                <button id="submitMessage" type="submit">
+                    {lang == "es" ? "Enviar mensaje" : "Send message"}
+                </button>
+                <div class="loading__icon">
+                    <LoadingSVG />
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    <div tabindex="-1" class="response-message">
+        <div class="success-message">
+            <h3>{lang == "es" ? "Tu mensaje fue enviado exitosamente!" : "Your message was sent successfully!"}</h3>
+            <p>{lang == "es" ? "Estaremos en contacto contigo pronto" : "We'll be in touch soon"}</p>
+            <button class="reset-form">{lang == "es" ? "Envia otro mensage" : "Send another message"}</button>
+        </div>
+        <div class="error-message">
+            <h3>{lang == "es" ? "Lo sentimos, algo salio mal" : "Sorry, something wen wrong"}</h3>
+            <p>{lang == "es" ? "Por favor intenta enviar el mensaje nuevamente mas tarde" : "Please try to send a message again later"}</p>
+            <button class="reset-form">{lang == "es" ? "Intenta nuevamente" : "Try again"}</button>
+        </div>
+    </div>
+</div>
+<script>
+    
+    //Error handling
+    const setError = (input) => {
+        input.setAttribute("aria-labelledby", `${input.id}Error`);
+        input.setAttribute("aria-invalid", "true");
+        document.getElementById(`${input.id}Error`).classList.remove('hidden');
+    }
+
+    const clearError = (input) => {
+        input.removeAttribute("aria-labelledby");
+        input.setAttribute("aria-invalid", "false");
+        document.getElementById(`${input.id}Error`).classList.add('hidden');
+    }
+
+    //Form rules
+    const validations = {
+        noEmpty: (input) => {
+            if(input.value.trim().length <= 0) {
+                setError(input);
+            }
+            else {
+                clearError(input);
+            }
+            return input.value.trim().length > 0;
+        },
+        validEmail: (input) => {
+            const regex = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
+            if(!regex.test(input.value)) {
+                setError(input);
+            }
+            else {
+                clearError(input);
+            }
+            return regex.test(input.value);
+        }
+    }
+
+    //Form validation
+    const validateForm = () => {
+        const nameValid = validations.noEmpty(document.getElementById("name"));
+        console.log("name: ", nameValid);
+        const emailValid = validations.validEmail(document.getElementById("email"));
+        console.log("email: ",emailValid);
+        const subjectValid = validations.noEmpty(document.getElementById("subject"));
+        console.log("subject: ", subjectValid);
+        const messageValid = validations.noEmpty(document.getElementById("message"));
+        console.log("message: ", messageValid);
+
+        return nameValid && emailValid && subjectValid && messageValid;
+    }
+
+    //Form submission
+    const sendMessage = () => {
+        if(!validateForm()){
+            document.querySelector("[aria-invalid='true']").focus();
+        }
+        else {
+            document.querySelector(".contact-form").classList.add("submitting");
+            fetch(`https://formsubmit.co/ajax/e15fcd8948133c7efabe77e7c5892780`, {
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            phone: document.getElementById("phone")?.value,
+            subject: document.getElementById("subject").value,
+            message: document.getElementById("message").value,
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        document.querySelector(".contact-form").classList.add(data.success == "true" ? "submitted" : "submission-error");
+        document.querySelector(".response-message").focus();
+    })
+    .catch(error => console.log(error));
+    }
+    }
+
+    document.getElementById("submitMessage").addEventListener("click", e => {
+        e.preventDefault();
+        sendMessage();
+    })
+
+    document.querySelectorAll("button.reset-form").forEach(b => {
+        b.addEventListener("click", e => {
+            const form = document.getElementById("contactForm");
+            const formContainer = document.querySelector(".contact-form");
+
+            form.reset();
+            formContainer.classList.remove("submitting");
+            formContainer.classList.remove("submitted");
+            formContainer.classList.remove("submission-error");
+            form.focus();
+        })
+    })
+</script>

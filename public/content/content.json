@@ -699,6 +699,24 @@
                         "hrefComp": "<a href='/contact-us'>Send us a message</a>"
                     }
                 }
+            },
+            "contact": {
+                "metadata": {
+                    "title": "Contact us - Sharing God's Love with the World | Grace of God Nazarene Church",
+                    "description": "",
+                    "esHref": "/contacto",
+                    "enHref": "/en/contact-us"
+                },
+                "hero": {
+                    "header": "Contact us",
+                    "verse": "No te des prisa en hablar, ni se apresure tu corazón a proferir palabra delante de Dios. Porque Dios está en el cielo y tú en la tierra; por tanto sean pocas tus palabras.",
+                    "book": "Eclesiastés 5:2"
+                },
+                "copy": {
+                    "sectionIntro": {
+                        "header": "We would love to hear from you"
+                    }
+                }
             }
         }
     }

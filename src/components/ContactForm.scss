@@ -1,0 +1,137 @@
+@import "../styles//variables.scss";
+@import "../styles/mixins.scss";
+
+.contact-form {
+    .response-message,
+    .success-message,
+    .error-message,
+    .loading__icon {
+        display: none;
+    }
+
+    &.submitting {
+        .loading__icon {
+            display: block;
+            animation: rotate 2s infinite linear;
+        }
+
+        @keyframes rotate {
+            from {transform: rotate(0deg);}
+            to {transform: rotate(180deg);}
+        }
+    }
+
+    &.submitted {
+        .response-message {
+            display: block;
+            .success-message {
+                display: block;
+            }
+        }
+        form {
+            display: none;
+        }
+    }
+    &.submission-error {
+        .response-message {
+            display: block;
+            .error-message {
+                display: block;
+            }
+        }
+        form {
+            display: none;
+        }
+    }
+
+    form {
+        margin-top: 1rem;
+        
+        fieldset {
+            border: none;
+            margin-top: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.1rem;
+            font-weight: 600;
+        }
+
+        input,
+        textarea {
+            padding: 0.5rem;
+            width: 100%;
+            border-radius: 5px;
+            border: 2px solid $secondary-color;
+        }
+
+        textarea {
+            min-height: 7rem;
+        }
+
+        button {
+            padding: 1rem;
+            background: $secondary-color;
+            border: 2px solid $secondary-color;
+            color: $white;
+            font-weight: 600;
+            font-size: 1.125rem;
+            border-radius: 5px;
+        }
+        button:hover {
+            color: $secondary-color;
+            background: $white;
+        }
+        button:focus {
+            outline: 2px dotted $secondary-color;
+        }
+
+        .loading__icon {
+            width: 40px;
+            position: absolute;
+            bottom: 23px;
+            left: 29%;
+
+            @include mobile {
+                left: 50%;
+            }
+
+            svg {
+                fill: $secondary-color;
+            }
+        }
+    }
+
+    .success-message,
+    .error-message {
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1.125rem;
+            margin-bottom: 1rem;
+        }
+        button {
+            padding: 0.5rem;
+            background: $secondary-color;
+            border: 2px solid $secondary-color;
+            color: $white;
+            border-radius: 5px;
+            font-size: 1.125rem;
+            min-width: 12rem;
+        }
+        button:hover {
+            background: $white;
+            color: $secondary-color;
+        }
+        button:focus {
+            outline: 2px dotted $secondary-color;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+@import "../styles/variables.scss";
+@import "../styles/mixins.scss";
+
+.page-contact {
+    .contact__content {
+        width: 100%;
+        flex-wrap: wrap;
+
+        @include desktop {
+            flex-wrap: nowrap;
+        }
+
+        .contact-form__container {
+            width: 100%;
+            margin-bottom: 2rem;
+            border: 2px solid $secondary-color;
+            padding: 1rem;
+            border-radius: 5px;
+    
+            @include desktop {
+                width: 65%;
+                margin-bottom: 0;
+            }
+        }
+
+        .contact-info__container {
+            width: 100%;
+
+            @include desktop {
+                margin-top: 1rem;
+            }
+
+            svg {
+                fill: $quinary-color;
+            }
+
+            @include desktop {
+                width: 30%;
+            }
+
+            .contact__item {
+                margin-bottom: 1rem;
+            }
+
+            .contact__email {
+                .email__icon {
+                    width: 20px;
+                    margin-right: 0.5rem;
+                }
+            }
+            .contact__address {
+                .address__icon {
+                    width: 20px;
+                    display: inline-block;
+                    margin-right: 0.5rem;
+                }
+
+                .contact__address {
+                    width: 100%;
+                }
+            }
+            .contact__map {
+                width: 100%;
+
+                iframe {
+                    width: 100%;
+                    aspect-ratio: 1;
+                }
+            }
+        }
+    }
+}
