@@ -11,16 +11,13 @@ export interface Props {
 const { heading, verse, book, image } = Astro.props;
 ---
 
-<section role="banner" class="hero">
+<section role="banner" class={`hero ${verse == "" && "no-verse"}`}>
     <div class="container relative">
         <h1 class="hero__heading">
             {heading}
         </h1>
         <div class="hero__verse">
-            <Verse 
-                copy={verse}
-                book={book}
-            />
+            {verse !== "" && <Verse copy={verse} book={book} />}
         </div>
     </div>
 </section>

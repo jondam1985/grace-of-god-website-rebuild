@@ -1,0 +1,39 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Content from 'public/content/content.json';
+import Hero from '@components/Hero.astro';
+import '@pages/contact.scss';
+
+const page = "privacy";
+const lang = "en";
+const content = Content[lang];
+const pageContent = content.pages[page];
+const title = pageContent.metadata.title;
+const description = pageContent.metadata.description;
+const pageClass = `page-${page} ${lang}`;
+---
+
+<Layout
+    title={title}
+    description={description}
+    lang={lang}
+    esHref={pageContent.metadata.esHref}
+    enHref={pageContent.metadata.enHref}
+    pageClass={pageClass}
+    canonical={`${pageContent}["${lang}Href"]`}
+    >
+    <main id="main">
+        <Hero
+            heading={pageContent.hero.header}
+            verse={pageContent.hero.verse}
+            book={pageContent.hero.book}
+        />
+        <section id="privacy" class="section-alt privacy">
+            <div class="container">
+                <div class="privacy__content">
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+</Layout>

@@ -10,4 +10,10 @@
         font-family: $secondary-font;
         margin-bottom: 4rem;
     }
+
+    &.no-verse {
+        h1 {
+            margin-bottom: 0;
+        }
+    }
 }

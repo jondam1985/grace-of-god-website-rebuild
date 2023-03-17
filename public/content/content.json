@@ -709,8 +709,8 @@
                 },
                 "hero": {
                     "header": "Contact us",
-                    "verse": "No te des prisa en hablar, ni se apresure tu corazón a proferir palabra delante de Dios. Porque Dios está en el cielo y tú en la tierra; por tanto sean pocas tus palabras.",
-                    "book": "Eclesiastés 5:2"
+                    "verse": "",
+                    "book": ""
                 },
                 "copy": {
                     "sectionIntro": {
@@ -727,8 +727,8 @@
                 },
                 "hero": {
                     "header": "Sitemap",
-                    "verse": "No te des prisa en hablar, ni se apresure tu corazón a proferir palabra delante de Dios. Porque Dios está en el cielo y tú en la tierra; por tanto sean pocas tus palabras.",
-                    "book": "Eclesiastés 5:2"
+                    "verse": "",
+                    "book": ""
                 },
                 "copy": {
                     "sectionSitemap": {
@@ -755,6 +755,19 @@
                             }
                         ]
                     }
+                }
+            },
+            "privacy": {
+                "metadata": {
+                    "title": "Privacy Policy - Sharing God's Love with the World | Grace of God Nazarene Church",
+                    "description": "",
+                    "esHref": "/sitemap",
+                    "enHref": "/en/sitemap"
+                },
+                "hero": {
+                    "header": "Privacy policy",
+                    "verse": "",
+                    "book": ""
                 }
             }
         }
