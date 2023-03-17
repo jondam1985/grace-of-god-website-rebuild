@@ -90,12 +90,16 @@
     position: relative;
     padding: 4rem 0;
     background-image: linear-gradient(-45deg, $primary-color, $white);
+    
 }
 .section-alt {
     position: relative;
     padding: 4rem 0;
     background: $white;
     
+}
+.section-first {
+    box-shadow: 0 -3px 8px $secondary-color;
 }
 .callout-at-bottom {
     padding-bottom: 13rem;
