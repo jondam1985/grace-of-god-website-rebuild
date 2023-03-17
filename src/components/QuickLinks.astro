@@ -7,7 +7,7 @@ export interface Props {
 const { links } = Astro.props;
 ---
 
-<section class="quick-links relative container">
+<section class="quick-links relative container relative">
     <div class="quick-links__container flex flex-align-center flex-justify-evenly box-shadow">
         {links.map(v => {
             return <a class={`quick-link text-center ${v.href}`} href={v.href}>{v.copy}</a>

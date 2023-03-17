@@ -6,6 +6,8 @@ header {
     height: 6rem;
     width: 100%;
     background: $white;
+    box-shadow: 0 3px 8px $secondary-color;
+    z-index: 2;
 
     @include desktop {
         font-size: 0.825rem;
@@ -75,7 +77,7 @@ header {
                 transform: translate(0, -50%);
             }
             span:last-of-type::before {
-                bottom: 0;
+                bottom: 1px;
             }
         }
     }

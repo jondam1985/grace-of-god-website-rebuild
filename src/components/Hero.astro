@@ -11,7 +11,7 @@ export interface Props {
 const { heading, verse, book, image } = Astro.props;
 ---
 
-<section role="banner" class={`hero ${verse == "" && "no-verse"}`}>
+<section role="banner" class={`hero ${verse == "" && "no-verse"} relative`}>
     <div class="container relative">
         <h1 class="hero__heading">
             {heading}
