@@ -717,6 +717,45 @@
                         "header": "We would love to hear from you"
                     }
                 }
+            },
+            "sitemap": {
+                "metadata": {
+                    "title": "Sitemap - Sharing God's Love with the World | Grace of God Nazarene Church",
+                    "description": "",
+                    "esHref": "/sitemap",
+                    "enHref": "/en/sitemap"
+                },
+                "hero": {
+                    "header": "Sitemap",
+                    "verse": "No te des prisa en hablar, ni se apresure tu corazón a proferir palabra delante de Dios. Porque Dios está en el cielo y tú en la tierra; por tanto sean pocas tus palabras.",
+                    "book": "Eclesiastés 5:2"
+                },
+                "copy": {
+                    "sectionSitemap": {
+                        "links": [
+                            {
+                                "copy": "Homepage",
+                                "href": "/en/"
+                            },
+                            {
+                                "copy": "About us",
+                                "href": "/en/about-us"
+                            },
+                            {
+                                "copy": "Services & location",
+                                "href": "/en/services-location"
+                            },
+                            {
+                                "copy": "Our beliefs",
+                                "href": "/en/beliefs"
+                            },
+                            {
+                                "copy": "Blog \"Nuggets of Faith\"",
+                                "href": "/en/blog"
+                            }
+                        ]
+                    }
+                }
             }
         }
     }

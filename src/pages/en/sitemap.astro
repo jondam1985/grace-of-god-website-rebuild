@@ -1,0 +1,41 @@
+---
+import '@pages/sitemap.scss';
+import Hero from '@components/Hero.astro';
+import Layout from '@layouts/Layout.astro';
+import Content from 'public/content/content.json';
+
+const page = "sitemap";
+const lang = "en";
+const content = Content[lang];
+const pageContent = content.pages[page];
+const title = pageContent.metadata.title;
+const description = pageContent.metadata.description;
+const pageClass = `page-${page} ${lang}`;
+---
+
+<Layout
+    title={title}
+    description={description}
+    lang={lang}
+    esHref={pageContent.metadata.esHref}
+    enHref={pageContent.metadata.enHref}
+    pageClass={pageClass}
+    canonical={`${pageContent}["${lang}Href"]`}
+    >
+    <main id="main">
+        <Hero
+            heading={pageContent.hero.header}
+            verse={pageContent.hero.verse}
+            book={pageContent.hero.book}
+        />
+        <section id="sitemap" class="section-alt sitemap">
+            <div class="container">
+                <div class="sitemap__content">
+                    {pageContent.copy.sectionSitemap.links.map(v => {
+                        return <a class="sitemap__link relative" href={v.href}>{v.copy}</a>
+                    })}
+                </div>
+            </div>
+        </section>
+    </main>
+</Layout>
