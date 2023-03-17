@@ -2,17 +2,13 @@
 import Layout from "@layouts/Layout.astro";
 import Posts from "public/content/posts.json";
 
-
-
-//console.log(staticPaths);
-
 export async function getStaticPaths() {
     const posts = Posts.posts;
 
-const staticPaths = posts.reduce((acc, v) => {
-    acc.push({params: {id: v.id}});
-    return acc;
-}, []);
+    const staticPaths = posts.reduce((acc, v) => {
+        acc.push({params: {id: v.id}});
+        return acc;
+    }, []);
 
     return staticPaths;
 
@@ -37,6 +33,18 @@ const { id } = Astro.params;
     canonical="test"
     >
     <main id="main">
-        <h1>{id}</h1>
+        <h1 class="header">{id}</h1>
+        <div class="post__details">
+            <div class="post__details flex flex-align-center flex-justify-left">
+                <!-- <p><b>{lang == "es" ? "Tiempo de lectura:" : "Reading time:"}</b> {length}</p>
+                <p><b>{lang == "es" ? "Tema:" : "Topic:"}</b> {topic}</p>
+                <p><b>{lang == "es" ? "Autor:" : "Author:"}</b> {author}</p>
+                <p><b>{lang == "es" ? "Fecha:" : "Date:"}</b> {date}</p> -->
+            </div>
+            <div class="post__image"></div>
+            <div class="post__content">
+                <Fragment set:html="" />
+            </div>
+        </div>
     </main>
 </Layout>
