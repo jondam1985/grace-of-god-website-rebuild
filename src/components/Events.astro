@@ -1,14 +1,43 @@
 ---
+import Airtable from 'Airtable';
 import EventCard from '@components/EventCard.astro';
 export interface Props {
     data: object;
 } 
 
 const { data } = Astro.props;
+
+var base = new Airtable({apiKey: 'patASZXZ7wZJ7UAze.d6f74d1a0071400f4e538494d110713361c7f49cff46d77737deb93602a1cbc3'}).base('appg1WC3k58wcqQ72');
+
+const allRecords = (airtableBase) => {
+    return (
+        airtableBase("events").select({
+            view: "All",
+        }).all()
+    )
+}
+
+const lang = "en"
+const language = lang == "en" ? "english" : "spanish"
+
+const allEvents = await allRecords(base);
+
+const events = allEvents.filter(v => {
+    return v["fields"]["Language"] == language;
+}).reduce((acc, x) => {
+    acc.push({
+        title: x["fields"]["Title"],
+        description: x["fields"]["Description"],
+        date: x["fields"]["Date"],
+        location: x["fields"]["Location"],
+        href: x["fields"]["Href"],
+    });
+    return acc;
+}, []);
 ---
 
 <div class="events__container flex flex-align-top flex-justify-center flex-wrap bg-white box-shadow">
-    {data.map(x => {
-        return (<EventCard title={x.title} description={x.description} date={x.date} location={x.location} locationHref={x.locationHref} addedClass="box-shadow" />)
+    {events.map((x, index) => {
+        return (<EventCard title={x["title"]} description={x["description"]} date={x["date"]} location={x["location"]} locationHref={x["href"]} addedClass="box-shadow" />)
     })}
 </div>

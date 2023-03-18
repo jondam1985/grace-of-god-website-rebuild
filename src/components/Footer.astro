@@ -14,9 +14,9 @@ const { lang } = Astro.props;
 <footer class="relative">
     <div class="container footer-navigation flex flex-align-center flex-justify-center">
         <nav class="footer-nav__main-nav flex flex-align-center flex-justify-center" aria-label="Footer navigation bar">
-            <a class="flex flex-align-center" href={lang == "es" ? "/" : "/en"}><span>{lang == "es" ? "Contacto" : "Contact"}</span></a>
-            <a class="flex flex-align-center" href={lang == "es" ? "/" : "/en"}><span>{lang == "es" ? "Privacidad" : "Privacy"}</span></a>
-            <a class="flex flex-align-center" href={lang == "es" ? "/" : "/en"}><span>Sitemap</span></a>
+            <a class="flex flex-align-center" href={lang == "es" ? "/contacto" : "/en/contact-us"}><span>{lang == "es" ? "Contacto" : "Contact"}</span></a>
+            <a class="flex flex-align-center" href={lang == "es" ? "/politica-de-privacidad" : "/en/privacy-policy"}><span>{lang == "es" ? "Privacidad" : "Privacy"}</span></a>
+            <a class="flex flex-align-center" href={lang == "es" ? "/sitemap" : "/en/sitemap"}><span>Sitemap</span></a>
         </nav>
         <div class=" flex flex-align-center footer-nav__second-nav">
             <div class="footer-nav__social-links flex flex-align-center flex-justify-center">

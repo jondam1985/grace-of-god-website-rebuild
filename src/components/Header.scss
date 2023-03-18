@@ -6,7 +6,7 @@ header {
     height: 6rem;
     width: 100%;
     background: $white;
-    box-shadow: 0 3px 8px $secondary-color;
+    box-shadow: 0 1px 8px $secondary-color;
     z-index: 2;
 
     @include desktop {

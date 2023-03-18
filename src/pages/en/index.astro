@@ -75,8 +75,9 @@ const events = [
 					/>
 				</div>
 			</div>
+			<div class="hero-shadow"></div>
 		</div>
-		<section class="section-alt sunday-service text-center relative section-first">
+		<section class="section-alt sunday-service text-center relative ">
 			<div class="container">
 				<div class="sunday-service__callout bg-white box-shadow relative">
 					<h2>{pageContent.copy.sectionSundayService.calloutOne.copy} 
@@ -147,7 +148,7 @@ const events = [
 		<section class="section events">
 			<div class="container">
 				<h2 class="subheading">{pageContent.copy.sectionEvents.header}</h2>
-				<Events data={events} />
+				<Events client:visible data={events} />
 			</div>
 		</section>
 	</main>

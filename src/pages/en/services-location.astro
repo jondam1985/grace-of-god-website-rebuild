@@ -67,7 +67,7 @@ const events = [
         <QuickLinks 
             links={pageContent.quickLinks}
         />
-        <section id="services" class="section-alt services section-first">
+        <section id="services" class="section-alt services ">
             <div class="container">
                 <h2 class="subheading">{pageContent.copy.sectionServices.header}</h2>
                     <div class="services__container">
@@ -137,7 +137,7 @@ const events = [
         <section id="events" class="section events callout-at-bottom">
 			<div class="container">
 				<h2 class="subheading">{pageContent.copy.sectionEvents.header}</h2>
-				<Events data={events} />
+				<Events client:visible data={events} />
 			</div>
         </section>
         <div class="callout__container comment relative last-callout">

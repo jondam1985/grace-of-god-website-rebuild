@@ -2,16 +2,16 @@
 
     //Main nav active states
 
-    .page-homepage {
+    .page-about {
         header {
             .main-nav__link.about {
                 @include active-nav;
             }
         }
     }
-    .page-services {
+    .page-location {
         header {
-            .main-nav__link.services {
+            .main-nav__link.location {
                 @include active-nav;
             }
         }

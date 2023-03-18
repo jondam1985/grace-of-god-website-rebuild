@@ -18,12 +18,12 @@ const { lang } = Astro.props
             <div class="form-group">
                 <label for="name">{lang == "es" ? "Nombre" : "Name"}</label>
                 <input maxlength="100" type="text" autocomplete="name" aria-required="true" aria-invalid="false" id="name" name="name" placeholder={lang == "es" ? "Ejemplo: Jane Doe" : "e.g. Jane Doe"} required>
-                <p id="nameError" class="error-message hidden">{lang == "es" ? "Nombre invalido" : "Invalid name"}</p>
+                <p id="nameError" class="error-message hidden">{lang == "es" ? "Por favor ingrese un nombre" : "Please enter a name"}</p>
             </div>
             <div class="form-group">
                 <label for="email">{lang == "es" ? "Correo electronico" : "Email"}</label>
                 <input maxlength="100" type="email" autocomplete="email" aria-required="true" aria-invalid="false" id="email" name="email" placeholder={lang == "es" ? "Ejemplo: nombre@dominio.com" : "e.g. name@domain.com"} required>
-                <p id="emailError" class="error-message hidden">{lang == "es" ? "Correo electronico invalido" : "Invalid email"}</p>
+                <p id="emailError" class="error-message hidden">{lang == "es" ? "Por favor ingrese una direccion de correo electronica valida" : "Please enter a valid email address"}</p>
             </div>
             <div class="form-group">
                 <label for="phone">{lang == "es" ? "Telefono (opcional)" : "Phone (optional)"}</label>
@@ -32,12 +32,13 @@ const { lang } = Astro.props
             <div class="form-group">
                 <label for="subject">{lang == "es" ? "Asunto" : "Subject"}</label>
                 <input maxlength="100" type="text" aria-required="true" aria-invalid="false" id="subject" name="subject" placeholder={lang == "es" ? "Ejemplo: Pregunta sobre sus creencias" : "e.g. Question about your beliefs"} required>
-                <p id="subjectError" class="error-message hidden">{lang == "es" ? "Asunto invalido" : "Invalid subject"}</p>
+                <p id="subjectError" class="error-message hidden">{lang == "es" ? "Por favor ingrese un asunto" : "Please enter a subject"}</p>
             </div>
             <div class="form-group">
                 <label for="message">{lang == "es" ? "Mensaje" : "Message"}</label>
                 <textarea maxlength="1000" aria-required="true" aria-invalid="false" id="message" name="message" placeholder={lang == "es" ? "Escribe tu mensaje aqui" : "Enter your message here"} required></textarea>
-                <p id="messageError" class="error-message hidden">{lang == "es" ? "Mensaje invalido" : "Invalid message"}</p>
+                <p class="character-counter">0/1000</p>
+                <p id="messageError" class="error-message hidden">{lang == "es" ? "Por favor ingrese un mensage" : "Please enter a message"}</p>
             </div>
             <input type="text" name="_honey" style="display:none">
             <input type="hidden" name="_captcha" value="false">
@@ -57,7 +58,7 @@ const { lang } = Astro.props
             <p>{lang == "es" ? "Estaremos en contacto contigo pronto" : "We'll be in touch soon"}</p>
             <button class="reset-form">{lang == "es" ? "Envia otro mensage" : "Send another message"}</button>
         </div>
-        <div class="error-message">
+        <div class="error-message-500">
             <h3>{lang == "es" ? "Lo sentimos, algo salio mal" : "Sorry, something wen wrong"}</h3>
             <p>{lang == "es" ? "Por favor intenta enviar el mensaje nuevamente mas tarde" : "Please try to send a message again later"}</p>
             <button class="reset-form">{lang == "es" ? "Intenta nuevamente" : "Try again"}</button>
@@ -162,5 +163,14 @@ const { lang } = Astro.props
             formContainer.classList.remove("submission-error");
             form.focus();
         })
+    })
+
+    const countCharacters = (input) => {
+        return input.value.length
+    }
+
+    document.getElementById("message").addEventListener("input", (e) => {
+        const characters = countCharacters(e.target);
+        document.querySelector(".character-counter").innerHTML = `${characters}/1000`;
     })
 </script>
