@@ -1,30 +1,28 @@
 ---
 import Airtable from 'Airtable';
 import EventCard from '@components/EventCard.astro';
+import '@components/Events.scss';
 export interface Props {
-    data: object;
+    lang: string;
 } 
 
-const { data } = Astro.props;
+const { lang } = Astro.props;
+
+const view = import.meta.env.MODE == "development" ? "Staging" : "Production";
 
 var base = new Airtable({apiKey: 'patASZXZ7wZJ7UAze.d6f74d1a0071400f4e538494d110713361c7f49cff46d77737deb93602a1cbc3'}).base('appg1WC3k58wcqQ72');
 
 const allRecords = (airtableBase) => {
     return (
-        airtableBase("events").select({
-            view: "All",
+        airtableBase(`events ${lang}`).select({
+            view: view,
         }).all()
     )
 }
 
-const lang = "en"
-const language = lang == "en" ? "english" : "spanish"
-
 const allEvents = await allRecords(base);
 
-const events = allEvents.filter(v => {
-    return v["fields"]["Language"] == language;
-}).reduce((acc, x) => {
+const events = allEvents.reduce((acc, x) => {
     acc.push({
         title: x["fields"]["Title"],
         description: x["fields"]["Description"],
@@ -36,8 +34,11 @@ const events = allEvents.filter(v => {
 }, []);
 ---
 
-<div class="events__container flex flex-align-top flex-justify-center flex-wrap bg-white box-shadow">
+<div class={`events__container flex flex-align-top flex-justify-center flex-wrap bg-white box-shadow ${events.length <= 0 ? "no-events" : ""}`}>
+    <p class="no-events-notice">
+        {lang == "es" ? "Lo sentimos, no hay eventos proximos por el momento. Por favor revisa mas tarde." : "Sorry, there are no upcoming events at the moment. Please check again soon."}
+    </p>
     {events.map((x, index) => {
-        return (<EventCard title={x["title"]} description={x["description"]} date={x["date"]} location={x["location"]} locationHref={x["href"]} addedClass="box-shadow" />)
+        return (<EventCard lang={lang} title={x["title"]} description={x["description"]} date={x["date"]} location={x["location"]} locationHref={x["href"]} addedClass="box-shadow" />)
     })}
 </div>

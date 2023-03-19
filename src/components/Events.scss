@@ -1,0 +1,14 @@
+.events__container {
+    .no-events-notice {
+        display: none;
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    &.no-events {
+        .no-events-notice {
+            display: block;
+        }
+    }
+}
