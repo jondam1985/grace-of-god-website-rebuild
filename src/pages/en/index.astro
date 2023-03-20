@@ -7,6 +7,7 @@ import AboutSVG from "@components/AboutSVG.astro";
 import BeliefsSVG from "@components/BeliefsSVG.astro";
 import BlogSVG from "@components/BlogSVG.astro";
 import Events from "@components/Events.astro";
+import VerseOfTheDay from "@components/VerseOfTheDay.astro";
 
 const page = "homepage";
 const lang = "en";
@@ -69,10 +70,7 @@ const events = [
 					</p>
 				</div>
 				<div class="verse relative">
-					<Verse 
-						copy="Nada hagáis por egoísmo o por vanagloria, sino que con actitud humilde cada uno de vosotros considere al otro como más importante que a sí mismo,"
-						book="Filipenses 2:3"
-					/>
+					<VerseOfTheDay lang={lang} />
 				</div>
 			</div>
 			<div class="hero-shadow"></div>
