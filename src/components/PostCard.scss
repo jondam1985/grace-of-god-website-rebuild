@@ -2,13 +2,21 @@
 @import "../styles/variables.scss";
 
 .post {
-    color: $white;
     padding: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     text-decoration: none;
     background-repeat: no-repeat;
     background-size: cover;
+    border-left: 10px solid $secondary-color;
     border-radius: 5px;
+
+    &:hover {
+        border-color: $quaternary-color;
+    }
+    &:focus {
+        outline: 2px dotted $secondary-color;
+        outline-offset: 5px;
+    }
 
     .post__title {
         margin-bottom: 0.5rem;
@@ -26,7 +34,7 @@
         }
 
         p:not(:last-of-type) {
-            border-right: 2px solid $white;
+            border-right: 2px solid $tertiary-color;
         }
     }
 }

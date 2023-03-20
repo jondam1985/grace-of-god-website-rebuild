@@ -6,6 +6,7 @@ import Content from 'public/content/content.json';
 import Callout from '@components/Callout.astro';
 import '@pages/blog.scss';
 import Posts from 'public/content/posts.json';
+import QuickLinks from '@components/QuickLinks.astro';
 
 const page = "blog";
 const lang = "en";
@@ -33,6 +34,9 @@ const posts = Posts.posts;
             verse={pageContent.hero.verse}
             book={pageContent.hero.book}
         />
+        <QuickLinks 
+            links={pageContent.quickLinks}
+        />
         <section id="introduction" class="section-alt">
             <div class="container">
                 <h2 class="subheading">{pageContent.copy.sectionIntro.header}</h2>
@@ -43,6 +47,7 @@ const posts = Posts.posts;
         </section>
         <section id="posts" class="section posts callout-at-bottom">
             <div class="container">
+                <h2 class="subheading">{pageContent.copy.sectionPosts.header}</h2>
                 <div class="posts__container">
                     {posts.map((p, index) => {
                         return (

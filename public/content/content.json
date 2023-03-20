@@ -688,10 +688,17 @@
                     "verse": "No te des prisa en hablar, ni se apresure tu corazón a proferir palabra delante de Dios. Porque Dios está en el cielo y tú en la tierra; por tanto sean pocas tus palabras.",
                     "book": "Eclesiastés 5:2"
                 },
+                "quickLinks": [
+                    {"copy": "Welcome to our blog", "href": "#introduction"},
+                    {"copy": "Uncover Nuggets of Faith", "href": "#posts"}
+                ],
                 "copy": {
                     "sectionIntro": {
-                        "header": "Uncover Nuggets of Faith",
+                        "header": "Welcome to our blog",
                         "copy": "<p>Welcome to our blog \"Nuggets of Faith\", written by members of the Grace of God Nazarene Church. Our mission is to share our experiences, insights, and reflections on living out our faith in today's world. We believe that our faith in Jesus Christ should inform and guide every aspect of our lives, and we are excited to share how this plays out in our daily walk. Whether you are a long-time follower of Christ or are exploring faith for the first time, we hope our blog will encourage and inspire you on your journey. Thank you for joining us!</p>"
+                    },
+                    "sectionPosts": {
+                        "header": "Uncover Nuggets of Faith"
                     },
                     "calloutMessage": {
                         "copy": "Do you have comments or questions about any of our posts? Visit us during our Sunday Service or send us a message so we can have a chat",
