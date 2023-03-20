@@ -1,5 +1,5 @@
 .verse-of-the-day {
-    span {
+    span[data-number] {
         display: none;
     }
 }
