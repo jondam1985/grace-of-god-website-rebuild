@@ -7,6 +7,7 @@ import Callout from '@components/Callout.astro';
 import '@pages/blog.scss';
 import Posts from 'public/content/posts.json';
 import QuickLinks from '@components/QuickLinks.astro';
+import Airtable from 'Airtable';
 
 const page = "blog";
 const lang = "en";
@@ -16,7 +17,37 @@ const title = pageContent.metadata.title;
 const description = pageContent.metadata.description;
 const pageClass = `page-${page} ${lang}`;
 
-const posts = Posts.posts;
+//const posts = Posts.posts;
+
+const view = import.meta.env.MODE == "development" ? "Staging" : "Production";
+
+var base = new Airtable({apiKey: 'patASZXZ7wZJ7UAze.d6f74d1a0071400f4e538494d110713361c7f49cff46d77737deb93602a1cbc3'}).base('appg1WC3k58wcqQ72');
+
+const allRecords = (airtableBase) => {
+    return (
+        airtableBase(`blog ${lang}`).select({
+            view: view,
+        }).all()
+    )
+}
+
+const allPosts = await allRecords(base);
+
+const posts = allPosts.reduce((acc, x) => {
+    acc.push({
+        atId: x["id"],
+        id: x["fields"]["Path"],
+        title: x["fields"]["Title"],
+        description: x["fields"]["Description"],
+        date: x["fields"]["Date"],
+        author: x["fields"]["Author"],
+        topic: x["fields"]["Topic"],
+        length: x["fields"]["Length"],
+        content: x["fields"]["Content"],
+        image: x["fields"]["Image"],
+    });
+    return acc;
+}, []);
 ---
 
 <Layout
@@ -49,7 +80,7 @@ const posts = Posts.posts;
             <div class="container">
                 <h2 class="subheading">{pageContent.copy.sectionPosts.header}</h2>
                 <div class="posts__container">
-                    {posts.map((p, index) => {
+                    {posts.map(p => {
                         return (
                             <PostCard 
                                 lang={lang}
@@ -60,7 +91,6 @@ const posts = Posts.posts;
                                 topic={p.topic}
                                 author={p.author}
                                 date={p.date}
-                                image={p.image}
                             />
                         )
                     })}

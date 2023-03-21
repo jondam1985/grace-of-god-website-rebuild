@@ -1,0 +1,42 @@
+@import "../styles/variables.scss";
+@import "../styles/mixins.scss";
+
+body.blog-post {
+    .lang-selector__languages {
+        display: none;
+    }
+
+    .header {
+        margin-bottom: 0.5rem;
+    }
+
+    .post__details {
+        @include mobile {
+            flex-wrap: wrap;
+            font-size: 0.824rem;
+        }
+
+        p {
+            @include mobile {
+                width: 100%;
+            }
+        }
+    }
+
+    .post__image {
+        margin: 1rem auto 2rem auto;
+        height: 200px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @include mobile {
+            height: 150px;
+        }
+    }
+    
+    .post__content {
+        margin-bottom: 2rem;
+        line-height: 1.5;
+    }
+}

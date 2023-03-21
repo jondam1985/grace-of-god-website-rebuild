@@ -10,10 +10,9 @@ export interface Props {
     topic: string;
     author: string;
     date: string;
-    image: string;
 }
 
-const { id, lang, title, description, length, topic, author, date, image } = Astro.props;
+const { id, lang, title, description, length, topic, author, date } = Astro.props;
 ---
 
 <a href={lang == "es" ? `/blog/${id}` : `/en/blog/${id}`} class={`post post--${id} relative box-shadow`}>
@@ -24,7 +23,7 @@ const { id, lang, title, description, length, topic, author, date, image } = Ast
         <Fragment set:html={description} />
     </div>
     <div class="post__details flex flex-align-center flex-justify-left">
-        <p><b>{lang == "es" ? "Tiempo de lectura:" : "Reading time:"}</b> {length}</p>
+        <p><b>{lang == "es" ? "Tiempo de lectura:" : "Reading time:"}</b> {length}{lang == "es" ? " minutos" : " minutes"}</p>
         <p><b>{lang == "es" ? "Tema:" : "Topic:"}</b> {topic}</p>
         <p><b>{lang == "es" ? "Autor:" : "Author:"}</b> {author}</p>
         <p><b>{lang == "es" ? "Fecha:" : "Date:"}</b> {date}</p>

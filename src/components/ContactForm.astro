@@ -27,7 +27,7 @@ const { lang } = Astro.props
             </div>
             <div class="form-group">
                 <label for="phone">{lang == "es" ? "Telefono (opcional)" : "Phone (optional)"}</label>
-                <input maxlength="10" type="tel" autocomplete="tel" aria-required="false" aria-invalid="false" id="phone" name="phone" placeholder={lang == "es" ? "5555467655" : "5555467655"}>
+                <input maxlength="10" type="tel" autocomplete="tel" aria-required="false" aria-invalid="false" id="phone" name="phone" placeholder={lang == "es" ? "Ejemplo: 5555467655" : "e.g. 5555467655"}>
             </div>
             <div class="form-group">
                 <label for="subject">{lang == "es" ? "Asunto" : "Subject"}</label>
@@ -161,6 +161,7 @@ const { lang } = Astro.props
             formContainer.classList.remove("submitting");
             formContainer.classList.remove("submitted");
             formContainer.classList.remove("submission-error");
+            document.querySelector(".character-counter").innerText = "0/1000";
             form.focus();
         })
     })
