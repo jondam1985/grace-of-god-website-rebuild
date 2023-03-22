@@ -6,7 +6,7 @@ body.blog-post {
     .hero {
         background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../assets/bg_light-blue.jpg);
     }
-    
+
     .lang-selector__languages {
         display: none;
     }
@@ -37,6 +37,19 @@ body.blog-post {
 
         @include mobile {
             height: 150px;
+        }
+    }
+
+    .post__share {
+        margin-top: 2rem;
+
+        h2 {
+            margin-right: 1rem;
+            font-size: 1rem;
+        }
+        .share__item {
+            width: 25px;
+            margin-right: 1rem;
         }
     }
     
