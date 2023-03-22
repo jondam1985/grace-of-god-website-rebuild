@@ -39,4 +39,34 @@ body.blog-post {
         margin-bottom: 2rem;
         line-height: 1.5;
     }
+
+    .back__link {
+        font-weight: 600;
+
+        a {
+            padding: 0.5rem;
+            text-align: right;
+            background: transparent;
+            border: 2px solid $secondary-color;
+            max-width: 20rem;
+            text-decoration: none;
+            border-radius: 5px;
+
+            &::before {
+                content: "\2190";
+                font-size: 2rem;
+                position: absolute;
+                left: 1rem;
+                top: 1rem;
+                line-height: 0;
+            }
+        }
+        a:hover {
+            background: $secondary-color;
+            color: $white;
+        }
+        a:focus {
+            outline: 2px dotted $secondary-color;
+        }
+    }
 }

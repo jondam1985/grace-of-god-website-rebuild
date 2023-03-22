@@ -5,7 +5,6 @@ import Layout from '@layouts/Layout.astro';
 import Content from 'public/content/content.json';
 import Callout from '@components/Callout.astro';
 import '@pages/blog.scss';
-import Posts from 'public/content/posts.json';
 import QuickLinks from '@components/QuickLinks.astro';
 import Airtable from 'Airtable';
 
@@ -43,7 +42,6 @@ const posts = allPosts.reduce((acc, x) => {
         author: x["fields"]["Author"],
         topic: x["fields"]["Topic"],
         length: x["fields"]["Length"],
-        content: x["fields"]["Content"],
     });
     return acc;
 }, []);

@@ -29,7 +29,8 @@ body.page-homepage {
                     font-size: 5rem;
                     opacity: 0;
                     top: 2rem;
-                    transition: opacity 2s linear, top 2s linear;
+                    margin-bottom: 3rem;
+                    transition: opacity 0.75s linear, top 0.75s linear;
 
                     @include mobile {
                         font-size: 4.5rem;
@@ -40,16 +41,16 @@ body.page-homepage {
                     font-size: 3rem;
                     opacity: 0;
                     top: 2rem;
-                    transition: opacity 2s linear, top 1.5s linear;
-                    transition-delay: 0.5s;
+                    transition: opacity 0.75s linear, top 0.75s linear;
+                    transition-delay: 0.75s;
                 }
             }
 
             .verse {
                 opacity: 0;
                 top: 2rem;
-                transition: opacity 2s linear, top 1.5s linear;
-                transition-delay: 1s;
+                transition: opacity 0.75s linear, top 0.75s linear;
+                transition-delay: 0.75s;
 
                 @include mobile {
                     width: 100%;

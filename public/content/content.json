@@ -293,7 +293,7 @@
                             "herf": "/"
                         },
                         "ctaTwo": {
-                            "copy": "Discover our faith - the foundation of all we do and believe in.",
+                            "copy": "Discover our faith - the foundation of all we do and believe in",
                             "linkCopy": "Our beliefs",
                             "herf": "/"
                         },
@@ -317,8 +317,8 @@
                 },
                 "hero": {
                     "header": "About us",
-                    "verse": "No te des prisa en hablar, ni se apresure tu corazón a proferir palabra delante de Dios. Porque Dios está en el cielo y tú en la tierra; por tanto sean pocas tus palabras.",
-                    "book": "Eclesiastés 5:2"
+                    "verse": "I say I am nothing special, but God says I am fearfully and wonderfully made. \"I praise you because I am fearfully and wonderfully made; your works are wonderful, I know that full well\"",
+                    "book": "Psalm 139:14"
                 },
                 "quickLinks": [
                     {"copy": "Who we are", "href": "#about"},
@@ -330,52 +330,52 @@
                 ],
                 "copy": {
                     "sectionAbout": {
-                        "header": "Quienes somos",
+                        "header": "Who we are",
                         "copy":
                             "<p>Grace of God Nazarene Church is a vibrant community of believers dedicated to sharing the love and grace of Jesus Christ with the world. Our church is committed to forming disciples who live out the message of the gospel in their daily lives. We believe that the Christian faith is not just a personal matter, but also a community one, and we seek to foster a loving and supportive community where everyone can grow in their relationship with God.</p><p>We strive to be a welcoming and open church to all, regardless of their past, present, or current circumstances. We want to be a source of hope and help for those in need, and we seek to serve our community in any way we can.</p><p>We would love for you to join us as we seek to grow in our faith, help others, and share the love of Jesus Christ with the world.</p>"
                     },
                     "calloutBeliefs": {
-                        "copy": "Nuestras creencias tambien forman parte de quienes somos",
-                        "href": "<a href='/nuestras-creencias'>Explora nuestas creencias</a>",
+                        "copy": "Our beliefs are also part of whi we are",
+                        "href": "<a href='/en/beliefs'>Explore our beliefs</a>",
                         "hrefComp": ""
                     },
                     "sectionMission": {
-                        "header": "Nuestra mision",
-                        "copy": "<p>La misión de la Iglesia del Nazareno es hacer discípulos en las naciones.</p><p>Somos una comunidad global de fe, se nos ha comisionado llevar las buenas nuevas de vida en Cristo Jesús a gente en todas partes y diseminar el mensaje bíblico de la santidad (vivir a la semejanza de Cristo) en todos los países.</p>"
+                        "header": "Our mission",
+                        "copy": "<p>The mission of the Church of the Nazarene is to make disciples of the nations.</p><p>We are a global community of faith, commissioned to bring the good news of life in Christ Jesus to people everywhere and to spread the biblical message of holiness (living like Christ) in all countries.</p>"
                     },
                     "sectionValues": {
-                        "header": "Nuestros valores escenciales",
-                        "copy": "Creemos que la santidad es la virtud principal de todo buen Nazareno.",
+                        "header": "Our core values",
+                        "copy": "We believe that holiness is the main virtue of every good Nazarene.",
                         "values": {
-                            "valueOne": "Somos un pueblo cristiano al servicio de la comunidad",
-                            "valueTwo": "Alabamos a Jesucristo y lo confesamos como Senor",
-                            "valueThree": "Somo un pueblo de santidad como estilo de vida",
-                            "valueFour": "Somos un pueblo misional, evangelizamos con compasion"
+                            "valueOne": "We are a Christian people at the service of the community",
+                            "valueTwo": "We praise Jesus Christ and confess him as Lord",
+                            "valueThree": "We are a people of holiness as a way of life",
+                            "valueFour": "We are a missional people, we evangelize with compassion"
                         }
                     },
                     "sectionLeaders": {
-                        "header": "Nuestros lideres espirituales",
+                        "header": "Our spiritual leaders",
                         "copy": "",
                         "profiles": [
                             {
                                 "name": "Gina Torres",
-                                "position": "Pastora",
-                                "motto": "Con Dios podemos alcanzarlo todo y mucho más de lo que imaginamos. Con Dios podemos hacer realidad todos nuestros sueños."
+                                "position": "Pastor",
+                                "motto": "\"With God we can achieve everything and much more than we imagine. With God we can make all our dreams come true.\""
                             },
                             {
                                 "name": "Oswaldo Castellanos",
-                                "position": "Vocal",
-                                "motto": "A veces las cosas no salen como tu esperabas, porque lo que te espera es lo mejor de Dios!DIOS quita pero cuando devuelve, MULTIPLICA..."
+                                "position": "Board member",
+                                "motto": "\"Sometimes things do not turn out as you expected, because what awaits you is the best of God! GOD takes away but when He returns, He MULTIPLIES...\""
                             },
                             {
                                 "name": "Roxana Contreras",
-                                "position": "Vocal",
-                                "motto": "La Fe en Dios no hace las cosas fáciles, pero si las hace posibles...No te aferres a cosas pequeñas porque DIOS tiene algo más grande para ti."
+                                "position": "Board member",
+                                "motto": "\"Faith in God does not make things easy, but it does make them possible... Do not cling to small things because GOD has something bigger for you.\""
                             },
                             {
                                 "name": "Francisco Buitrago",
-                                "position": "Vocal",
-                                "motto": "Donde hay fe hay amor, donde hay amor hay paz, donde hay paz esta DIOS y donde está DIOS no falta nada. Es mejor tenerlo a El."
+                                "position": "Board member",
+                                "motto": "\"Where there is faith there is love, where there is love there is peace, where there is peace there is GOD and where GOD is, nothing is missing. It's better to have him.\""
                             }
                         ]
                     },
@@ -383,26 +383,26 @@
                         "header": "Nuestros ministerios",
                         "copy": "Grace of God has a variety of groups that cater to different age groups, interests, and needs, providing opportunities for spiritual growth, fellowship, and service.",
                         "ministries": {
-                            "tabs": ["Alabanza", "Jovenes", "Ninos", "Damas", "Caballeros"],
+                            "tabs": ["Praise", "Youth", "Children", "Women", "Men"],
                             "panels": [
                                 {
-                                    "header": "<h3>Ministerio de Alabanza",
+                                    "header": "<h3>Praise ministry",
                                     "copy": "<p>Tempor commodo ipsum enim in irure pariatur sit occaecat magna consequat incididunt et nisi amet. Ullamco pariatur sit aute consequat sit. Non ullamco exercitation consequat duis est eiusmod excepteur.</p><p>Enim officia irure labore dolor amet nulla exercitation aliquip sunt. Est sit et pariatur irure consectetur incididunt voluptate. Qui do incididunt quis anim culpa elit elit aliqua aliqua ea occaecat. Aute aute cupidatat ad commodo duis eu. Proident duis aliqua mollit laboris sit mollit nisi.</p>"
                                 },
                                 {
-                                    "header": "<h3>Ministerio de Jovenes",
+                                    "header": "<h3>Youth ministry",
                                     "copy": "<p>Labore deserunt sint esse ullamco irure nostrud in non. Fugiat cupidatat aute culpa duis incididunt ullamco sint minim labore. Sint minim deserunt nisi minim pariatur sunt proident incididunt excepteur sit ad veniam.</p><p>Adipisicing fugiat fugiat reprehenderit et nostrud eu. Eiusmod dolor reprehenderit duis ullamco proident laborum voluptate amet minim. Cupidatat nisi nulla esse velit anim amet. Tempor ea deserunt nulla aliquip pariatur deserunt esse deserunt sint est duis enim. Aliqua amet aliqua voluptate qui sunt et labore ex culpa. Ut sit ex non Lorem id velit.</p>"
                                 },
                                 {
-                                    "header": "<h3>Ministerio de Ninos",
+                                    "header": "<h3>Children ministry",
                                     "copy": "<p>Ullamco Lorem nisi culpa consectetur qui consequat commodo quis enim non commodo. Exercitation adipisicing ex labore et id eiusmod velit sint ex labore dolore laboris aute dolor. Esse laborum ex deserunt quis et eu. Adipisicing et ut dolore tempor quis ex sit quis occaecat nulla nostrud irure cupidatat ipsum. Ipsum esse ad nisi velit do et. Qui minim nisi consequat incididunt. Ea ullamco mollit cillum occaecat tempor ad aute id esse.</p><p>Ipsum do nisi ad voluptate culpa voluptate veniam. Duis irure excepteur dolore proident labore pariatur consequat aliqua veniam adipisicing officia id eiusmod. Consectetur incididunt aute ipsum deserunt consectetur consequat consectetur do. Sit deserunt anim commodo do quis laboris adipisicing proident reprehenderit pariatur cupidatat ipsum ad sit.</p>"
                                 },
                                 {
-                                    "header": "<h3>Ministerio de Damas",
+                                    "header": "<h3>Women's ministry",
                                     "copy": "<p>Excepteur laboris labore laborum ea. Lorem elit occaecat adipisicing reprehenderit culpa fugiat veniam. Quis tempor aliqua fugiat laborum aute fugiat mollit eiusmod nulla ullamco amet. Non ex velit ipsum in officia duis anim ex enim enim officia enim exercitation.</p><p>Eu sit irure tempor enim et minim eiusmod id anim. Nostrud nulla nisi aliquip irure do enim veniam dolor labore excepteur. Sunt magna esse consectetur veniam veniam quis veniam officia voluptate velit eu. Tempor ea dolor voluptate sunt Lorem esse culpa et deserunt veniam.</p>"
                                 },
                                 {
-                                    "header": "<h3>Ministerio de Caballeros",
+                                    "header": "<h3>Men's ministry",
                                     "copy": "<p>Occaecat fugiat nulla Lorem in anim velit mollit fugiat eu deserunt pariatur adipisicing exercitation. Ad aliquip velit voluptate nostrud. Quis Lorem id nulla aute ut commodo fugiat elit quis et non occaecat veniam. Do occaecat sit tempor in nostrud labore. Minim anim labore esse aute dolor ad Lorem anim exercitation. Aliqua aliquip amet id labore cupidatat adipisicing mollit ad velit.</p><p>Cillum ut et ea eu sunt pariatur magna. Elit et occaecat enim occaecat ad sit fugiat velit cillum velit enim aute qui sit. Labore excepteur ullamco adipisicing aliqua duis in enim. Ullamco aute excepteur mollit elit cillum excepteur in voluptate sit in ipsum deserunt dolor magna. Duis reprehenderit commodo elit dolore aliquip culpa nulla sint.</p>"
                                 }
 
@@ -410,17 +410,17 @@
                         }
                     },
                     "calloutVisit": {
-                        "copy": "Conoce a nuestros lideres en persona y aprende mas sobre nuestros ministerios",
-                        "href": "<a href='/ubicacion-servicios'>Visitanos</a>",
+                        "copy": "Meet our leaders in person and learn more about our ministries",
+                        "href": "<a href='/en/services-location'>Visit us</a>",
                         "hrefComp": ""
                     },
                     "sectionHistory": {
-                        "header": "Nuestra historia",
+                        "header": "Our history",
                         "copy": "<p>Adipisicing enim aliquip sint non mollit. Aliquip aliqua qui tempor sit consectetur ut consequat pariatur fugiat consectetur ullamco. Ex laboris reprehenderit sit excepteur sint sint dolor Lorem.</p><p>Tempor ut amet sunt laboris aliqua et proident ipsum deserunt sunt voluptate id cupidatat. Aliquip sint labore qui ipsum dolore. Ullamco ut exercitation eu sit incididunt velit ex nisi qui. Sit id non labore minim. Ut nostrud proident voluptate voluptate. Velit enim aute qui tempor ut est mollit aute elit enim ex aliquip labore.</p><p>Irure sint esse nisi eu aliquip Lorem aliquip incididunt do id dolor velit dolore quis. Lorem sunt cillum ipsum deserunt non consequat officia nisi. Esse aute fugiat dolore laboris eu voluptate deserunt eu deserunt et elit proident nulla. Quis ullamco quis elit commodo sit deserunt ad magna consequat voluptate. Consequat qui ut minim esse sit.</p>"
                     },
                     "calloutMessage": {
-                        "copy": "Tienes alguna pregunta o comentario? Nos encantaria escuchar de ti",
-                        "href": "<a href='/contacto'>Contactanos</a>",
+                        "copy": "Do you have any comments or questions? We would love to hear from you",
+                        "href": "<a href='/en/contact-us'>Contact us</a>",
                         "hrefComp": ""
                     }
                 }
@@ -433,47 +433,47 @@
                     "enHref": "/en/services-location"
                 },
                 "hero": {
-                    "header": "Servicios y Ubicacion",
-                    "verse": "No te des prisa en hablar, ni se apresure tu corazón a proferir palabra delante de Dios. Porque Dios está en el cielo y tú en la tierra; por tanto sean pocas tus palabras.",
-                    "book": "Eclesiastés 5:2"
+                    "header": "Services & Location",
+                    "verse": "And let us consider one another in order to provoke love and good works, not neglecting to gather together, as some are in the habit of doing, but encouraging each other, and all the more as you see the day approaching",
+                    "book": "Hebrews 10:24"
                 },
                 "quickLinks": [
-                    {"copy": "Servicios", "href": "#services"},
-                    {"copy": "Ubicacion", "href": "#location"},
-                    {"copy": "En linea", "href": "#online"},
-                    {"copy": "Eventos", "href": "#events"}
+                    {"copy": "Services", "href": "#services"},
+                    {"copy": "Location", "href": "#location"},
+                    {"copy": "Online", "href": "#online"},
+                    {"copy": "Upcoming events", "href": "#events"}
                 ],
                 "copy": {
                     "sectionServices": {
-                        "header": "Nuestros servicios",
-                        "sundayHeader": "Servicio de Adoracion",
-                        "sundayHour": "Visitanos los domingos a las 3:00pm",
-                        "sundayInPerson": "<a href='#location'>EN PERSONA</a>",
-                        "sundayOnline": "<a href='#online'>EN LINEA</a>",
+                        "header": "Our services",
+                        "sundayHeader": "Worship service",
+                        "sundayHour": "Visit us every Sunday at 3:00pm",
+                        "sundayInPerson": "<a href='#location'>IN PERSON</a>",
+                        "sundayOnline": "<a href='#online'>ON LINE</a>",
                         "otherHeader": "Other services",
                         "services": [
                             {
-                                "title": "Servicio lunes",
-                                "location": "<span>En linea",
-                                "date": "Lunes a las 6:00pm",
+                                "title": "Service Monday",
+                                "location": "Online",
+                                "date": "Modanys at 6:00pm",
                                 "link": "<a href='https://www.zoom.us' target='_blank' rel='noopener'>Attend via Zoom</a>"
                             },
                             {
-                                "title": "Servicio martes",
-                                "location": "<span>En linea",
-                                "date": "Martes a las 6:00pm",
+                                "title": "Service Tuesday",
+                                "location": "624 Annette St, Toronto ON",
+                                "date": "Tuesdays at 6:00pm",
                                 "link": "<a href='#location'>Attend in person</a>"
                             },
                             {
-                                "title": "Servicio miercoles",
-                                "location": "<span>En Persona",
-                                "date": "Lunes a las 6:00pm",
+                                "title": "Service Wednesday",
+                                "location": "Online",
+                                "date": "Wednesdays at 6:00pm",
                                 "link": "<a href='https://www.zoom.us' target='_blank' rel='noopener'>Attend via Zoom</a>"
                             },
                             {
-                                "title": "Servicio jueves",
-                                "location": "<span>En linea",
-                                "date": "Jueves a las 6:00pm",
+                                "title": "Service Thursday",
+                                "location": "Online",
+                                "date": "Thursdays at 6:00pm",
                                 "link": "<a href='https://www.zoom.us' target='_blank' rel='noopener'>Attend via Zoom</a>"
                             }
                         ]
@@ -496,8 +496,8 @@
                         "header": "Upcoming events"
                     },
                     "calloutMessage": {
-                        "copy": "Tienes alguna pregunta o comentario? Nos encantaria escuchar de ti",
-                        "href": "<a href='/contacto'>Contactanos</a>",
+                        "copy": "Do you have any comments or questions? We would love to hear from you",
+                        "href": "<a href='/en/contact-us'>Contact us</a>",
                         "hrefComp": ""
                     }
                 }
@@ -511,8 +511,8 @@
                 },
                 "hero": {
                     "header": "Our Beliefs",
-                    "verse": "No te des prisa en hablar, ni se apresure tu corazón a proferir palabra delante de Dios. Porque Dios está en el cielo y tú en la tierra; por tanto sean pocas tus palabras.",
-                    "book": "Eclesiastés 5:2"
+                    "verse": "Truly, truly, I say to you, whoever believes in me will also do the works that I do; and greater works than these will he do, because I am going to the Father. Whatever you ask in my name, this I will do, that the Father may be glorified in the Son. If you ask me[a] anything in my name, I will do it.",
+                    "book": "John 14:12-14"
                 },
                 "quickLinks": [
                     {"copy": "Explore", "href": "#explore"},
@@ -632,7 +632,7 @@
                     },
                     "calloutBlog": {
                         "copy": "You might also be interested in reading words from the hearts of our congreation",
-                        "href": "<a href='/blog'>Read our blog \"Nuggets&nbsp;of&nbsp;Faith\"</a>",
+                        "href": "<a href='/en/blog'>Read our blog \"Nuggets&nbsp;of&nbsp;Faith\"</a>",
                         "hrefComp": ""
                     },
                     "sectionValues": {
@@ -670,8 +670,8 @@
                         ]
                     },
                     "calloutMessage": {
-                        "copy": "Do you have any comments or questions?",
-                        "href": "<a href='/contact-us'>Contact us</a>",
+                        "copy": "Do you have any comments or questions? We would love to hear from you",
+                        "href": "<a href='/en/contact-us'>Contact us</a>",
                         "hrefComp": ""
                     }
                 }
@@ -775,6 +775,36 @@
                     "header": "Privacy policy",
                     "verse": "",
                     "book": ""
+                },
+                "copy": {
+                    "sectionPrivacy": {
+                        "header": "Privacy Policy for Grace of God Nazarene Church Website",
+                        "copy": "<p>At Grace of God Nazarene Church, we understand the importance of protecting your privacy online. This Privacy Policy outlines the types of personal information we may collect through our website, how we use it, and how we protect it.</p>"
+                    },
+                    "sectionData": {
+                        "header": "Information Collection and Use",
+                        "copy": "<p>We may collect personal information, such as your name, email address, and phone number, through our Contact Us form on the website. This information is solely used to respond to your inquiries and provide you with the requested information. We do not sell or rent any personal information to third parties.</p>"
+                    },
+                    "sectionCookies": {
+                        "header": "Cookies and Tracking",
+                        "copy": "<p>Our website may use cookies to enhance your browsing experience. Cookies are small text files that are placed on your device to store your preferences and other information about your visit. We do not use cookies to collect personal information or track your browsing behavior.</p>"
+                    },
+                    "sectionSecurity": {
+                        "header": "Security",
+                        "copy": "<p>We take appropriate measures to protect the security of your personal information, including physical, electronic, and procedural safeguards. We use a variety of security technologies and procedures to help protect your personal information from unauthorized access, use, or disclosure.</p>"
+                    },
+                    "sectionThird": {
+                        "header": "Third-Party Websites",
+                        "copy": "<p>Our website may contain links to third-party websites that are not owned or controlled by Grace of God Nazarene Church. We are not responsible for the privacy practices or content of these websites. We encourage you to review the privacy policies of these websites before sharing any personal information.</p>"
+                    },
+                    "sectionChanges": {
+                        "header": "Changes to this Privacy Policy",
+                        "copy": "<p>We reserve the right to modify this Privacy Policy at any time. If we make material changes to this policy, we will post a notice on our website prior to the change becoming effective. We encourage you to review this policy periodically.</p>"
+                    },
+                    "sectionContact": {
+                        "header": "Contact Us",
+                        "copy": "<p>If you have any questions or concerns about this Privacy Policy, please contact us at <a class='inline' href='mailto:email@domain.com'>email@domain.com</a>.</p>"
+                    }
                 }
             }
         }
