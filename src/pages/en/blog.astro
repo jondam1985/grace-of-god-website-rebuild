@@ -44,10 +44,11 @@ const posts = allPosts.reduce((acc, x) => {
         topic: x["fields"]["Topic"],
         length: x["fields"]["Length"],
         content: x["fields"]["Content"],
-        image: x["fields"]["Image"],
     });
     return acc;
 }, []);
+
+console.log(posts);
 ---
 
 <Layout
