@@ -42,8 +42,6 @@ export async function getStaticPaths() {
         return acc;
     }, []);
 
-    console.log(posts);
-
     const staticPaths = posts.reduce((acc, v) => {
         acc.push({params: {path: v.path}, props: {title: v.title, description: v.description, author: v.author, length: v.length, date: v.date, topic: v.topic, content: v.content, image: v.image}});
         return acc;
