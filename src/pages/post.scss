@@ -2,6 +2,11 @@
 @import "../styles/mixins.scss";
 
 body.blog-post {
+
+    .hero {
+        background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../assets/bg_light-blue.jpg);
+    }
+    
     .lang-selector__languages {
         display: none;
     }

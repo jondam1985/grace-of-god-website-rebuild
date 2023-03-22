@@ -2,6 +2,14 @@
 @import "../styles/variables.scss";
 
 .page-beliefs {
+
+    .hero {
+        background-image: url(../assets/bg_hero-beliefs.webp);
+
+        @include desktop {
+            background-position-y: -250px;
+        }
+    }
     .accordions {
         width: 100%;
         margin-top: 2rem;

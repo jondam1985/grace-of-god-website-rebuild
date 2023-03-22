@@ -3,6 +3,19 @@
 
 
 .page-blog {
+    .hero {
+        background-image: url(../assets/bg_hero-blog.webp);
+
+        @include desktop {
+            background-position-y: -150px;
+        }
+        
+        h1 {
+            @include mobile {
+                line-height: 2;
+            }
+        }
+    }
     .posts__container {
         width: 100%;
     }

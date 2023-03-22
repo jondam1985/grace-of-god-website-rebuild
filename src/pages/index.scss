@@ -190,15 +190,27 @@ body.page-homepage {
             .hero__header h1 {
                 opacity: 1;
                 top: 0;
+                background: $quinary-color;
             }
 
             .hero__header p {
                 opacity: 1;
                 top: 0;
+                background: $quinary-color;
+
+                @include desktop {
+                    width: 50%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
             }
             .verse {
                 opacity: 1;
                 top: 0;
+                
+                @include desktop {
+                    width: 50%;
+                }
             }
         }
     }

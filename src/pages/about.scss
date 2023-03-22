@@ -2,7 +2,13 @@
 @import "../styles/variables.scss";
 
 .page-about {
+
+    .hero {
+        background-image: url(../assets/bg_hero-about-us.webp);
+    }
+
     .about {
+
         .about__content {
             width: 100%;
     

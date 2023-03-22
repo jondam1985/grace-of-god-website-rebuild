@@ -1,8 +1,10 @@
 @import "../styles/variables.scss";
+@import "../styles/mixins.scss";
 
 .hero {
     padding: 4rem 0;
-    background: $primary-color;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: $white;
 
     h1 {
@@ -14,6 +16,12 @@
     &.no-verse {
         h1 {
             margin-bottom: 0;
+        }
+    }
+
+    .hero__verse {
+        @include desktop {
+            width: 50%;
         }
     }
 

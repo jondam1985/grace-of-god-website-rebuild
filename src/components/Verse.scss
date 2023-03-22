@@ -4,11 +4,7 @@
 .verse__container {
     text-shadow: 2px 1px 2px $black;
     color: $white;
-    
-    @include desktop {
-        width: 50%;
-        margin-left: 50px;
-    }
+    padding: 0.5rem;
 
     .verse__accent {
         height: 50px;

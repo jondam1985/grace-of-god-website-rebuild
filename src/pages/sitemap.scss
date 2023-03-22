@@ -1,6 +1,11 @@
 @import "../styles/variables.scss";
 
 .page-sitemap {
+
+    .hero {
+        background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../assets/bg_light-blue.jpg);
+    }
+    
     .sitemap__content {
         font-size: 1.5rem;
 
