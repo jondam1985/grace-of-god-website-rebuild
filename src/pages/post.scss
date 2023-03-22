@@ -50,6 +50,15 @@ body.blog-post {
         .share__item {
             width: 25px;
             margin-right: 1rem;
+
+            a:hover {
+                svg {
+                    fill: $quinary-color;
+                }
+            }
+            a:focus {
+                outline: 2px dotted $quinary-color;
+            }
         }
     }
     
