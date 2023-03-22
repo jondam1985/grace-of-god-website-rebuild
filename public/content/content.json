@@ -806,6 +806,24 @@
                         "copy": "<p>If you have any questions or concerns about this Privacy Policy, please contact us at <a class='inline' href='mailto:email@domain.com'>email@domain.com</a>.</p>"
                     }
                 }
+            },
+            "error": {
+                "metadata": {
+                    "title": "Page not found 404 - Sharing God's Love with the World | Grace of God Nazarene Church",
+                    "description": "",
+                    "esHref": "/404",
+                    "enHref": "/en/404"
+                },
+                "hero": {
+                    "header": "Page Not Found",
+                    "verse": "",
+                    "book": ""
+                },
+                "copy": {
+                    "sectionError": {
+                        "copy": "<p>We could not found the page you're looking for.</p><p>It might have been removed, had its name changed, or is temporarily unavailable.</p><p>Please check that the website address is spelled correctly.</p><a class='error-link' href='/en/'>Return to homepage</a>"
+                    }
+                }
             }
         }
     }
