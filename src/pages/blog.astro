@@ -1,0 +1,106 @@
+---
+import Hero from '@components/Hero.astro';
+import PostCard from '@components/PostCard.astro';
+import Layout from '@layouts/Layout.astro';
+import Content from 'public/content/content.json';
+import Callout from '@components/Callout.astro';
+import '@pages/blog.scss';
+import QuickLinks from '@components/QuickLinks.astro';
+import Airtable from 'Airtable';
+
+const page = "blog";
+const lang = "es";
+const content = Content[lang];
+const pageContent = content.pages[page];
+const title = pageContent.metadata.title;
+const description = pageContent.metadata.description;
+const pageClass = `page-${page} ${lang}`;
+
+//const posts = Posts.posts;
+
+const view = import.meta.env.MODE == "development" ? "Staging" : "Production";
+
+var base = new Airtable({apiKey: 'patASZXZ7wZJ7UAze.d6f74d1a0071400f4e538494d110713361c7f49cff46d77737deb93602a1cbc3'}).base('appg1WC3k58wcqQ72');
+
+const allRecords = (airtableBase) => {
+    return (
+        airtableBase(`blog ${lang}`).select({
+            view: view,
+        }).all()
+    )
+}
+
+const allPosts = await allRecords(base);
+
+const posts = allPosts.reduce((acc, x) => {
+    acc.push({
+        atId: x["id"],
+        id: x["fields"]["Path"],
+        title: x["fields"]["Title"],
+        description: x["fields"]["Description"],
+        date: x["fields"]["Date"],
+        author: x["fields"]["Author"],
+        topic: x["fields"]["Topic"],
+        length: x["fields"]["Length"],
+    });
+    return acc;
+}, []);
+---
+
+<Layout
+    title={title}
+    description={description}
+    lang={lang}
+    esHref={pageContent.metadata.esHref}
+    enHref={pageContent.metadata.enHref}
+    pageClass={pageClass}
+    canonical={`${pageContent}["${lang}Href"]`}
+    >
+    <main id="main">
+        <Hero
+            heading={pageContent.hero.header}
+            verse={pageContent.hero.verse}
+            book={pageContent.hero.book}
+        />
+        <QuickLinks 
+            links={pageContent.quickLinks}
+        />
+        <section id="introduction" class="section-alt">
+            <div class="container">
+                <h2 class="subheading">{pageContent.copy.sectionIntro.header}</h2>
+                <div class="introduction__content">
+                    <Fragment set:html={pageContent.copy.sectionIntro.copy} />
+                </div>
+            </div>
+        </section>
+        <section id="posts" class="section posts callout-at-bottom">
+            <div class="container">
+                <h2 class="subheading">{pageContent.copy.sectionPosts.header}</h2>
+                <div class="posts__container">
+                    {posts.map(p => {
+                        return (
+                            <PostCard 
+                                lang={lang}
+                                id={p.id}
+                                title={p.title}
+                                description={p.description}
+                                length={p.length}
+                                topic={p.topic}
+                                author={p.author}
+                                date={p.date}
+                            />
+                        )
+                    })}
+                </div>
+            </div>
+        </section>
+        <div class="callout__container comment relative last-callout">
+            <Callout 
+                copy={pageContent.copy.calloutMessage.copy} 
+                href={pageContent.copy.calloutMessage.href} 
+                hrefComp={pageContent.copy.calloutMessage.hrefComp} 
+                last={true}
+            />
+        </div>
+    </main>
+</Layout>

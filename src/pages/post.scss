@@ -16,12 +16,16 @@ body.blog-post {
     }
 
     .post__details {
+
         @include mobile {
             flex-wrap: wrap;
             font-size: 0.824rem;
         }
 
         p {
+            margin-right: 1.5rem;
+            font-size: 0.825rem;
+            
             @include mobile {
                 width: 100%;
             }

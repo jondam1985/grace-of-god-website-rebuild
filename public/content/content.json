@@ -11,7 +11,7 @@
         "pages": {
             "homepage": {
                 "metadata": {
-                    "title": "Bienvenido a la Iglesia Nazarena Gracia de Dioz | Gracia de Dios",
+                    "title": "Bienvenido a la Iglesia del Nazareno Gracia de Dioz | Gracia de Dios",
                     "description": "Bienvenido a Gracia de Dios - una vibrante comunidad de creyentes dedicados a esparcir el amor y la gracia de Jesucrist. Acompananos en nuestro viaje, donde buscamos crecer en la fe, esperanza y amor.",
                     "esHref": "/",
                     "enHref": "/en"
@@ -33,8 +33,8 @@
                         }
                     },
                     "sectionWelcome": {
-                        "header": "Bienvenido a la Iglesia Nazarena Gracia de Dios",
-                        "copyOne": "<p>La Iglesia Nazarena Gracia de Dios es una comunidad de cristianos quienes proviniendo de varios países, diferentes trasfondos culturales, sociales y religiosos, nos congregamos para adorar y servir a Dios en la ciudad de Toronto, Canadá.</p><p>Ya seas nuevo en la fe o hayas sido un miebro de la Iglesia del Nazareno por anos, te damos la mas calida bienvenida. Es un privilegio conectarnos con personas que comparten una pasion por servir a Dios y esparcir su amor por todo el mundo.</p>"
+                        "header": "Bienvenido a la Iglesia del Nazareno Gracia de Dios",
+                        "copyOne": "<p>La Iglesia del Nazareno Gracia de Dios es una comunidad de cristianos quienes proviniendo de varios países, diferentes trasfondos culturales, sociales y religiosos, nos congregamos para adorar y servir a Dios en la ciudad de Toronto, Canadá.</p><p>Ya seas nuevo en la fe o hayas sido un miebro de la Iglesia del Nazareno por anos, te damos la mas calida bienvenida. Es un privilegio conectarnos con personas que comparten una pasion por servir a Dios y esparcir su amor por todo el mundo.</p>"
                     },
                     "sectionCta": {
                         "ctaOne": {
@@ -54,14 +54,14 @@
                         }
                     },
                     "sectionEvents": {
-                        "header": "Eventos"
+                        "header": "Eventos proximos"
                     }
                 }
             },
             "about": {
                 "metadata": {
-                    "title": "About us - Sharing God's Love with the World | Gracia de Dios",
-                    "description": "Learn about Grace of God - who we are, our values, our history, and our mission to spread the love of Jesus Christ to the world.",
+                    "title": "Sobre nosotros - Compartiendo el amor de Dios con el mundo | Gracia de Dios",
+                    "description": "Aprende sobre Gracia de Dios: quiénes somos, nuestros valores, nuestra historia y nuestra misión de difundir el amor de Jesucristo en el mundo.",
                     "esHref": "/sobre-nosotros",
                     "enHref": "/en/about-us"
                 },
@@ -71,12 +71,30 @@
                     "book": "Eclesiastés 5:2"
                 },
                 "quickLinks": [
-                    {"copy": "Quienes somos", "href": "#about"},
-                    {"copy": "Mision", "href": "#mission"},
-                    {"copy": "Valores", "href": "#values"},
-                    {"copy": "Lideres", "href": "#leaders"},
-                    {"copy": "Ministerios", "href": "#ministries"},
-                    {"copy": "Historia", "href": "#history"}
+                    {
+                        "copy": "Quienes somos",
+                        "href": "#about"
+                    },
+                    {
+                        "copy": "Mision",
+                        "href": "#mission"
+                    },
+                    {
+                        "copy": "Valores",
+                        "href": "#values"
+                    },
+                    {
+                        "copy": "Lideres",
+                        "href": "#leaders"
+                    },
+                    {
+                        "copy": "Ministerios",
+                        "href": "#ministries"
+                    },
+                    {
+                        "copy": "Historia",
+                        "href": "#history"
+                    }
                 ],
                 "copy": {
                     "sectionAbout": {
@@ -130,9 +148,15 @@
                     },
                     "sectionMinistries": {
                         "header": "Nuestros ministerios",
-                        "copy": "Grace of God has a variety of groups that cater to different age groups, interests, and needs, providing opportunities for spiritual growth, fellowship, and service.",
+                        "copy": "Gracia de Dios tiene una variedad de ministerios que atienden a grupos de diferentes edades, intereses y necesidades, brindando oportunidades para el crecimiento espiritual, el compañerismo y el servicio.",
                         "ministries": {
-                            "tabs": ["Alabanza", "Jovenes", "Ninos", "Damas", "Caballeros"],
+                            "tabs": [
+                                "Alabanza",
+                                "Jovenes",
+                                "Ninos",
+                                "Damas",
+                                "Caballeros"
+                            ],
                             "panels": [
                                 {
                                     "header": "<h3>Ministerio de Alabanza",
@@ -154,7 +178,6 @@
                                     "header": "<h3>Ministerio de Caballeros",
                                     "copy": "<p>Occaecat fugiat nulla Lorem in anim velit mollit fugiat eu deserunt pariatur adipisicing exercitation. Ad aliquip velit voluptate nostrud. Quis Lorem id nulla aute ut commodo fugiat elit quis et non occaecat veniam. Do occaecat sit tempor in nostrud labore. Minim anim labore esse aute dolor ad Lorem anim exercitation. Aliqua aliquip amet id labore cupidatat adipisicing mollit ad velit.</p><p>Cillum ut et ea eu sunt pariatur magna. Elit et occaecat enim occaecat ad sit fugiat velit cillum velit enim aute qui sit. Labore excepteur ullamco adipisicing aliqua duis in enim. Ullamco aute excepteur mollit elit cillum excepteur in voluptate sit in ipsum deserunt dolor magna. Duis reprehenderit commodo elit dolore aliquip culpa nulla sint.</p>"
                                 }
-
                             ]
                         }
                     },
@@ -168,7 +191,7 @@
                         "copy": "<p>Adipisicing enim aliquip sint non mollit. Aliquip aliqua qui tempor sit consectetur ut consequat pariatur fugiat consectetur ullamco. Ex laboris reprehenderit sit excepteur sint sint dolor Lorem.</p><p>Tempor ut amet sunt laboris aliqua et proident ipsum deserunt sunt voluptate id cupidatat. Aliquip sint labore qui ipsum dolore. Ullamco ut exercitation eu sit incididunt velit ex nisi qui. Sit id non labore minim. Ut nostrud proident voluptate voluptate. Velit enim aute qui tempor ut est mollit aute elit enim ex aliquip labore.</p><p>Irure sint esse nisi eu aliquip Lorem aliquip incididunt do id dolor velit dolore quis. Lorem sunt cillum ipsum deserunt non consequat officia nisi. Esse aute fugiat dolore laboris eu voluptate deserunt eu deserunt et elit proident nulla. Quis ullamco quis elit commodo sit deserunt ad magna consequat voluptate. Consequat qui ut minim esse sit.</p>"
                     },
                     "calloutMessage": {
-                        "copy": "Tienes alguna pregunta o comentario? Nos encantaria escuchar de ti",
+                        "copy": "Tienes preguntas o comentarios? Nos encantaria escuchar de ti",
                         "href": "<a href='/contacto'>Contactanos</a>",
                         "hrefComp": ""
                     }
@@ -176,8 +199,8 @@
             },
             "location": {
                 "metadata": {
-                    "title": "Services and location - Sharing God's Love with the World | Gracia de Dios",
-                    "description": "Discover Our Church Grace of God: Experience Community and Worship in Toronto with Our Range of Services and Programs.",
+                    "title": "Servicios y ubicación - Compartiendo el Amor de Dios con el Mundo | Gracia de Dios",
+                    "description": "Descubre nuestra Iglesia Gracia de Dios: experimenta la Comunidad y la adoración en Toronto con nuestra gama de servicios y programas.",
                     "esHref": "/servicios-ubicacion",
                     "enHref": "/en/services-location"
                 },
@@ -187,10 +210,22 @@
                     "book": "Eclesiastés 5:2"
                 },
                 "quickLinks": [
-                    {"copy": "Servicios", "href": "#services"},
-                    {"copy": "Ubicacion", "href": "#location"},
-                    {"copy": "En linea", "href": "#online"},
-                    {"copy": "Eventos", "href": "#events"}
+                    {
+                        "copy": "Servicios",
+                        "href": "#services"
+                    },
+                    {
+                        "copy": "Ubicacion",
+                        "href": "#location"
+                    },
+                    {
+                        "copy": "En linea",
+                        "href": "#online"
+                    },
+                    {
+                        "copy": "Eventos",
+                        "href": "#events"
+                    }
                 ],
                 "copy": {
                     "sectionServices": {
@@ -199,7 +234,7 @@
                         "sundayHour": "Visitanos los domingos a las 3:00pm",
                         "sundayInPerson": "<a href='#location'>EN PERSONA</a>",
                         "sundayOnline": "<a href='#online'>EN LINEA</a>",
-                        "otherHeader": "Other services",
+                        "otherHeader": "Otros servicios",
                         "services": [
                             {
                                 "title": "Servicio lunes",
@@ -228,26 +263,367 @@
                         ]
                     },
                     "sectionLocation": {
-                        "header": "We'd love to see you in person",
-                        "locationCopy": "<h3 class='location__subheader'>We are located at:</h3><p><b>624 Annette St, Toronto, ON M6S&nbsp;2C4</b></p>"
+                        "header": "Nos encantaria verte en persona",
+                        "locationCopy": "<h3 class='location__subheader'>Estamos ubicados en:</h3><p><b>624 Annette St, Toronto, ON M6S&nbsp;2C4</b></p>"
                     },
                     "sectionOnline": {
-                        "header": "You can also join us online",
-                        "locationCopy": "<h3 class='online__subheader text-center'>Watch our livestream Sunday Service and past sermons on our Youtube channel</h3>",
-                        "locationLink": "<a class='text-center' href='https://www.google.com' target='_blank' rel='noopener'>Watch now</a>"
+                        "header": "Tambien puedes unirte en linea",
+                        "locationCopy": "<h3 class='online__subheader text-center'>Mira nuestro Servicio Dominical en vivo y sermones anteriores en nuestro canal de Youtube</h3>",
+                        "locationLink": "<a class='text-center' href='https://www.google.com' target='_blank' rel='noopener'>Mira ahora</a>"
                     },
                     "calloutBlog": {
-                        "copy": "Keep growing your faith - uncover nuggets of faith in these articles penned by our family in Christ",
-                        "href": "<a href='/blog'>Read our blog \"Nuggets&nbsp;of&nbsp;Faith\"</a>",
-                        "hrefComp":""
+                        "copy": "Sigue aumentando tu fe: descubre pepitas de fe en estos artículos escritos por nuestra familia en Cristo",
+                        "href": "<a href='/blog'>Lee nuestro blog \"Pepitas&nbsp;de&nbsp;Fe\"</a>",
+                        "hrefComp": ""
                     },
                     "sectionEvents": {
-                        "header": "Upcoming events"
+                        "header": "Eventos proximos"
                     },
                     "calloutMessage": {
-                        "copy": "Tienes alguna pregunta o comentario? Nos encantaria escuchar de ti",
+                        "copy": "Tienes preguntas o comentarios? Nos encantaria escuchar de ti",
                         "href": "<a href='/contacto'>Contactanos</a>",
                         "hrefComp": ""
+                    }
+                }
+            },
+            "beliefs": {
+                "metadata": {
+                    "title": "Nuestras Creencias - Compartiendo el amor de Dios con el mundo | Iglesia del Nazareno Gracia de Dios",
+                    "description": "Conoce las creencias de la Iglesia del Nazareno Gracia de Dios: descubre nuestro énfasis en la santidad, nuestro compromiso con el evangelismo y las misiones, y nuestra creencia en la santificación, la curación divina y la segunda venida de Jesús.",
+                    "esHref": "/creencias",
+                    "enHref": "/en/beliefs"
+                },
+                "hero": {
+                    "header": "Nuestras Creencias",
+                    "verse": "De cierto, de cierto os digo: El que en mí cree, las obras que yo hago, él las hará también; y aun mayores hará, porque yo voy al Padre. Y todo lo que pidiereis al Padre en mi nombre, lo haré, para que el Padre sea glorificado en el Hijo. Si algo pidiereis en mi nombre, yo lo haré.",
+                    "book": "Juan 14:12-14"
+                },
+                "quickLinks": [
+                    {
+                        "copy": "Explora",
+                        "href": "#explore"
+                    },
+                    {
+                        "copy": "Articulos de Fe",
+                        "href": "#articles"
+                    },
+                    {
+                        "copy": "Caracteristicas",
+                        "href": "#characteristics"
+                    },
+                    {
+                        "copy": "Valores",
+                        "href": "#values"
+                    }
+                ],
+                "copy": {
+                    "sectionExplore": {
+                        "header": "Explora nuestras creencias",
+                        "copy": "<p>Aprende acerca de las creencias de la Iglesia del Nazareno de la Gracia de Dios, una denominación cristiana protestante con raíces en la tradición wesleyana. Descubre nuestro énfasis en la santidad, nuestro compromiso con el evangelismo y las misiones, y nuestra creencia en la santificación, la curación divina y la segunda venida de Jesús. Explora nuestros valores de educación, adoración y familia.</p>"
+                    },
+                    "sectionArticles": {
+                        "header": "Articulos de fe",
+                        "copy": "<p>Los Artículos de Fe representan nuestras creencias fundamentales. Sirven como una declaración de fe y proporcionan un marco para comprender la perspectiva teológica y práctica de nuestra denominación. Son una declaración unificadora de lo que creemos y son el fundamento de nuestro ministerio y misión.</p>",
+                        "accordions": [
+                            {
+                                "trigger": "El Dios Triuno",
+                                "panel": "<p>Creemos en un solo Dios, que existe en tres personas: el Padre, el Hijo (Jesucristo) y el Espíritu Santo.</p>"
+                            },
+                            {
+                                "trigger": "Jesucristo",
+                                "panel": "<p>Creemos en la divinidad de Jesucristo, su nacimiento virginal, vida sin pecado, muerte expiatoria, resurrección corporal y ascensión al cielo.</p>"
+                            },
+                            {
+                                "trigger": "El Espíritu Santo",
+                                "panel": "<p>Creemos en el Espíritu Santo, que es una persona y forma parte del Dios trino. El Espíritu Santo capacita a los creyentes para vivir una vida santa y dar testimonio de Cristo.</p>"
+                            },
+                            {
+                                "trigger": "Las Sagradas Escrituras",
+                                "panel": "<p>La Iglesia del Nazareno cree en la autoridad y la inspiración de la Biblia, que es la palabra escrita de Dios. La Biblia es la autoridad final para todos los asuntos de fe y práctica.</p>"
+                            },
+                            {
+                                "trigger": "El pecado, original y personal",
+                                "panel": "<p>Creemos que el pecado entró en el mundo por la desobediencia de Adán y Eva, y que todos los seres humanos nacen con una naturaleza pecaminosa. También creemos que los individuos cometen pecados personales y necesitan perdón y salvación.</p>"
+                            },
+                            {
+                                "trigger": "La expiación",
+                                "panel": "<p>Creemos que la muerte de Jesucristo en la cruz proporciona el único medio de salvación para la humanidad. A través de su muerte y resurrección, los creyentes son reconciliados con Dios y reciben vida eterna.</p>"
+                            },
+                            {
+                                "trigger": "Gracia Preveniente",
+                                "panel": "<p>Creemos en la gracia preveniente, que es la gracia de Dios que nos precede, preparando nuestros corazones para recibir la salvación.</p>"
+                            },
+                            {
+                                "trigger": "Arrepentimiento",
+                                "panel": "<p>Creemos que el arrepentimiento es necesario para la salvación. El arrepentimiento implica un verdadero alejamiento del pecado y un acercamiento a Dios.</p>"
+                            },
+                            {
+                                "trigger": "Justificación, Regeneración y Adopción",
+                                "panel": "<p>Creemos que la justificación es el acto de Dios de declarar justo a un pecador basado en la fe en Cristo. La regeneración es el nuevo nacimiento que ocurre cuando una persona acepta a Cristo como Señor y Salvador. La adopción es el acto de Dios de recibir a los creyentes en su familia.</p>"
+                            },
+                            {
+                                "trigger": "Santificación Entera",
+                                "panel": "<p>Creemos en la posibilidad de la santificación entera, que es una segunda obra de gracia que resulta en que el creyente es llenado con el Espíritu Santo y experimenta una vida de victoria sobre el pecado.</p>"
+                            },
+                            {
+                                "trigger": "La Iglesia",
+                                "panel": "<p>Creyemos en la Iglesia universal, que está compuesta por todos los creyentes en Cristo. También creemos en la iglesia local, que es una comunidad de creyentes que se reúnen para adorar, tener compañerismo y servicio.</p>"
+                            },
+                            {
+                                "trigger": "El Bautismo",
+                                "panel": "<p>Practicamos el bautismo por inmersión para los creyentes. El bautismo es un símbolo externo de un compromiso interno de seguir a Cristo.</p>"
+                            },
+                            {
+                                "trigger": "La Cena del Señor",
+                                "panel": "<p>Practicamos la Cena del Señor como un memorial de la muerte de Cristo y como un medio de gracia para los creyentes.</p>"
+                            },
+                            {
+                                "trigger": "La Sanidad Divina",
+                                "panel": "<p>Creyemos que Dios puede y sana a las personas física, emocional y espiritualmente.</p>"
+                            },
+                            {
+                                "trigger": "La Segunda Venida de Cristo",
+                                "panel": "<p>Creyemos en el retorno inminente de Cristo, cuando juzgará a los vivos y los muertos y establecerá su reino en la tierra.</p>"
+                            },
+                            {
+                                "trigger": "La Administración Cristiana",
+                                "panel": "<p>Creyemos que todos los creyentes están llamados a ser buenos administradores de los recursos que Dios les ha confiado. Esto incluye su tiempo, talentos y posesiones materiales, que deben usarse para promover el reino de Dios y bendecir a otros.</p>"
+                            }
+                        ]
+                    },
+                    "calloutVisit": {
+                        "copy": "Quieres conocer mas? Visitanos durante nuestro Servicio Dominical y platica con uno de nuestros lideres",
+                        "href": "<a href='/service-location'>Visitanos</a>",
+                        "hrefComp": ""
+                    },
+                    "sectionCharacteristics": {
+                        "header": "Nuestras caracteristicas nazarenas",
+                        "copy": "<p>Estas características definitorias de la Iglesia del Nazareno y sus miembros dan forma a la identidad y misión de la iglesia y proporcionan un marco para su teología y práctica.</p>",
+                        "accordions": [
+                            {
+                                "trigger": "Teologia Weysleyana",
+                                "panel": "<p>Formamos parte de la tradición wesleyana, que enfatiza las enseñanzas bíblicas de John Wesley, el fundador del metodismo, y el movimiento de santificación, que enfatizó la importancia de una vida de santificación y pureza.</p>"
+                            },
+                            {
+                                "trigger": "Énfasis en la Santidad Personal y Social",
+                                "panel": "<p>Damos un gran énfasis tanto a la santidad personal como social. La santidad personal implica vivir una vida apartada para Dios y caracterizada por la obediencia a los mandamientos de Dios. La santidad social implica involucrarse en ministerios de compasión y justicia social para ayudar a los necesitados.</p>"
+                            },
+                            {
+                                "trigger": "Énfasis en el Evangelismo y las Misiones",
+                                "panel": "<p>Tenemos un fuerte compromiso con el evangelismo y las misiones, buscando compartir el evangelio de Jesucristo con el mundo y participar en ministerios de compasión para ayudar a los necesitados.</p>"
+                            },
+                            {
+                                "trigger": "Compromiso con la Educación",
+                                "panel": "<p>Damos un alto valor a la educación, contando con varias universidades y seminarios alrededor del mundo. Creemos en la importancia de equipar a nuestros miembros con conocimientos y habilidades para servir a Dios efectivamente.</p>"
+                            },
+                            {
+                                "trigger": "Participación Activa en la Adoración",
+                                "panel": "<p>Enfatizamos la importancia de la participación activa en la adoración, incluyendo el canto, la oración, la lectura de las Escrituras y la predicación. La iglesia cree que la adoración es una parte vital del crecimiento y desarrollo espiritual del creyente.</p>"
+                            },
+                            {
+                                "trigger": "Apoyo a los Valores Familiares Tradicionales",
+                                "panel": "<p>Damos un alto valor a los valores familiares tradicionales, incluyendo la importancia del matrimonio entre un hombre y una mujer y la santidad de la vida humana.</p>"
+                            }
+                        ]
+                    },
+                    "calloutBlog": {
+                        "copy": "Tambien puede interesarte leer palabras directamente del corazon de nuestra congregacion",
+                        "href": "<a href='/en/blog'>Lee Nuestro Blog \"Pepitas&nbsp;de&nbsp;Fe\"</a>",
+                        "hrefComp": ""
+                    },
+                    "sectionValues": {
+                        "header": "Nuestros valores nazarenos",
+                        "copy": "<p>Estos valores ayudan a moldear la identidad y la misión de la Iglesia del Nazareno Gracia de Dios y nos guían en la vivencia de nuestra fe.</p>",
+                        "accordions": [
+                            {
+                                "trigger": "Somos un pueblo cristiano",
+                                "panel": "<p>Como denominación cristiana, valoramos la centralidad de Jesucristo en todos los aspectos de nuestra teología, adoración y misión.</p>"
+                            },
+                            {
+                                "trigger": "Somos un pueblo de santidad",
+                                "panel": "<p>Valoramos el concepto bíblico de la santidad, que enfatiza la obra transformadora del Espíritu Santo en la vida del creyente, llevando a una vida de obediencia y amor a Dios y a los demás.</p>"
+                            },
+                            {
+                                "trigger": "Somos un pueblo misional",
+                                "panel": "<p>Valoramos el llamado a compartir el evangelio de Jesucristo con el mundo y a involucrarnos en ministerios de compasión para ayudar a los necesitados.</p>"
+                            },
+                            {
+                                "trigger": "Somos un pueblo disciplinado",
+                                "panel": "<p>Valoramos la importancia de las disciplinas espirituales, como la oración, el ayuno, el estudio bíblico y la responsabilidad mutua, para crecer en la fe y la santidad.</p>"
+                            },
+                            {
+                                "trigger": "Somos un pueblo diverso",
+                                "panel": "<p>Valoramos la diversidad de culturas, razas, géneros y antecedentes en nuestra membresía, y buscamos promover la unidad en Cristo.</p>"
+                            },
+                            {
+                                "trigger": "Somos un pueblo compasivo",
+                                "panel": "<p>Valoramos mostrar el amor de Cristo a los demás a través de actos de bondad, misericordia y justicia.</p>"
+                            },
+                            {
+                                "trigger": "Somos un pueblo visionario",
+                                "panel": "<p>Valoramos la innovación y la creatividad para comprometernos efectivamente con el mundo y compartir el evangelio.</p>"
+                            }
+                        ]
+                    },
+                    "calloutMessage": {
+                        "copy": "Tienes preguntas o comentarios? Nos encataria escuchar de ti",
+                        "href": "<a href='/contacto'>Contactanos</a>",
+                        "hrefComp": ""
+                    }
+                }
+            },
+            "blog": {
+                "metadata": {
+                    "title": "Blog: Pepitas de Fe - Compartiendo el amor de Dios con el mundo | Iglesia del Nazareno Gracia de Dios",
+                    "description": "Pepitas de Fe - Un blog de la Iglesia del Nazareno Gracia de Dios dedicado a fortalecer tu caminar con Cristo a través de conocimientos prácticos, devocionales sinceros e historias inspiradoras de fe. Descubre la alegría de vivir una vida centrada en Cristo y sé animado a crecer más profundamente en tu relación con Dios a través de nuestra comunidad de creyentes.",
+                    "esHref": "/blog",
+                    "enHref": "/en/blog"
+                },
+                "hero": {
+                    "header": "Pepitas de Fe",
+                    "verse": "Sea vuestra palabra siempre con gracia, sazonada con sal, para que sepáis cómo debéis responder a cada uno.",
+                    "book": "Colosenses 4:6"
+                },
+                "quickLinks": [
+                    {
+                        "copy": "Bienvenido a nuestro blog",
+                        "href": "#introduction"
+                    },
+                    {
+                        "copy": "Descubre Pepitas de Fe",
+                        "href": "#posts"
+                    }
+                ],
+                "copy": {
+                    "sectionIntro": {
+                        "header": "Bienvenido a nuestro blog",
+                        "copy": "<p>Bienvenidos a nuestro blog \"Pepitas de Fe\", escrito por miembros de la Iglesia del Nazareno Gracia de Dios. Nuestra misión es compartir nuestras experiencias, perspectivas y reflexiones sobre cómo vivir nuestra fe en el mundo actual. Creemos que nuestra fe en Jesucristo debe informar y guiar cada aspecto de nuestras vidas, y estamos emocionados de compartir cómo esto se lleva a cabo en nuestra vida diaria. Ya sea que seas un seguidor de Cristo de larga data o estés explorando la fe por primera vez, esperamos que nuestro blog te anime e inspire en tu camino. ¡Gracias por unirte a nosotros!</p>"
+                    },
+                    "sectionPosts": {
+                        "header": "Descubre Pepitas de Fe"
+                    },
+                    "calloutMessage": {
+                        "copy": "Tienes preguntas o comentarios sobre alguno de nuestros articulos? Visitanos durante nuestro Servicio Dominical o envianos un mensaje para poder charlar",
+                        "href": "<a href='/services-location'>Visitanos</a>",
+                        "hrefComp": "<a href='/contact-us'>Envianos un mensaje</a>"
+                    }
+                }
+            },
+            "contact": {
+                "metadata": {
+                    "title": "Contacto - Compartiendo el amor de Dios con el mundo | Iglesia del Nazareno Gracia de Dios",
+                    "description": "",
+                    "esHref": "/contacto",
+                    "enHref": "/en/contact-us"
+                },
+                "hero": {
+                    "header": "Contacto",
+                    "verse": "",
+                    "book": ""
+                },
+                "copy": {
+                    "sectionIntro": {
+                        "header": "Nos encantaria escuchar de ti"
+                    }
+                }
+            },
+            "sitemap": {
+                "metadata": {
+                    "title": "Mapa del sitio - Compartiendo el amor de Dios con el mundo | Iglesia del Nazareno Gracia de Dios",
+                    "description": "",
+                    "esHref": "/mapa-del-sitio",
+                    "enHref": "/en/sitemap"
+                },
+                "hero": {
+                    "header": "Mapa del Sitio",
+                    "verse": "",
+                    "book": ""
+                },
+                "copy": {
+                    "sectionSitemap": {
+                        "links": [
+                            {
+                                "copy": "Inicio",
+                                "href": "/"
+                            },
+                            {
+                                "copy": "Sobre nosotros",
+                                "href": "/sobre-nosotros"
+                            },
+                            {
+                                "copy": "Servicios y ubicacion",
+                                "href": "/servicios-ubicacion"
+                            },
+                            {
+                                "copy": "Nuestras creencias",
+                                "href": "/creencias"
+                            },
+                            {
+                                "copy": "Blog \"Pepitas de Fe\"",
+                                "href": "/blog"
+                            }
+                        ]
+                    }
+                }
+            },
+            "privacy": {
+                "metadata": {
+                    "title": "Politica de Privacidad - Compartiendo el amor de Dios con el mundo | Iglesia del Nazareno Gracia de Dios",
+                    "description": "",
+                    "esHref": "/politica-de-privacidad",
+                    "enHref": "/en/privacy-policy"
+                },
+                "hero": {
+                    "header": "Politica de privacidad",
+                    "verse": "",
+                    "book": ""
+                },
+                "copy": {
+                    "sectionPrivacy": {
+                        "header": "Política de privacidad del sitio web de la Iglesia del Nazareno Gracia de Dios",
+                        "copy": "<p>En la Iglesia del Nazareno Gracia de Dios, entendemos la importancia de proteger su privacidad en línea. Esta Política de Privacidad describe los tipos de información personal que podemos recopilar a través de nuestro sitio web, cómo la usamos y cómo la protegemos.</p>"
+                    },
+                    "sectionData": {
+                        "header": "Recopilación y uso de información",
+                        "copy": "<p>Podemos recopilar información personal, como su nombre, dirección de correo electrónico y número de teléfono, a través de nuestro formulario de contacto en el sitio web. Esta información se utiliza únicamente para responder a sus consultas y proporcionarle la información solicitada. No vendemos ni alquilamos ninguna información personal a terceros.</p>"
+                    },
+                    "sectionCookies": {
+                        "header": "Cookies y seguimiento",
+                        "copy": "<p>Nuestro sitio web puede utilizar cookies para mejorar su experiencia de navegación. Las cookies son pequeños archivos de texto que se colocan en su dispositivo para almacenar sus preferencias y otra información sobre su visita. No utilizamos cookies para recopilar información personal o realizar un seguimiento de su comportamiento de navegación.</p>"
+                    },
+                    "sectionSecurity": {
+                        "header": "Seguridad",
+                        "copy": "<p>Tomamos medidas adecuadas para proteger la seguridad de su información personal, incluidas las medidas de seguridad físicas, electrónicas y procedimentales. Utilizamos una variedad de tecnologías y procedimientos de seguridad para ayudar a proteger su información personal contra el acceso, uso o divulgación no autorizados.</p>"
+                    },
+                    "sectionThird": {
+                        "header": "Sitios web de terceros",
+                        "copy": "<p>Nuestro sitio web puede contener enlaces a sitios web de terceros que no son propiedad ni están controlados por la Iglesia del Nazareno Gracia de Dios. No somos responsables de las prácticas de privacidad o el contenido de estos sitios web. Le recomendamos que revise las políticas de privacidad de estos sitios web antes de compartir cualquier información personal.</p>"
+                    },
+                    "sectionChanges": {
+                        "header": "Cambios en esta Política de Privacidad",
+                        "copy": "<p>Nos reservamos el derecho de modificar esta Política de Privacidad en cualquier momento. Si realizamos cambios materiales en esta política, publicaremos un aviso en nuestro sitio web antes de que el cambio entre en vigor. Le recomendamos que revise esta política periódicamente.</p>"
+                    },
+                    "sectionContact": {
+                        "header": "Contáctanos",
+                        "copy": "<p>Si tiene alguna pregunta o inquietud sobre esta Política de Privacidad, contáctenos en <a class='inline' href='mailto:email@domain.com'>email@domain.com</a>.</p>"
+                    }        
+                }
+            },
+            "error": {
+                "metadata": {
+                    "title": "Pagina no encontrada 404 - Compartiendo el amor de Dios con el mundo | Iglesia del Nazareno Gracia de Dios",
+                    "description": "",
+                    "esHref": "/404",
+                    "enHref": "/en/404"
+                },
+                "hero": {
+                    "header": "Pagina No Encontrada",
+                    "verse": "",
+                    "book": ""
+                },
+                "copy": {
+                    "sectionError": {
+                        "copy": "<p>No se pudo encontrar la página que estás buscando.</p><p>Puede haber sido eliminada, cambiado su nombre o estar temporalmente no disponible.</p><p>Por favor, verifica que la dirección del sitio web esté escrita correctamente.</p><a class='error-link' href='/'>Volver a la página principal</a>"
                     }
                 }
             }
@@ -321,18 +697,35 @@
                     "book": "Psalm 139:14"
                 },
                 "quickLinks": [
-                    {"copy": "Who we are", "href": "#about"},
-                    {"copy": "Mission", "href": "#mission"},
-                    {"copy": "Values", "href": "#values"},
-                    {"copy": "Leadership", "href": "#leaders"},
-                    {"copy": "Ministries", "href": "#ministries"},
-                    {"copy": "History", "href": "#history"}
+                    {
+                        "copy": "Who we are",
+                        "href": "#about"
+                    },
+                    {
+                        "copy": "Mission",
+                        "href": "#mission"
+                    },
+                    {
+                        "copy": "Values",
+                        "href": "#values"
+                    },
+                    {
+                        "copy": "Leadership",
+                        "href": "#leaders"
+                    },
+                    {
+                        "copy": "Ministries",
+                        "href": "#ministries"
+                    },
+                    {
+                        "copy": "History",
+                        "href": "#history"
+                    }
                 ],
                 "copy": {
                     "sectionAbout": {
                         "header": "Who we are",
-                        "copy":
-                            "<p>Grace of God Nazarene Church is a vibrant community of believers dedicated to sharing the love and grace of Jesus Christ with the world. Our church is committed to forming disciples who live out the message of the gospel in their daily lives. We believe that the Christian faith is not just a personal matter, but also a community one, and we seek to foster a loving and supportive community where everyone can grow in their relationship with God.</p><p>We strive to be a welcoming and open church to all, regardless of their past, present, or current circumstances. We want to be a source of hope and help for those in need, and we seek to serve our community in any way we can.</p><p>We would love for you to join us as we seek to grow in our faith, help others, and share the love of Jesus Christ with the world.</p>"
+                        "copy": "<p>Grace of God Nazarene Church is a vibrant community of believers dedicated to sharing the love and grace of Jesus Christ with the world. Our church is committed to forming disciples who live out the message of the gospel in their daily lives. We believe that the Christian faith is not just a personal matter, but also a community one, and we seek to foster a loving and supportive community where everyone can grow in their relationship with God.</p><p>We strive to be a welcoming and open church to all, regardless of their past, present, or current circumstances. We want to be a source of hope and help for those in need, and we seek to serve our community in any way we can.</p><p>We would love for you to join us as we seek to grow in our faith, help others, and share the love of Jesus Christ with the world.</p>"
                     },
                     "calloutBeliefs": {
                         "copy": "Our beliefs are also part of whi we are",
@@ -383,7 +776,13 @@
                         "header": "Nuestros ministerios",
                         "copy": "Grace of God has a variety of groups that cater to different age groups, interests, and needs, providing opportunities for spiritual growth, fellowship, and service.",
                         "ministries": {
-                            "tabs": ["Praise", "Youth", "Children", "Women", "Men"],
+                            "tabs": [
+                                "Praise",
+                                "Youth",
+                                "Children",
+                                "Women",
+                                "Men"
+                            ],
                             "panels": [
                                 {
                                     "header": "<h3>Praise ministry",
@@ -405,7 +804,6 @@
                                     "header": "<h3>Men's ministry",
                                     "copy": "<p>Occaecat fugiat nulla Lorem in anim velit mollit fugiat eu deserunt pariatur adipisicing exercitation. Ad aliquip velit voluptate nostrud. Quis Lorem id nulla aute ut commodo fugiat elit quis et non occaecat veniam. Do occaecat sit tempor in nostrud labore. Minim anim labore esse aute dolor ad Lorem anim exercitation. Aliqua aliquip amet id labore cupidatat adipisicing mollit ad velit.</p><p>Cillum ut et ea eu sunt pariatur magna. Elit et occaecat enim occaecat ad sit fugiat velit cillum velit enim aute qui sit. Labore excepteur ullamco adipisicing aliqua duis in enim. Ullamco aute excepteur mollit elit cillum excepteur in voluptate sit in ipsum deserunt dolor magna. Duis reprehenderit commodo elit dolore aliquip culpa nulla sint.</p>"
                                 }
-
                             ]
                         }
                     },
@@ -438,10 +836,22 @@
                     "book": "Hebrews 10:24"
                 },
                 "quickLinks": [
-                    {"copy": "Services", "href": "#services"},
-                    {"copy": "Location", "href": "#location"},
-                    {"copy": "Online", "href": "#online"},
-                    {"copy": "Upcoming events", "href": "#events"}
+                    {
+                        "copy": "Services",
+                        "href": "#services"
+                    },
+                    {
+                        "copy": "Location",
+                        "href": "#location"
+                    },
+                    {
+                        "copy": "Online",
+                        "href": "#online"
+                    },
+                    {
+                        "copy": "Upcoming events",
+                        "href": "#events"
+                    }
                 ],
                 "copy": {
                     "sectionServices": {
@@ -490,7 +900,7 @@
                     "calloutBlog": {
                         "copy": "Keep growing your faith - uncover nuggets of faith in these articles penned by our family in Christ",
                         "href": "<a href='/blog'>Read our blog \"Nuggets&nbsp;of&nbsp;Faith\"</a>",
-                        "hrefComp":""
+                        "hrefComp": ""
                     },
                     "sectionEvents": {
                         "header": "Upcoming events"
@@ -515,10 +925,22 @@
                     "book": "John 14:12-14"
                 },
                 "quickLinks": [
-                    {"copy": "Explore", "href": "#explore"},
-                    {"copy": "Articles of Faith", "href": "#articles"},
-                    {"copy": "Characteristics", "href": "#characteristics"},
-                    {"copy": "Values", "href": "#values"}
+                    {
+                        "copy": "Explore",
+                        "href": "#explore"
+                    },
+                    {
+                        "copy": "Articles of Faith",
+                        "href": "#articles"
+                    },
+                    {
+                        "copy": "Characteristics",
+                        "href": "#characteristics"
+                    },
+                    {
+                        "copy": "Values",
+                        "href": "#values"
+                    }
                 ],
                 "copy": {
                     "sectionExplore": {
@@ -689,8 +1111,14 @@
                     "book": "Colossians 4:6"
                 },
                 "quickLinks": [
-                    {"copy": "Welcome to our blog", "href": "#introduction"},
-                    {"copy": "Uncover Nuggets of Faith", "href": "#posts"}
+                    {
+                        "copy": "Welcome to our blog",
+                        "href": "#introduction"
+                    },
+                    {
+                        "copy": "Uncover Nuggets of Faith",
+                        "href": "#posts"
+                    }
                 ],
                 "copy": {
                     "sectionIntro": {
@@ -768,8 +1196,8 @@
                 "metadata": {
                     "title": "Privacy Policy - Sharing God's Love with the World | Grace of God Nazarene Church",
                     "description": "",
-                    "esHref": "/sitemap",
-                    "enHref": "/en/sitemap"
+                    "esHref": "/politica-de-privacidad",
+                    "enHref": "/en/privacy-policy"
                 },
                 "hero": {
                     "header": "Privacy policy",
