@@ -6,7 +6,7 @@ export default defineConfig({
     build: {
         rollupOptions: {
             external: [
-                "Airtable"
+                "./node_modules/airtable"
             ]
         }
     }
