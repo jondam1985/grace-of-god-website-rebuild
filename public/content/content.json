@@ -11,7 +11,7 @@
         "pages": {
             "homepage": {
                 "metadata": {
-                    "title": "Bienvenido a la Iglesia del Nazareno Gracia de Dioz | Gracia de Dios",
+                    "title": "Bienvenido a la Iglesia del Nazareno Gracia de Dioz - Compartiendo el amor de Dios con Toronto y  el mundo | Iglesia del Nazareno Gracia de Dios",
                     "description": "Bienvenido a Gracia de Dios - una vibrante comunidad de creyentes dedicados a esparcir el amor y la gracia de Jesucrist. Acompananos en nuestro viaje, donde buscamos crecer en la fe, esperanza y amor.",
                     "esHref": "/",
                     "enHref": "/en"
@@ -61,7 +61,7 @@
             },
             "about": {
                 "metadata": {
-                    "title": "Sobre nosotros - Compartiendo el amor de Dios con el mundo | Gracia de Dios",
+                    "title": "Sobre nosotros - Compartiendo el amor de Dios con Toronto y  el mundo | Iglesia del Nazareno Gracia de Dios",
                     "description": "Aprende sobre Gracia de Dios: quiénes somos, nuestros valores, nuestra historia y nuestra misión de difundir el amor de Jesucristo en el mundo.",
                     "esHref": "/sobre-nosotros",
                     "enHref": "/en/about-us"
@@ -200,13 +200,13 @@
             },
             "location": {
                 "metadata": {
-                    "title": "Servicios y ubicación - Compartiendo el Amor de Dios con el Mundo | Gracia de Dios",
+                    "title": "Ubicacion y Servicios - Compartiendo el amor de Dios con Toronto y  el mundo | Iglesia del Nazareno Gracia de Dios",
                     "description": "Descubre nuestra Iglesia Gracia de Dios: experimenta la Comunidad y la adoración en Toronto con nuestra gama de servicios y programas.",
                     "esHref": "/servicios-ubicacion",
                     "enHref": "/en/services-location"
                 },
                 "hero": {
-                    "header": "Servicios y Ubicacion",
+                    "header": "Ubicacion y Servicios",
                     "verse": "No te des prisa en hablar, ni se apresure tu corazón a proferir palabra delante de Dios. Porque Dios está en el cielo y tú en la tierra; por tanto sean pocas tus palabras.",
                     "book": "Eclesiastés 5:2"
                 },
@@ -289,7 +289,7 @@
             },
             "beliefs": {
                 "metadata": {
-                    "title": "Nuestras Creencias - Compartiendo el amor de Dios con el mundo | Iglesia del Nazareno Gracia de Dios",
+                    "title": "Nuestras Creencias - Compartiendo el amor de Dios con Toronto y  el mundo | Iglesia del Nazareno Gracia de Dios",
                     "description": "Conoce las creencias de la Iglesia del Nazareno Gracia de Dios: descubre nuestro énfasis en la santidad, nuestro compromiso con el evangelismo y las misiones, y nuestra creencia en la santificación, la curación divina y la segunda venida de Jesús.",
                     "esHref": "/creencias",
                     "enHref": "/en/beliefs"
@@ -475,7 +475,7 @@
             },
             "blog": {
                 "metadata": {
-                    "title": "Blog: Pepitas de Fe - Compartiendo el amor de Dios con el mundo | Iglesia del Nazareno Gracia de Dios",
+                    "title": "Blog: Pepitas de Fe - Compartiendo el amor de Dios con Toronto y  el mundo | Iglesia del Nazareno Gracia de Dios",
                     "description": "Pepitas de Fe - Un blog de la Iglesia del Nazareno Gracia de Dios dedicado a fortalecer tu caminar con Cristo a través de conocimientos prácticos, devocionales sinceros e historias inspiradoras de fe. Descubre la alegría de vivir una vida centrada en Cristo y sé animado a crecer más profundamente en tu relación con Dios a través de nuestra comunidad de creyentes.",
                     "esHref": "/blog",
                     "enHref": "/en/blog"
@@ -512,7 +512,7 @@
             },
             "contact": {
                 "metadata": {
-                    "title": "Contacto - Compartiendo el amor de Dios con el mundo | Iglesia del Nazareno Gracia de Dios",
+                    "title": "Contacto - Compartiendo el amor de Dios con Toronto y  el mundo | Iglesia del Nazareno Gracia de Dios",
                     "description": "",
                     "esHref": "/contacto",
                     "enHref": "/en/contact-us"
@@ -530,7 +530,7 @@
             },
             "sitemap": {
                 "metadata": {
-                    "title": "Mapa del sitio - Compartiendo el amor de Dios con el mundo | Iglesia del Nazareno Gracia de Dios",
+                    "title": "Mapa del sitio - Compartiendo el amor de Dios con Toronto y  el mundo | Iglesia del Nazareno Gracia de Dios",
                     "description": "",
                     "esHref": "/mapa-del-sitio",
                     "enHref": "/en/sitemap"
@@ -569,13 +569,13 @@
             },
             "privacy": {
                 "metadata": {
-                    "title": "Politica de Privacidad - Compartiendo el amor de Dios con el mundo | Iglesia del Nazareno Gracia de Dios",
+                    "title": "Politica de Privacidad - Compartiendo el amor de Dios con Toronto y  el mundo | Iglesia del Nazareno Gracia de Dios",
                     "description": "",
                     "esHref": "/politica-de-privacidad",
                     "enHref": "/en/privacy-policy"
                 },
                 "hero": {
-                    "header": "Politica de privacidad",
+                    "header": "Politica de Privacidad",
                     "verse": "",
                     "book": ""
                 },
@@ -612,7 +612,7 @@
             },
             "error": {
                 "metadata": {
-                    "title": "Pagina no encontrada 404 - Compartiendo el amor de Dios con el mundo | Iglesia del Nazareno Gracia de Dios",
+                    "title": "Pagina no encontrada 404 - Compartiendo el amor de Dios con Toronto y  el mundo | Iglesia del Nazareno Gracia de Dios",
                     "description": "",
                     "esHref": "/404",
                     "enHref": "/en/404"
@@ -638,7 +638,7 @@
         "pages": {
             "homepage": {
                 "metadata": {
-                    "title": "Welcome to Grace of God Nazare Church | Grace of God",
+                    "title": "Welcome to Grace of God Nazare Church - Sharing God's love with Toronto and the world | Grace of God Nazarene Church",
                     "description": "Welcome to Grace of God - a vibrant community of believers dedicated to spreading the love and grace of Jesus Christ. Join us as we journey together, seeking to grow in faith, hope, and love.",
                     "esHref": "/",
                     "enHref": "/en"
@@ -688,13 +688,13 @@
             },
             "about": {
                 "metadata": {
-                    "title": "About us - Sharing God's Love with the World | Grace of God",
+                    "title": "About us - Sharing God's love with Toronto and the world | Grace of God Nazarene Church",
                     "description": "Learn about Grace of God - who we are, our values, our history, and our mission to spread the love of Jesus Christ to the world.",
                     "esHref": "/sobre-nosotros",
                     "enHref": "/en/about-us"
                 },
                 "hero": {
-                    "header": "About us",
+                    "header": "About Us",
                     "verse": "I say I am nothing special, but God says I am fearfully and wonderfully made. \"I praise you because I am fearfully and wonderfully made; your works are wonderful, I know that full well\"",
                     "book": "Psalm 139:14"
                 },
@@ -775,7 +775,7 @@
                         ]
                     },
                     "sectionMinistries": {
-                        "header": "Nuestros ministerios",
+                        "header": "Our ministries",
                         "copy": "Grace of God has a variety of groups that cater to different age groups, interests, and needs, providing opportunities for spiritual growth, fellowship, and service.",
                         "ministries": {
                             "tabs": [
@@ -827,13 +827,13 @@
             },
             "location": {
                 "metadata": {
-                    "title": "Services and location - Sharing God's Love with the World | Gracia de Dios",
+                    "title": "Location & services - Sharing God's love with Toronto and the world | Iglesia del Nazareno Gracia de Dios",
                     "description": "Discover Our Church Grace of God: Experience Community and Worship in Toronto with Our Range of Services and Programs.",
                     "esHref": "/servicios-ubicacion",
                     "enHref": "/en/services-location"
                 },
                 "hero": {
-                    "header": "Services & Location",
+                    "header": "Location & Services",
                     "verse": "And let us consider one another in order to provoke love and good works, not neglecting to gather together, as some are in the habit of doing, but encouraging each other, and all the more as you see the day approaching",
                     "book": "Hebrews 10:24"
                 },
@@ -916,7 +916,7 @@
             },
             "beliefs": {
                 "metadata": {
-                    "title": "Our Beliefs - Sharing God's Love with the World | Grace of God Nazarene Church",
+                    "title": "Our Beliefs - Sharing God's love with Toronto and the world | Grace of God Nazarene Church",
                     "description": "Learn about the beliefs of the Grace of God Nazarene Church: discover our emphasis on holiness, commitment to evangelism and missions, and belief in sanctification, divine healing, and the second coming of Jesus.",
                     "esHref": "/creencias",
                     "enHref": "/en/beliefs"
@@ -1102,7 +1102,7 @@
             },
             "blog": {
                 "metadata": {
-                    "title": "Blog: Nuggets of Faith - Sharing God's Love with the World | Grace of God Nazarene Church",
+                    "title": "Blog: Nuggets of Faith - Sharing God's love with Toronto and the world | Grace of God Nazarene Church",
                     "description": "Nuggets of Faith - A Grace of God Nazarene Church blog devoted to strengthening your walk with Christ through practical insights, heartfelt devotionals, and inspiring stories of faith. Discover the joy of living a Christ-centered life and be encouraged to grow deeper in your relationship with God through our community of believers.",
                     "esHref": "/blog",
                     "enHref": "/en/blog"
@@ -1139,13 +1139,13 @@
             },
             "contact": {
                 "metadata": {
-                    "title": "Contact us - Sharing God's Love with the World | Grace of God Nazarene Church",
+                    "title": "Contact us - Sharing God's love with Toronto and the world | Grace of God Nazarene Church",
                     "description": "",
                     "esHref": "/contacto",
                     "enHref": "/en/contact-us"
                 },
                 "hero": {
-                    "header": "Contact us",
+                    "header": "Contact Us",
                     "verse": "",
                     "book": ""
                 },
@@ -1157,7 +1157,7 @@
             },
             "sitemap": {
                 "metadata": {
-                    "title": "Sitemap - Sharing God's Love with the World | Grace of God Nazarene Church",
+                    "title": "Sitemap - Sharing God's love with Toronto and the world | Grace of God Nazarene Church",
                     "description": "",
                     "esHref": "/sitemap",
                     "enHref": "/en/sitemap"
@@ -1179,7 +1179,7 @@
                                 "href": "/en/about-us"
                             },
                             {
-                                "copy": "Services & location",
+                                "copy": "Location & services",
                                 "href": "/en/services-location"
                             },
                             {
@@ -1196,13 +1196,13 @@
             },
             "privacy": {
                 "metadata": {
-                    "title": "Privacy Policy - Sharing God's Love with the World | Grace of God Nazarene Church",
+                    "title": "Privacy Policy - Sharing God's love with Toronto and the world | Grace of God Nazarene Church",
                     "description": "",
                     "esHref": "/politica-de-privacidad",
                     "enHref": "/en/privacy-policy"
                 },
                 "hero": {
-                    "header": "Privacy policy",
+                    "header": "Privacy Policy",
                     "verse": "",
                     "book": ""
                 },
@@ -1239,7 +1239,7 @@
             },
             "error": {
                 "metadata": {
-                    "title": "Page not found 404 - Sharing God's Love with the World | Grace of God Nazarene Church",
+                    "title": "Page not found 404 - Sharing God's love with Toronto and the world | Grace of God Nazarene Church",
                     "description": "",
                     "esHref": "/404",
                     "enHref": "/en/404"

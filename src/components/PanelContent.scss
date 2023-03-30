@@ -10,6 +10,7 @@
     @include mobile {
         flex-wrap: wrap;
         flex-direction: column-reverse;
+        padding: 1rem;
     }
 
     .panel__image {
