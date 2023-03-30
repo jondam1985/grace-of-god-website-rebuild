@@ -23,11 +23,12 @@
                 "copy": {
                     "sectionSundayService": {
                         "calloutOne": {
-                            "copy": "Servicio de Adoracion: todos los domingos a las 3:00pm",
+                            "header": "Servicio de Adoracion",
+                            "copy": "Todos los domingos a las 3:00pm",
                             "ctaOneCopy": "En persona",
                             "ctaOneHref": "/servicios-ubicacion",
                             "ctaOneExternal": false,
-                            "ctaTwoCopy": "en linea",
+                            "ctaTwoCopy": "En linea",
                             "ctaTwoHref": "https://www.google.com/",
                             "ctaTwoExternal": true
                         }
@@ -40,17 +41,17 @@
                         "ctaOne": {
                             "copy": "Conocenos - quienes somos y que representamos!",
                             "linkCopy": "Sobre nosotros",
-                            "herf": "/"
+                            "herf": "/sobre-nosotros"
                         },
                         "ctaTwo": {
                             "copy": "Descrube nuestra fe - la fundacion de lo que hacemos y en que creemos",
                             "linkCopy": "Creencias",
-                            "herf": "/"
+                            "herf": "/creencias"
                         },
                         "ctaThree": {
                             "copy": "Descubre pepitas doradas de fe y sabiduria - un articulo a la vez",
                             "linkCopy": "Lee nuestro blog",
-                            "herf": "/"
+                            "herf": "/blog"
                         }
                     },
                     "sectionEvents": {
@@ -231,7 +232,7 @@
                     "sectionServices": {
                         "header": "Nuestros servicios",
                         "sundayHeader": "Servicio de Adoracion",
-                        "sundayHour": "Visitanos los domingos a las 3:00pm",
+                        "sundayHour": "Visitanos todos los domingos a las 3:00pm",
                         "sundayInPerson": "<a href='#location'>EN PERSONA</a>",
                         "sundayOnline": "<a href='#online'>EN LINEA</a>",
                         "otherHeader": "Otros servicios",
@@ -649,34 +650,35 @@
                 "copy": {
                     "sectionSundayService": {
                         "calloutOne": {
-                            "copy": "Worship Service: Every Sunday at 3:00pm",
+                            "header": "Worship Service",
+                            "copy": "Every Sunday at 3:00pm",
                             "ctaOneCopy": "In person",
-                            "ctaOneHref": "/servicios-ubicacion",
+                            "ctaOneHref": "/en/services-location#location",
                             "ctaOneExternal": false,
-                            "ctaTwoCopy": "online",
+                            "ctaTwoCopy": "Online",
                             "ctaTwoHref": "https://www.google.com/",
                             "ctaTwoExternal": true
                         }
                     },
                     "sectionWelcome": {
-                        "header": "Welcome Grace of God Nazarene Church",
+                        "header": "Welcome to Grace of God Nazarene Church",
                         "copyOne": "<p>Grace of God Nazarene Church is a community of Christians who coming from various countries, different cultural, social and religious backgrounds, gather to worship and serve God in the city of Toronto, Canada.</p><p>Whether you are new in the faith or have been a member of the Church of the Nazarene for many years, we want to extend a warm welcome to you. It is a privilege to connect with individuals who share a passion for serving God and spreading his love in the world.</p>"
                     },
                     "sectionCta": {
                         "ctaOne": {
                             "copy": "Get to know us - who we are and what we stand for!",
                             "linkCopy": "About us",
-                            "herf": "/"
+                            "herf": "/en/about-us"
                         },
                         "ctaTwo": {
                             "copy": "Discover our faith - the foundation of all we do and believe in",
                             "linkCopy": "Our beliefs",
-                            "herf": "/"
+                            "herf": "/en/beliefs"
                         },
                         "ctaThree": {
                             "copy": "Uncover golden nuggets of faith and wisdom - one post at a time",
                             "linkCopy": "Read our blog",
-                            "herf": "/"
+                            "herf": "/en/blog"
                         }
                     },
                     "sectionEvents": {
@@ -857,7 +859,7 @@
                     "sectionServices": {
                         "header": "Our services",
                         "sundayHeader": "Worship service",
-                        "sundayHour": "Visit us every Sunday at 3:00pm",
+                        "sundayHour": "Join us every Sunday at 3:00pm",
                         "sundayInPerson": "<a href='#location'>IN PERSON</a>",
                         "sundayOnline": "<a href='#online'>ON LINE</a>",
                         "otherHeader": "Other services",
@@ -899,7 +901,7 @@
                     },
                     "calloutBlog": {
                         "copy": "Keep growing your faith - uncover nuggets of faith in these articles penned by our family in Christ",
-                        "href": "<a href='/blog'>Read our blog \"Nuggets&nbsp;of&nbsp;Faith\"</a>",
+                        "href": "<a href='/en/blog'>Read our blog \"Nuggets&nbsp;of&nbsp;Faith\"</a>",
                         "hrefComp": ""
                     },
                     "sectionEvents": {

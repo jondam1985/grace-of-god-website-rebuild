@@ -20,12 +20,12 @@ const { lang } = Astro.props;
         </nav>
         <div class=" flex flex-align-center footer-nav__second-nav">
             <div class="footer-nav__social-links flex flex-align-center flex-justify-center">
-                <a href="https://www.goolge.com" target="_blank" rel="noopner" aria-label={lang == "es" ? "Siguenos en Facebook" : "Follow us on Facebook"}><FacebookSVG /></a>
-                <a href="https://www.goolge.com" target="_blank" rel="noopner" aria-label={lang == "es" ? "Siguenos en Twitter" : "Follow us on Twitter"}><TwitterSVG /></a>
-                <a href="https://www.goolge.com" target="_blank" rel="noopner" aria-label={lang == "es" ? "Siguenos en Youtube" : "Follow us on Youtube"}><YoutubeSVG /></a>
+                <a href="https://www.facebook.com" target="_blank" rel="noopner" aria-label={lang == "es" ? "Siguenos en Facebook" : "Follow us on Facebook"}><FacebookSVG /></a>
+                <a href="https://www.twitter.com" target="_blank" rel="noopner" aria-label={lang == "es" ? "Siguenos en Twitter" : "Follow us on Twitter"}><TwitterSVG /></a>
+                <a href="https://www.youtube.com" target="_blank" rel="noopner" aria-label={lang == "es" ? "Siguenos en Youtube" : "Follow us on Youtube"}><YoutubeSVG /></a>
             </div>
             <div class="footer-nav__donate-links">
-                <a href="https://www.goolge.com" target="_blank" rel="noopner"><span>{lang == "es" ? "Donaciones" : "Donate"}</span></a>
+                <a href="https://www.canadahelps.org/en/" target="_blank" rel="noopner"><span>{lang == "es" ? "Donaciones" : "Donate"}</span></a>
             </div>
         </div>
     </div>
@@ -36,8 +36,8 @@ const { lang } = Astro.props;
         <div class="footer__copy">
             <p class="footer__copy-services">
                 {lang == "es" ? 
-                <span>Servicio de Adoracion: domingos a las 3:00pm - <a href="/servicios-ubicacion" class="inline">en persona</a> y <a href="https://www.google.com" class="inline">en linea</a></span> : 
-                <span>Worship Service: Sundays at 3:00pm - <a href="/en/services-location" class="inline">in person</a> and <a href="https://www.google.com" class="inline">online</a></span>
+                <span>Servicio de Adoracion: domingos a las 3:00pm - <a href="/servicios-ubicacion#location" class="inline">en persona</a> y <a href="https://www.google.com" class="inline">en linea</a></span> : 
+                <span>Worship Service: Sundays at 3:00pm - <a href="/en/services-location#location" class="inline">in person</a> and <a href="https://www.google.com" class="inline">online</a></span>
                 }
             </p>
             <p class="footer__copy-copyright">&copy; <span id="currentYear"></span>

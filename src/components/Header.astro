@@ -18,7 +18,7 @@ const { lang, esHref, enHref  } = Astro.props;
     <div class="container flex flex-align-center">
         <div class="navbar__logo mobile">
             <a class="flex flex-align-center" href={lang == "es" ? "/" : "/en"}>
-                <img alt={lang == "es" ? "Logo Iglesia del Nazareno, ir a pagina de inicio" : "Church of the Nazarene logo, go to homepage"} src={LogoSmall} />
+                <img height="68" width="78" alt={lang == "es" ? "Logo Iglesia del Nazareno, ir a pagina de inicio" : "Church of the Nazarene logo, go to homepage"} src={LogoSmall} />
             </a>
         </div>
         <div class="navbar__language mobile">
@@ -48,12 +48,12 @@ const { lang, esHref, enHref  } = Astro.props;
             </nav>
             <div class="navbar__second-nav flex flex-align-center flex-justify-between">
                 <div class="navbar__second-nav-social-links flex flex-justify-center">
-                    <a class="second-nav__social" target="_blank" rel="noopener" href="https://www.google.com"><FacebookSVG /><span class="sr-only" lang={lang}>{lang == "es" ? "Siguenos en Facebook" : "Follow us on Facebook"}</span></a>
-                    <a class="second-nav__social" target="_blank" rel="noopener" href="https://www.google.com"><TwitterSVG /><span class="sr-only" lang={lang}>{lang == "es" ? "Siguenos en Twitter " : "Follow us on Twitter "}</span></a>
-                    <a class="second-nav__social" target="_blank" rel="noopener" href="https://www.google.com"><YoutubeSVG /><span class="sr-only" lang={lang}>{lang == "es" ? "Siguenos en Youtube " : "Follow us on Youtube "}</span></a>
+                    <a class="second-nav__social" target="_blank" rel="noopener" href="https://www.facebook.com"><FacebookSVG /><span class="sr-only" lang={lang}>{lang == "es" ? "Siguenos en Facebook" : "Follow us on Facebook"}</span></a>
+                    <a class="second-nav__social" target="_blank" rel="noopener" href="https://www.twitter.com"><TwitterSVG /><span class="sr-only" lang={lang}>{lang == "es" ? "Siguenos en Twitter " : "Follow us on Twitter "}</span></a>
+                    <a class="second-nav__social" target="_blank" rel="noopener" href="https://www.youtube.com"><YoutubeSVG /><span class="sr-only" lang={lang}>{lang == "es" ? "Siguenos en Youtube " : "Follow us on Youtube "}</span></a>
                 </div>
                 <div class="navbar__second-nav-donate-links flex flex-justify-center">
-                    <a class="second-nav__donate" target="_blank" rel="noopener" href="https://www.google.com">{lang == "es" ? "Donaciones" : "Donate"}</a>
+                    <a class="second-nav__donate" target="_blank" rel="noopener" href="https://www.canadahelps.org/en/">{lang == "es" ? "Donaciones" : "Donate"}</a>
                 </div>
                 <div class="desktop">
                     <LangSwitch 

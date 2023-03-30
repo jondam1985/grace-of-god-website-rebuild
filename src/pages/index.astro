@@ -2,13 +2,13 @@
 import "@pages/index.scss";
 import Layout from '@layouts/Layout.astro';
 import Content from 'public/content/content.json';
-import Verse from "@components/Verse.astro";
 import AboutSVG from "@components/AboutSVG.astro";
 import BeliefsSVG from "@components/BeliefsSVG.astro";
 import BlogSVG from "@components/BlogSVG.astro";
 import Events from "@components/Events.astro";
-import WelcomeVideo from "@components/WelcomeVideo.astro";
 import VerseOfTheDay from "@components/VerseOfTheDay.astro";
+import LogoChurchEn from "@assets/logo_church-en.webp";
+import LogoChurchEs from "@assets/logo_church-es.webp";
 
 const page = "homepage";
 const lang = "es";
@@ -17,37 +17,6 @@ const pageContent = content.pages[page];
 const title = pageContent.metadata.title;
 const description = pageContent.metadata.description;
 const pageClass = `page-${page} ${lang}`;
-
-const events = [
-	{
-		"title": "Titulo del evento",
-		"description": "Amet ea aliqua cillum sint est eu",
-		"date": "Sabado 11 de Marzo - 3:00pm",
-		"location": "624 Annete St, Toronto, ON",
-		"locationHref": "/ubicacion-servicios"
-	},
-	{
-		"title": "Titulo del evento",
-		"description": "Amet ea aliqua cillum sint est eu",
-		"date": "Sabado 11 de Marzo - 3:00pm",
-		"location": "624 Annete St, Toronto, ON",
-		"locationHref": "/ubicacion-servicios"
-	},
-	{
-		"title": "Titulo del evento",
-		"description": "Amet ea aliqua cillum sint est eu",
-		"date": "Sabado 11 de Marzo - 3:00pm",
-		"location": "624 Annete St, Toronto, ON",
-		"locationHref": "/ubicacion-servicios"
-	},
-	{
-		"title": "Titulo del evento",
-		"description": "Amet ea aliqua cillum sint est eu",
-		"date": "Sabado 11 de Marzo - 3:00pm",
-		"location": "624 Annete St, Toronto, ON",
-		"locationHref": "/ubicacion-servicios"
-	}
-]
 ---
 
 <Layout 
@@ -63,6 +32,9 @@ const events = [
 		<div class="hero relative" role="banner">
 			<div class="container">
 				<div class="hero__header">
+					<div class="hero__image relative">
+						<img width="338" height="auto" alt={lang == "es" ? "Iglesia del Nazareno" : "Church of the Nazarene"} src={lang == "es" ? LogoChurchEs : LogoChurchEn} />
+					</div>
 					<h1 class="relative">
 						{pageContent.hero.header}
 					</h1>
@@ -78,11 +50,15 @@ const events = [
 		</div>
 		<section class="section-alt sunday-service text-center relative ">
 			<div class="container">
-				<div class="sunday-service__callout bg-white box-shadow relative">
-					<h2>{pageContent.copy.sectionSundayService.calloutOne.copy} 
-						[<a target="_blank" rel="noopener" href={pageContent.copy.sectionSundayService.calloutOne.ctaOneHref} class="inline">{pageContent.copy.sectionSundayService.calloutOne.ctaOneCopy}</a>
-						 y <a href={pageContent.copy.sectionSundayService.calloutOne.ctaTwoHref} class="inline">{pageContent.copy.sectionSundayService.calloutOne.ctaTwoCopy}</a>]
-					</h2>
+				<div class="sunday-service__callout bg-white box-shadow relative text-center">
+					<h2 class="subheading">{pageContent.copy.sectionSundayService.calloutOne.header}</h2>
+					<div class="sunday__service-copy">
+						<p>{pageContent.copy.sectionSundayService.calloutOne.copy}</p>
+						<div class="sunday__service-links flex flex-align-center flex-justify-center">
+							<a href={pageContent.copy.sectionSundayService.calloutOne.ctaOneHref} class="inline">{pageContent.copy.sectionSundayService.calloutOne.ctaOneCopy}</a>
+							<a target="_blank" rel="noopener" href={pageContent.copy.sectionSundayService.calloutOne.ctaTwoHref} class="inline">{pageContent.copy.sectionSundayService.calloutOne.ctaTwoCopy}</a>
+						</div>
+					</div>
 				</div>
 				<div class="sunday-accent"></div>
 			</div>
@@ -95,7 +71,7 @@ const events = [
 						<Fragment set:html={pageContent.copy.sectionWelcome.copyOne} />
 					</div>
 					<div class="welcome__video">
-						<WelcomeVideo />
+						<iframe src="https://www.youtube-nocookie.com/embed/K4TOrB7at0Y" title="YouTube video player" allow="encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
