@@ -11,7 +11,7 @@ export interface Props {
 const { copy, href, hrefComp, last } = Astro.props;
 ---
 
-<div class={`callout relative flex flex-align-center flex-justify-center ${last ? "last" : ""}`}>
+<div class={`callout flex flex-align-center flex-justify-center ${last ? "last" : ""}`}>
     <div class="callout__content text-center">
         <div class="callout__copy">
             <h3>{copy}</h3>
