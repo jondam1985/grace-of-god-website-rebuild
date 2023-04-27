@@ -22,7 +22,7 @@ const { lang } = Astro.props;
         const verseContent = document.querySelector(".verse__copy");
         const verseBook = document.querySelector(".verse__book");
 
-        fetch(`/api/verse/?${lang}`)
+        fetch(`/api/verse?${lang}`)
         .then(response => response.json())
         .then(data => {
             verseContent.innerHTML = data.content;
