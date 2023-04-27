@@ -2,7 +2,7 @@ import { verses } from "../utils/verses-list";
 
 export async function onRequestGet(context) {
     const verseList = verses;
-    const apiKey = "3004a7f40b1726ced351cce69f19da84";
+    const apiKey = env.VERSE_KEY;
     const lang = context.request.url.split("?")[1];
     const bibleId = lang == "es" ? "592420522e16049f-01" : "de4e12af7f28f599-02"; 
 
