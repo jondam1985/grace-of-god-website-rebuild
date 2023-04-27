@@ -9,7 +9,7 @@ export async function onRequestGet(context) {
     const dayOfYear = date =>
         Math.floor((date - new Date(date.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24);
 
-    const response = await fetch(`https://api.scripture.api.bible/v1/bibles/${bibleId}/search?query=${verseList[dayOfYear(new Date.now())]}`, {
+    const response = await fetch(`https://api.scripture.api.bible/v1/bibles/${bibleId}/search?query=${verseList[dayOfYear(new Date)]}`, {
         headers: {
             "api-key": apiKey,
         }
