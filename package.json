@@ -11,8 +11,9 @@
 		"astro": "astro"
 	},
 	"dependencies": {
+		"@astrojs/cloudflare": "^6.2.3",
 		"airtable": "^0.11.6",
-		"astro": "^2.0.16"
+		"astro": "^2.3.2"
 	},
 	"devDependencies": {
 		"@cloudflare/workers-types": "^4.20230321.0",
