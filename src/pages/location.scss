@@ -88,6 +88,11 @@
                             width: 100%;
                         }
                     }
+                    p:nth-child(3) {
+                        @include desktop {
+                            max-width: 125px;
+                        }
+                    }
 
                     .service__connect {
 
@@ -97,6 +102,10 @@
                             padding: 0.5rem;
                             text-decoration: none;
                             border-radius: 5px;
+
+                            @include desktop {
+                                min-width: 263px;
+                            }
                         }
 
                         a:hover {

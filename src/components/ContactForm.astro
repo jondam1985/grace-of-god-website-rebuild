@@ -7,9 +7,11 @@ export interface Props {
 }
 
 const { lang } = Astro.props
+
+const emailHash = "bf98455cebdfd3fa0931f612ce26feb2";
 ---
 
-<div class="contact-form relative">
+<div data-email-hash={emailHash} class="contact-form relative">
     <form tabindex="-1" id="contactForm" novalidate>
         <div class="disclaimer">
             <p>{lang == "es" ? "Todos los campos son requeridos a menos que se indique lo contrario" : "All fields are required unless otherwise noted"}</p>
@@ -120,7 +122,7 @@ const { lang } = Astro.props
         }
         else {
             document.querySelector(".contact-form").classList.add("submitting");
-            fetch(`https://formsubmit.co/ajax/e15fcd8948133c7efabe77e7c5892780`, {
+            fetch(`https://formsubmit.co/ajax/${document.querySelector(".contact-form").getAttribute("data-email-hash")}`, {
         method: "POST",
         headers: {
             'Content-Type': 'application/json',

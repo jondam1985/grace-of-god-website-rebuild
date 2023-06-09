@@ -34,8 +34,14 @@ button {
     }
 }
 
-p {
+p,
+blockquote {
     margin-bottom: 0.875rem;
+}
+
+blockquote {
+    padding-left: 1rem;
+    border-left: 5px solid $quinary-color;
 }
 
 .sr-only {

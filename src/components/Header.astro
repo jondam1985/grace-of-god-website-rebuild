@@ -1,7 +1,6 @@
 ---
 import LogoSmall from "@assets/logo_church-small.png";
 import FacebookSVG from "@components/FacebookSVG.astro";
-import TwitterSVG from "@components/TwitterSVG.astro";
 import YoutubeSVG from "@components/YoutubeSVG.astro";
 import "@components/Header.scss";
 import LangSwitch from "@components/LangSwitch.astro";
@@ -48,12 +47,11 @@ const { lang, esHref, enHref  } = Astro.props;
             </nav>
             <div class="navbar__second-nav flex flex-align-center flex-justify-between">
                 <div class="navbar__second-nav-social-links flex flex-justify-center">
-                    <a class="second-nav__social" target="_blank" rel="noopener" href="https://www.facebook.com"><FacebookSVG /><span class="sr-only" lang={lang}>{lang == "es" ? "Siguenos en Facebook" : "Follow us on Facebook"}</span></a>
-                    <a class="second-nav__social" target="_blank" rel="noopener" href="https://www.twitter.com"><TwitterSVG /><span class="sr-only" lang={lang}>{lang == "es" ? "Siguenos en Twitter " : "Follow us on Twitter "}</span></a>
-                    <a class="second-nav__social" target="_blank" rel="noopener" href="https://www.youtube.com"><YoutubeSVG /><span class="sr-only" lang={lang}>{lang == "es" ? "Siguenos en Youtube " : "Follow us on Youtube "}</span></a>
+                    <a class="second-nav__social" target="_blank" rel="noopener" href="https://www.facebook.com/IglesiaNazarenaGraciadeDios"><FacebookSVG /><span class="sr-only" lang={lang}>{lang == "es" ? "Siguenos en Facebook" : "Follow us on Facebook"}</span></a>
+                    <a class="second-nav__social" target="_blank" rel="noopener" href="https://www.youtube.com/@iglesiadelnazarenograciade8537"><YoutubeSVG /><span class="sr-only" lang={lang}>{lang == "es" ? "Siguenos en Youtube " : "Follow us on Youtube "}</span></a>
                 </div>
                 <div class="navbar__second-nav-donate-links flex flex-justify-center">
-                    <a class="second-nav__donate" target="_blank" rel="noopener" href="https://www.canadahelps.org/en/">{lang == "es" ? "Donaciones" : "Donate"}</a>
+                    <a class="second-nav__donate" target="_blank" rel="noopener" href="https://www.canadahelps.org/en/charities/toronto-grace-of-god-spanish-church-of-the-nazarene/?moregiving=1">{lang == "es" ? "Donaciones" : "Donate"}</a>
                 </div>
                 <div class="desktop">
                     <LangSwitch 

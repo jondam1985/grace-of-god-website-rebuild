@@ -86,7 +86,7 @@ const events = [
                             {pageContent.copy.sectionServices.services.map((s, index) => {
                             return (
                                 <div class={`service__item service__item-${index} relative flex flex-align-center flex-justify-between`}>
-                                    <p><b>**{s.title}**</b></p>
+                                    <p><b>{s.title}</b></p>
                                     <p><span><b>{lang == "es" ? "Fecha" : "When"}:</b> </span>{s.date}</p>
                                     <p><span><b>{lang == "es" ? "Lugar" : "Where"}:</b> </span><Fragment set:html={s.location} /></p>
                                     <div class="service__connect">

@@ -37,7 +37,7 @@ export async function getStaticPaths() {
             topic: x["fields"]["Topic"],
             length: x["fields"]["Length"],
             content: x["fields"]["Content"],
-            image: x["fields"]["Image"][0]["url"],
+            image: `https://drive.google.com/uc?export=view&id=${x["fields"]["Image ID"]}`,
         });
         return acc;
     }, []);

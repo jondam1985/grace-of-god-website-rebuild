@@ -69,6 +69,23 @@ body.blog-post {
     .post__content {
         margin-bottom: 2rem;
         line-height: 1.5;
+
+        span.blog-quote {
+            display: block;
+            padding-left: 1rem;
+            margin-top: 0.875rem;
+            font-style: italic;
+            position: relative;
+            &::before {
+                content: "-";
+                font-size: 1rem;
+                font-weight: 700;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+        }
     }
 
     .back__link {

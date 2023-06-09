@@ -2,43 +2,71 @@
 import Airtable from 'airtable';
 import EventCard from '@components/EventCard.astro';
 import '@components/Events.scss';
+import '@components/EventCard.scss';
 export interface Props {
     lang: string;
 } 
 
 const { lang } = Astro.props;
 
-const view = import.meta.env.MODE == "development" ? "Staging" : "Production";
+// const view = import.meta.env.MODE == "development" ? "Staging" : "Production";
 
-var base = new Airtable({apiKey: 'patASZXZ7wZJ7UAze.d6f74d1a0071400f4e538494d110713361c7f49cff46d77737deb93602a1cbc3'}).base('appg1WC3k58wcqQ72');
+// var base = new Airtable({apiKey: 'patASZXZ7wZJ7UAze.d6f74d1a0071400f4e538494d110713361c7f49cff46d77737deb93602a1cbc3'}).base('appg1WC3k58wcqQ72');
 
-const allRecords = (airtableBase) => {
-    return (
-        airtableBase(`events ${lang}`).select({
-            view: view,
-        }).all()
-    )
-}
+// const allRecords = (airtableBase) => {
+//     return (
+//         airtableBase(`events ${lang}`).select({
+//             view: view,
+//         }).all()
+//     )
+// }
 
-const allEvents = await allRecords(base);
+// const allEvents = await allRecords(base);
 
-const events = allEvents.reduce((acc, x) => {
-    acc.push({
-        title: x["fields"]["Title"],
-        description: x["fields"]["Description"],
-        date: x["fields"]["Date"],
-        location: x["fields"]["Location"],
-        href: x["fields"]["Href"],
-    });
-    return acc;
-}, []);
+// const events = allEvents.reduce((acc, x) => {
+//     acc.push({
+//         title: x["fields"]["Title"],
+//         description: x["fields"]["Description"],
+//         date: x["fields"]["Date"],
+//         location: x["fields"]["Location"],
+//         href: x["fields"]["Href"],
+//     });
+//     return acc;
+// }, []);
 ---
 
-<div class={`events__container flex flex-align-top flex-justify-center flex-wrap bg-white box-shadow ${events.length <= 0 ? "no-events" : ""}`}>
+<div data-lang={lang} class={`events__container flex flex-align-top flex-justify-center flex-wrap bg-white box-shadow`}>
     <p class="no-events-notice">
         {lang == "es" ? "Lo sentimos, no hay eventos proximos por el momento. Por favor revisa mas tarde." : "Sorry, there are no upcoming events at the moment. Please check again soon."}
     </p>
-    {events.map((x, index) => {
-        return (<EventCard lang={lang} title={x["title"]} description={x["description"]} date={x["date"]} location={x["location"]} locationHref={x["href"]} addedClass="box-shadow" />)
-    })}
 </div>
+<script>
+    window.addEventListener("load", () => {
+        const lang = document.querySelector(".events__container").getAttribute("data-lang");
+        const createCard = (lang, addedClass, title, description, date, locationHref, location) => {
+            const card =  `
+            <div class="event-card ${addedClass}">
+                <div class="event__content">
+                    <h3 class="event__title text-center">${title}</h3>
+                    <p class="event__description">${description}</p>
+                    <p class="event__date">${lang == "es" ? "Fecha:" : "When:"} <b>${date}</b></p>
+                    <p class="event__location">${lang == "es" ? "Lugar:" : "Where:"} <a class="inline" href=${locationHref}><b>${location}</b></a></p>
+                </div>
+            </div> 
+            `
+            return card;
+        }
+
+        fetch(`/api/events?${lang}`)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            const events = data.reduce((acc, v, i) => {
+                acc+=createCard(lang, "added-class", v.title, v.description, v.date, v.locationHref, v.location,);
+                return acc;
+            }, "");
+
+            document.querySelector(".events__container").innerHTML = events;
+        });
+    });
+</script>
