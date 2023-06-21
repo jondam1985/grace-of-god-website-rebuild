@@ -86,7 +86,7 @@ const pageClass = `page-${page} ${lang}`;
                 last={false}
             />
         </div>
-        <section id="values" class="section values callout-at-bottom callout-at-top">
+        <section id="values" class="section values callout-at-top">
             <div class="container">
                 <h2 class="subheading">{pageContent.copy.sectionValues.header}</h2>
                 <div class="values__copy">
@@ -96,6 +96,20 @@ const pageClass = `page-${page} ${lang}`;
                     <Accordion 
                     id="valuesAccordion"
                     accordions={pageContent.copy.sectionValues.accordions}
+                />
+                </div>
+            </div>
+        </section>
+        <section id="missions" class="section-alt missions callout-at-bottom">
+            <div class="container">
+                <h2 class="subheading">{pageContent.copy.sectionMissions.header}</h2>
+                <div class="missions__copy">
+                    <Fragment set:html={pageContent.copy.sectionMissions.copy} />
+                </div>
+                <div class="missions__accordions">
+                    <Accordion 
+                    id="missionsAccordion"
+                    accordions={pageContent.copy.sectionMissions.accordions}
                 />
                 </div>
             </div>

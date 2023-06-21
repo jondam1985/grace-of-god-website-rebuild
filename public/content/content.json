@@ -11,8 +11,8 @@
         "pages": {
             "homepage": {
                 "metadata": {
-                    "title": "Bienvenido a la Iglesia del Nazareno Gracia de Dioz - Compartiendo el amor de Dios con Toronto y  el mundo | Iglesia del Nazareno Gracia de Dios",
-                    "description": "Bienvenido a Gracia de Dios - una vibrante comunidad de creyentes dedicados a esparcir el amor y la gracia de Jesucrist. Acompananos en nuestro viaje, donde buscamos crecer en la fe, esperanza y amor.",
+                    "title": "Bienvenido a la Iglesia del Nazareno Gracia de Dios, hay un lugar para ti aquí - Compartiendo el amor de Dios con Toronto y  el mundo | Iglesia del Nazareno Gracia de Dios",
+                    "description": "Bienvenido a Gracia de Dios - un lugar de esperanza, significado y propósito. Visítanos y forma parte de una amorosa familia. Dios tiene un plan y un propósito para tu vida; no estás solo.",
                     "esHref": "/",
                     "enHref": "/en"
                 },
@@ -62,7 +62,7 @@
             "about": {
                 "metadata": {
                     "title": "Sobre nosotros - Compartiendo el amor de Dios con Toronto y  el mundo | Iglesia del Nazareno Gracia de Dios",
-                    "description": "Aprende sobre Gracia de Dios: quiénes somos, nuestros valores, nuestra historia y nuestra misión de difundir el amor de Jesucristo en el mundo.",
+                    "description": "La Iglesia del Nazareno es la denominación wesleyana de santidad más grande de América del Norte. La organización tiene sus raíces en el movimiento de avivamiento de la santidad a fines del siglo XIX. La Iglesia del Nazareno tiene iglesias y ministerios en 164 regiones del mundo.",
                     "esHref": "/sobre-nosotros",
                     "enHref": "/en/about-us"
                 },
@@ -93,8 +93,8 @@
                         "href": "#ministries"
                     },
                     {
-                        "copy": "Historia",
-                        "href": "#history"
+                        "copy": "Iglesia del Nazareno",
+                        "href": "#church"
                     }
                 ],
                 "copy": {
@@ -154,9 +154,9 @@
                             "tabs": [
                                 "Alabanza",
                                 "Jovenes",
-                                "Ninos",
-                                "Damas",
-                                "Caballeros"
+                                "Niños",
+                                "Mujeres",
+                                "Hombres"
                             ],
                             "panels": [
                                 {
@@ -168,16 +168,16 @@
                                     "copy": "<p>El Ministerio de Jóvenes es una comunidad dinámica y comprometida donde los jóvenes pueden descubrir, desarrollar y profundizar su relación con Jesucristo. Nuestro ministerio se compromete a crear un espacio seguro e inclusivo donde los adolescentes y los adultos jóvenes puedan explorar su fe, hacer preguntas difíciles y encontrar apoyo y orientación de líderes dedicados. A través de estudios bíblicos relevantes e inspiradores, servicios de adoración, retiros y actividades de alcance, buscamos equipar a los jóvenes con una sólida base de verdades bíblicas, capacitarlos para vivir su fe en su vida diaria y animarlos a tener un impacto positivo en sus escuelas, familias y comunidades. Invitamos a todos los jóvenes a unirse a nosotros mientras caminamos juntos en la fe, la amistad y el servicio.</p>"
                                 },
                                 {
-                                    "header": "<h3>Ministerio de Escuela Dominical",
-                                    "copy": "<p>El Ministerio de Escuela Dominical para Niños es un ambiente emocionante y acogedor donde los niños pueden explorar las maravillas de la Palabra de Dios y crecer en su fe. Nuestro ministerio está dedicado a brindar lecciones apropiadas para su edad y atractivas que capturan la imaginación de los niños mientras les enseñan verdades bíblicas. A través de narraciones interactivas, actividades creativas y discusiones significativas, nuestro objetivo es ayudar a los niños a desarrollar una relación personal con Jesucristo y comprender la relevancia de la Biblia en sus vidas. Con maestros atentos y dedicados, creamos un espacio seguro donde los niños pueden hacer preguntas, construir amistades y descubrir la alegría de aprender sobre Dios. Invitamos a todos los niños a unirse a nosotros los domingos mientras caminamos juntos en el descubrimiento del increíble amor y plan que Dios tiene para cada uno de ellos.</p>"
+                                    "header": "<h3>Ministerio de Escuela Dominical Para Niños",
+                                    "copy": "<p>Todos nuestros trabajadores de niños han pasado verificaciones de antecedentes policiales.</p><p>\"En mi corazón he guardado tus palabras para no pecar contra ti\" (Salmo 119:11).</p><p>Nuestro ministerio de niños enseña lecciones de vida invaluables a través de la palabra de Dios.</p><p>Estamos presenciando una crisis de identidad en la vida de los niños y una sociedad que afirma esta confusión. La infancia debería ser una época feliz y despreocupada, y queremos ayudar a que eso suceda afirmándoles quiénes son y ayudándoles a ser todo lo que pueden ser.</p>"
                                 },
                                 {
-                                    "header": "<h3>Ministerio de Damas",
-                                    "copy": "<p>El Ministerio de Damas en la Iglesia del Nazareno es una comunidad vibrante e inclusiva donde mujeres de todas las edades se reúnen para crecer en su fe, conectarse unas con otras y servir a su iglesia y comunidad local. Nuestro ministerio ofrece una variedad de actividades y recursos diseñados para fomentar el crecimiento espiritual, fomentar amistades profundas y empoderar a las mujeres para que tengan un impacto positivo en sus esferas de influencia. Desde estudios bíblicos y grupos de oración hasta retiros e iniciativas de alcance, brindamos un ambiente acogedor donde las mujeres pueden encontrar apoyo, inspiración y oportunidades para usar sus dones y talentos para la gloria de Dios. Ya sea que seas una recién llegada o una miembro de mucho tiempo, te invitamos a unirte a nosotras mientras caminamos juntas en busca de una relación más cercana con Cristo.</p>"
+                                    "header": "<h3>Ministerio de Mujeres",
+                                    "copy": "<p>Las mujeres tienen necesidades y desafíos únicos en su caminar cristiano. Al examinar estas necesidades, vemos la inmensa importancia de desarrollar un próspero ministerio de mujeres en nuestra congregación.</p><p>Las mujeres de todas las edades necesitan entornos emocionalmente seguros. A menudo se sienten más seguras compartiendo sus corazones, haciendo preguntas, pidiendo oración y expresándose cuando están con otras mujeres. Un ministerio de mujeres es un excelente lugar para que las mujeres establezcan conexiones que resulten en una oración ferviente unas por otras, por sus hogares y por sus comunidades.</p>"
                                 },
                                 {
-                                    "header": "<h3>Ministerio de Caballeros",
-                                    "copy": "<p>El Ministerio de Caballeros es una comunidad dedicada a ayudar a los hombres a crecer espiritualmente, construir relaciones sólidas y servir como líderes en sus familias, iglesia y comunidad. A través de estudios bíblicos significativos, encuentros de compañerismo y oportunidades de mentoría, nos esforzamos por equipar a los hombres con las herramientas que necesitan para enfrentar los desafíos de la vida y tener un impacto positivo en el mundo que les rodea. Nuestro ministerio fomenta la autenticidad, la responsabilidad y una relación más profunda con Cristo. Ya seas un joven en busca de orientación o un veterano experimentado buscando compañerismo, te invitamos a unirte a nosotros mientras caminamos juntos para convertirnos en hombres piadosos e íntegros.</p>"
+                                    "header": "<h3>Ministerio de Hombres",
+                                    "copy": "<p>Los hombres tienen un llamado muy único en el hogar que a menudo es malinterpretado.</p><p>Nuestro ministerio de hombres brinda la oportunidad de reunirse para estudiar la palabra de Dios, descubrir quiénes son en Cristo y el importante papel al que han sido llamados tanto en el hogar como en la iglesia. Casados, solteros, divorciados, Dios desea ministrar a los hombres donde se encuentren en la vida para ayudarles a descubrir todo lo que estaban destinados a ser.</p>"
                                 }
                             ]
                         }
@@ -187,9 +187,10 @@
                         "href": "<a href='/ubicacion-servicios'>Visitanos</a>",
                         "hrefComp": ""
                     },
-                    "sectionHistory": {
-                        "header": "Nuestra historia",
-                        "copy": "<p>Adipisicing enim aliquip sint non mollit. Aliquip aliqua qui tempor sit consectetur ut consequat pariatur fugiat consectetur ullamco. Ex laboris reprehenderit sit excepteur sint sint dolor Lorem.</p><p>Tempor ut amet sunt laboris aliqua et proident ipsum deserunt sunt voluptate id cupidatat. Aliquip sint labore qui ipsum dolore. Ullamco ut exercitation eu sit incididunt velit ex nisi qui. Sit id non labore minim. Ut nostrud proident voluptate voluptate. Velit enim aute qui tempor ut est mollit aute elit enim ex aliquip labore.</p><p>Irure sint esse nisi eu aliquip Lorem aliquip incididunt do id dolor velit dolore quis. Lorem sunt cillum ipsum deserunt non consequat officia nisi. Esse aute fugiat dolore laboris eu voluptate deserunt eu deserunt et elit proident nulla. Quis ullamco quis elit commodo sit deserunt ad magna consequat voluptate. Consequat qui ut minim esse sit.</p>"
+                    "sectionChurch": {
+                        "header": "La Iglesia del Nazareno",
+                        "numbers": "<div class='numbers-container churches'><span class='count'>30,875</span><span class='type'>IGLESIAS</span></div><div class='numbers-container members'><span class='count'>2,616,741</span><span class='type'>MIEMBROS</span></div>",
+                        "copy": "<p>La Iglesia del Nazareno ha evolucionado con el tiempo, pasando de ser una iglesia con presencia internacional a ser una comunidad global de creyentes. Basados en la tradición wesleyana, los nazarenos se entienden a sí mismos como un pueblo cristiano, de santidad y misional, y han abrazado la declaración de misión: \"Hacer discípulos semejantes a Cristo en las naciones\".</p><p><b>TESTIFICAR:</b> Todo discípulo de Jesús está llamado a compartir la historia de la gracia de Dios en su propia vida con los demás. A medida que hacemos discípulos, debemos contar y volver a contar la historia de la gracia de Dios en nuestras vidas y en las vidas de otros.</p><p><b>ANDAR:</b> Dios no forma discípulos semejantes a Cristo en un momento. El camino de la gracia abarca toda una vida. Cristo llama a sus seguidores a un camino con otros desde la falta de fe hasta la fe nueva y madura. El camino con otros requiere paciencia. Requiere amor. ¡Requiere gracia!</p>"
                     },
                     "calloutMessage": {
                         "copy": "Tienes preguntas o comentarios? Nos encantaria escuchar de ti",
@@ -200,8 +201,8 @@
             },
             "location": {
                 "metadata": {
-                    "title": "Ubicacion y Servicios - Compartiendo el amor de Dios con Toronto y  el mundo | Iglesia del Nazareno Gracia de Dios",
-                    "description": "Descubre nuestra Iglesia Gracia de Dios: experimenta la Comunidad y la adoración en Toronto con nuestra gama de servicios y programas.",
+                    "title": "Ubicacion y Servicios, 624 Calle Annette, domingos a las 3 p.m. servicio evangélico, Escuela Dominical a las 2 p.m. Los servicios son en inglés y español. - Compartiendo el amor de Dios con Toronto y  el mundo | Iglesia del Nazareno Gracia de Dios",
+                    "description": "Descubre nuestra iglesia, Gracia de Dios: Experimenta comunidad y adoración en Toronto con nuestra variedad de servicios y programas. Gracia de Dios ministrando a todas las generaciones y nacionalidades.",
                     "esHref": "/servicios-ubicacion",
                     "enHref": "/en/services-location"
                 },
@@ -309,6 +310,10 @@
                     {
                         "copy": "Valores",
                         "href": "#values"
+                    },
+                    {
+                        "copy": "Misiones",
+                        "href": "#missions"
                     }
                 ],
                 "copy": {
@@ -457,6 +462,28 @@
                             {
                                 "trigger": "Somos un pueblo visionario",
                                 "panel": "<p>Valoramos la innovación y la creatividad para comprometernos efectivamente con el mundo y compartir el evangelio.</p>"
+                            }
+                        ]
+                    },
+                    "sectionMissions": {
+                        "header": "Nuestras misiones nazarenas",
+                        "copy": "<p>Dentro de la Iglesia del Nazareno, existen misiones clave dedicadas a cumplir la visión de la iglesia e impactar vidas.</p><p>Cada misión desempeña un papel vital en movilizar a la iglesia, ya sea a través de la oración, el discipulado, la entrega, la educación, la evangelización o el equipamiento de los jóvenes.</p>",
+                        "accordions": [
+                            {
+                                "trigger": "Misiones Nazarenas Internacionales (NMI)",
+                                "panel": "<p>Misiones Nazarenas Internacionales (NMI) busca movilizar a la iglesia en la misión a través de la oración, el discipulado, la entrega y la educación.</p><p><b>Objetivos de NMI:</b><ul><li>Alentar a las personas a orar por todos los esfuerzos de evangelización mundial</li><li>Informar a las personas sobre las necesidades del mundo y lo que la iglesia está haciendo para satisfacer esas necesidades</li><li>Desafiar a los niños y jóvenes a aprender acerca de la misión de la iglesia y participar en ella</li><li>Recaudar fondos para la difusión de la misión</li></ul>"
+                            },
+                            {
+                                "trigger": "Nazarene Youth International (NYI)",
+                                "panel": "<p>Nazarene Youth International (NYI) es el ministerio juvenil de la Iglesia del Nazareno. Existimos porque la Iglesia del Nazareno cree que los jóvenes son parte integral de la Iglesia. Debido a esa creencia, NYI se compromete a guiar a los jóvenes hacia una relación duradera con Jesucristo y a facilitar su crecimiento como discípulos para el servicio cristiano. Juntos trabajamos para llevar a cabo una estrategia de tres partes:</p><ol><li>Evangelización, alcanzando a los jóvenes para Cristo;</li><li>Discipulado, equipando a los jóvenes para que sean seguidores semejantes a Cristo;</li><li>Desarrollo de liderazgo, capacitando a los jóvenes para servir a los demás.</li></ol>"
+                            },
+                            {
+                                "trigger": "Nazarene Discipleship International (NDI)",
+                                "panel": "<p>Nuestro propósito en NDI es cuádruple:</p><ol><li>Desarrollar intencionalmente relaciones con personas no alcanzadas hasta que sean discípulos semejantes a Cristo y hagan discípulos semejantes a Cristo.</li><li>Enseñar la Palabra de Dios hasta que los niños, jóvenes y adultos sean salvos, santificados por completo y maduren en la experiencia cristiana.</li><li>Ayudar a los cristianos a crecer espiritualmente, involucrándolos en la evangelización, la educación cristiana y la formación de discípulos.</li><li>Animar a los niños, jóvenes y adultos a inscribirse en la Escuela Dominical, los grupos pequeños y/o los ministerios de discipulado, y participar fielmente.</li></ol>"
+                            },
+                            {
+                                "trigger": "Ministerios Infantiles Nazarenos (SDMI KIDS MINISTRIES)",
+                                "panel": "<p>La misión de los Ministerios Infantiles Nazarenos es cumplir con la Gran Comisión para los niños y sus familias, y capacitar, animar y equipar a líderes cristianos que ministran a los niños en nuestro distrito.</p>"
                             }
                         ]
                     },
@@ -632,8 +659,8 @@
         "pages": {
             "homepage": {
                 "metadata": {
-                    "title": "Welcome to Grace of God Nazare Church - Sharing God's love with Toronto and the world | Grace of God Nazarene Church",
-                    "description": "Welcome to Grace of God - a vibrant community of believers dedicated to spreading the love and grace of Jesus Christ. Join us as we journey together, seeking to grow in faith, hope, and love.",
+                    "title": "Welcome to Grace of God Nazare Church, there is a place for you at Grace - Sharing God's love with Toronto and the world | Grace of God Nazarene Church",
+                    "description": "Welcome to Grace of God - A place of hope meaning and purpose. Visit and become a part of a loving family. God has a plan and a purpose for your life; you are not alone.",
                     "esHref": "/",
                     "enHref": "/en"
                 },
@@ -683,7 +710,7 @@
             "about": {
                 "metadata": {
                     "title": "About us - Sharing God's love with Toronto and the world | Grace of God Nazarene Church",
-                    "description": "Learn about Grace of God - who we are, our values, our history, and our mission to spread the love of Jesus Christ to the world.",
+                    "description": "The church of the Nazarene is the largest Wesleyan Holiness denomination in North America. The organization traces its roots to the late nineteenth- century holiness revival movement The church of the Nazarene has churches and ministries in 164 regions of the world.",
                     "esHref": "/sobre-nosotros",
                     "enHref": "/en/about-us"
                 },
@@ -714,8 +741,8 @@
                         "href": "#ministries"
                     },
                     {
-                        "copy": "History",
-                        "href": "#history"
+                        "copy": "Church of The Nazarene",
+                        "href": "#church"
                     }
                 ],
                 "copy": {
@@ -790,15 +817,15 @@
                                 },
                                 {
                                     "header": "<h3>Children's Sunday School Ministry",
-                                    "copy": "<p>The Children's Sunday School Ministry is an exciting and nurturing environment where kids can explore the wonders of God's Word and grow in their faith. Our ministry is dedicated to providing age-appropriate and engaging lessons that capture the imaginations of children while teaching them biblical truths. Through interactive storytelling, creative activities, and meaningful discussions, we aim to help children develop a personal relationship with Jesus Christ and understand the relevance of the Bible in their lives. With caring and dedicated teachers, we create a safe space where children can ask questions, build friendships, and discover the joy of learning about God. We invite all children to join us on Sundays as we journey together in discovering the amazing love and plan God has for each one of them.</p>"
+                                    "copy": "<p>All of our children's workers have been given police background checks.</p><p>\"Thy word have I hid in my heart, that I will not sin against thee\" (Psalm 119:11).</p><p>Our children's ministry teaches life lessons which are invaluable through the word of God.</p><p>We are seeing an identity crises in the lives of children and a society that affirms this confusion. Childhood should be a happy carefree time of life, and we want to help make that happen by affirming in them who they are, and helping them to be all that they can be.</p>"
                                 },
                                 {
                                     "header": "<h3>Women's Ministry",
-                                    "copy": "<p>The Women'sMinistry is a vibrant and inclusive community where women of all ages come together to grow in their faith, connect with one another, and serve their church and local community. Our ministry offers a variety of activities and resources designed to encourage spiritual growth, foster deep friendships, and empower women to make a positive impact in their spheres of influence. From Bible studies and prayer groups to retreats and outreach initiatives, we provide a nurturing environment where women can find support, inspiration, and opportunities to use their gifts and talents for God's glory. Whether you are a newcomer or a long-time member, we invite you to join us as we journey together in pursuit of a closer relationship with Christ.</p>"
+                                    "copy": "<p>Women have needs and challenges unique to their Christian walks. As we examine these needs, we see the immense importance of developing a thriving women's ministry in our congregation.</p><p>Women of all ages need emotionally safe environments. Women often feel safest sharing their hearts, asking questions, requesting prayer and speaking up when they're with other women . A women's ministry is an excellent place for women to build connections that result in fervent prayer for each other for their homes and for their communities.</p>"
                                 },
                                 {
                                     "header": "<h3>Men's Ministry",
-                                    "copy": "<p>The Men's Ministry is a community dedicated to helping men grow spiritually, build strong relationships, and serve as leaders in their families, church, and community. Through meaningful Bible studies, fellowship gatherings, and mentorship opportunities, we strive to equip men with the tools they need to navigate the challenges of life and make a positive impact in the world around them. Our ministry encourages authenticity, accountability, and a deepening relationship with Christ. Whether you are a young man seeking guidance or a seasoned veteran looking for fellowship, we invite you to join us as we journey together in becoming godly men of integrity.</p>"
+                                    "copy": "<p>Men have a very unique calling in the home that is often misunderstood.</p><p>Our men's ministry gives opportunity for men to get together to study the word of God, to discover who they are in Christ and the important role that they have been called to in the home and also in the church. Married, single divorced God wants to minister to men where they are in life so he can help them discover all they were meant to be.</p>"
                                 }
                             ]
                         }
@@ -808,9 +835,10 @@
                         "href": "<a href='/en/services-location'>Visit us</a>",
                         "hrefComp": ""
                     },
-                    "sectionHistory": {
-                        "header": "Our history",
-                        "copy": "<p>Adipisicing enim aliquip sint non mollit. Aliquip aliqua qui tempor sit consectetur ut consequat pariatur fugiat consectetur ullamco. Ex laboris reprehenderit sit excepteur sint sint dolor Lorem.</p><p>Tempor ut amet sunt laboris aliqua et proident ipsum deserunt sunt voluptate id cupidatat. Aliquip sint labore qui ipsum dolore. Ullamco ut exercitation eu sit incididunt velit ex nisi qui. Sit id non labore minim. Ut nostrud proident voluptate voluptate. Velit enim aute qui tempor ut est mollit aute elit enim ex aliquip labore.</p><p>Irure sint esse nisi eu aliquip Lorem aliquip incididunt do id dolor velit dolore quis. Lorem sunt cillum ipsum deserunt non consequat officia nisi. Esse aute fugiat dolore laboris eu voluptate deserunt eu deserunt et elit proident nulla. Quis ullamco quis elit commodo sit deserunt ad magna consequat voluptate. Consequat qui ut minim esse sit.</p>"
+                    "sectionChurch": {
+                        "header": "The Church of The Nazarene",
+                        "numbers": "<div class='numbers-container churches'><span class='count'>30,875</span><span class='type'>CHURCHES</span></div><div class='numbers-container members'><span class='count'>2,616,741</span><span class='type'>MEMBERS</span></div>",
+                        "copy": "<p>The Church of the Nazarene has moved over time from a church with an international presence toward a global community of believers. Grounded in the Wesleyan tradition, Nazarenes understand themselves to be a people who are Christian, holiness, and missional, and they have embraced the mission statement: \"To make Christlike disciples in the nations.\"</p><p><b>WITNESSING:</b> Every disciple of Jesus is called to share the story of God's grace in his or her own life with others. As we make disciples, we must tell and retell the story of God's grace in our lives and the lives of others.</p><p><b>WALKING:</b> God does not make Christlike disciples in a moment. The journey of grace spans a lifetime. Christ calls His followers to a journey with others from no faith to new faith to mature faith. The journey with others takes patience. It takes love. It takes grace!</p>"
                     },
                     "calloutMessage": {
                         "copy": "Do you have any comments or questions? We would love to hear from you",
@@ -821,8 +849,8 @@
             },
             "location": {
                 "metadata": {
-                    "title": "Location & services - Sharing God's love with Toronto and the world | Iglesia del Nazareno Gracia de Dios",
-                    "description": "Discover Our Church Grace of God: Experience Community and Worship in Toronto with Our Range of Services and Programs.",
+                    "title": "Location & services, 624 Annette Street, Sundays at 3pm evangelical service and Sunday School 2pm. Services are in English and Spanish - Sharing God's love with Toronto and the world | Iglesia del Nazareno Gracia de Dios",
+                    "description": "Discover Our Church Grace of God: Experience Community and Worship in Toronto with Our Range of Services and Programs. Grace of God ministering to all generations and all nationalities.",
                     "esHref": "/servicios-ubicacion",
                     "enHref": "/en/services-location"
                 },
@@ -930,6 +958,10 @@
                     {
                         "copy": "Values",
                         "href": "#values"
+                    },
+                    {
+                        "copy": "Missions",
+                        "href": "#missions"
                     }
                 ],
                 "copy": {
@@ -1081,6 +1113,29 @@
                             }
                         ]
                     },
+                    "sectionMissions": {
+                        "header": "Our Nazarene missions",
+                        "copy": "<p>Within the Church of the Nazarene, there are key missions dedicated to fulfilling the church's vision and impacting lives.</p><p>Each mission plays a vital role in mobilizing the church, whether through praying, discipling, giving, educating, evangelizing, or equipping young people. </p>",
+                        "accordions": [
+                            {
+                                "trigger": "Nazarene Missions IinternationalL (NMI)",
+                                "panel": "<p>Nazarene Missions International (NMI) seeks to mobilize the church in mission through praying, discipling, giving, and educating.</p><p><b>NMI Objectives:</b><ul><li>To encourage people to pray for all efforts of world evangelization</li><li>To inform people of the world&#39;s needs and what the church is doing to meet those needs</li><li>To challenge children and youth to learn about and participate in the mission of the church</li><li>To raise funds for mission outreach</li></ul>"
+                            },
+                            {
+                                "trigger": "Nazarene Youth International (NYI)",
+                                "panel": "<p>Nazarene Youth International (NYI) is the youth ministry of the Church of the Nazarene. We exist because the Church of the Nazarene believes that young people are an integral part of the Church. Because of that belief, NYI is committed to leading young people into a lifelong relationship with Jesus Christ and to facilitateing their growth as disciples for Christian service. Together we work to accomplish a threefold strategy of:</p><ol><li>Evangelism, reaching young people for Christ;</li><li>Discipleship, equipping young people to be Christlike followers;</li><li>Leadership Development, empowering young people to serve others.</li></ol>"
+                            },
+                            {
+                                "trigger": "NAzarene Discipleship International (NDI)",
+                                "panel": "<p>Our NDI Purpose is fourfold:</p><ol><li>To intentionally develop relationships with unreached people until they are Christlike disciples and making Christlike disciples.</li><li>To teach the Word of God until children, youth, and adults are saved, sanctified wholly, andmaturing in the Christian experience.</li><li>To help Christians grow spiritually, involving them in evangelism, Christian education, anddisciple making.</li><li>To encourage children, youth, and adults to enroll in Sunday School, small groups and/ordiscipling ministries, and faithfully participate.</li></ol>"
+                            },
+                            {
+                                "trigger": "Nazarene Kids' (SDMI KIDS MINISTRIES)",
+                                "panel": "<p>Nazarene Kids' mission is to carry out the Great Commission to children and their families, and to train, encourage, and equip Christian leaders who minister to children in our district.</p>"
+                            }
+                        ]
+                    },
+
                     "calloutMessage": {
                         "copy": "Do you have any comments or questions? We would love to hear from you",
                         "href": "<a href='/en/contact-us'>Contact us</a>",

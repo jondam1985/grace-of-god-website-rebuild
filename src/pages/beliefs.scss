@@ -37,10 +37,16 @@
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
             border: 4px solid $white;
+
+            ul,
+            ol {
+                padding-left: 2rem;
+            }
         }
     }
 
-    section.articles {
+    section.articles,
+    section.missions {
         .accordions {
             .accordion__trigger {
                 button {

@@ -9,6 +9,7 @@ import Events from "@components/Events.astro";
 import VerseOfTheDay from "@components/VerseOfTheDay.astro";
 import LogoChurchEn from "@assets/logo_church-en.webp";
 import LogoChurchEs from "@assets/logo_church-es.webp";
+import WelcomeVideo from "@components/WelcomeVideo.astro";
 
 const page = "homepage";
 const lang = "es";
@@ -70,9 +71,7 @@ const pageClass = `page-${page} ${lang}`;
 					<div class="welcome__copy ">
 						<Fragment set:html={pageContent.copy.sectionWelcome.copyOne} />
 					</div>
-					<div class="welcome__video">
-						<iframe src="https://www.youtube-nocookie.com/embed/K4TOrB7at0Y" title="YouTube video player" allow="encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
-					</div>
+					<WelcomeVideo />
 				</div>
 			</div>
 		</section>

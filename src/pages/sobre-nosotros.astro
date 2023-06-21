@@ -5,7 +5,7 @@ import Layout from '@layouts/Layout.astro';
 import Content from 'public/content/content.json';
 import ProfileCard from '@components/ProfileCard.astro';
 import AboutUsImg from '@assets/bg_church.jpg';
-import HistoryImg from '@assets/bg_church-old.png';
+import ChurchImg from '@assets/bg_church-old.png';
 import CommunitySVG from '@components/CommunitySVG.astro';
 import MusicSVG from '@components/MusicSVG.astro';
 import DoveSVG from '@components/DoveSVG.astro';
@@ -163,15 +163,15 @@ const panelImages = [Music,Youth, SundaySchool, Women, Men]
                 last={false}
             />
         </div>
-        <section id="history" class="section history callout-at-top callout-at-bottom">
+        <section id="church" class="section church callout-at-top callout-at-bottom">
             <div class="container">
-                <h2 class="subheading">{pageContent.copy.sectionHistory.header}</h2>
-                <div class="flex flex-justify-between history__content  bg-white box-shadow">
-                    <div class="history__image">
-                        <img src={HistoryImg} alt="" />
+                <h2 class="subheading">{pageContent.copy.sectionChurch.header}</h2>
+                <div class="flex flex-justify-between church__content  bg-white box-shadow">
+                    <div class="church__image">
+                        <Fragment set:html={pageContent.copy.sectionChurch.numbers} />
                     </div>
-                    <div class="history__copy">
-                        <Fragment set:html={pageContent.copy.sectionHistory.copy} />
+                    <div class="church__copy">
+                        <Fragment set:html={pageContent.copy.sectionChurch.copy} />
                     </div>
                 </div>
             </div>

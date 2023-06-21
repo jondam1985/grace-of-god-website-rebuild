@@ -1,6 +1,7 @@
 ---
 import "./Footer.scss";
 import LogoSmall from "@assets/logo_church-small.png";
+import QRCode from "@assets/qr-code.png";
 import FacebookSVG from "./FacebookSVG.astro";
 import YoutubeSVG from "./YoutubeSVG.astro";
 export interface Props {
@@ -44,6 +45,9 @@ const { lang } = Astro.props;
                     <span> Church of the Nazarene, Grace of God. All Rights Reserved.</span>
                 }
             </p>
+        </div>
+        <div class="footer__qr">
+            <img alt="" src={QRCode} />
         </div>
     </div>
 </footer>

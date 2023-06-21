@@ -158,5 +158,17 @@ footer {
                 }
             }
         }
+
+        .footer__qr {
+            margin-left: 1rem;
+
+            img {
+                width: 5rem;
+            }
+
+            @include mobile {
+                display: none;
+            }
+        }
     }
 }
