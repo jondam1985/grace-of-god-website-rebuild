@@ -12,7 +12,7 @@ export async function getStaticPaths() {
 
     const lang = "es";
 
-    const view = import.meta.env.MODE == "development" ? "Staging" : "Production";
+    const view = "Staging";
 
     var base = new Airtable({apiKey: 'patASZXZ7wZJ7UAze.d6f74d1a0071400f4e538494d110713361c7f49cff46d77737deb93602a1cbc3'}).base('appg1WC3k58wcqQ72');
 
