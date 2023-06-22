@@ -60,7 +60,6 @@ const { lang } = Astro.props;
         fetch(`/api/events?${lang}`)
         .then(response => response.json())
         .then(data => {
-            console.log(data);
             const events = data.reduce((acc, v, i) => {
                 acc+=createCard(lang, "added-class", v.title, v.description, v.date, v.locationHref, v.location,);
                 return acc;

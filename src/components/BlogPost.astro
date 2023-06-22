@@ -8,79 +8,62 @@ import WhatsAppSVG from "@components/WhatsAppSVG.astro";
 import FacebookSVG from "@components/FacebookSVG.astro";
 import TwitterSVG from "@components/TwitterSVG.astro";
 
-export async function getStaticPaths() {
+export interface Props {
+    id: string;
+    lang: string;
+}
 
-    const lang = "en";
+const {id, lang} = Astro.props;
 
-    const view = "Staging";
+    const baseUrl = `https://www.graciadedios.ca${lang == "es" ? "/" : "/en/"}`;
 
     var base = new Airtable({apiKey: 'patASZXZ7wZJ7UAze.d6f74d1a0071400f4e538494d110713361c7f49cff46d77737deb93602a1cbc3'}).base('appg1WC3k58wcqQ72');
 
-    const allRecords = (airtableBase) => {
+    const record = async (airtableBase) => {
         return (
-            airtableBase(`blog ${lang}`).select({
-                view: view,
-            }).all()
+            await airtableBase(`blog ${lang}`).find(id)
         )
     }
 
-    const allPosts = await allRecords(base);
+    const post = await record(base);
 
-    const posts = allPosts.reduce((acc, x) => {
-        acc.push({
-            atId: x["id"],
-            path: x["fields"]["Path"],
-            title: x["fields"]["Title"],
-            description: x["fields"]["Description"],
-            date: x["fields"]["Date"],
-            author: x["fields"]["Author"],
-            topic: x["fields"]["Topic"],
-            length: x["fields"]["Length"],
-            content: x["fields"]["Content"],
-            image: `https://drive.google.com/uc?export=view&id=${x["fields"]["Image ID"]}`,
-        });
-        return acc;
-    }, []);
-
-    const staticPaths = posts.reduce((acc, v) => {
-        acc.push({params: {path: v.path}, props: {title: v.title, description: v.description, author: v.author, length: v.length, date: v.date, topic: v.topic, content: v.content, image: v.image}});
-        return acc;
-    }, []);
-
-    return staticPaths;
-}
-
-const { path } = Astro.params;
-const { title, description, author, length, topic, date, content, image } = Astro.props;
-
-const lang = "en";
-const baseUrl = "https://www.graciadedios.ca";
+    const content = {
+        path: post["fields"]["Path"],
+        title: post["fields"]["Title"],
+        description: post["fields"]["Description"],
+        author: post["fields"]["Author"],
+        length: post["fields"]["Length"],
+        topic: post["fields"]["Topic"],
+        date: post["fields"]["Date"],
+        content: post["fields"]["Content"],
+        image: `https://drive.google.com/uc?export=view&id=${post["fields"]["Image ID"]}`,
+    }
 ---
 
 <Layout
-    title={title}
-    description={description}
+    title={content.title}
+    description={content.description}
     lang={lang}
-    esHref={`/blog/${path}`}
-    enHref={`/en/blog/${path}`}
-    pageClass={`blog-post blog-post-${path}`}
-    canonical={lang == "es" ? `/blog/${path}` : `/en/blog/${path}`}
+    esHref={`/blog/${content.path}`}
+    enHref={`/en/blog/${content.path}`}
+    pageClass={`blog-post blog-post-${content.path}`}
+    canonical={content.path}
     >
     <main id="main">
-        <section data-lang={lang} data-title={title} id={`post-${title}`} class="section-alt post">
+        <section data-lang={lang} data-title={content.title} id={`post-${content.title}`} class="section-alt post">
             <div class="container">
-                <h1 class="header">{title}</h1>
+                <h1 class="header">{content.title}</h1>
                 <div class="post__content">
                     <div class="post__details flex flex-align-center">
-                        <p><b>{lang == "es" ? "Tiempo de lectura:" : "Reading time:"}</b> {length} {lang == "es" ? "minutos" : "minutes"}</p>
-                        <p><b>{lang == "es" ? "Tema:" : "Topic:"}</b> {topic}</p>
-                        <p><b>{lang == "es" ? "Autor:" : "Author:"}</b> {author}</p>
-                        <p><b>{lang == "es" ? "Fecha:" : "Date:"}</b> {date}</p>
+                        <p><b>{lang == "es" ? "Tiempo de lectura:" : "Reading time:"}</b> {content.length} {lang == "es" ? "minutos" : "minutes"}</p>
+                        <p><b>{lang == "es" ? "Tema:" : "Topic:"}</b> {content.topic}</p>
+                        <p><b>{lang == "es" ? "Autor:" : "Author:"}</b> {content.author}</p>
+                        <p><b>{lang == "es" ? "Fecha:" : "Date:"}</b> {content.date}</p>
                     </div>
                     <div class="post__share flex flex-align-center">
                         <h2>{lang == "es" ? "Comparte " : "Share "}</h2>
                         <div class="share__item email">
-                            <a href={`mailto:?subject=${lang == "es" ? `Este articulo del Blog: Pepitas de Fe puede interesarte: "${title}"` : `You might find this post from the blog Nuggets of Faith interesting: "${title}"`}&body=${title} ${lang == "es" ? `${baseUrl}/blog/${path}` : `${baseUrl}/en/blog/${path}`}`} class="share__link" href="" target="_blank" rel="noopener">
+                            <a href={`mailto:?subject=${lang == "es" ? `Este articulo del Blog: Pepitas de Fe puede interesarte: "${content.title}"` : `You might find this post from the blog Nuggets of Faith interesting: "${content.title}"`}&body=${content.title} ${lang == "es" ? `${baseUrl}/blog/${content.path}` : `${baseUrl}/en/blog/${content.path}`}`} class="share__link" href="" target="_blank" rel="noopener">
                                 <div class="share__image">
                                     <EmailSVG />
                                 </div>
@@ -88,7 +71,7 @@ const baseUrl = "https://www.graciadedios.ca";
                             </a>
                         </div>
                         <div class="share__item whatsapp">
-                            <a href={`https://wa.me/?text=${lang == "es" ? `Este articulo del blog Pepitas de Fe puede interesarte: "${title}" ${baseUrl}/blog/${path}` : `This article from the blog Nuggets of Faith might interest you: "${title}" ${baseUrl}/en/blog/${path}`}`} class="share__link" href="" target="_blank" rel="noopener">
+                            <a href={`https://wa.me/?text=${lang == "es" ? `Este articulo del blog Pepitas de Fe puede interesarte: "${content.title}" ${baseUrl}/blog/${content.path}` : `This article from the blog Nuggets of Faith might interest you: "${content.title}" ${baseUrl}/en/blog/${content.path}`}`} class="share__link" href="" target="_blank" rel="noopener">
                                 <div class="share__image">
                                     <WhatsAppSVG />
                                 </div>
@@ -96,7 +79,7 @@ const baseUrl = "https://www.graciadedios.ca";
                             </a>
                         </div>
                         <div class="share__item facebook">
-                            <a href={`http://www.facebook.com/share.php?u=${lang == "es" ? `${baseUrl}/blog/${path}` : `${baseUrl}/en/blog/${path}`}`} class="share__link" href="" target="_blank" rel="noopener">
+                            <a href={`http://www.facebook.com/share.php?u=${lang == "es" ? `${baseUrl}/blog/${content.path}` : `${baseUrl}/en/blog/${content.path}`}`} class="share__link" href="" target="_blank" rel="noopener">
                                 <div class="share__image">
                                     <FacebookSVG />
                                 </div>
@@ -104,7 +87,7 @@ const baseUrl = "https://www.graciadedios.ca";
                             </a>
                         </div>
                         <div class="share__item twitter">
-                            <a href={`https://twitter.com/intent/tweet/?text=${lang == "es" ? `Interesante articulo del blog Pepitas de Fe: "${title}"" ${baseUrl}/blog/${path}` : `Interesting article from the blog Nuggets of Faith: "${title}"" ${baseUrl}/en/blog/${path}`}`} class="share__link" href="" target="_blank" rel="noopener">
+                            <a href={`https://twitter.com/intent/tweet/?text=${lang == "es" ? `Interesante articulo del blog Pepitas de Fe: "${content.title}"" ${baseUrl}/blog/${content.path}` : `Interesting article from the blog Nuggets of Faith: "${content.title}"" ${baseUrl}/en/blog/${content.path}`}`} class="share__link" href="" target="_blank" rel="noopener">
                                 <div class="share__image">
                                     <TwitterSVG />
                                 </div>
@@ -112,9 +95,9 @@ const baseUrl = "https://www.graciadedios.ca";
                             </a>
                         </div>
                     </div>
-                    <div class="post__image" style={`background-image: url(${image})`}></div>
+                    <div class="post__image" style={`background-image: url(${content.image})`}></div>
                     <div class="post__content">
-                        <Fragment set:html={content} />
+                        <Fragment set:html={content.content} />
                     </div>
                     <div class="back__link relative">
                         <a href={lang == "es" ? "/blog#posts" : "/en/blog#posts"}>{lang == "es" ? "Descubre mas Pepitas de Fe" : "Uncover more Nuggets of Faith"}</a>
