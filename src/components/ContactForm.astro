@@ -23,12 +23,12 @@ const emailHash = "bf98455cebdfd3fa0931f612ce26feb2";
                 <p id="nameError" class="error-message hidden">{lang == "es" ? "Por favor ingrese un nombre" : "Please enter a name"}</p>
             </div>
             <div class="form-group">
-                <label for="email">{lang == "es" ? "Correo electronico" : "Email"}</label>
+                <label for="email">{lang == "es" ? "Correo electrónico" : "Email"}</label>
                 <input maxlength="100" type="email" autocomplete="email" aria-required="true" aria-invalid="false" id="email" name="email" placeholder={lang == "es" ? "Ejemplo: nombre@dominio.com" : "e.g. name@domain.com"} required>
-                <p id="emailError" class="error-message hidden">{lang == "es" ? "Por favor ingrese una direccion de correo electronica valida" : "Please enter a valid email address"}</p>
+                <p id="emailError" class="error-message hidden">{lang == "es" ? "Por favor ingrese una dirección de correo electronica válida" : "Please enter a valid email address"}</p>
             </div>
             <div class="form-group">
-                <label for="phone">{lang == "es" ? "Telefono (opcional)" : "Phone (optional)"}</label>
+                <label for="phone">{lang == "es" ? "Teléfono (opcional)" : "Phone (optional)"}</label>
                 <input maxlength="10" type="tel" autocomplete="tel" aria-required="false" aria-invalid="false" id="phone" name="phone" placeholder={lang == "es" ? "Ejemplo: 5555467655" : "e.g. 5555467655"}>
             </div>
             <div class="form-group">
@@ -38,9 +38,9 @@ const emailHash = "bf98455cebdfd3fa0931f612ce26feb2";
             </div>
             <div class="form-group">
                 <label for="message">{lang == "es" ? "Mensaje" : "Message"}</label>
-                <textarea maxlength="1000" aria-required="true" aria-invalid="false" id="message" name="message" placeholder={lang == "es" ? "Escribe tu mensaje aqui" : "Enter your message here"} required></textarea>
+                <textarea maxlength="1000" aria-required="true" aria-invalid="false" id="message" name="message" placeholder={lang == "es" ? "Escribe tu mensaje aquí" : "Enter your message here"} required></textarea>
                 <p class="character-counter">0/1000</p>
-                <p id="messageError" class="error-message hidden">{lang == "es" ? "Por favor ingrese un mensage" : "Please enter a message"}</p>
+                <p id="messageError" class="error-message hidden">{lang == "es" ? "Por favor ingrese un mensaje" : "Please enter a message"}</p>
             </div>
             <input type="text" name="_honey" style="display:none">
             <input type="hidden" name="_captcha" value="false">
@@ -58,11 +58,11 @@ const emailHash = "bf98455cebdfd3fa0931f612ce26feb2";
         <div class="success-message">
             <h3>{lang == "es" ? "Tu mensaje fue enviado exitosamente!" : "Your message was sent successfully!"}</h3>
             <p>{lang == "es" ? "Estaremos en contacto contigo pronto" : "We'll be in touch soon"}</p>
-            <button class="reset-form">{lang == "es" ? "Envia otro mensage" : "Send another message"}</button>
+            <button class="reset-form">{lang == "es" ? "Envia otro mensaje" : "Send another message"}</button>
         </div>
         <div class="error-message-500">
             <h3>{lang == "es" ? "Lo sentimos, algo salio mal" : "Sorry, something wen wrong"}</h3>
-            <p>{lang == "es" ? "Por favor intenta enviar el mensaje nuevamente mas tarde" : "Please try to send a message again later"}</p>
+            <p>{lang == "es" ? "Por favor intenta enviar el mensaje nuevamente más tarde" : "Please try to send a message again later"}</p>
             <button class="reset-form">{lang == "es" ? "Intenta nuevamente" : "Try again"}</button>
         </div>
     </div>

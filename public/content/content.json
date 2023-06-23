@@ -23,39 +23,39 @@
                 "copy": {
                     "sectionSundayService": {
                         "calloutOne": {
-                            "header": "Servicio de Adoracion",
+                            "header": "Servicio de Adoración",
                             "copy": "Todos los domingos a las 3:00pm",
                             "ctaOneCopy": "En persona",
                             "ctaOneHref": "/servicios-ubicacion",
                             "ctaOneExternal": false,
-                            "ctaTwoCopy": "En linea",
-                            "ctaTwoHref": "https://www.iglesia@graciadedios.ca/@iglesiadelnazarenograciade8537",
+                            "ctaTwoCopy": "En línea",
+                            "ctaTwoHref": "https://www.youtube.com/@iglesiadelnazarenograciade8537",
                             "ctaTwoExternal": true
                         }
                     },
                     "sectionWelcome": {
                         "header": "Bienvenido a la Iglesia del Nazareno Gracia de Dios",
-                        "copyOne": "<p>La Iglesia del Nazareno Gracia de Dios es una comunidad de cristianos quienes proviniendo de varios países, diferentes trasfondos culturales, sociales y religiosos, nos congregamos para adorar y servir a Dios en la ciudad de Toronto, Canadá.</p><p>Ya seas nuevo en la fe o hayas sido un miebro de la Iglesia del Nazareno por anos, te damos la mas calida bienvenida. Es un privilegio conectarnos con personas que comparten una pasion por servir a Dios y esparcir su amor por todo el mundo.</p>"
+                        "copyOne": "<p>La Iglesia del Nazareno Gracia de Dios es una comunidad de cristianos quienes proviniendo de varios países, diferentes trasfondos culturales, sociales y religiosos, nos congregamos para adorar y servir a Dios en la ciudad de Toronto, Canadá.</p><p>Ya seas nuevo en la fe o hayas sido un miembro de la Iglesia del Nazareno por años, te damos la más cálida bienvenida. Es un privilegio conectarnos con personas que comparten una pasión por servir a Dios y esparcir su amor por todo el mundo.</p>"
                     },
                     "sectionCta": {
                         "ctaOne": {
-                            "copy": "Conocenos - quienes somos y que representamos!",
+                            "copy": "Conocenos - quiénes somos y que representamos!",
                             "linkCopy": "Sobre nosotros",
                             "herf": "/sobre-nosotros"
                         },
                         "ctaTwo": {
-                            "copy": "Descrube nuestra fe - la fundacion de lo que hacemos y en que creemos",
+                            "copy": "Descrube nuestra fe - la fundación de lo que hacemos y en que creemos",
                             "linkCopy": "Creencias",
                             "herf": "/creencias"
                         },
                         "ctaThree": {
-                            "copy": "Descubre pepitas doradas de fe y sabiduria - un articulo a la vez",
+                            "copy": "Descubre pepitas doradas de fe y sabiduría - un artículo a la vez",
                             "linkCopy": "Lee nuestro blog",
                             "herf": "/blog"
                         }
                     },
                     "sectionEvents": {
-                        "header": "Eventos proximos"
+                        "header": "Eventos próximos"
                     }
                 }
             },
@@ -73,7 +73,7 @@
                 },
                 "quickLinks": [
                     {
-                        "copy": "Quienes somos",
+                        "copy": "Quiénes somos",
                         "href": "#about"
                     },
                     {
@@ -85,7 +85,7 @@
                         "href": "#values"
                     },
                     {
-                        "copy": "Lideres",
+                        "copy": "Líderes",
                         "href": "#leaders"
                     },
                     {
@@ -99,12 +99,12 @@
                 ],
                 "copy": {
                     "sectionAbout": {
-                        "header": "Quienes somos",
+                        "header": "Quiénes somos",
                         "copy": "<p>La Iglesia del Nazareno de la Gracia de Dios es una comunidad vibrante de creyentes dedicados a compartir el amor y la gracia de Jesucristo con el mundo. Nuestra iglesia está comprometida con la formación de discípulos que viven el mensaje del evangelio en sus vidas diarias. Creemos que la fe cristiana no solo es una cuestión personal, sino también comunitaria, y buscamos fomentar una comunidad amorosa y de apoyo donde todos puedan crecer en su relación con Dios</p><p>Nos esforzamos por ser una iglesia acogedora y abierta a todos, sin importar su pasado, su presente o sus circunstancias actuales. Queremos ser una fuente de esperanza y ayuda para aquellos que están en necesidad, y buscamos servir a nuestra comunidad en cualquier forma que podamos.</p><p>Nos encantaría que te unas a nosotros mientras buscamos crecer en nuestra fe, ayudar a otros y compartir el amor de Jesucristo con el mundo.</p>"
                     },
                     "calloutBeliefs": {
-                        "copy": "Nuestras creencias tambien forman parte de quienes somos",
-                        "href": "<a href='/nuestras-creencias'>Explora nuestas creencias</a>",
+                        "copy": "Nuestras creencias también forman parte de quienes somos",
+                        "href": "<a href='/creencias'>Explora nuestas creencias</a>",
                         "hrefComp": ""
                     },
                     "sectionMission": {
@@ -117,12 +117,12 @@
                         "values": {
                             "valueOne": "Somos un pueblo cristiano al servicio de la comunidad",
                             "valueTwo": "Alabamos a Jesucristo y lo confesamos como Senor",
-                            "valueThree": "Somo un pueblo de santidad como estilo de vida",
-                            "valueFour": "Somos un pueblo misional, evangelizamos con compasion"
+                            "valueThree": "Somos un pueblo de santidad como estilo de vida",
+                            "valueFour": "Somos un pueblo misional, evangelizamos con compasión"
                         }
                     },
                     "sectionLeaders": {
-                        "header": "Nuestros lideres espirituales",
+                        "header": "Nuestros líderes espirituales",
                         "copy": "",
                         "profiles": [
                             {
@@ -153,7 +153,7 @@
                         "ministries": {
                             "tabs": [
                                 "Alabanza",
-                                "Jovenes",
+                                "Jóvenes",
                                 "Niños",
                                 "Mujeres",
                                 "Hombres"
@@ -164,7 +164,7 @@
                                     "copy": "<p>El Ministerio de Alabanza es una parte vibrante e integral de nuestra experiencia de adoración. A través de la música, buscamos glorificar a Dios, elevar a la congregación y crear una atmósfera de alabanza y adoración. Nuestro ministerio da la bienvenida a personas de todas las edades y habilidades musicales que tienen pasión por la adoración a través de la música. Ya sea que seas un músico hábil, un vocalista o simplemente ames cantar, hay diversas oportunidades para involucrarte, como unirte al coro, participar en la banda de adoración o ayudar en la preparación del equipo musical. Nos esforzamos por cultivar una cultura de excelencia y adoración sincera, donde cada persona pueda usar sus talentos dados por Dios para inspirar a otros y acercarse más a Dios. Únete a nosotros mientras unimos nuestras voces e instrumentos en armonía, ofreciendo nuestros dones como acto de adoración a nuestro Señor.</p>"
                                 },
                                 {
-                                    "header": "<h3>Ministerio de Jovenes",
+                                    "header": "<h3>Ministerio de Jóvenes",
                                     "copy": "<p>El Ministerio de Jóvenes es una comunidad dinámica y comprometida donde los jóvenes pueden descubrir, desarrollar y profundizar su relación con Jesucristo. Nuestro ministerio se compromete a crear un espacio seguro e inclusivo donde los adolescentes y los adultos jóvenes puedan explorar su fe, hacer preguntas difíciles y encontrar apoyo y orientación de líderes dedicados. A través de estudios bíblicos relevantes e inspiradores, servicios de adoración, retiros y actividades de alcance, buscamos equipar a los jóvenes con una sólida base de verdades bíblicas, capacitarlos para vivir su fe en su vida diaria y animarlos a tener un impacto positivo en sus escuelas, familias y comunidades. Invitamos a todos los jóvenes a unirse a nosotros mientras caminamos juntos en la fe, la amistad y el servicio.</p>"
                                 },
                                 {
@@ -183,8 +183,8 @@
                         }
                     },
                     "calloutVisit": {
-                        "copy": "Conoce a nuestros lideres en persona y aprende mas sobre nuestros ministerios",
-                        "href": "<a href='/ubicacion-servicios'>Visitanos</a>",
+                        "copy": "Conoce a nuestros líderes en persona y aprende más sobre nuestros ministerios",
+                        "href": "<a href='/servicios-ubicacion'>Visítanos</a>",
                         "hrefComp": ""
                     },
                     "sectionChurch": {
@@ -193,21 +193,21 @@
                         "copy": "<p>La Iglesia del Nazareno ha evolucionado con el tiempo, pasando de ser una iglesia con presencia internacional a ser una comunidad global de creyentes. Basados en la tradición wesleyana, los nazarenos se entienden a sí mismos como un pueblo cristiano, de santidad y misional, y han abrazado la declaración de misión: \"Hacer discípulos semejantes a Cristo en las naciones\".</p><p><b>TESTIFICAR:</b> Todo discípulo de Jesús está llamado a compartir la historia de la gracia de Dios en su propia vida con los demás. A medida que hacemos discípulos, debemos contar y volver a contar la historia de la gracia de Dios en nuestras vidas y en las vidas de otros.</p><p><b>ANDAR:</b> Dios no forma discípulos semejantes a Cristo en un momento. El camino de la gracia abarca toda una vida. Cristo llama a sus seguidores a un camino con otros desde la falta de fe hasta la fe nueva y madura. El camino con otros requiere paciencia. Requiere amor. ¡Requiere gracia!</p>"
                     },
                     "calloutMessage": {
-                        "copy": "Tienes preguntas o comentarios? Nos encantaria escuchar de ti",
-                        "href": "<a href='/contacto'>Contactanos</a>",
+                        "copy": "Tienes preguntas o comentarios? Nos encantaría escuchar de ti",
+                        "href": "<a href='/contacto'>Contáctanos</a>",
                         "hrefComp": ""
                     }
                 }
             },
             "location": {
                 "metadata": {
-                    "title": "Ubicacion y Servicios, 624 Calle Annette, domingos a las 3 p.m. servicio evangélico, Escuela Dominical a las 2 p.m. Los servicios son en inglés y español. - Compartiendo el amor de Dios con Toronto y  el mundo | Iglesia del Nazareno Gracia de Dios",
+                    "title": "Ubicación y Servicios, 624 Calle Annette, domingos a las 3 p.m. servicio evangélico, Escuela Dominical a las 2 p.m. Los servicios son en inglés y español. - Compartiendo el amor de Dios con Toronto y  el mundo | Iglesia del Nazareno Gracia de Dios",
                     "description": "Descubre nuestra iglesia, Gracia de Dios: Experimenta comunidad y adoración en Toronto con nuestra variedad de servicios y programas. Gracia de Dios ministrando a todas las generaciones y nacionalidades.",
                     "esHref": "/servicios-ubicacion",
                     "enHref": "/en/services-location"
                 },
                 "hero": {
-                    "header": "Ubicacion y Servicios",
+                    "header": "Ubicación y Servicios",
                     "verse": "No te des prisa en hablar, ni se apresure tu corazón a proferir palabra delante de Dios. Porque Dios está en el cielo y tú en la tierra; por tanto sean pocas tus palabras.",
                     "book": "Eclesiastés 5:2"
                 },
@@ -217,11 +217,11 @@
                         "href": "#services"
                     },
                     {
-                        "copy": "Ubicacion",
+                        "copy": "Ubicación",
                         "href": "#location"
                     },
                     {
-                        "copy": "En linea",
+                        "copy": "En línea",
                         "href": "#online"
                     },
                     {
@@ -232,40 +232,40 @@
                 "copy": {
                     "sectionServices": {
                         "header": "Nuestros servicios",
-                        "sundayHeader": "Servicio de Adoracion",
-                        "sundayHour": "Visitanos todos los domingos a las 3:00pm",
+                        "sundayHeader": "Servicio de Adoración",
+                        "sundayHour": "Visítanos todos los domingos a las 3:00pm",
                         "sundayInPerson": "<a href='#location'>EN PERSONA</a>",
-                        "sundayOnline": "<a href='#online'>EN LINEA</a>",
+                        "sundayOnline": "<a href='#online'>EN LÍNEA</a>",
                         "otherHeader": "Otros servicios",
                         "services": [
                             {
                                 "title": "Estudio Bíblico y Oración",
-                                "location": "<span>En linea</span>",
+                                "location": "<span>En línea</span>",
                                 "date": "Martes a las 6:30pm",
                                 "link": "<a href='https://zoom.us/join' target='_blank' rel='noopener'>Únete por Zoom <br aria-hidden='true'><small>ID: 89484999402</small><span> | </span><small>Passcode: 832983</small></a>"
                             },
                             {
                                 "title": "Reunión Ministerio de Damas",
-                                "location": "<span>En linea</span>",
+                                "location": "<span>En línea</span>",
                                 "date": "Jueves a las 7:00pm",
                                 "link": "<a href='https://zoom.us/join' target='_blank' rel='noopener'>Únete por Zoom <br aria-hidden='true'><small>ID: 79886394078</small><span> | </span><small>Passcode: 2r4m17</small></a>"
                             },
                             {
                                 "title": "Estudio Bíblico y Oración",
-                                "location": "<span>En linea</span>",
+                                "location": "<span>En línea</span>",
                                 "date": "Sábados a las 6:00pm",
                                 "link": "<a href='https://zoom.us/join' target='_blank' rel='noopener'>Únete por Zoom <br aria-hidden='true'><small>ID: 81163752224</small><span> | </span><small>Passcode: 304520</small></a>"
                             }
                         ]
                     },
                     "sectionLocation": {
-                        "header": "Nos encantaria verte en persona",
+                        "header": "Nos encantaría verte en persona",
                         "locationCopy": "<h3 class='location__subheader'>Estamos ubicados en:</h3><p><b>624 Annette St, Toronto, ON M6S&nbsp;2C4</b></p>"
                     },
                     "sectionOnline": {
-                        "header": "Tambien puedes unirte en linea",
+                        "header": "También puedes unirte en línea",
                         "locationCopy": "<h3 class='online__subheader text-center'>Mira nuestro Servicio Dominical en vivo y sermones anteriores en nuestro canal de Youtube</h3>",
-                        "locationLink": "<a class='text-center' href='https://www.iglesia@graciadedios.ca/@iglesiadelnazarenograciade8537' target='_blank' rel='noopener'>Mira ahora</a>"
+                        "locationLink": "<a class='text-center' href='https://www.youtube.com/@iglesiadelnazarenograciade8537' target='_blank' rel='noopener'>Mira ahora</a>"
                     },
                     "calloutBlog": {
                         "copy": "Sigue aumentando tu fe: descubre pepitas de fe en estos artículos escritos por nuestra familia en Cristo",
@@ -273,11 +273,11 @@
                         "hrefComp": ""
                     },
                     "sectionEvents": {
-                        "header": "Eventos proximos"
+                        "header": "Eventos próximos"
                     },
                     "calloutMessage": {
-                        "copy": "Tienes preguntas o comentarios? Nos encantaria escuchar de ti",
-                        "href": "<a href='/contacto'>Contactanos</a>",
+                        "copy": "Tienes preguntas o comentarios? Nos encantaría escuchar de ti",
+                        "href": "<a href='/contacto'>Contáctanos</a>",
                         "hrefComp": ""
                     }
                 }
@@ -300,11 +300,11 @@
                         "href": "#explore"
                     },
                     {
-                        "copy": "Articulos de Fe",
+                        "copy": "Artículos de Fe",
                         "href": "#articles"
                     },
                     {
-                        "copy": "Caracteristicas",
+                        "copy": "Características",
                         "href": "#characteristics"
                     },
                     {
@@ -322,7 +322,7 @@
                         "copy": "<p>Aprende acerca de las creencias de la Iglesia del Nazareno de la Gracia de Dios, una denominación cristiana protestante con raíces en la tradición wesleyana. Descubre nuestro énfasis en la santidad, nuestro compromiso con el evangelismo y las misiones, y nuestra creencia en la santificación, la curación divina y la segunda venida de Jesús. Explora nuestros valores de educación, adoración y familia.</p>"
                     },
                     "sectionArticles": {
-                        "header": "Articulos de fe",
+                        "header": "Artículos de fe",
                         "copy": "<p>Los Artículos de Fe representan nuestras creencias fundamentales. Sirven como una declaración de fe y proporcionan un marco para comprender la perspectiva teológica y práctica de nuestra denominación. Son una declaración unificadora de lo que creemos y son el fundamento de nuestro ministerio y misión.</p>",
                         "accordions": [
                             {
@@ -367,7 +367,7 @@
                             },
                             {
                                 "trigger": "La Iglesia",
-                                "panel": "<p>Creyemos en la Iglesia universal, que está compuesta por todos los creyentes en Cristo. También creemos en la iglesia local, que es una comunidad de creyentes que se reúnen para adorar, tener compañerismo y servicio.</p>"
+                                "panel": "<p>Creemos en la Iglesia universal, que está compuesta por todos los creyentes en Cristo. También creemos en la iglesia local, que es una comunidad de creyentes que se reúnen para adorar, tener compañerismo y servicio.</p>"
                             },
                             {
                                 "trigger": "El Bautismo",
@@ -379,25 +379,25 @@
                             },
                             {
                                 "trigger": "La Sanidad Divina",
-                                "panel": "<p>Creyemos que Dios puede y sana a las personas física, emocional y espiritualmente.</p>"
+                                "panel": "<p>Creemos que Dios puede y sana a las personas física, emocional y espiritualmente.</p>"
                             },
                             {
                                 "trigger": "La Segunda Venida de Cristo",
-                                "panel": "<p>Creyemos en el retorno inminente de Cristo, cuando juzgará a los vivos y los muertos y establecerá su reino en la tierra.</p>"
+                                "panel": "<p>Creemos en el retorno inminente de Cristo, cuando juzgará a los vivos y los muertos y establecerá su reino en la tierra.</p>"
                             },
                             {
                                 "trigger": "La Administración Cristiana",
-                                "panel": "<p>Creyemos que todos los creyentes están llamados a ser buenos administradores de los recursos que Dios les ha confiado. Esto incluye su tiempo, talentos y posesiones materiales, que deben usarse para promover el reino de Dios y bendecir a otros.</p>"
+                                "panel": "<p>Creemos que todos los creyentes están llamados a ser buenos administradores de los recursos que Dios les ha confiado. Esto incluye su tiempo, talentos y posesiones materiales, que deben usarse para promover el reino de Dios y bendecir a otros.</p>"
                             }
                         ]
                     },
                     "calloutVisit": {
-                        "copy": "Quieres conocer mas? Visitanos durante nuestro Servicio Dominical y platica con uno de nuestros lideres",
-                        "href": "<a href='/service-location'>Visitanos</a>",
+                        "copy": "Quieres conocer más? Visítanos durante nuestro Servicio Dominical y platica con uno de nuestros líderes",
+                        "href": "<a href='/servicios-ubicacion'>Visítanos</a>",
                         "hrefComp": ""
                     },
                     "sectionCharacteristics": {
-                        "header": "Nuestras caracteristicas nazarenas",
+                        "header": "Nuestras características nazarenas",
                         "copy": "<p>Estas características definitorias de la Iglesia del Nazareno y sus miembros dan forma a la identidad y misión de la iglesia y proporcionan un marco para su teología y práctica.</p>",
                         "accordions": [
                             {
@@ -427,8 +427,8 @@
                         ]
                     },
                     "calloutBlog": {
-                        "copy": "Tambien puede interesarte leer palabras directamente del corazon de nuestra congregacion",
-                        "href": "<a href='/en/blog'>Lee Nuestro Blog \"Pepitas&nbsp;de&nbsp;Fe\"</a>",
+                        "copy": "También puede interesarte leer palabras directamente del corazón de nuestra congregación",
+                        "href": "<a href='/blog'>Lee Nuestro Blog \"Pepitas&nbsp;de&nbsp;Fe\"</a>",
                         "hrefComp": ""
                     },
                     "sectionValues": {
@@ -488,8 +488,8 @@
                         ]
                     },
                     "calloutMessage": {
-                        "copy": "Tienes preguntas o comentarios? Nos encataria escuchar de ti",
-                        "href": "<a href='/contacto'>Contactanos</a>",
+                        "copy": "Tienes preguntas o comentarios? Nos encantaría escuchar de ti",
+                        "href": "<a href='/contacto'>Contáctanos</a>",
                         "hrefComp": ""
                     }
                 }
@@ -525,9 +525,9 @@
                         "header": "Descubre Pepitas de Fe"
                     },
                     "calloutMessage": {
-                        "copy": "Tienes preguntas o comentarios sobre alguno de nuestros articulos? Visitanos durante nuestro Servicio Dominical o envianos un mensaje para poder charlar",
-                        "href": "<a href='/services-location'>Visitanos</a>",
-                        "hrefComp": "<a href='/contact-us'>Envianos un mensaje</a>"
+                        "copy": "Tienes preguntas o comentarios sobre alguno de nuestros artículos? Visítanos durante nuestro Servicio Dominical o envíanos un mensaje para poder charlar",
+                        "href": "<a href='/servicios-ubicacion'>Visítanos</a>",
+                        "hrefComp": "<a href='/contacto'>Envíanos un mensaje</a>"
                     }
                 }
             },
@@ -545,7 +545,7 @@
                 },
                 "copy": {
                     "sectionIntro": {
-                        "header": "Nos encantaria escuchar de ti"
+                        "header": "Nos encantaría escuchar de ti"
                     }
                 }
             },
@@ -677,7 +677,7 @@
                             "ctaOneHref": "/en/services-location#location",
                             "ctaOneExternal": false,
                             "ctaTwoCopy": "Online",
-                            "ctaTwoHref": "https://www.iglesia@graciadedios.ca/@iglesiadelnazarenograciade8537",
+                            "ctaTwoHref": "https://www.youtube.com/@iglesiadelnazarenograciade8537",
                             "ctaTwoExternal": true
                         }
                     },
@@ -913,7 +913,7 @@
                     "sectionOnline": {
                         "header": "You can also join us online",
                         "locationCopy": "<h3 class='online__subheader text-center'>Watch our livestream Sunday Service and past sermons on our Youtube channel</h3>",
-                        "locationLink": "<a class='text-center' href='https://www.iglesia@graciadedios.ca/@iglesiadelnazarenograciade8537' target='_blank' rel='noopener'>Watch now</a>"
+                        "locationLink": "<a class='text-center' href='https://www.youtube.com/@iglesiadelnazarenograciade8537' target='_blank' rel='noopener'>Watch now</a>"
                     },
                     "calloutBlog": {
                         "copy": "Keep growing your faith - uncover nuggets of faith in these articles penned by our family in Christ",
@@ -1041,7 +1041,7 @@
                     },
                     "calloutVisit": {
                         "copy": "Do you want to know more? Visit us during our Sunday Service and chat with one of our leaders",
-                        "href": "<a href='/service-location'>Visit us</a>",
+                        "href": "<a href='/en/service-location'>Visit us</a>",
                         "hrefComp": ""
                     },
                     "sectionCharacteristics": {
@@ -1175,8 +1175,8 @@
                     },
                     "calloutMessage": {
                         "copy": "Do you have comments or questions about any of our posts? Visit us during our Sunday Service or send us a message so we can have a chat",
-                        "href": "<a href='/services-location'>Visit us</a>",
-                        "hrefComp": "<a href='/contact-us'>Send us a message</a>"
+                        "href": "<a href='/en/services-location'>Visit us</a>",
+                        "hrefComp": "<a href='/en/contact-us'>Send us a message</a>"
                     }
                 }
             },
@@ -1202,7 +1202,7 @@
                 "metadata": {
                     "title": "Sitemap - Sharing God's love with Toronto and the world | Grace of God Nazarene Church",
                     "description": "",
-                    "esHref": "/sitemap",
+                    "esHref": "/mapa-del-sitio",
                     "enHref": "/en/sitemap"
                 },
                 "hero": {

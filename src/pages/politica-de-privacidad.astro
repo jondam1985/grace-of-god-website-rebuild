@@ -1,0 +1,66 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Content from 'public/content/content.json';
+import Hero from '@components/Hero.astro';
+import '@pages/privacy.scss';
+
+const page = "privacy";
+const lang = "es";
+const content = Content[lang];
+const pageContent = content.pages[page];
+const title = pageContent.metadata.title;
+const description = pageContent.metadata.description;
+const pageClass = `page-${page} ${lang}`;
+---
+
+<Layout
+    title={title}
+    description={description}
+    lang={lang}
+    esHref={pageContent.metadata.esHref}
+    enHref={pageContent.metadata.enHref}
+    pageClass={pageClass}
+    canonical={`${pageContent}["${lang}Href"]`}
+    >
+    <main id="main">
+        <Hero
+            heading={pageContent.hero.header}
+            verse={pageContent.hero.verse}
+            book={pageContent.hero.book}
+        />
+        <section id="privacy" class="section-alt privacy ">
+            <div class="container">
+                <section id="privacy" class="section-alt privacy">
+                    <div>
+                        <h2>{pageContent.copy.sectionPrivacy.header}</h2>
+                        <Fragment set:html={pageContent.copy.sectionPrivacy.copy} />
+                    </div>
+                    <div>
+                        <h2>{pageContent.copy.sectionData.header}</h2>
+                        <Fragment set:html={pageContent.copy.sectionData.copy} />
+                    </div>
+                    <div>
+                        <h2>{pageContent.copy.sectionCookies.header}</h2>
+                        <Fragment set:html={pageContent.copy.sectionCookies.copy} />
+                    </div>
+                    <div>
+                        <h2>{pageContent.copy.sectionSecurity.header}</h2>
+                        <Fragment set:html={pageContent.copy.sectionSecurity.copy} />
+                    </div>
+                    <div>
+                        <h2>{pageContent.copy.sectionThird.header}</h2>
+                        <Fragment set:html={pageContent.copy.sectionThird.copy} />
+                    </div>
+                    <div>
+                        <h2>{pageContent.copy.sectionChanges.header}</h2>
+                        <Fragment set:html={pageContent.copy.sectionChanges.copy} />
+                    </div>
+                    <div>
+                        <h2>{pageContent.copy.sectionContact.header}</h2>
+                        <Fragment set:html={pageContent.copy.sectionContact.copy} />
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+</Layout>

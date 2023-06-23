@@ -63,15 +63,15 @@ const {id, lang} = Astro.props;
                     <div class="post__share flex flex-align-center">
                         <h2>{lang == "es" ? "Comparte " : "Share "}</h2>
                         <div class="share__item email">
-                            <a href={`mailto:?subject=${lang == "es" ? `Este articulo del Blog: Pepitas de Fe puede interesarte: "${content.title}"` : `You might find this post from the blog Nuggets of Faith interesting: "${content.title}"`}&body=${content.title} ${lang == "es" ? `${baseUrl}/blog/${content.path}` : `${baseUrl}/en/blog/${content.path}`}`} class="share__link" href="" target="_blank" rel="noopener">
+                            <a href={`mailto:?subject=${lang == "es" ? `Este artículo del Blog: Pepitas de Fe puede interesarte: "${content.title}"` : `You might find this post from the blog Nuggets of Faith interesting: "${content.title}"`}&body=${content.title} ${lang == "es" ? `${baseUrl}/blog/${content.path}` : `${baseUrl}/en/blog/${content.path}`}`} class="share__link" href="" target="_blank" rel="noopener">
                                 <div class="share__image">
                                     <EmailSVG />
                                 </div>
-                                <span class="sr-only">{lang == "es" ? "Comparte via correo electronico" : "Share via email"}</span>
+                                <span class="sr-only">{lang == "es" ? "Comparte via correo electrónico" : "Share via email"}</span>
                             </a>
                         </div>
                         <div class="share__item whatsapp">
-                            <a href={`https://wa.me/?text=${lang == "es" ? `Este articulo del blog Pepitas de Fe puede interesarte: "${content.title}" ${baseUrl}/blog/${content.path}` : `This article from the blog Nuggets of Faith might interest you: "${content.title}" ${baseUrl}/en/blog/${content.path}`}`} class="share__link" href="" target="_blank" rel="noopener">
+                            <a href={`https://wa.me/?text=${lang == "es" ? `Este artículo del blog Pepitas de Fe puede interesarte: "${content.title}" ${baseUrl}/blog/${content.path}` : `This article from the blog Nuggets of Faith might interest you: "${content.title}" ${baseUrl}/en/blog/${content.path}`}`} class="share__link" href="" target="_blank" rel="noopener">
                                 <div class="share__image">
                                     <WhatsAppSVG />
                                 </div>
@@ -87,7 +87,7 @@ const {id, lang} = Astro.props;
                             </a>
                         </div>
                         <div class="share__item twitter">
-                            <a href={`https://twitter.com/intent/tweet/?text=${lang == "es" ? `Interesante articulo del blog Pepitas de Fe: "${content.title}"" ${baseUrl}/blog/${content.path}` : `Interesting article from the blog Nuggets of Faith: "${content.title}"" ${baseUrl}/en/blog/${content.path}`}`} class="share__link" href="" target="_blank" rel="noopener">
+                            <a href={`https://twitter.com/intent/tweet/?text=${lang == "es" ? `Interesante artículo del blog Pepitas de Fe: "${content.title}"" ${baseUrl}/blog/${content.path}` : `Interesting article from the blog Nuggets of Faith: "${content.title}"" ${baseUrl}/en/blog/${content.path}`}`} class="share__link" href="" target="_blank" rel="noopener">
                                 <div class="share__image">
                                     <TwitterSVG />
                                 </div>
@@ -100,14 +100,14 @@ const {id, lang} = Astro.props;
                         <Fragment set:html={content.content} />
                     </div>
                     <div class="back__link relative">
-                        <a href={lang == "es" ? "/blog#posts" : "/en/blog#posts"}>{lang == "es" ? "Descubre mas Pepitas de Fe" : "Uncover more Nuggets of Faith"}</a>
+                        <a href={lang == "es" ? "/blog#posts" : "/en/blog#posts"}>{lang == "es" ? "Descubre más Pepitas de Fe" : "Uncover more Nuggets of Faith"}</a>
                     </div>
                 </div>
             </div>
         </section>
         <section id="contact" class="section contact">
             <div class="container">
-                <h2 class="subheading">{lang == "es" ? "Tienes preguntas o comentarios sobre este articulo?" : "Do you have any questions or comments about this post?"}</h2>
+                <h2 class="subheading">{lang == "es" ? "Tienes preguntas o comentarios sobre este artículo?" : "Do you have any questions or comments about this post?"}</h2>
                 <ContactForm lang={lang} />
             </div>
         </section>

@@ -8,37 +8,9 @@ export interface Props {
 } 
 
 const { lang } = Astro.props;
-
-// const view = import.meta.env.MODE == "development" ? "Staging" : "Production";
-
-// var base = new Airtable({apiKey: 'patASZXZ7wZJ7UAze.d6f74d1a0071400f4e538494d110713361c7f49cff46d77737deb93602a1cbc3'}).base('appg1WC3k58wcqQ72');
-
-// const allRecords = (airtableBase) => {
-//     return (
-//         airtableBase(`events ${lang}`).select({
-//             view: view,
-//         }).all()
-//     )
-// }
-
-// const allEvents = await allRecords(base);
-
-// const events = allEvents.reduce((acc, x) => {
-//     acc.push({
-//         title: x["fields"]["Title"],
-//         description: x["fields"]["Description"],
-//         date: x["fields"]["Date"],
-//         location: x["fields"]["Location"],
-//         href: x["fields"]["Href"],
-//     });
-//     return acc;
-// }, []);
 ---
 
 <div data-lang={lang} class={`events__container flex flex-align-top flex-justify-center flex-wrap bg-white box-shadow`}>
-    <p class="no-events-notice">
-        {lang == "es" ? "Lo sentimos, no hay eventos proximos por el momento. Por favor revisa mas tarde." : "Sorry, there are no upcoming events at the moment. Please check again soon."}
-    </p>
 </div>
 <script>
     window.addEventListener("load", () => {
@@ -60,6 +32,12 @@ const { lang } = Astro.props;
         fetch(`/api/events?${lang}`)
         .then(response => response.json())
         .then(data => {
+            if (data.length == 0) {
+                document.querySelector(".events__container").innerHTML = 
+                    `<p class="no-events-notice">
+                        ${lang == "es" ? "Lo sentimos, no hay eventos próximos por el momento. Por favor revisa más tarde." : "Sorry, there are no upcoming events at the moment. Please check again soon."}
+                    </p>`;
+            }
             const events = data.reduce((acc, v, i) => {
                 acc+=createCard(lang, "added-class", v.title, v.description, v.date, v.locationHref, v.location,);
                 return acc;

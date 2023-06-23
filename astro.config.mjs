@@ -12,6 +12,6 @@ export default defineConfig({
       }
     }
   },
-  output: "server",
-  adapter: cloudflare({ mode: "directory" }),
+  // output: "server",
+  // adapter: cloudflare({ mode: "directory" }),
 });
