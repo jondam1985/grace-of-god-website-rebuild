@@ -15,14 +15,14 @@ const { lang } = Astro.props;
 <script>
     window.addEventListener("load", () => {
         const lang = document.querySelector(".events__container").getAttribute("data-lang");
-        const createCard = (lang, addedClass, title, description, date, locationHref, location) => {
+        const createCard = (lang, addedClass, title, description, date, href, location) => {
             const card =  `
             <div class="event-card ${addedClass}">
                 <div class="event__content">
                     <h3 class="event__title text-center">${title}</h3>
                     <p class="event__description">${description}</p>
                     <p class="event__date">${lang == "es" ? "Fecha:" : "When:"} <b>${date}</b></p>
-                    <p class="event__location">${lang == "es" ? "Lugar:" : "Where:"} <a class="inline" href=${locationHref}><b>${location}</b></a></p>
+                    <p class="event__location">${lang == "es" ? "Lugar:" : "Where:"} <a class="inline" href=${href}><b>${location}</b></a></p>
                 </div>
             </div> 
             `
@@ -39,7 +39,7 @@ const { lang } = Astro.props;
                     </p>`;
             }
             const events = data.reduce((acc, v, i) => {
-                acc+=createCard(lang, "added-class", v.title, v.description, v.date, v.locationHref, v.location,);
+                acc+=createCard(lang, "added-class", v.title, v.description, v.date, v.href, v.location,);
                 return acc;
             }, "");
 
