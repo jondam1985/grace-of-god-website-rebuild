@@ -44,7 +44,7 @@ const pageClass = `page-${page} ${lang}`;
                             <div class="email__icon">
                                 <EmailSVG />
                             </div>
-                            <p><b>{lang == "es" ? "Correo electrónico" : "Email"}:</b> <a class="inline" href="mailto:iglesia@graciadedios.ca"> iglesia@graciadedios.ca</a></p>
+                            <p><b>{lang == "es" ? "Correo electrónico" : "Email"}:</b> <a class="inline" href=`${lang == "es" ? "mailto:contacto@graciadediostoronto.com" : "mailto:contact@graciadediostoronto.com"}`> {lang == "es" ? "contacto@graciadediostoronto.com" : "contact@graciadediostoronto.com"}</a></p>
                         </div>
                         <div class="contact__item contact__address flex">
                             <div class="address__icon">
